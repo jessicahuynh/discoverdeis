@@ -1,0 +1,70 @@
+@import url('colors.less');
+
+div.go-to-navigate {	
+	margin-bottom:1em;
+	width:100%;
+	a {
+		text-align:center;
+		padding:1em;
+		display:block;
+		width:100%;
+		color:@off-white;
+		text-decoration:none;
+		background-color:@dark-blue;
+		text-transform:uppercase;
+	}
+	a:hover, a:focus, a:active {
+		background-color:#ededed;
+		color:#111;
+	}
+}
+
+.page-header {
+	#returnToList {
+		font-size:1.1em;
+		display:block;
+		height:100%;
+		float:left;
+		margin-right:0.25em;
+	}
+	small {
+		clear:both;
+	}
+}
+
+.profilePic {
+	max-width:100%;
+}
+
+#profileMap #map-container {
+	margin:0;
+}
+
+#profileTabs {
+	max-width:100%;
+	font-size:1.4em;
+	margin-bottom:1em;
+	
+	ul {
+		margin:0 auto;
+	}
+	
+	
+	li {
+		text-align:center;
+		width:calc(~'50% - 1px');
+		
+		a {
+			border-radius:0;
+			text-transform:uppercase;
+		}
+	}
+}
+
+.mobileGo {
+	display:none;
+}
+@media (max-width:768px) {
+	.mobileGo {display:block;}
+	.desktopGo {display:none;}
+}

@@ -1,0 +1,30 @@
+<template name="footer">
+<footer id="footer">
+	<div class="container">
+		{{#with loc}}
+		<div id="currentLoc"><a href="/viewLocation/{{inLocationId}}" id="currentLocLink"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;{{inLocation}} <small>{{inOrNear}}</small></a></div>
+		{{/with}}
+		<div id="info" class="small pull-right"></div>
+		<div id="audioBox">
+			<div id="listenBox">
+				<a href="#" class="btn btn-default btn-lg" id="listen"><span class="glyphicon glyphicon-volume-up"></span></a>
+			</div>
+			<div id="micBox">
+				<div id="microphone"></div>
+			</div>
+			<span class="clear">&nbsp;</span>
+		</div>
+	</div>
+</footer>
+<div id="speechText">
+	<div class="popover-content">
+		<button id="close-popover" aria-label="Close" class="pull-right">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+		<div id="result"></div>
+		<div id="error"></div>
+	</div>
+	<!--<span>{{voiceInput}}</span>
+	<button id="voiceInputButton">Speak</button>-->
+</div>
+</template>

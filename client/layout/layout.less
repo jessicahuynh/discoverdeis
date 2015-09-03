@@ -1,0 +1,379 @@
+@import url('../colors.less');
+
+body, p, span, div {
+	font-family:"Ubuntu","Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a, input, button, textarea, select, option, label, h1, h2, h3, h4, h5, h6 {
+	font-family:"Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	border-radius:0;
+}
+.btn {
+	border-radius:0;
+	text-transform:uppercase;
+}
+.form-control {
+	border-radius:0;
+	border:2px solid @dark-blue;
+	box-shadow: none;
+}
+form {width:100%;}
+
+#searchForm .form-group {
+	width:100%;
+}
+
+.form-group.required label:after {
+  content:" *";
+  color:@reddish;
+}
+
+.panel {border-radius:0;}
+
+/* adjust body when menu is open */
+body.slide-active {
+    overflow-x: hidden
+}
+/*first child of #page-content so it doesn't shift around*/
+.no-margin-top {
+    margin-top: 0px!important
+}
+/*wrap the entire page content but not nav inside this div if not a fixed top, don't add any top padding */
+#page-content {
+    position: relative;
+	left:0;
+	div.container {
+		margin-bottom:90px;
+	}
+}
+#page-content.slide-active {
+    padding-top:71px;
+}
+@media (min-width:769px) {
+	#page-content.slide-active {
+		padding-top: 0;
+	}
+}
+
+nav div.container {
+	padding:0;
+	font-size:1.2em;
+	font-variant:small-caps;
+}
+
+/* put toggle bars on the left :: not using button */
+#slide-nav .navbar-toggle {
+    cursor: pointer;
+    position: fixed;
+    line-height: 0;
+    float: left;
+    margin: 0;
+    width: 30px;
+    height: 40px;
+    padding: 10px 0 0 0;
+    border: 0;
+    background: transparent;
+}
+/* icon bar prettyup - optional */
+#slide-nav .navbar-toggle > .icon-bar {
+    width: 100%;
+    display: block;
+    height: 3px;
+    margin: 5px 0 0 0;
+}
+/* the color of the hamburger menu when clicked */
+#slide-nav .navbar-toggle.slide-active .icon-bar {
+    background: #ffffff;
+}
+.navbar-header {
+    position: fixed;
+}
+/* fix the navbar when active so that all the menu items are accessible */
+.navbar.navbar-fixed-top.slide-active {
+    position: fixed;
+}
+.navbar-inverse {
+	background:@dark-blue;
+	border-color:@dark-blue;
+	color:#ffffff;
+	
+	ul.navbar-nav {
+		width:100%;
+		margin-top:3em;
+	}
+	.navbar-brand {
+		color:#ffffff;
+	}
+	
+	.navbar-nav li {
+		display:block;
+		clear:both;
+	}
+	.navbar-nav li a {
+		color:#efefef;
+		display:block;
+		padding:1em;
+	}
+	.navbar-nav li:hover {
+		background-color:@deis-blue;
+	}
+}
+
+
+@media (max-width:768px) { 
+	#slide-nav .container {
+	    margin: 0;
+	    padding: 0!important;
+	}
+	#slide-nav .navbar-header {
+	    margin: 0 auto;
+	    padding: 0 15px;
+		
+		.navbar-brand {
+			margin-left:1.5em;
+			padding-right:0;
+			height:2em;
+			overflow:hidden;
+		}
+	}
+	#slide-nav .navbar.slide-active {
+	    position: absolute;
+	    width: 60%;
+	    top: -1px;
+	    z-index: 1000;
+	}
+	#slide-nav #navbar-hamburger {
+	    background: #f7f7f7;
+	    left: -100%;
+	    width: 60%;
+	    min-width: 0;
+	    position: fixed;
+	    padding-left: 0;
+		padding-right:0;
+		// padding-top:58px;
+	    z-index: 2;
+	    top: -8px;
+	    margin: 0;
+		
+	}
+	#slide-nav #navbar-hamburger .navbar-nav {
+	    min-width: 0;
+	    width: 100%;
+	    margin: 0;
+	}
+	#slide-nav #navbar-hamburger .navbar-nav .dropdown-menu li a {
+	    min-width: 0;
+	    width: 60%;
+	    white-space: normal;
+	}
+	#slide-nav {
+	    border-top: 0
+	}
+	#slide-nav.navbar-inverse #navbar-hamburger {
+	    background: @dark-blue;
+	}
+	/* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
+	#slide-nav #navbar-height-col {
+	    position: fixed;
+	    top: 0;
+	    height: 100%;
+	    width: 60%;
+	    left: -60%;
+	    background: #eee;
+	}
+	#slide-nav.navbar-inverse #navbar-height-col {
+	    background: @dark-blue;
+	    z-index: 1;
+	    border: 0;
+	}
+	#slide-nav .navbar-form {
+	    width: 100%;
+	    margin: 8px 0;
+	    text-align: center;
+	    overflow: hidden;
+	    /*fast clearfixer*/
+	}
+	#slide-nav .navbar-form .form-control {
+	    text-align: center
+	}
+	#slide-nav .navbar-form .btn {
+	    width: 100%
+	}
+}
+@media (min-width:769px) { 
+	#page-content {
+	    left: 0!important;
+		z-index:200;
+	}
+	/* for the sidebar space */
+	#page-content .container {
+		padding-left:275px;
+	}
+	.navbar.navbar-fixed-top.slide-active {
+	    position: fixed
+	}
+	.navbar-header {
+	    left: 0!important;
+	}
+	/* fix widths and make a sidebar */
+	#slide-nav {
+		height:100%; /* get background color to show all the way down */
+		width:270px;
+		background:@dark-blue;
+		
+		.container {
+			width:270px;
+		}
+		
+		/* stack navigation elements instead of inline */
+		#navbar-hamburger ul li {
+			float:none;
+		}
+	}	
+	#homeLink {
+		display:none;
+	}
+}
+@media (max-width:768px) {
+	#page-content {
+		padding-top:72px;
+	}
+	
+	#homeLink {
+		display:block;
+		padding-top:3px;
+	}
+}
+
+/* STYLES FOR THE SEARCH BOX */
+form#searchForm {
+	position:fixed;
+	float:right;
+	top:20px;
+	right:20px;
+	max-width:550px;
+	z-index:1100;
+	input {
+		display:none;
+		width:100%;
+		border-radius:0;
+	}
+	a#back,#clearBack{display:none}
+}
+button#searchGlass {
+	border:0;
+	float:right;
+	background:transparent;
+	float:none;
+	position:fixed;
+	top:1.2em;
+	right:1em;
+	z-index:12000;
+}
+
+@media (max-width:768px) {
+	form#searchForm {
+		top:0;
+		right:0;
+		float:none;
+		display:none;
+		margin:0 auto;
+		padding:0 1em;
+		max-width:100%;
+		min-width:96%;
+		width:100%;
+		margin-top:50px;
+		background-color:@dark-blue;
+		
+		.form-group {
+			margin-bottom:12px;
+		}
+		
+		input {display:block;}
+		
+	}
+	button#searchGlass {
+		color:#ffffff;
+		top:.4em;
+		right:.25em;
+	}
+}
+
+
+
+/* NAVBAR BRAND ON WEB */
+@media (min-width:769px) {
+	nav.navbar .container .navbar-brand {
+		margin:0 auto;
+	}
+	
+	#toggleBtn {
+		display:none;
+	}
+	.back {
+		display:none;
+	}
+	
+	#discoverDeisLink {
+		display:block;
+	}
+	#mobileTitleLink {
+		display:none;
+	}
+}
+
+/* PAGE HEADER */
+@media(max-width:768px) {
+	// get rid of header in mobile view except for on pages that need the full location name
+	.page-header {
+		display:none;
+	}
+	.locName {
+		display:block;
+		margin-top:0;
+	}
+	
+	.back {
+		display:none;
+	}
+	#toggleBtn {
+		display:block;
+	}
+	
+	#discoverDeisLink {
+		display:none;
+	}
+	#mobileTitleLink {
+		display:block;
+	}
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+	z-index:1000;
+}
+
+.navbar-header .back span {
+	font-size:1.4em;
+}
+
+
+
+/* ALERTS */
+.alert {
+	border-radius:0;
+}
+
+
+
+/* MAPS */
+#map-container, #map-nav {
+	height:300px;
+	width:100%;
+}
+
+
+
+/* SWITCHES */
+.bootstrap-switch {
+	border-radius:0;
+}
