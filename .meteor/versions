@@ -9,7 +9,7 @@ callback-hook@1.0.3
 check@1.0.5
 coffeescript@1.0.6
 dandv:caret-position@2.1.1
-dburles:google-maps@1.1.1
+dburles:google-maps@1.1.4
 ddp@1.1.0
 deps@1.0.7
 ejson@1.0.6
@@ -35,7 +35,7 @@ less@1.0.14
 livedata@1.0.13
 logging@1.0.7
 manuelschoebel:wait-on-lib@0.3.0
-matteodem:easy-search@1.5.7
+matteodem:easy-search@1.6.3
 maxharris9:meteor-bootstrap-slider@0.9.0
 meteor@1.1.6
 meteor-platform@1.2.2
@@ -63,7 +63,7 @@ spacebars-compiler@1.0.6
 templating@1.1.1
 tracker@1.0.7
 twbs:bootstrap@3.3.5
-u2622:persistent-session@0.3.5
+u2622:persistent-session@0.4.1
 ui@1.0.6
 underscore@1.0.3
 url@1.0.4
