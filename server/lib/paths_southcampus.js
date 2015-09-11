@@ -176,6 +176,46 @@ paths_southcampus = [
     "description":"Walk towards the road, keeping Sherman on the right",
 },
 {
+    "start":"shermanfunctionhall_c03",
+    "end":"shapirodorm_c04",
+    "description":"Walk towards the loop road, keeping Sherman on the right and Faculty Club on the left",
+},
+{
+    "start":"shapirodorm_c04",
+    "end":"shermanfunctionhall_c03",
+    "description":"Walk along the road, keeping Sherman on the left and Faculty Club on the right",
+},
+{
+    "start":"shermanfunctionhall_c03",
+    "end":"scc_c01",
+    "description":"Face towards Fellows Garden, leaving the way to loop road at back, and walk along the road",
+},
+{
+    "start":"scc_c01",
+    "end":"shermanfunctionhall_c03",
+    "description":"Leave Fellows Garden at back, walk along the road, keeping SCC on the left and Sherman on the right",
+},
+{
+    "start":"scc_c11",
+    "end":"shermanfunctionhall_c01",
+    "description":"Walk along the road, keeping Sherman on the left and Fellows Garden on the right",
+},
+{
+    "start":"shermanfunctionhall_c01",
+    "end":"scc_c11",
+    "description":"Walk along the road towards SCC, keeping Sherman on the right",
+},
+{
+    "start":"shermanfunctionhall_e01",
+    "end":"usen_c03",
+    "description":"Walk outside of the entrance, and walk along the road, facing towards Massell Quad and keeping Rosie South on the right",
+},
+{
+    "start":"usen_c03",
+    "end":"shermanfunctionhall_e01",
+    "description":"Walk along the road, keeping Sherman on the right",
+},
+{
     "start":"admissions_c01",
     "end":"scc_c08",
     "description": "Walk across the road",
@@ -249,6 +289,31 @@ paths_southcampus = [
     "start":"fellowsgarden_c03",
     "end":"scc_c12",
     "description": "Take the trail across Fellows Garden",
+},
+{
+    "start":"fellowsgarden_c03",
+    "end":"shermanfunctionhall_c02",
+    "description":"Walk along the road, keeping Fellows Garden on the left",
+},
+{
+    "start":"shermanfunctionhall_c02",
+    "end":"fellowsgarden_c03",
+    "description":"Walk along the road, keeping Fellows Garden on the right",
+},
+{
+    "start":"shermanfunctionhall_c02",
+    "end":"chapelsfield_c02",
+    "description":"Walk along the road, keeping Rosie East on the left and Fellows Garden at back",
+},
+{
+    "start":"shermanfunctionhall_c02",
+    "end":"volen_c02",
+    "description":"Walk along the road, keeping Volen on the right",
+},
+{
+    "start":"volen_c02",
+    "end":"shermanfunctionhall_c02",
+    "description":"Face towards Rosie East, and walk along the lane on the right",
 },
 {
     "start":"scc_c04",
