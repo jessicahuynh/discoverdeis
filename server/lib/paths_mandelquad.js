@@ -327,7 +327,7 @@ paths_mandelquad = [
 	{
 	    "start":"rabb_c03",
 	    "end":"mandelHQuad_e01",
-	    "description": "Follow the path you are on and walk towards the group of trees unti you see a set of stairs.",
+	    "description": "Follow the path you are on and walk towards the group of trees until you see a set of stairs.",
 	},
 	/////
 	

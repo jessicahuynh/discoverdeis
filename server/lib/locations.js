@@ -703,7 +703,7 @@ locations = [
 						different areas of study. Classes in this building are taught in a round-table setting \
 						as well as in lecture halls.",
 		"category":["academics"],
-		"entrances":["mandel_e01", "olin-sang_ie01"],
+		"entrances":["mandel_e01", "mandel_e02", "olin-sang_ie01"],
 		"nearby":["olin-sang","golding","rabbGrad", "heller"],
 		"area":["upper campus","mandel"]
 	},
