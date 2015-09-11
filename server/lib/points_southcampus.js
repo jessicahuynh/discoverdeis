@@ -118,6 +118,32 @@ points_southcampus = [
 {
     "id": "facultycenter_c02",
     "coordinate":new Point(42.365944, -71.261430),
+    "type": "crossing",
+},
+{
+    "id": "shermanfunctionhall_e01",
+    "coordinate":new Point(42.366534, -71.260443),
+    "type": "entrance",
+},
+{
+    "id": "shermanfunctionhall_e02",
+    "coordinate":new Point(42.366663, -71.260604),
+    "type": "entrance",
+},
+{
+    "id": "shermanfunctionhall_c01",
+    "coordinate":new Point(42.366377, -71.260204),
+    "type": "crossing",
+},
+{
+    "id": "shermanfunctionhall_c02",
+    "coordinate":new Point(42.366843, -71.259598),
+    "type": "crossing",
+},
+{
+    "id": "shermanfunctionhall_c03",
+    "coordinate":new Point(42.366228, -71.260491),
+    "type": "crossing",
 },
 {
     "id": "theaterlot_e01",

@@ -106,6 +106,61 @@ paths_southcampus = [
     "description": "Walk outside of the entrance and go straight ahead toward the loop road",
 },
 {
+    "start":"shermanfunctionhall_e01",
+    "end":"shermanfunctionhall_c02",
+    "description": "Turn left after getting out of the entrance, and walk along the road keeping Fellows Garden on the right",
+},
+{
+    "start":"shermanfunctionhall_c02",
+    "end":"shermanfunctionhall_e01",
+    "description": "Walk along the road and choose the road on the right at crossing, keeping Fellows Garden on the left",
+},
+{
+    "start":"shermanfunctionhall_e01",
+    "end":"shermanfunctionhall_c01",
+    "description": "Walk along the road after getting out of the entrance, keeping Sherman on the right",
+},
+{
+    "start":"shermanfunctionhall_c01",
+    "end":"shermanfunctionhall_e01",
+    "description": "Walk along the road, keeping Fellows Garden at back and Sherman on the left",
+},
+{
+    "start":"shermanfunctionhall_c01",
+    "end":"shermanfunctionhall_c02",
+    "description": "Walk along the road, keeping Fellows Garden on the right",
+},
+{
+    "start":"shermanfunctionhall_c02",
+    "end":"shermanfunctionhall_c01",
+    "description": "Walk along the road and choose the road on the left at crossing, keeping Fellows Garden on the left",
+},
+{
+    "start":"shermanfunctionhall_c01",
+    "end":"scc_c01",
+    "description": "Walk along the road, keeping Fellows Garden on the left",
+},
+{
+    "start":"scc_c01",
+    "end":"shermanfunctionhall_c01",
+    "description": "Walk along the road, keeping Fellows Garden on the right",
+},
+{
+    "start":"shermanfunctionhall_c03",
+    "end":"scc_c11",
+    "description": "Walk along the road towards SCC, keeping Sherman at back",
+},
+{
+    "start":"scc_c11",
+    "end":"shermanfunctionhall_c03",
+    "description": "Walk along the road towards Sherman, keeping SCC at back",
+},
+{
+    "start":"shermanfunctionhall_c03",
+    "end":"shermanfunctionhall_c01",
+    "description":"Walk along the road, keeping Sherman on the left",
+},
+{
     "start":"admissions_c01",
     "end":"scc_c08",
     "description": "Walk across the road",

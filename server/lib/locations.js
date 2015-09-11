@@ -1102,6 +1102,28 @@ locations = [
 			new Point(42.369017, -71.260276),
 			new Point(42.368729, -71.260412),
 			new Point(42.368522, -71.259772)]
+	},
+	{
+		"id":"shermanfunctionhall",
+		"name":"Sherman Function Hall",
+		"nickname":"Sherman",
+		"function":"Sherman Function Hall holds conferences and has a dining hall downstairs",
+		"description":"",
+		"category":["dining","student life"],
+		"area":["lower campus"],
+		"nearby":["facultycenter","scc","rosiesouth","shapirodorm","usen"],
+		"coordinates":[new Point(42.366599, -71.260741),
+			new Point(42.366687, -71.260541),
+			new Point(42.366545, -71.260425),
+			new Point(42.366525, -71.260473),
+			new Point(42.366325, -71.260309),
+			new Point(42.366253, -71.260473),
+			new Point(42.366260, -71.260901),
+			new Point(42.366355, -71.260985),
+			new Point(42.366438, -71.260810),
+			new Point(42.366627, -71.260942),
+			new Point(42.366688, -71.260810)],
+		"entrances":["shermanfunctionhall_e01","shermanfunctionhall_e02"]
 	}
 
 
