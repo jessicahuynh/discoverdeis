@@ -1,6 +1,16 @@
 <template name="debugger">
-<h1 class="page-header">Debugger</h1>
-<p>Discover Deis was made by Jessica Huynh, Tianci Zhong, and Ziyu Qiu.</p>
+<h2>Map Debugger</h2>
+<div id="map-container" style="height:900px">
+	{{> googleMap name="dataMap" options=dataMapOptions}}
+</div>
+<p>The map markers are from <a>http://www.benjaminkeen.com/google-maps-coloured-markers/</a>.</p>
+
+<h2>Locations without entrances assigned</h2>
+<ul>
+	{{#each loc}}
+	<li>{{name}}</li>
+	{{/each}}
+</ul>
 
 <h2>Stats</h2>
 <ul>
@@ -12,20 +22,6 @@
 	</li>
 	<li># locations: {{numLocs}}</li>
 	<li># paths: {{numPaths}}</li>
-</ul>
-
-
-<h2>Map Debugger</h2>
-<div id="map-container">
-	{{> googleMap name="dataMap" options=dataMapOptions}}
-</div>
-<p>The map markers are from <a>http://www.benjaminkeen.com/google-maps-coloured-markers/</a>.</p>
-
-<h2>Locations without entrances assigned</h2>
-<ul>
-	{{#each loc}}
-	<li>{{name}}</li>
-	{{/each}}
 </ul>
 
 </template>
