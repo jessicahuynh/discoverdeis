@@ -46,7 +46,7 @@ paths_libraryeast = [
 	},
     
     {
-	    "start":"",
+	    "start":"library_c03",
 	    "end":"goldfarb_e01",
 	    "description": "turn left and you can find a passage",
 	},

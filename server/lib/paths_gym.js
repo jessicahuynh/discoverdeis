@@ -133,7 +133,7 @@ paths_gym = [
 		"description":"Take the one-way exit out of Gosman's stairwell to the outside."
 	},
 	{
-		"start":"gosman_c05",
+		"start":"gosman_e05",
 		"end":"linsey_c02",
 		"description":"Go down the stairs and to the intersection straight in front."
 	},
