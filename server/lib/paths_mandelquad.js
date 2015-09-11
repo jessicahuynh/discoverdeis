@@ -257,6 +257,16 @@ paths_mandelquad = [
 	    "end":"mandelJewish_e01",
 	    "description": "Cross the road and walk straight.",
 	},
+	{
+	    "start":"heller_c03",
+	    "end":"mandel_c01",
+	    "description": "Walk towards the crossroads.",
+	},
+	{
+	    "start":"mandel_c01",
+	    "end":"heller_c03",
+	    "description": "Walk along the left path.",
+	},
 	//////
 	{
 	    "start":"shiffman_c01",

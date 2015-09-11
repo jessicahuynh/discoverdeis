@@ -19,10 +19,7 @@ points_mandelquad = [
 	    "coordinate":new Point(42.369563, -71.258777),
 	    "type": "crossing",
 	},
-    
-    
-    
-    
+	
 	{
 	    "id": "mandel_e01",
 	    "coordinate":new Point(42.369592, -71.258119),
