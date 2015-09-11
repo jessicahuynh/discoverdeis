@@ -205,13 +205,6 @@ points_science = [
 	    "type": "crossing",
 	},
 
-
-
-	{
-	    "id": "gzang_e02",
-	    "coordinate":new Point(42.366527, -71.258368),
-	    "type": "entrance",
-	},
 	{
 	    "id": "gzang_ie02",//to edison
 	    "coordinate":new Point(42.366548, -71.258307),
@@ -250,8 +243,77 @@ points_science = [
 	{
 		"id":"feldberg_c01", // foot of stairs
 		"coordinate":new Point(42.366571, -71.259108),
-		"type":"entrance"
+		"type":"crossing"
+	},
+
+	//Added by Dewar
+	// {
+	// "id":
+	// "coordinate":new Point(
+	// "type":
+	// },
+	{
+		"id": "scc_ic03", //stairwell to SSC
+		"coordinate":new Point(42.36566,  -71.25784),
+		"type": "icrossing"
+	},
+	{
+		"id": "rosenstiel_ic02", //double doors to lab, 
+		"coordinate":new Point(42.365935, -71.257589),
+		"type": "icrossing"
+	},
+	{
+		"id": "rosenstiel_ic03", //stairwell
+		"coordinate":new Point(42.365817, -71.257155),
+		"type": "icrossing"
+	},
+
+	{
+		"id": "abelson_e03", //Abelson roof access 
+		"coordinate":new Point(42.366550, -71.258417),
+		"type": "entrance"
+	},
+
+	{
+		"id": "abelson_ic01", //Abelson stairwell
+		"coordinate":new Point(42.366402, -71.258626),
+		"type": "icrossing"
+	},
+	
+	{
+		"id": "gzang_c01", //gzang roof intersection
+		"coordinate":new Point(42.366688, -71.258219),
+		"type": "crossing"
+	},
+
+	{
+		"id": "edison_e02", //Edison-Leeks building roof access
+		"coordinate":new Point(42.366527, -71.258360),
+		"type": "entrance"
+	},
+
+	{
+		"id": "gzang_e02", //gzang entrance near shapiro
+		"coordinate": new Point(42.366375, -71.258509),
+		"type": "entrance"
+	},
+
+	{
+		"id": "volen_e02", //volen entrance on roof
+		"coordinate": new Point(42.366805, -71.258364),
+		"type": "entrance"
+	},
+
+	{
+		"id": "ssc_e04", //ssc entrance near gzang
+		"coordinate": new Point(42.366120, -71.258038),
+		"type": "entrance"
+
 	}
+
+	
+
+
 ]
 
 function Point(x,y) {
