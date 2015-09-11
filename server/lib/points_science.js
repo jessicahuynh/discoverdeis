@@ -308,10 +308,7 @@ points_science = [
 		"id": "ssc_e04", //ssc entrance near gzang
 		"coordinate": new Point(42.366120, -71.258038),
 		"type": "entrance"
-
 	}
-
-	
 
 
 ]

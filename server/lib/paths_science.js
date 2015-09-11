@@ -607,18 +607,6 @@ paths_science = [
 	},
 
 	{
-		"start": "volen_ie03",
-		"end": "bassine_c02",
-		"description": "Exit outside, walk across brick floor and turn left towards stairs at end"
-	},
-
-	{
-		"start": "gzang_c01",
-		"end": "abelson_e03",
-		"description": "Turn left here and enter through door on right side"
-	},
-
-	{
 		"start": "gzang_c01",
 		"end": "abelson_e03",
 		"description": "Turn left here and enter through door on right side"
@@ -692,12 +680,12 @@ paths_science = [
 
 	{
 		"start": "abelson_c01",
-		"end": "gzang_e03",
+		"end": "gzang_e02",
 		"description": "Walk straight towards building with ramp and enter through door"
 	},
 
 	{
-		"start": "gzang_e03",
+		"start": "gzang_e02",
 		"end": "abelson_c01",
 		"description": "Walk outside and head straight"
 	},
@@ -737,34 +725,5 @@ paths_science = [
 		"end": "scc_e04",
 		"description": "Walk straight across atrium toward doors leading outside"
 	},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-
-	
-
-
-
-
-	// {
-
-	// },
-
-
 
 ]
