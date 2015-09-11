@@ -535,16 +535,16 @@ paths_science = [
 
 	{
 		"start": "rosenstiel_ic03",
-		"end": "rosenstiel_ic02",
-		"description": "Walk up the stairs to level two and head straight down the hall way to the double doors"
-
+		"end": "rosenstiel_e01",
+		"description": "Walk down the stairs to level one and exit to entrance around the corner"
 	},
 
 	{
 		"start": "rosenstiel_ic03",
-		"end": "rosenstiel_e01",
-		"description": "Walk down the stairs to level one and exit to entrance around the corner"
+		"end": "rosenstiel_ic02",
+		"description": "Walk up the stairs to level two and head straight down the hall way to the double doors"
 	},
+
 
 	{
 		"start": "rosenstiel_ic02",
@@ -583,9 +583,21 @@ paths_science = [
 	},
 
 	{
+		"start": "bassine_c01",
+		"end": "edison_c01",
+		"description": "Walk down stairs and turn right"
+	},
+
+	{
 		"start": "bassine_c02",
 		"end": "gzang_c01",
 		"description": "Head up stairs, turn left and walk across brick floor"
+	},
+
+	{
+		"start": "gzang_c01",
+		"end": "bassine_c02",
+		"description": "Continue straight and turn left at end down the stairs"
 	},
 
 	{
@@ -598,12 +610,6 @@ paths_science = [
 		"start": "gzang_c01",
 		"end": "volen_e02",
 		"description": "Head straight towards white building with double doors"
-	},
-
-	{
-		"start": "gzang_c01",
-		"end": "bassine_c02",
-		"description": "Continue straight and turn left at end down the stairs"
 	},
 
 	{
@@ -716,13 +722,13 @@ paths_science = [
 
 	{
 		"start": "ssc_e04",
-		"end": "scc_e03",
+		"end": "ssc_e03",
 		"description": "Walk straight across atrium toward set of double doors leading outside"
 	},
 
 	{
 		"start": "ssc_e03",
-		"end": "scc_e04",
+		"end": "ssc_e04",
 		"description": "Walk straight across atrium toward doors leading outside"
 	},
 
