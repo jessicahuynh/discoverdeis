@@ -88,6 +88,67 @@ paths_gym = [
 	},
 	//gosman and linsey
 	{
+		"start":"gosmanparkinglot_e02",
+		"end":"gosmanparkinglot_e01",
+		"description":"Pass through the parking lot."
+	},
+	{
+		"start":"gosmanparkinglot_e01",
+		"end":"gosmanparkinglot_e02",
+		"description":"Pass through the parking lot."
+	},
+	{
+		"start":"gosman_e01",
+		"end":"gosman_ic01",
+		"description":"Enter Gosman and then veer right through the glass doors to the hallway next to concessions."
+	},
+	{
+		"start":"gosman_ic01",
+		"end":"gosman_e01",
+		"description":"Head to Gosman's main entrance."
+	},
+	{
+		"start":"gosman_ic01",
+		"end":"gosman_e04",
+		"description":"Enter the gym on your left. Head for the doors on the far right corner that will lead you to the pool access."
+	},
+	{
+		"start":"gosman_e04",
+		"end":"gosman_ic01",
+		"description":"Open the doors into the gym and exit into the hallway on the left."
+	},
+	{
+		"start":"gosman_ic01",
+		"end":"gosman_ic02",
+		"description":"Head down the hallway to the very end. Go through the doors on your right and down a flight of stairs."
+	},
+	{
+		"start":"gosman_ic02",
+		"end":"gosman_ic01",
+		"description":"Head up one flight of stairs and exit the door into the hallway. Continue down the hallway to the sets of glass doors."
+	},
+	{
+		"start":"gosman_ic02",
+		"end":"gosman_e05",
+		"description":"Take the one-way exit out of Gosman's stairwell to the outside."
+	},
+	{
+		"start":"gosman_c05",
+		"end":"linsey_c02",
+		"description":"Go down the stairs and to the intersection straight in front."
+	},
+	{
+		"start":'gosman_ic01',
+		"end":"fieldhouse_ie01",
+		"description":"Head down the steps to Auerbach Arena (the Fieldhouse)."
+	},
+	{
+		"start":"fieldhouse_ie01",
+		"end":"gosman_ic01",
+		"description":"Head up the steps to the top level."
+	},
+	// gosman linsey outside
+	{
 		"start":"gosman_c01",
 		"end":"linsey_c01",
 		"description":"Continue on South Street."
@@ -100,112 +161,112 @@ paths_gym = [
 	{
 		"start":"gosman_e01",
 		"end":"athleticslot_e01",
-		"description":"Exit the gym and go around the small loop."
+		"description":"Exit the gym and go around the small loop to the main road next to the flags."
 	},
 	{
 		"start":"athleticslot_e01",
 		"end":"gosman_e01",
-		"description":"Go around the small loop."
+		"description":"Head towards the flags to the main entrance of Gosman."
 	},
 	{
 		"start":"gosman_c02",
 		"end":"athleticslot_e01",
-		"description":"Continue on this samll road."
+		"description":"Continue down the road, away from South Street towards the tennis courts."
 	},
 	{
 		"start":"athleticslot_e01",
 		"end":"gosman_c02",
-		"description":"Continue on this samll road."
+		"description":"Continue on the road away from the tennis courts, towards South Street and the bridge."
 	},
 	{
 		"start":"linsey_c02",
 		"end":"linsey_c01",
-		"description":"Turn right and go straight to the South Street."
+		"description":"Pass under the skywalk between Linsey and Gosman, going uphill towards South Street."
+	},
+	{
+		"start":"linsey_c01",
+		"end":"linsey_c02",
+		"description":"Head downhill under the skywalk between Linsey and Gosman."	
 	},
 	{
 		"start":"linsey_c02",
 		"end":"gosmanparkinglot_e01",
-		"description":"Turn left and go straight on the smaller road."
+		"description":"Continue along the road on the side of Gosman towards the tennis courts."
 	},	
 	{
 		"start":"gosmanparkinglot_e01",
 		"end":"linsey_c02",
-		"description":"Turn right and go straight along the path."
+		"description":"Go straight along the road on the side of Gosman, heading away from the tennis courts in the direction of the skywalk."
 	},
 	{
 		"start":"linsey_c02",
 		"end":"linsey_c03",
-		"description":"Go forward and continue on this road."
+		"description":"Head along the road adjacent to Linsey, away from Gosman with the parking lot on your right."
 	},
 	{
 		"start":"linsey_c03",
 		"end":"linsey_c02",
-		"description":"Go forward toward the building in front of you."
+		"description":"Head slightly uphill along the road, keeping Linsey to your right and the parking lot on your left."
 	},
 	{
 		"start":"gosman_e02",
 		"end":"linsey_c02",
-		"description":"Exit the Gosman Gym."
+		"description":"Exit Gosman and veer left towards the intersection."
 	},
 	{
 		"start":"gosman_e03",
 		"end":"gosmanparkinglot_e01",
-		"description":"Exit the Gosman Gym and turn right."
+		"description":"Exit Gosman and veer left towards the parking lot."
 	},
 	{
 		"start":"gosman_e03",
 		"end":"gosman_c02",
-		"description":"Exit the Gosman Gym, turn left and walk along the path."
+		"description":"Exit Gosman, turn right and walk along the path next to the parking lot."
 	},
 	{
 		"start":"gosman_e04",
 		"end":"linsey_c02",
-		"description":"Exit the Gosman Gym, turn left and walk along the building."
+		"description":"Exit Gosman Gym by going down the stairs, turning right, and walking away from South Street towards the parking area."
 	},
 	{
 		"start":"gosman_e04",
 		"end":"linsey_c01",
-		"description":"Exit the Gosman Gym, turn right and walk toward South Street."
+		"description":"Exit Gosman Gym by going down the stairs, turning left, and walking toward South Street."
 	},
 	{
 		"start":"gosman_e04",
 		"end":"linsey_e01",
-		"description":"Go up stairs and walk pass the bridge."
+		"description":"Walk across the skywalk between Gosman and Linsey."
 	},
 	{
 		"start":"linsey_e01",
 		"end":"gosman_e04",
-		"description":"Walk pass the bridge and go down the stairs."
-	},
-	{
-		"start":"gosman_e04",
-		"end":"linsey_c04",
-		"description":"Exit Linsey Pool and go forward."
+		"description":"Walk across the skywalk."
 	},
 	{
 		"start":"linsey_c01",
 		"end":"linsey_c04",
-		"description":"Continue walk along South Street."
+		"description":"Continue walking along South Street."
 	},
 	{
 		"start":"linsey_c04",
 		"end":"linsey_c01",
-		"description":"Continue walk along South Street."
+		"description":"Continue walking along South Street."
 	},
 	{
 		"start":"linsey_e02",
 		"end":"linsey_c04",
-		"description":"Walk toward the South Street."
+		"description":"Exit Linsey and walk down the path towards South Street."
 	},
 	{
 		"start":"linsey_c01",
 		"end":"healthcenter_c01",
-		"description":"Walk cross the road and go up the stairs."
+		"description":"Walk across the road at the crosswalk and go up the stairs."
 	},
 	{
 		"start":"healthcenter_c01",
 		"end":"linsey_c01",
-		"description":"Walk down the stairs and cross the road."
+		"description":"Walk down the stairs and cross the road at the crosswalk."
 	},
 	// mods
 	{
@@ -269,11 +330,7 @@ paths_gym = [
 		"end":"gosmanparkinglot_e02",
 		"description":"Follow the path beside the clump of trees."
 	},
-	{
-		"start":"gosman_e01",
-		"end":"mailman_e01",
-		"description":"Follow the path along the gym, go up stairs across the bridge."
-	},
+	// squire bridge
 	{
 		"start":"mailman_c01",
 		"end":"squirebridge_e02",
@@ -329,6 +386,7 @@ paths_gym = [
 		"end":"mailman_c01",
 		"description":"Turn right."
 	},
+	//connecting to castle
 	{
 		"start":"castle_e02",
 		"end":"usdan_c01",
@@ -349,6 +407,7 @@ paths_gym = [
 		"end":"castle_e01",
 		"description":"Walk down the slope toward the castle in front of you."
 	},
+	// health center area
 	{
 		"start":"healthcenter_c01",
 		"end":"police_e01",
@@ -388,26 +447,6 @@ paths_gym = [
 		"start":"healthcenter_c01",
 		"end":"rubenstein_c01",
 		"description":"Waking up the slope toward the Loop Road."
-	},
-	{
-		"start":"gosman_e01",
-		"end":"gosman_e04",
-		"description":"null"
-	},
-	{
-		"start":"gosman_e04",
-		"end":"gosman_e01",
-		"description":"null"
-	},
-	{
-		"start":"gosmanparkinglot_e02",
-		"end":"gosmanparkinglot_e01",
-		"description":"Pass through the parking lot."
-	},
-	{
-		"start":"gosmanparkinglot_e01",
-		"end":"gosmanparkinglot_e02",
-		"description":"Pass through the parking lot."
 	},
 	{
 		"start":"healthcenter_e01",
