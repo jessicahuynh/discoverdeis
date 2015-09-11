@@ -101,9 +101,19 @@ paths_southcampus = [
     "description": "Walk outside of the entrance and go downstairs, then walk along to the first crossing",
 },
 {
+    "start":"facultycenter_c01",
+    "end":"facultycenter_e01",
+    "description": "Walk towards the Faculty Club and go upstairs, keeping SCC at back",
+},
+{
     "start":"facultycenter_e02",
     "end":"facultycenter_c02",
     "description": "Walk outside of the entrance and go straight ahead toward the loop road",
+},
+{
+    "start":"facultycenter_c02",
+    "end":"facultycenter_e02",
+    "description": "Walk towards the Faculty Club, keeping loop road at back",
 },
 {
     "start":"shermanfunctionhall_e01",
@@ -159,6 +169,11 @@ paths_southcampus = [
     "start":"shermanfunctionhall_c03",
     "end":"shermanfunctionhall_c01",
     "description":"Walk along the road, keeping Sherman on the left",
+},
+{
+    "start":"shermanfunctionhall_c01",
+    "end":"shermanfunctionhall_c03",
+    "description":"Walk towards the road, keeping Sherman on the right",
 },
 {
     "start":"admissions_c01",

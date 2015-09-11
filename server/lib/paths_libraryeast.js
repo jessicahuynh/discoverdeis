@@ -40,9 +40,19 @@ paths_libraryeast = [
 		"description": "Walk straight towards to the loop road after get out of the usdan",
 	},
 	{
+		"start":"usdan_c06",
+		"end":"usdan_c08",
+		"description": "Walk straight towards Usdan",
+	},
+	{
 		"start":"usdan_c08",
 		"end":"usdan_c09",
 		"description": "Turn to the left-hand side and walk along the road",
+	},
+	{
+		"start":"usdan_c09",
+		"end":"usdan_c08",
+		"description": "Walk towards Usdan, keeping loop road on the left",
 	},
 	{
 		"start":"usdan_c08",
@@ -50,14 +60,29 @@ paths_libraryeast = [
 		"description": "Turn to the right-hand side and walk along the road",
 	},
 	{
+		"start":"usdan_c05",
+		"end":"usdan_c08",
+		"description": "Walk straight towards Usdan",
+	},
+	{
 		"start":"usdan_c09",
 		"end":"usdan_c07",
-		"description": "Walk towards to the road on the right, and walk along to the loop road",
+		"description": "Walk towards the loop road",
+	},
+	{
+		"start":"usdan_c07",
+		"end":"usdan_c09",
+		"description": "Walk towards the Libray, keeping loop road at back",
 	},
 	{
 		"start":"usdan_c09",
 		"end":"rabb_c01",
-		"description": "Walk towards to the road on the left, and walk along to the loop road",
+		"description": "Walk towards the road on the left, and walk along to the loop road",
+	},
+	{
+		"start":"rabb_c01",
+		"end":"usdan_c09",
+		"description": "Walk towards Usdan, keeping Rabb at back",
 	},
 	{
 	    "start":"library_c03",
