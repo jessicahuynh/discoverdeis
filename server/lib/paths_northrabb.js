@@ -38,7 +38,7 @@ paths_northrabb = [
 	{
 		"start":"scheffres_c02",
 		"end":"scheffres_e01",
-		"description":"The entrace of Scheffres is to your left."
+		"description":"The entrance of Scheffres is to your left."
 	},
 	{
 		"start":"scheffres_e01",
@@ -55,11 +55,21 @@ paths_northrabb = [
 		"end":"scheffres_c02",
 		"description":"Go down the set of stairs on the left of Shiffman."
 	},
+	{
+		"start":"scheffres_c02",
+		"end":"kutz_c04",
+		"description":"Walk straight towards the larger path."
+	},
+	{
+		"start":"kutz_c04",
+		"end":"scheffres_c02",
+		"description":"Make a left turn and walk straight towards the smaller path."
+	},
 	//////
 	{
 		"start":"gordon_c01",
 		"end":"reitman_e02",
-		"description":"The entrance of Reitmen is on your right."
+		"description":"The entrance of Reitman is on your right."
 	},
 	{
 		"start":"reitman_e02",
