@@ -309,6 +309,35 @@ points_science = [
 		"coordinate": new Point(42.366120, -71.258038),
 		"type": "entrance"
 	},
+//Added after errorfixed commit on 9/10/15-Dewar
+	{
+		"id": "bassine_ic01", //rooftop IC 
+		"coordinate": new Point(42.366956, -71.258029),
+		"type": "icrossing"
+	},
+
+	{
+		"id": "bassine_e02", //rooftop bassine entrance
+		"coordinate": new Point(42.366885, -71.258138),
+		"type": "entrance"
+	},
+	{
+		"id": "bassine_ic02",//Bassine stairwell
+		"coordinate": new Point(42.366783, -71.257804),
+		"type": "icrossing"
+	},
+
+	{
+		"id": "bassine_ie01", //gzang connector first floor entrance
+		"coordinate": new Point(42.366940, -71.258132),
+		"type": "ientrance"
+	},
+
+	{
+		"id": "bassine_ic03", // gzang connector first floor ic
+		"coordinate": new Point(42.366940, -71.258132),
+		"type": "ientrance"
+	},
 
 
 ]
