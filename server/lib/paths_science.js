@@ -524,7 +524,7 @@ paths_science = [
 	{
 		"start":"abelson_e02",
 		"end": "abelson_c01",
-		"description": "test"
+		"description": "When outside take a left"
 	},
 
 	{

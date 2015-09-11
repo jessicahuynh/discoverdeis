@@ -36,11 +36,11 @@ paths_mandelquad = [
 	},
     {
 	    "start":"heller_c03",
-	    "end":" schneider_e01",
+	    "end":"schneider_e01",
 	    "description": "turn right and Walk towards the side of the building and enter the entrance. Here Schneider is",
 	},
     {
-	    "start":" schneider_e01",
+	    "start":"schneider_e01",
 	    "end":"heller_c03",
 	    "description": "just walk ahead and there is a road with zebra crossing",
 	},
@@ -50,12 +50,7 @@ paths_mandelquad = [
 	    "end":"rabb_c01",
 	    "description": "Walk down to the first crossroads you see on your left side",
 	},
-    
-    {
-	    "start":"library_c04",
-	    "end":"rabb_c01",
-	    "description": "Walk down to the first crossroads you see on your left side",
-	},
+ 
 	{
 	    "start":"rabb_c01",
 	    "end":"rabb_c02",
