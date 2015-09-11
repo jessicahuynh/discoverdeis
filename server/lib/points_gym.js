@@ -83,42 +83,53 @@ points_gym = [
 		"type":"crossing"
 	},
 	{
-		"id":"athleticslot_e01",
-		"coordinate":new Point(42.365022, -71.255865),
-		"type":"entrance"
-	},
-	{
-		"id":"athleticslot_e02", //next to gordon field
-		"coordinate":new Point(42.364224, -71.257695),
-		"type":"entrance"
-	},
-	{
 		"id":"gosman_e01",
 		"coordinate":new Point(42.365142, -71.255437),
-		"type":"entrance"
+		"type":"entrance",
+		"getTo":"Head to the main entrance of Gosman."
 	},
 	{
-		"id":"gosman_e02",
+		"id":"gosman_e02", // fieldhouse entrance next to mods
 		"coordinate":new Point(42.365420, -71.254361),
 		"type":"entrance"
 	},
 	{
-		"id":"gosman_e03",
+		"id":"gosman_e03", // fieldhouse entrance in back
 		"coordinate":new Point(42.364945, -71.254048),
 		"type":"entrance"
 	},
 	{
-		"id":"gosman_e04",
+		"id":"gosman_e04", // stairs at bridge to linsey
 		"coordinate":new Point(42.365713, -71.254695),
 		"type":"entrance"
-	},	
+	},
+	{
+		"id":"gosman_e05",//one way out at the stairs
+		"coordinate":new Point(42.365520, -71.254513),
+		"type":"entrance"
+	},
+	{
+		"id":"gosman_ic01", // hallway between gym and concessions
+		"coordinate":new Point(42.365131, -71.255133),
+		"type":"icrossing"
+	},
+	{
+		"id":"gosman_ic02", //stairwell, second floor
+		"coordinate":new Point(42.365424, -71.254586),
+		"type":"icrossing"
+	},
+	{
+		"id":"fieldhouse_ie01", //entrance to convocation area
+		"coordinate":new Point(42.365071, -71.255072),
+		"type":"ientrance"
+	},
 	{
 		"id":"linsey_e01",
 		"coordinate":new Point(42.365797, -71.254562),
 		"type":"entrance"
 	},
 	{
-		"id":"linsey_e02",
+		"id":"linsey_e02", // linsey main entrance
 		"coordinate":new Point(42.365980, -71.254454),
 		"type":"entrance"
 	},
@@ -156,6 +167,16 @@ points_gym = [
 	{
 		"id":"gosmanparkinglot_e02",
 		"coordinate":new Point(42.365364, -71.253399),
+		"type":"entrance"
+	},
+	{
+		"id":"athleticslot_e01",
+		"coordinate":new Point(42.365022, -71.255865),
+		"type":"entrance"
+	},
+	{
+		"id":"athleticslot_e02", //next to gordon field
+		"coordinate":new Point(42.364224, -71.257695),
 		"type":"entrance"
 	},
 

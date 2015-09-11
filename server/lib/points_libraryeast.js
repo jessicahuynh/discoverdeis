@@ -16,6 +16,16 @@ points_libraryeast = [
 	    "coordinate":new Point(42.367832, -71.258425),
 	    "type":"entrance"
 	},
+    {
+	    "id":"farber_ie01",
+	    "coordinate":new Point(42.367936, -71.258442),
+	    "type":"ientrance"
+	}, 
+    {
+	    "id":"library_ie01",
+	    "coordinate":new Point(42.367970, -71.258376),
+	    "type":"ientrance"
+	}, 
 	{
 	    "id": "library_c01",
 	    "coordinate":new Point(42.367638, -71.258299),
