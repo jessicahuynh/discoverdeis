@@ -520,6 +520,250 @@ paths_science = [
 	    "end":"gzang_ie01",
 	    "description": "Walk through the hall way.",
 	},
+//Dewar Added everything below
+	{
+		"start":"abelson_e02",
+		"end": "abelson_c01",
+		"description": "test"
+	},
+
+	{
+		"start": "rosenstiel_e01",
+		"end": "rosenstiel_ic03",
+		"description": "Enter the building and take a right behind you towards the stairwell on the left of the elevator"
+	},
+
+	{
+		"start": "rosenstiel_ic03",
+		"end": "rosenstiel_ic02",
+		"description": "Walk up the stairs to level two and head straight down the hall way to the double doors"
+
+	},
+
+	{
+		"start": "rosenstiel_ic03",
+		"end": "rosenstiel_e01",
+		"description": "Walk down the stairs to level one and exit to entrance around the corner"
+	},
+
+	{
+		"start": "rosenstiel_ic02",
+		"end": "ssc_e02",
+		"description": "Walk through the hallway towards the exit"
+	},
+
+	{
+		"start": "ssc_e02",
+		"end": "rosenstiel_ic02",
+		"description": "Walk through the hall way"
+	},
+
+	{
+		"start": "rosenstiel_ic02",
+		"end": "ssc_e03",
+		"description": "Head up the stairs and exit outside the glass double doors ahead"
+	},
+
+	{
+		"start": "ssc_e03",
+		"end": "edison_c01",
+		"description": "Walk outside and turn left"
+	},
+
+	{
+		"start": "edison_c01",
+		"end": "ssc_e03",
+		"description": "Walk outside and turn right"
+	},
+
+	{
+		"start": "edison_c01",
+		"end": "bassine_c02",
+		"description": "Walk outside towards stairs"
+	},
+
+	{
+		"start": "bassine_c02",
+		"end": "gzang_c01",
+		"description": "Head up stairs, turn left and walk across brick floor"
+	},
+
+	{
+		"start": "volen_e02",
+		"end": "gzang_c01",
+		"description": "Exit outside, walk across brick floor"
+	},
+
+	{
+		"start": "gzang_c01",
+		"end": "volen_e02",
+		"description": "Head straight towards white building with double doors"
+	},
+
+	{
+		"start": "gzang_c01",
+		"end": "bassine_c02",
+		"description": "Continue straight and turn left at end down the stairs"
+	},
+
+	{
+		"start": "volen_ie03",
+		"end": "bassine_c02",
+		"description": "Exit outside, walk across brick floor and turn left towards stairs at end"
+	},
+
+	{
+		"start": "gzang_c01",
+		"end": "abelson_e03",
+		"description": "Turn left here and enter through door on right side"
+	},
+
+	{
+		"start": "gzang_c01",
+		"end": "abelson_e03",
+		"description": "Turn left here and enter through door on right side"
+	},
+
+	{
+		"start": "abelson_e03",
+		"end": "gzang_c01",
+		"description": "Walk outside and turn left"
+	},
+
+	{
+		"start": "gzang_c01",
+		"end": "edison_e02",
+		"description": "Turn left here and enter through door on left side"
+	},
+
+	{
+		"start": "edison_e02",
+		"end": "gzang_c01",
+		"description": "Walk outside and turn right"
+	},
+
+	{
+		"start": "fellowsgarden_c02",
+		"end": "abelson_e02",
+		"description": "Walk up stairs bearing right and enter door at top"
+	},
+
+	{
+		"start": "abelson_e02",
+		"end": "fellowsgarden_c02",
+		"description": "Exit outside and walk down stairs on right"
+	},
+
+	{
+		"start": "feldberg_c01",
+		"end": "fellowsgarden_c02",
+		"description": "Walk down path"
+	},
+
+	{
+		"start": "fellowsgarden_c02",
+		"end": "feldberg_c01",
+		"description": "Walk up path"
+	},
+
+	{
+		"start": "fellowsgarden_c02",
+		"end": "abelson_e01",
+		"description": "Walk up stairs and walk alongside building then enter door on the right near end of building"
+	},
+
+	{
+		"start": "abelson_e01",
+		"end": "fellowsgarden_c02",
+		"description": "Exit to ouside and walk alongside building and down stairs at the end"
+	},
+
+	{
+		"start": "abelson_e01",
+		"end": "gzang_ie01",
+		"description": "Walk straight entering through two sets of doors"
+	},
+
+	{
+		"start": "gzang_ie01",
+		"end": "abelson_e01",
+		"description": "Walk straight entering through two sets of doors, proceed to exit in front of you"
+	},
+
+	{
+		"start": "abelson_c01",
+		"end": "gzang_e03",
+		"description": "Walk straight towards building with ramp and enter through door"
+	},
+
+	{
+		"start": "gzang_e03",
+		"end": "abelson_c01",
+		"description": "Walk outside and head straight"
+	},
+
+	{
+		"start": "abelson_c01",
+		"end": "ssc_e01",
+		"description": "Head around building to entrance"
+	},
+
+	{
+		"start": "ssc_e01",
+		"end": "abelson_c01",
+		"description": "Exit out of building and take a right"
+	},
+
+	{
+		"start": "ssc_e04",
+		"end": "abelson_c01",
+		"description": "Exit out of building and walk straight"
+	},
+
+	{
+		"start": "abelson_c01",
+		"end": "ssc_e04",
+		"description": "Walk alongside building on right and enter gray door"
+	},
+
+	{
+		"start": "ssc_e04",
+		"end": "scc_e03",
+		"description": "Walk straight across atrium toward set of double doors leading outside"
+	},
+
+	{
+		"start": "ssc_e03",
+		"end": "scc_e04",
+		"description": "Walk straight across atrium toward doors leading outside"
+	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+	// {
+
+	// },
 
 
 

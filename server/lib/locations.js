@@ -468,7 +468,7 @@ locations = [
 		"area":["upper campus","science complex"]
 		},
 	{
-		"id":"edison",
+		"id":"edison",  //Rose and Herman Lecks Chemical building
 		"name":"Edison-Lecks Science Building",
 		"nickname":"Edison",
 		"coordinates":[
