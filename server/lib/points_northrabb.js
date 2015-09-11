@@ -20,9 +20,9 @@ points_northrabb = [
 		"type":"crossing"
 	},
 	{
-		"id":"mandelQuad_e01",
-		"coordinate":new Point(42.369096, -71.256627),
-		"type":"crossing"
+		"id":"mandelHQuad_e01",
+		"coordinate":new Point(42.369398, -71.256887),
+		"type":"entrance"
 	},
 	{
 		"id":"gordon_e01",

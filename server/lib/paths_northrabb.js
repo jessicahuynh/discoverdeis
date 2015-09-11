@@ -65,25 +65,25 @@ paths_northrabb = [
 		"description":"Exit the residance hall and walk toward the small path."
 	},
 	{
-		//added
+		
 	    "start":"gordon_e02",
 	    "end":"scheffres_c01",
 	    "description": "Go down the stairs.",
 	},
 	{
-		//added
+		
 	    "start":"scheffres_c01",
 	    "end":"gordon_e02",
 	    "description": "Go up the stairs.",
 	},
 	{
-		//added
+		
 	    "start":"gordon_e03",
 	    "end":"gordon_c01",
 	    "description": "Go down the stairs, turn left, and walk towards Reitman.",
 	},
 	{
-		//added
+		
 	    "start":"gordon_c01",
 	    "end":"gordon_e03",
 	    "description": "Walk straight away from Reitman and the entrance of Gordon will be on your right.",
@@ -179,6 +179,18 @@ paths_northrabb = [
 		"description":"Walk toward the building on your right."
 	},
 	{
+		
+		"start":"cable_e02",
+		"end":"reitman_e03",
+		"description":"Walk straight to the building ahead."
+	},
+	{
+		
+		"start":"reitman_e03",
+		"end":"cable_e02",
+		"description":"Walk straight to the building ahead."
+	},
+	{
 		"start":"reitman_e01",
 		"end":"cable_c02",
 		"description":"Exit the residance hall and walk toward the larger road."
@@ -234,10 +246,16 @@ paths_northrabb = [
 	    "description": "Walk out of the building and go straight to the parking lot",
 	},
 	{
-		//added
+		
 	    "start":"kutz_e01",
 	    "end":"kutz_c04",
 	    "description": "Walk towards the larger path.",
+	},
+	{
+		
+	    "start":"kutz_c04",
+	    "end":"kutz_e01",
+	    "description": "Walk towards the smaller path by your right leading to the Kutz building.",
 	},
 	{
 	    "start":"kutz_c05",
