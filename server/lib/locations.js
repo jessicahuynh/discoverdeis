@@ -703,7 +703,7 @@ locations = [
 						different areas of study. Classes in this building are taught in a round-table setting \
 						as well as in lecture halls.",
 		"category":["academics"],
-		"entrances":["mandel_e01"],
+		"entrances":["mandel_e01", "olin-sang_ie01"],
 		"nearby":["olin-sang","golding","rabbGrad", "heller"],
 		"area":["upper campus","mandel"]
 	},
@@ -744,7 +744,7 @@ locations = [
 			new Point(42.369392, -71.257481), 
 			new Point(42.369507, -71.257322),],
 		"category":["academics"],
-		"entrances":["olin-sang_e01"],
+		"entrances":["olin-sang_e01", "olin-sang_ie01", "olin-sang_e02"],
 		"area":["upper campus","mandel"]
 	},
 	goldfarb = {

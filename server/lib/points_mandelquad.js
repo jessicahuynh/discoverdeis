@@ -50,7 +50,7 @@ points_mandelquad = [
 	    "type": "entrance",
 	},
 	{
-
+		//**
 	    "id": "olin-sang_e02",
 	    "coordinate":new Point(42.369790, -71.257683),
 	    "type": "entrance",

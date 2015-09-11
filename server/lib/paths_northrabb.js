@@ -34,16 +34,28 @@ paths_northrabb = [
 		"end":"scheffres_c01",
 		"description":"Walk along the straight small path."
 	},
+	///////
 	{
 		"start":"scheffres_c02",
-		"end":"mandelQuad_e01",
+		"end":"scheffres_e01",
+		"description":"The entrace of Scheffres is to your left."
+	},
+	{
+		"start":"scheffres_e01",
+		"end":"scheffres_c02",
+		"description":"Walk up the set of stairs to your right."
+	},
+	{
+		"start":"scheffres_c02",
+		"end":"mandelHQuad_e01",
 		"description":"Go up the set of stairs surrounded by trees."
 	},
 	{
-		"start":"mandelQuad_e01",
+		"start":"mandelHQuad_e01",
 		"end":"scheffres_c02",
 		"description":"Go down the set of stairs on the left of Shiffman."
 	},
+	//////
 	{
 		"start":"gordon_c01",
 		"end":"reitman_e02",
@@ -64,30 +76,28 @@ paths_northrabb = [
 		"end":"gordon_c01",
 		"description":"Exit the residance hall and walk toward the small path."
 	},
+	////////
 	{
-		
 	    "start":"gordon_e02",
 	    "end":"scheffres_c01",
 	    "description": "Go down the stairs.",
 	},
 	{
-		
 	    "start":"scheffres_c01",
 	    "end":"gordon_e02",
 	    "description": "Go up the stairs.",
 	},
 	{
-		
 	    "start":"gordon_e03",
 	    "end":"gordon_c01",
-	    "description": "Go down the stairs, turn left, and walk towards Reitman.",
+	    "description": "Go down the stairs, turn left, and walk straight.",
 	},
 	{
-		
 	    "start":"gordon_c01",
 	    "end":"gordon_e03",
-	    "description": "Walk straight away from Reitman and the entrance of Gordon will be on your right.",
+	    "description": "Walk straight and go up the set of stairs at your right to enter Gordon.",
 	},
+	///////
 	{
 		"start":"kutz_c04",
 		"end":"scheffres_e01",
@@ -102,11 +112,6 @@ paths_northrabb = [
 		"start":"scheffres_c01",
 		"end":"kutz_c04",
 		"description":"Walk up the stairs and walk down the slope."
-	},
-	{
-	    "start":"scheffres_e01",
-	    "end":"gordon_e02",
-	    "description": "Go up the stairs and the entrance to Gordon will be at your right.",
 	},
 	{
 		"start":"kutz_c04",
@@ -245,18 +250,18 @@ paths_northrabb = [
 	    "end":"kutz_c01",
 	    "description": "Walk out of the building and go straight to the parking lot",
 	},
+	/////
 	{
-		
 	    "start":"kutz_e01",
 	    "end":"kutz_c04",
 	    "description": "Walk towards the larger path.",
 	},
 	{
-		
 	    "start":"kutz_c04",
 	    "end":"kutz_e01",
-	    "description": "Walk towards the smaller path by your right leading to the Kutz building.",
+	    "description": "Walk towards the smaller path by your right, which leads to the Kutz building.",
 	},
+	//////
 	{
 	    "start":"kutz_c05",
 	    "end":"cable_c01",

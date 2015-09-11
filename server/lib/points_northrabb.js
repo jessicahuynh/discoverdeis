@@ -15,11 +15,13 @@ points_northrabb = [
 		"type":"crossing"
 	},
 	{
+		//**
 		"id":"scheffres_c02",
 		"coordinate":new Point(42.369054, -71.256582),
 		"type":"crossing"
 	},
 	{
+		//**
 		"id":"mandelHQuad_e01",
 		"coordinate":new Point(42.369398, -71.256887),
 		"type":"entrance"
