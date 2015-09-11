@@ -35,6 +35,16 @@ paths_northrabb = [
 		"description":"Walk along the straight small path."
 	},
 	{
+		"start":"scheffres_c02",
+		"end":"mandelQuad_e01",
+		"description":"Go up the set of stairs surrounded by trees."
+	},
+	{
+		"start":"mandelQuad_e01",
+		"end":"scheffres_c02",
+		"description":"Go down the set of stairs on the left of Shiffman."
+	},
+	{
 		"start":"gordon_c01",
 		"end":"reitman_e02",
 		"description":"The entance of Reitmen is on your right."
@@ -47,12 +57,36 @@ paths_northrabb = [
 	{
 		"start":"gordon_c01",
 		"end":"gordon_e01",
-		"description":"The entance of Gordon is on your left."
+		"description":"The entrance of Gordon is on your left."
 	},
 	{
 		"start":"gordon_e01",
 		"end":"gordon_c01",
 		"description":"Exit the residance hall and walk toward the small path."
+	},
+	{
+		//added
+	    "start":"gordon_e02",
+	    "end":"scheffres_c01",
+	    "description": "Go down the stairs.",
+	},
+	{
+		//added
+	    "start":"scheffres_c01",
+	    "end":"gordon_e02",
+	    "description": "Go up the stairs.",
+	},
+	{
+		//added
+	    "start":"gordon_e03",
+	    "end":"gordon_c01",
+	    "description": "Go down the stairs, turn left, and walk towards Reitman.",
+	},
+	{
+		//added
+	    "start":"gordon_c01",
+	    "end":"gordon_e03",
+	    "description": "Walk straight away from Reitman and the entrance of Gordon will be on your right.",
 	},
 	{
 		"start":"kutz_c04",
@@ -68,6 +102,11 @@ paths_northrabb = [
 		"start":"scheffres_c01",
 		"end":"kutz_c04",
 		"description":"Walk up the stairs and walk down the slope."
+	},
+	{
+	    "start":"scheffres_e01",
+	    "end":"gordon_e02",
+	    "description": "Go up the stairs and the entrance to Gordon will be at your right.",
 	},
 	{
 		"start":"kutz_c04",
@@ -195,6 +234,12 @@ paths_northrabb = [
 	    "description": "Walk out of the building and go straight to the parking lot",
 	},
 	{
+		//added
+	    "start":"kutz_e01",
+	    "end":"kutz_c04",
+	    "description": "Walk towards the larger path.",
+	},
+	{
 	    "start":"kutz_c05",
 	    "end":"cable_c01",
 	    "description": "Get off the Loop Road and walk along the samller road.",
@@ -239,8 +284,7 @@ paths_northrabb = [
 	    "end":"kutz_c03",
 	    "description": "Walk along the Loop Road.",
 	},
-
-
+	
 	
 
 ]
