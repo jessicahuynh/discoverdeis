@@ -2,8 +2,61 @@ paths_libraryeast = [
 	{
 	    "start":"library_c01",
 	    "end":"goldfarb_e01",
-	    "description": "Walk along the red brick towards the entrance and here is Libray",
+	    "description": "Walk along the red brick towards the entrance and here is Library",
 	},
+    
+    {
+	    "start":"farber_ie01",
+	    "end":"library_ie01",
+	    "description": "walk along the passage and you will be in the library",
+	},
+    
+    {
+	    "start":"library_ie01",
+	    "end":"farber_ie01",
+	    "description": "walk along the passage and you reach the Farber",
+	},
+    
+    {
+	    "start":"farber_ie01",
+	    "end":"farber_e01",
+	    "description": "turn left and you can find an exit",
+	},
+    
+    {
+	    "start":"farber_e01",
+	    "end":"farber_ie01",
+	    "description": "turn right and you can find a passage",
+	},
+    {
+	    "start":"library_ie01",
+	    "end":"goldfarb_e01",
+	    "description": "On your right you can find an exit",
+	},
+    
+    {
+	    "start":"goldfarb_e01",
+	    "end":"library_c03",
+	    "description": "turn left and you can find an entrance to the Goldfarb library",
+	},
+    {
+	    "start":"goldfarb_e01",
+	    "end":"library_c03",
+	    "description": "go ahead and you will find a road",
+	},
+    
+    {
+	    "start":"",
+	    "end":"goldfarb_e01",
+	    "description": "turn left and you can find a passage",
+	},
+    
+    
+    
+    
+    
+    
+    
 	{
 	    "start":"library_c01",
 	    "end":"library_c02",
