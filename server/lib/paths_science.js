@@ -524,7 +524,7 @@ paths_science = [
 	{
 		"start":"abelson_e02",
 		"end": "abelson_c01",
-		"description": "test"
+		"description": "When outside take a left"
 	},
 
 	{
@@ -731,5 +731,104 @@ paths_science = [
 		"end": "ssc_e04",
 		"description": "Walk straight across atrium toward doors leading outside"
 	},
+
+	{
+		"start": "bassine_e01",
+		"end": "gzang_c01",
+		"description": "Exit out of building and take a right towards back of building"
+	},
+
+	{
+		"start": "gzang_c01",
+		"end": "bassine_e01",
+		"description": "Go straight and take a left, take door that will be on left side"
+	},
+//Added after errorfixed commit on 9/10/15-Dewar
+	{
+		"start": "bassine_e01",
+		"end": "bassine_ic01",
+		"description": "Enter building and walk down hall until you reach elevators on right"
+	},
+
+	{
+		"start": "bassine_ic01",
+		"end": "bassine_e01",
+		"description": "Walk down hall until you reach the end of building"
+	},
+
+	{
+		"start": "bassine_e02",
+		"end": "bassine_ic01",
+		"description": "Enter building and walk up steps"
+	},
+
+	{
+		"start": "bassine_ic01",
+		"end": "bassine_e02",
+		"description": "Turn left and walk down steps to exit outside"
+	},
+
+	{
+		"start": "bassine_ic01",
+		"end": "bassine_ic02",
+		"description": "Walk down hall until you reach stairwell on right, take it down one level to main floor"
+	},
+
+	{
+		"start": "bassine_ic02",
+		"end": "bassine_ic01",
+		"description": "Walk up stairs and take a left down hallway until you reach elevators on your right"
+	},
+
+	{
+		"start": "bassine_ic02",
+		"end": "bassine_e01",
+		"description": "Enter stairwell on right and go up to level two then exit to outside door on right"
+	},
+
+	{
+		"start": "bassine_e01",
+		"end": "bassine_ic02",
+		"description": "Enter stairwell on left and go down to level two then exit and use door on right"
+	},
+
+	{
+		"start": "bassine_ic02",
+		"end": "bassine_ic03",
+		"description": "After exiting stairwell turn left and go straight until you reach elevators on your right"
+	},
+
+	{
+		"start": "bassine_ic03",
+		"end": "bassine_ic02",
+		"description": "Go down hallway until near the end and take stairwell going UP to the second floor"
+	},
+
+	{
+		"start": "bassine_ie01",
+		"end": "bassine_ic03",
+		"description": "Walk up steps through double doors until your in front of elevator"
+	},
+
+	{
+		"start": "bassine_ic03",
+		"end": "bassine_ie01",
+		"description": "Walk down steps passing double doors"
+	},
+
+	{
+		"start": "bassine_ie01",
+		"end": "gzang_e01",
+		"description": "Walk down steps make your first right around the corner to exit"
+	},
+
+	{
+		"start": "gzang_e01",
+		"end": "bassine_ie01",
+		"description": "Enter building go straight and take a left"
+	},
+
+
+
 
 ]
