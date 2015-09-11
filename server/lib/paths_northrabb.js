@@ -59,7 +59,7 @@ paths_northrabb = [
 	{
 		"start":"gordon_c01",
 		"end":"reitman_e02",
-		"description":"The entance of Reitmen is on your right."
+		"description":"The entrance of Reitmen is on your right."
 	},
 	{
 		"start":"reitman_e02",
