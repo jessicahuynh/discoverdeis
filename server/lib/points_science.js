@@ -252,11 +252,11 @@ points_science = [
 	// "coordinate":new Point(
 	// "type":
 	// },
-	{
-		"id": "scc_ic03", //stairwell to SSC
-		"coordinate":new Point(42.36566,  -71.25784),
-		"type": "icrossing"
-	},
+	// {
+	// 	"id": "scc_ic03", //stairwell to SSC
+	// 	"coordinate":new Point(42.36566,  -71.25784),
+	// 	"type": "icrossing"
+	// },
 	{
 		"id": "rosenstiel_ic02", //double doors to lab, 
 		"coordinate":new Point(42.365935, -71.257589),
@@ -308,10 +308,7 @@ points_science = [
 		"id": "ssc_e04", //ssc entrance near gzang
 		"coordinate": new Point(42.366120, -71.258038),
 		"type": "entrance"
-
-	}
-
-	
+	},
 
 
 ]
