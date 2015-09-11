@@ -298,5 +298,37 @@ paths_mandelquad = [
 	    "end":"golding_c02",
 	    "description": "Walk out the building to the first intersection",
 	},
+	/////
+	{
+	    "start":"mandelHQuad_e01",
+	    "end":"shiffman_e01",
+	    "description": "Walk straight and the entrance to Shiffman is on your right.",
+	},
+	{
+	    "start":"shiffman_e01",
+	    "end":"mandelHQuad_e01",
+	    "description": "Walk straight until you see a set of stairs.",
+	},
+	{
+	    "start":"mandelHQuad_e01",
+	    "end":"shiffman_c01",
+	    "description": "Walk to the intersection of paths in the center of the quad.",
+	},
+	{
+	    "start":"shiffman_c01",
+	    "end":"mandelHQuad_e01",
+	    "description": "Walk straight towards the group of trees ahead until you see a set of stairs.",
+	},
+	{
+	    "start":"mandelHQuad_e01",
+	    "end":"rabb_c03",
+	    "description": "Take the left path and walk straight.",
+	},
+	{
+	    "start":"rabb_c03",
+	    "end":"mandelHQuad_e01",
+	    "description": "Follow the path you are on and walk towards the group of trees unti you see a set of stairs.",
+	},
+	/////
 	
 ]
