@@ -96,6 +96,16 @@ paths_southcampus = [
     "description": "Walk across the road",
 },
 {
+    "start":"facultycenter_e01",
+    "end":"facultycenter_c01",
+    "description": "Walk outside of the entrance and go downstairs, then walk along to the first crossing",
+},
+{
+    "start":"facultycenter_e02",
+    "end":"facultycenter_c02",
+    "description": "Walk outside of the entrance and go straight ahead toward the loop road",
+},
+{
     "start":"admissions_c01",
     "end":"scc_c08",
     "description": "Walk across the road",

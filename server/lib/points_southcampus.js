@@ -101,6 +101,25 @@ points_southcampus = [
     "type": "crossing",
 },
 {
+    "id": "facultycenter_e01",
+    "coordinate":new Point(42.365761, -71.260940),
+    "type": "entrance",
+},
+{
+    "id": "facultycenter_e02",
+    "coordinate":new Point(42.365967, -71.261241),
+    "type": "entrance",
+},
+{
+    "id": "facultycenter_c01",
+    "coordinate":new Point(42.365825, -71.260491),
+    "type": "crossing",
+},
+{
+    "id": "facultycenter_c02",
+    "coordinate":new Point(42.365944, -71.261430),
+},
+{
     "id": "theaterlot_e01",
     "coordinate":new Point(42.363930, -71.261732),
     "type": "entrance",
