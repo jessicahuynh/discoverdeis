@@ -86,16 +86,26 @@ paths_northrabb = [
 		"end":"gordon_c01",
 		"description":"Exit the residance hall and walk toward the small path."
 	},
-	////////
+	////////new
 	{
 	    "start":"gordon_e02",
+	    "end":"gordon_c02",
+	    "description": "Walk towards the stairs.",
+	},
+	{
+	    "start":"gordon_c02",
+	    "end":"gordon_e02",
+	    "description": "The entrance of Gordon is on your right.",
+	},
+	{
+	    "start":"gordon_c02",
 	    "end":"scheffres_c01",
-	    "description": "Go down the stairs.",
+	    "description": "Go down the stairs and walk towards the intersection of the path.",
 	},
 	{
 	    "start":"scheffres_c01",
-	    "end":"gordon_e02",
-	    "description": "Go up the stairs.",
+	    "end":"gordon_c02",
+	    "description": "Go up the stairs straight ahead.",
 	},
 	{
 	    "start":"gordon_e03",
@@ -107,7 +117,16 @@ paths_northrabb = [
 	    "end":"gordon_e03",
 	    "description": "Walk straight and go up the set of stairs at your right to enter Gordon.",
 	},
-	///////
+	{
+	    "start":"gordon_e03",
+	    "end":"scheffres_c01",
+	    "description": "Go down the stairs, turn right, and walk straight.",
+	},
+	{
+	    "start":"scheffres_c01",
+	    "end":"gordon_e03",
+	    "description": "Walk straight and go up the stairs on your left to enter Gordon.",
+	},
 	{
 		"start":"kutz_c04",
 		"end":"scheffres_e01",
@@ -117,17 +136,31 @@ paths_northrabb = [
 		"start":"scheffres_e01",
 		"end":"kutz_c04",
 		"description":"Exit the residance hall and walk down the slope."
-	},
+	},	
+
+	/////new
 	{
 		"start":"scheffres_c01",
+		"end":"gordon_c02",
+		"description":"Walk up the stairs."
+	},
+	{
+		"start":"gordon_c02",
+		"end":"scheffres_c01",
+		"description":"Walk down the stairs."
+	},
+	{
+		"start":"gordon_c02",
 		"end":"kutz_c04",
-		"description":"Walk up the stairs and walk down the slope."
+		"description":"Walk down the slope until you are at an intersection."
 	},
 	{
 		"start":"kutz_c04",
-		"end":"scheffres_c01",
-		"description":"Walk up the slope and walk down the stairs."
+		"end":"gordon_c02",
+		"description":"Walk up the slope until you are at a set of stairs."
 	},
+	/////new
+
 	{
 		"start":"kutz_c04",
 		"end":"kutz_c02",
@@ -137,6 +170,46 @@ paths_northrabb = [
 		"start":"kutz_c02",
 		"end":"kutz_c04",
 		"description":"Walk up the slope."
+	},
+	{
+		"start":"kutz_c04",
+		"end":"kutzlot_e01",
+		"description":"Walk up the slope."
+	},
+	{
+		"start":"kutz_c04",
+		"end":"kutzlot_e01",
+		"description":"Walk down the slope."
+	},
+	{
+		"start":"kutz_c02",
+		"end":"kutz_c06",
+		"description":"Walk down the stairs."
+	},
+	{
+		"start":"kutz_c06",
+		"end":"kutz_c02",
+		"description":"Walk up the stairs."
+	},
+	{
+		"start":"kutz_c06",
+		"end":"usdan_c06",
+		"description":"Walk across the road on the pedestrian cross."
+	},
+	{
+		"start":"usdan_c06",
+		"end":"kutz_c06",
+		"description":"Walk towards the stairs."
+	},
+	{
+		"start":"usdan_c07",
+		"end":"kutz_c06",
+		"description":"Walk towards the stairs."
+	},
+	{
+		"start":"kutz_c06",
+		"end":"usdan_c07",
+		"description":"Walk straight across the road."
 	},
 	{
 		"start":"gordon_c01",
@@ -220,7 +293,8 @@ paths_northrabb = [
 		"end":"cable_c01",
 		"description":"Walk up the slope on the larger road."
 	},
-	////
+
+	////new
 	{
 		"start":"cable_c02",
 		"end":"northquadlot_e01",
@@ -231,7 +305,18 @@ paths_northrabb = [
 		"end":"cable_c02",
 		"description":"Follow the large path."
 	},
-	////
+	{
+		"start":"northquadlot_e01",
+		"end":"reitman_e01",
+		"description":"The entrance to Reitman is on your right."
+	},
+	{
+		"start":"reitman_e01",
+		"end":"northquadlot_e01",
+		"description":"Follow the large path."
+	},
+	////new
+
 	{
 	    "start":"rabb_c01",
 	    "end":"kutz_c03",
@@ -272,6 +357,7 @@ paths_northrabb = [
 	    "end":"kutz_c01",
 	    "description": "Walk out of the building and go straight to the parking lot",
 	},
+
 	/////
 	{
 	    "start":"kutz_e01",
@@ -284,6 +370,7 @@ paths_northrabb = [
 	    "description": "Walk towards the smaller path by your right, which leads to the Kutz building.",
 	},
 	//////
+
 	{
 	    "start":"kutz_c05",
 	    "end":"cable_c01",

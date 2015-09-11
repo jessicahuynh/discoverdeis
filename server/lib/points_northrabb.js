@@ -46,6 +46,13 @@ points_northrabb = [
 		"coordinate":new Point(42.369705, -71.255763),
 		"type":"crossing"
 	},
+	////
+	{
+		"id":"gordon_c02",
+		"coordinate":new Point(42.369351, -71.256109),
+		"type":"crossing"
+	},
+	////
 	{
 		"id":"cable_e01",
 		"coordinate":new Point(42.368953, -71.255415),
@@ -156,7 +163,13 @@ points_northrabb = [
 	    "coordinate":new Point(42.368438, -71.256215),
 	    "type":"crossing"
 	},
-
+	/////
+	{
+	    "id":"kutz_c06",
+	    "coordinate":new Point(42.368683, -71.256710),
+	    "type":"crossing"
+	},
+	/////
 
 ]
 
