@@ -180,10 +180,42 @@ points_massellchapels = [
 		"id":"hlot_e02",
 		"coordinate":new Point(42.366516, -71.261528),
 		"type":"entrance"
-	}
-
-
-	
+	},
+	{
+		"id":"deroy_c03",
+		"coordinate":new Point(42.367106, -71.261884),
+		"type":"crossing"
+	},
+	{
+		"id":"shapirodorm_c03",
+		"coordinate":new Point(42.367019, -71.261833),
+		"type":"crossing"
+	},
+	{
+		"id":"usen_c03",
+		"coordinate":new Point(42.366721, -71.260547),
+		"type":"crossing"
+	},
+	{
+		"id":"chapelsfield_c05",
+		"coordinate":new Point(42.367845, -71.261618),
+		"type":"crossing"
+	},
+	{
+		"id":"berlin_c01",
+		"coordinate":new Point(42.368271, -71.261197),
+		"type":"crossing"
+	},
+	{
+		"id":"harlan_c01",
+		"coordinate":new Point(42.368751, -71.260927),
+		"type":"crossing"
+	},
+	{
+		"id":"shapirodorm_c04",
+		"coordinate":new Point(42.366284, -71.261363),
+		"type":"crossing"
+	}	
 ]
 
 function Point(x,y) {
