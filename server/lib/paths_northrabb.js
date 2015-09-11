@@ -210,6 +210,18 @@ paths_northrabb = [
 		"end":"cable_c01",
 		"description":"Walk up the slope on the larger road."
 	},
+	////
+	{
+		"start":"cable_c02",
+		"end":"northquadlot_e01",
+		"description":"Follow the large path."
+	},
+	{
+		"start":"northquadlot_e01",
+		"end":"cable_c02",
+		"description":"Follow the large path."
+	},
+	////
 	{
 	    "start":"rabb_c01",
 	    "end":"kutz_c03",

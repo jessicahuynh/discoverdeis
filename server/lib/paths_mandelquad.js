@@ -112,8 +112,120 @@ paths_mandelquad = [
 	{
 	    "start":"olin-sang_e01",
 	    "end":"rabb_c03",
-	    "description": "Walk out the building to the intersection in front of you",
+	    "description": "Walk out of the building to the intersection in front of you",
 	},
+	///////
+	{
+	    "start":"rabb_c03",
+	    "end":"heller_c02",
+	    "description": "Go down the slope to your left.",
+	},
+	{
+	    "start":"heller_c02",
+	    "end":"rabb_c03",
+	    "description": "Go up the slope to your right.",
+	},
+	{
+	    "start":"olin-sang_e02",
+	    "end":"golding_c01",
+	    "description": "Walk straight.",
+	},
+	{
+	    "start":"golding_c01",
+	    "end":"olin-sang_e02",
+	    "description": "On your left is the entrance to Olin-Sang.",
+	},
+	{
+	    "start":"olin-sang_e02",
+	    "end":"olin-sang_ie01",
+	    "description": "Walk straight past Olin-Sang 101 until you see an open area with lights that change color on the ceiling.",
+	},
+	{
+	    "start":"olin-sang_ie01",
+	    "end":"olin-sang_e02",
+	    "description": "Walk straight past Olin-Sang 101.",
+	},
+	{
+	    "start":"olin-sang_ie01",
+	    "end":"mandel_e01",
+	    "description": "Walk down the stairs to your left and make a U-turn.",
+	},
+	{
+	    "start":"mandel_e01",
+	    "end":"olin-sang_ie01",
+	    "description": "Walk up the stairs on your right and walk straight.",
+	},
+	{
+	    "start":"mandel_e02",
+	    "end":"olin-sang_ie01",
+	    "description": "Make a right turn and continue walking until you see a set of stairs on your right. Go up the stairs and walk straight.",
+	},
+	{
+	    "start":"olin-sang_ie01",
+	    "end":"mandel_e02",
+	    "description": "Walk down the stairs to your left, make a left turn, and walk straight.",
+	},
+	{
+	    "start":"mandel_c01",
+	    "end":"mandel_e01",
+	    "description": "Walk straight, then go up the stairs on your left.",
+	},
+	{
+	    "start":"mandel_e01",
+	    "end":"mandel_c01",
+	    "description": "Go down the stairs, make a right turn, then walk straight.",
+	},
+	{
+	    "start":"mandel_e02",
+	    "end":"mandel_c01",
+	    "description": "Cross the road and walk straight.",
+	},
+	{
+	    "start":"mandel_c01",
+	    "end":"mandel_e02",
+	    "description": "Walk straight until you are at a crossroads.",
+	},
+	{
+	    "start":"mandel_c01",
+	    "end":"mandelJewish_e01",
+	    "description": "Walk along the left path. The entrace to Mandel Center for Studies in Jewish Education should be straight ahead.",
+	},
+	{
+	    "start":"mandelJewish_e01",
+	    "end":"mandel_c01",
+	    "description": "Walk straight until you are at a crossroads.",
+	},
+	{
+	    "start":"mandel_c01",
+	    "end":"towerlot_e01",
+	    "description": "Take the path on your right, walk straight, and take the small path.",
+	},
+	{
+	    "start":"towerlot_e01",
+	    "end":"mandel_c01",
+	    "description": "Walk along the small path and follow it until you are at a crossroads.",
+	},
+	{
+	    "start":"mandel_c01",
+	    "end":"abraham_e01",
+	    "description": "Walk straight until you are at a small intersection. Take the path on your right and continue ahead. You should see the entrance to Abraham Shapiro Academic Complex straight ahead.",
+	},
+	{
+	    "start":"abraham_e01",
+	    "end":"mandelJewish_e01",
+	    "description": "Walk straight until you are at a crossroads on the large road.",
+	},
+	{
+	    "start":"mandelJewish_e01",
+	    "end":"schneider_e01",
+	    "description": "Cross the road and walk straight.",
+	},
+	{
+	    "start":"schneider_e01",
+	    "end":"mandelJewish_e01",
+	    "description": "Cross the road and walk straight.",
+	},
+	//////
 	{
 	    "start":"shiffman_c01",
 	    "end":"rabb_c03",

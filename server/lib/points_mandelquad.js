@@ -25,6 +25,11 @@ points_mandelquad = [
 	    "type": "entrance",
 	},
 	{
+	    "id": "mandel_c01",
+	    "coordinate":new Point(42.369609, -71.258578),
+	    "type": "crossing",
+	},
+	{
 	    "id": "rabb_e01",
 	    "coordinate":new Point(42.369108, -71.257294),
 	    "type": "entrance",
