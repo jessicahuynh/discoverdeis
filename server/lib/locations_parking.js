@@ -46,9 +46,10 @@ locations_parking = [
 			new Point(42.370790, -71.258274), 
 			new Point(42.370909, -71.258726), 
 			new Point(42.370091, -71.259134), 
-			new Point(42.369904, -71.258646)],
+			new Point(42.369904, -71.258646),
+			new Point(42.369990, -71.258506)],
 		"category":["parking"],
-		"entrances":["towerlot_e01"],
+		"entrances":["towerlot_e01", "towerlot_e02"],
 		"area":["upper campus","mandel"]
 	},
 	{
@@ -82,12 +83,13 @@ locations_parking = [
 		"name":"North Quad Parking Lot",
 		"nickname":"North Quad Parking Lot",
 		"coordinates":[
-			new Point(42.370431, -71.256786), 
+			new Point(42.370431, -71.256786),
+			new Point(42.370306, -71.256963),
 			new Point(42.370211, -71.256866), 
-			new Point(42.369640, -71.254723), 
+			new Point(42.369640, -71.254723),
 			new Point(42.369763, -71.254697)],
 		"category":["parking"],
-		"entrances":["northquadlot_e01"],
+		"entrances":["northquadlot_e01", "northquadlot_e02"],
 		"area":["upper campus","north"]
 	},
 	{

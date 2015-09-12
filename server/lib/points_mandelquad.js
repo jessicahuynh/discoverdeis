@@ -73,8 +73,32 @@ points_mandelquad = [
 	    "type": "ientrance",
 	},
 	{
+		//path to get to Tower Parking Lot
+	    "id": "olin-sang_c01",
+	    "coordinate":new Point(42.369912, -71.257796),
+	    "type": "crossing",
+	},
+	{
+		//path to get to Tower Parking Lot
+	    "id": "olin-sang_c02",
+	    "coordinate":new Point(42.369852, -71.257975),
+	    "type": "crossing",
+	},
+	{
 	    "id": "shiffman_e01",
 	    "coordinate":new Point(42.369657, -71.257098),
+	    "type": "entrance",
+	},
+	{
+		//left entrance of shiffman
+	    "id": "shiffman_e02",
+	    "coordinate":new Point(42.369905, -71.257277),
+	    "type": "entrance",
+	},
+	{
+		//right entrance of shiff
+	    "id": "shiffman_e03",
+	    "coordinate":new Point(42.369508, -71.256800),
 	    "type": "entrance",
 	},
 	{
@@ -88,8 +112,24 @@ points_mandelquad = [
 	    "type": "entrance",
 	},
 	{
+	    "id": "lown_e02",
+	    "coordinate":new Point(42.370236, -71.257144),
+	    "type": "entrance",
+	},
+	{
+	    "id": "lown_c01",
+	    "coordinate":new Point(42.370021, -71.257266),
+	    "type": "crossing",
+	},
+	{
 	    "id": "golding_e01",
 	    "coordinate":new Point(42.370020, -71.257716),
+	    "type": "entrance",
+	},
+	{
+		//golding e by tower lot
+	    "id": "golding_e02",
+	    "coordinate":new Point(42.369976, -71.258104),
 	    "type": "entrance",
 	},
 	{
@@ -100,6 +140,12 @@ points_mandelquad = [
 	{
 	    "id": "golding_c02",
 	    "coordinate":new Point(42.369888, -71.257533),
+	    "type": "crossing",
+	},
+	{
+		//tower lot intersection
+	    "id": "golding_c03",
+	    "coordinate":new Point(42.369932, -71.258204),
 	    "type": "crossing",
 	},
 ]

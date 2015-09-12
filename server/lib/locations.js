@@ -717,7 +717,7 @@ locations = [
 			new Point(42.369876, -71.257926), 
 			new Point(42.370232, -71.257451),],
 		"category":["academics"],
-		"entrances":["golding_e01"],
+		"entrances":["golding_e01", "golding_e02"],
 		"nearby":["olin-sang","mandel","lown","shiffman"],
 		"area":["upper campus","mandel"]
 	},
@@ -731,7 +731,7 @@ locations = [
 			new Point(42.369475, -71.256876), 
 			new Point(42.369583, -71.256729),],
 		"category":["academics"],
-		"entrances":["shiffman_e01"],
+		"entrances":["shiffman_e01", "shiffman_e02", "shiffman_e03"],
 		"area":["upper campus","mandel"]
 	},
 	olinsang = {
@@ -857,7 +857,7 @@ locations = [
 			new Point(42.369941, -71.257161),
 			new Point(42.370076, -71.256976),],
 		"category":["academics","offices"],
-		"entrances":["lown_e01"],
+		"entrances":["lown_e01", "lown_e02"],
 		"area":["upper campus","mandel"]
 	},
 	{

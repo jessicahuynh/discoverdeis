@@ -101,6 +101,15 @@ locations_artinstallations = [
 		"function":"This bronze sculpture by Chaim Gross was the gift of Antje and Leonard L. Farber.",
 		"category":["art"],
 		"area":["lower campus"]
+	},
+	{
+		"id":"jcm",
+		"name":"Joseph C. Mandel, 1999",
+		"nickname":"JCM",
+		"coordinates":[new Point(42.369448, -71.257032)],
+		"function":"The sculpture was created and donated to Brandeis University by Joseph C. Mandel on October 26, 2010.",
+		"category":["art"],
+		"area":["mandel", "upper campus"]
 	}
 
 	

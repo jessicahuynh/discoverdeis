@@ -146,6 +146,7 @@ paths_mandelquad = [
 	    "end":"rabb_c03",
 	    "description": "Walk out of the building to the intersection in front of you",
 	},
+	
 	///////
 	{
 	    "start":"rabb_c03",
@@ -220,7 +221,7 @@ paths_mandelquad = [
 	{
 	    "start":"mandel_c01",
 	    "end":"mandelJewish_e01",
-	    "description": "Walk along the left path. The entrace to Mandel Center for Studies in Jewish Education should be straight ahead.",
+	    "description": "Walk along the left path. The entrance to Mandel Center for Studies in Jewish Education is straight ahead.",
 	},
 	{
 	    "start":"mandelJewish_e01",
@@ -268,6 +269,7 @@ paths_mandelquad = [
 	    "description": "Walk along the left path.",
 	},
 	//////
+
 	{
 	    "start":"shiffman_c01",
 	    "end":"rabb_c03",
@@ -298,7 +300,103 @@ paths_mandelquad = [
 	    "end":"golding_c02",
 	    "description": "Walk out the building to the first intersection",
 	},
+
 	/////
+	{
+	    "start":"golding_c02",
+	    "end":"shiffman_e02",
+	    "description": "Walk straight on the left path and the entrance to Shiffman is ahead.",
+	},
+	{
+	    "start":"golding_c02",
+	    "end":"shiffman_e02",
+	    "description": "Exit the doors and walk towards the intersection of paths in the center.",
+	},
+	{
+	    "start":"golding_c02",
+	    "end":"olin-sang_c01",
+	    "description": "Walk on the left path.",
+	},
+	{
+	    "start":"olin-sang_c01",
+	    "end":"golding_c02",
+	    "description": "Walk towards the larger path in the center.",
+	},	
+	{
+	    "start":"olin-sang_c01",
+	    "end":"olin-sang_c02",
+	    "description": "Continue following the current path you are on, going around the building on your left.",
+	},	
+	{
+	    "start":"olin-sang_c01",
+	    "end":"olin-sang_c02",
+	    "description": "Continue following the current path you are on, going around the building on your right.",
+	},
+	{
+	    "start":"olin-sang_c01",
+	    "end":"olin-sang_c02",
+	    "description": "Continue following the current path you are on, going around the building on your right.",
+	},
+	{
+	    "start":"olin-sang_c02",
+	    "end":"golding_c03",
+	    "description": "Walk straight towards the intersection of paths.",
+	},
+	{
+	    "start":"golding_c03",
+	    "end":"olin-sang_c02",
+	    "description": "Continue on the smaller path on your right.",
+	},	
+	{
+	    "start":"towerlot_e02",
+	    "end":"golding_c03",
+	    "description": "Walk straight until you are at the intersection of paths.",
+	},	
+	{
+	    "start":"golding_c03",
+	    "end":"towerlot_e02",
+	    "description": "Continue on the path, ahead is Tower Lot.",
+	},
+	{
+	    "start":"golding_c03",
+	    "end":"golding_e02",
+	    "description": "The entrance to Golding is on your left.",
+	},
+	{
+	    "start":"golding_e02",
+	    "end":"golding_c03",
+	    "description": "Walk straight towards the intersection of paths.",
+	},
+	{
+	    "start":"lown_e01",
+	    "end":"lown_c01",
+	    "description": "Walk towards the stairs that go down.",
+	},
+	{
+	    "start":"lown_c01",
+	    "end":"lown_e01",
+	    "description": "Walk through the double doors to enter Lown.",
+	},
+	{
+	    "start":"lown_e02",
+	    "end":"lown_c01",
+	    "description": "Walk up the stairs.",
+	},
+	{
+	    "start":"lown_c01",
+	    "end":"lown_e02",
+	    "description": "Walk down the stairs.",
+	},
+	{
+	    "start":"lown_e02",
+	    "end":"northquadlot_e02",
+	    "description": "Walk straight. You are now at North Quad Lot",
+	},
+	{
+	    "start":"northquadlot_e02",
+	    "end":"lown_e02",
+	    "description": "Walk straight and go up the stairs on your left.",
+	},
 	{
 	    "start":"mandelHQuad_e01",
 	    "end":"shiffman_e01",
@@ -328,6 +426,16 @@ paths_mandelquad = [
 	    "start":"rabb_c03",
 	    "end":"mandelHQuad_e01",
 	    "description": "Follow the path you are on and walk towards the group of trees until you see a set of stairs.",
+	},
+	{
+	    "start":"mandelHQuad_e01",
+	    "end":"shiffman_e03",
+	    "description": "Take the right path and walk straight. The entrance to Shiffman is ahead.",
+	},
+	{
+	    "start":"shiffman_e03",
+	    "end":"mandelHQuad_e01",
+	    "description": "Walk towards the intersection of paths surrounded by trees.",
 	},
 	/////
 	

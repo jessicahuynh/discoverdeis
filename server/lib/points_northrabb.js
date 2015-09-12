@@ -119,6 +119,11 @@ points_northrabb = [
 		"type":"entrance"
 	},
 	{
+		"id":"towerlot_e02",
+		"coordinate":new Point(42.369990, -71.258506),
+		"type":"entrance"
+	},
+	{
 		"id":"kutzlot_e01",
 		"coordinate":new Point(42.368793, -71.256466),
 		"type":"entrance"
@@ -126,6 +131,11 @@ points_northrabb = [
 	{
 		"id":"northquadlot_e01",
 		"coordinate":new Point(42.369641, -71.254727),
+		"type":"entrance"
+	},
+	{
+		"id":"northquadlot_e02",
+		"coordinate":new Point(42.370306, -71.256963),
 		"type":"entrance"
 	},
 	{
