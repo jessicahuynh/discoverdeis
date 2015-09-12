@@ -48,7 +48,7 @@ paths_northrabb = [
 	{
 		"start":"scheffres_c02",
 		"end":"mandelHQuad_e01",
-		"description":"Go up the set of stairs surrounded by trees."
+		"description":"Go up the set of stairs surrounded by trees and continue on the path until you see an intersection of paths."
 	},
 	{
 		"start":"mandelHQuad_e01",
