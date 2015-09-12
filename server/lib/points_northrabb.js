@@ -1,5 +1,10 @@
 points_northrabb = [
 	{
+		"id":"scheffres_ie01",
+		"coordinate":new Point(42.369414, -71.256207),
+		"type":"ientrance"
+	},
+	{
 		"id":"scheffres_e01",
 		"coordinate":new Point(42.369052, -71.256483),
 		"type":"entrance"
@@ -41,6 +46,12 @@ points_northrabb = [
 		"coordinate":new Point(42.369508, -71.255938),
 		"type":"entrance"
 	},
+	{
+		"id":"gordon_ie01",
+		"coordinate":new Point(42.369508, -71.255938),
+		"type":"ientrance"
+	},
+	
 	{
 		"id":"gordon_c01",
 		"coordinate":new Point(42.369705, -71.255763),

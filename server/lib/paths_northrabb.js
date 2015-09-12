@@ -136,8 +136,27 @@ paths_northrabb = [
 		"start":"scheffres_e01",
 		"end":"kutz_c04",
 		"description":"Exit the residance hall and walk down the slope."
+	},
+	{
+		"start":"scheffres_e02",
+		"end":"scheffres_ie01",
+		"description":"Enter the doors to Scheffres and go down one flight of stairs."
 	},	
-
+	{
+		"start":"scheffres_ie01",
+		"end":"scheffres_e02",
+		"description":"Go up one flight of stairs."
+	},
+	{
+		"start":"scheffres_ie01",
+		"end":"gordon_ie01",
+		"description": "Walk into the room with couches (Polaris Lounge) and exit through the doors on the other side."
+	},
+	{
+		"start":"gordon_ie01",
+		"end":"scheffres_ie01",
+		"description": "Walk into the room with couches (Polaris Lounge) and exit through the doors on the other side."
+	},
 	/////new
 	{
 		"start":"scheffres_c01",
