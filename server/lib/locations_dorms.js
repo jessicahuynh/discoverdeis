@@ -510,7 +510,7 @@ locations_dorms = [
 		"function":"Gordon provides traditional dorm style living for freshmen.",
 		"description": "Gordon is one of the buildings in North Quad, which is mainly for freshmen. Students living in North enjoy traditional-style residence hall living on single sex and mixed gender floors. North Quad sits at the top of campus next to the Rabb Academic Quad, housing most humanities classes, and the Kutz Hall administrative building, housing the University Registrar, Campus Card Office and International Students & Scholars Office, amongst others. Furthermore, North is only steps from the Usdan Student Center, home to Dining Services, Hillel, a convenience store, the campus mailroom, the Chaplaincy, Academic Services, Hiatt Career Center and the Department of Community Living.",
 		"category":["dorm"],
-		"entrances":["gordon_e01","gordon_e02", "gordon_e03"],
+		"entrances":["gordon_e01","gordon_e02", "gordon_e03", "gordon_ie01"],
 		"nearby":["reitman","cable","scheffres","kutz"],
 		"area":["upper campus","north"]
 	},
@@ -570,7 +570,7 @@ locations_dorms = [
 		"function":"Scheffres provides traditional dorm style living for freshmen.",
 		"description": "Scheffres is one of the buildings in North Quad, which is mainly for freshmen. Students living in North enjoy traditional-style residence hall living on single sex and mixed gender floors. North Quad sits at the top of campus next to the Rabb Academic Quad, housing most humanities classes, and the Kutz Hall administrative building, housing the University Registrar, Campus Card Office and International Students & Scholars Office, amongst others. Furthermore, North is only steps from the Usdan Student Center, home to Dining Services, Hillel, a convenience store, the campus mailroom, the Chaplaincy, Academic Services, Hiatt Career Center and the Department of Community Living.",
 		"category":["dorm"],
-		"entrances":["scheffres_e01", "scheffres_e02"],
+		"entrances":["scheffres_e01", "scheffres_e02", "scheffres_ie01"],
 		"nearby":["reitman","cable","gordon","kutz"],
 		"area":["upper campus","north"]
 	},
