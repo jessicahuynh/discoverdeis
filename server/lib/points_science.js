@@ -34,11 +34,11 @@ points_science = [
 	    "coordinate":new Point(42.366978, -71.258363),
 	    "type": "entrance",
 	},
-	{
-		"id":"gzang_ie01",
-		"coordinate":new Point(42.366213, -71.258016),
-		"type":"ientrance"
-	},
+	// {
+	// 	"id":"gzang_ie01",
+	// 	"coordinate":new Point(42.366213, -71.258016),
+	// 	"type":"ientrance"
+	// },
 	{
 		"id":"goldsmith_e01",
 		"coordinate":new Point(42.367223, -71.258579),
@@ -60,7 +60,7 @@ points_science = [
 	    "type": "crossing",
 	},
 	{
-	    "id": "edison_e01",
+	    "id": "edison_e01", //on roof brick entrance
 	    "coordinate":new Point(42.366240, -71.257926),
 	    "type": "entrance",
 	},
@@ -294,7 +294,7 @@ points_science = [
 
 	{
 		"id": "gzang_e02", //gzang entrance near shapiro
-		"coordinate": new Point(42.366375, -71.258509),
+		"coordinate": new Point(42.366521, -71.258386),
 		"type": "entrance"
 	},
 
@@ -339,10 +339,58 @@ points_science = [
 		"type": "ientrance"
 	},
 
+		//Added on 9/14/15 --Dewar
+
+	{
+		"id": "gzang_ic01", // gzang IC near 
+		"coordinate": new Point(42.366476, -71.258457),
+		"type": "icrossing"
+	},
+
+	{
+		"id": "gzang_e03", // entrance near outside of shaphiro
+		"coordinate": new Point(42.366201, -71.257845),
+		"type": "entrance"
+	},
+
+	{
+		"id": "gzang_ic02", // intersection in gzang of shapiro and edison and gzang exit
+		"coordinate": new Point(42.366219, -71.258051 ),
+		"type": "icrossing"
+	},
+
+	{
+		"id": "edison_ie01", // intersection in gzang edison entrance
+		"coordinate": new Point(42.366229, -71.258078),
+		"type": "ientrance"
+	},
+
+	{
+		"id": "edison_ie02", // intersection in gzang near shapiro entrance of gzng
+		"coordinate": new Point(42.366449, -71.258412),
+		"type": "ientrance"
+	},
+
+	{
+		"id": "edison_ic01", // stairwell closer to shapiro gzang entrance
+		"coordinate": new Point(42.366442, -71.258346),
+		"type": "icrossing"
+	},
+
+	{
+		"id": "edison_ic02", // stairwell closer to roof brick
+		"coordinate": new Point(42.366264, -71.258063),
+		"type": "icrossing"
+	},
+
+
+
+	
+
 
 ]
 
 function Point(x,y) {
 	this.x = x;
 	this.y = y;
-}
+}7 

@@ -139,16 +139,16 @@ paths_science = [
 		"end":"goldsmith_e01",
 		"description":"Turn left through two sets of double doors and head down three flights of stairs."
 	},
-	{
-		"start":"volen_e01",
-		"end":"volen_ie02",
-		"description":"Head right and walk up two flights of stairs. Turn to your left and head all the way to the end, then head up half a flight of stairs and turn left to the skywalk."
-	},
-	{
-		"start":"volen_ie02",
-		"end":"volen_e01",
-		"description":"Turn right and head down half a flight of stairs. Go straight along this corridor until you reach the doors to the staircase at the end, and then head down two flights."
-	},
+	// {
+	// 	"start":"volen_e01",
+	// 	"end":"volen_ie02",
+	// 	"description":"Head right and walk up two flights of stairs. Turn to your left and head all the way to the end, then head up half a flight of stairs and turn left to the skywalk."
+	// },
+	// {
+	// 	"start":"volen_ie02",
+	// 	"end":"volen_e01",
+	// 	"description":"Turn right and head down half a flight of stairs. Go straight along this corridor until you reach the doors to the staircase at the end, and then head down two flights."
+	// },
 	{
 		"start":"volen_ie02",
 		"end":"goldsmith_ie02",
@@ -210,26 +210,26 @@ paths_science = [
 		"description":"While facing the green building, turn immediately left and walk to the foot of the stairs under the sign labeled Feldberg Communications Center."
 	},
 	/* shapiro science, oh god */
-	{
-		"start":"edison_e01",
-		"end":"gzang_e01",
-		"description":"Walk to where Edison, Gzang, and the Shapiro Science Center all meet."
-	},
-	{
-		"start":"gzang_e01",
-		"end":"edison_e01",
-		"description":"Walk through the set of doors that lead outside to the parking lot."
-	},
-	{
-		"start":"ssc_ie01",
-		"end":"gzang_ie01",
-		"description":"Open the doors and head through the covered walkway."
-	},
-	{
-		"start":"gzang_ie01",
-		"end":"ssc_ie01",
-		"description":"Open the doors that lead through the covered walkway and head through."
-	},
+	// {
+	// 	"start":"edison_e01",
+	// 	"end":"gzang_e01",
+	// 	"description":"Walk to where Edison, Gzang, and the Shapiro Science Center all meet."
+	// },
+	// {
+	// 	"start":"gzang_e01",
+	// 	"end":"edison_e01",
+	// 	"description":"Walk through the set of doors that lead outside to the parking lot."
+	// },
+	// {
+	// 	"start":"ssc_ie01",
+	// 	"end":"gzang_ie01",
+	// 	"description":"Open the doors and head through the covered walkway."
+	// },
+	// {
+	// 	"start":"gzang_ie01",
+	// 	"end":"ssc_ie01",
+	// 	"description":"Open the doors that lead through the covered walkway and head through."
+	// },
 	{
 		"start":"ssc_ie01",
 		"end":"ssc_e03",
@@ -290,16 +290,16 @@ paths_science = [
 	    "end":"ssc_e02",
 	    "description": "Enter the doors to the right of the stairs.",
 	},
-	{
-	    "start":"edison_e01",
-	    "end":"edison_c01",
-	    "description": "Exit Edison.",
-	},
-	{
-	    "start":"edison_c01",
-	    "end":"edison_e01",
-	    "description": "Entrance to Edison is right ahead.",
-	},
+	// {
+	//     "start":"edison_e01",
+	//     "end":"edison_c01",
+	//     "description": "Exit Edison and go towards parking lot.",
+	// },
+	// {
+	//     "start":"edison_c01",
+	//     "end":"edison_e01",
+	//     "description": "Entrance to Edison is on the second level ahead, either go around to stairs or climb over barrier",
+	// },
 	{
 	    "start":"edison_c01",
 	    "end":"edison_c02",
@@ -510,16 +510,16 @@ paths_science = [
 	    "end":"rosensweig_e02",
 	    "description": "Walk toward the building next to the path way.",
 	},
-	{
-	    "start":"gzang_ie01",
-	    "end":"edison_e01",
-	    "description": "Walk through the hall way.",
-	},
-	{
-	    "start":"edison_e01",
-	    "end":"gzang_ie01",
-	    "description": "Walk through the hall way.",
-	},
+	// {
+	//     "start":"gzang_ie01",
+	//     "end":"edison_e01",
+	//     "description": "Walk through the hall way.",
+	// },
+	// {
+	//     "start":"edison_e01",
+	//     "end":"gzang_ie01",
+	//     "description": "Walk through the hall way.",
+	// },
 //Dewar Added everything below
 	{
 		"start":"abelson_e02",
@@ -579,13 +579,13 @@ paths_science = [
 	{
 		"start": "edison_c01",
 		"end": "bassine_c02",
-		"description": "Walk outside towards stairs"
+		"description": "Walk outside and down the stairs across the parking lot"
 	},
 
 	{
 		"start": "bassine_c01",
 		"end": "edison_c01",
-		"description": "Walk down stairs and turn right"
+		"description": "Walk down stairs and turn right across parking lot"
 	},
 
 	{
@@ -672,17 +672,17 @@ paths_science = [
 		"description": "Exit to ouside and walk alongside building and down stairs at the end"
 	},
 
-	{
-		"start": "abelson_e01",
-		"end": "gzang_ie01",
-		"description": "Walk straight entering through two sets of doors"
-	},
+	// {
+	// 	"start": "abelson_e01",
+	// 	"end": "gzang_ie01",
+	// 	"description": "Walk straight entering through two sets of doors"
+	// },
 
-	{
-		"start": "gzang_ie01",
-		"end": "abelson_e01",
-		"description": "Walk straight entering through two sets of doors, proceed to exit in front of you"
-	},
+	// {
+	// 	"start": "gzang_ie01",
+	// 	"end": "abelson_e01",
+	// 	"description": "Walk straight entering through two sets of doors, proceed to exit in front of you"
+	// },
 
 	{
 		"start": "abelson_c01",
@@ -827,6 +827,227 @@ paths_science = [
 		"end": "bassine_ie01",
 		"description": "Enter building go straight and take a left"
 	},
+
+	{
+		"start": "abelson_e02",
+		"end": "abelson_ic01",
+		"description": "Enter building go straight down hallway"
+	},
+
+	{
+		"start": "abelson_ic01",
+		"end": "abelson_e02",
+		"description": "Walk straight ahead for door and exit outside"
+	},
+	//Added on 9/14/15 --Dewar
+
+	{
+		"start": "volen_ie03",
+		"end": "gzang_ie03",
+		"description": "Enter through CLOSED double doors and follow hallway all the way to the end until next set of double doors"
+	},
+
+	{
+		"start": "gzang_ie03",
+		"end": "volen_ie03",
+		"description": "Enter through double doors and follow hallway all the way to the end until next set of double doors"
+	},
+
+	{
+		"start": "gzang_e02",
+		"end": "gzang_ic01",
+		"description": "Head straight and down flight of stairs until you see hallway on right"
+	},
+
+	{
+		"start": "gzang_ic01",
+		"end": "gzang_e02",
+		"description": "Head straight up flight of stairs and towards door exiting outside"
+	},
+
+	{
+		"start": "gzang_ic01",
+		"end": "gzang_ic02",
+		"description": "Turn right and follow hallway to the end until you reach intersection with three doors"
+	},
+
+	{
+		"start": "gzang_ic02",
+		"end": "gzang_ic01",
+		"description": "Follow hallway down until you reach the end"
+	},
+
+	{
+		"start": "gzang_ic02",
+		"end": "gzang_e03",
+		"description": "Take door on left and exit outside"
+	},
+
+	{
+		"start": "gzang_e03",
+		"end": "gzang_ic02",
+		"description": "Enter through door"
+	},
+
+	{
+		"start": "gzang_e03",
+		"end": "edison_c01",
+		"description": "Go straight and bear right"
+	},
+
+	{
+		"start": "edison_c01",
+		"end": "gzang_e03",
+		"description": "Turn left and enter through black door"
+	},
+
+	{
+		"start": "gzang_ic02",
+		"end": "edison_ie01",
+		"description": "Enter door on right into Edison Leeks building"
+	},
+
+	{
+		"start": "edison_ie01",
+		"end": "gzang_ic02",
+		"description": "Exit out into hallway"
+	},
+
+	{
+		"start": "gzang_ic02",
+		"end": "ssc_ie01",
+		"description": "Enter door straight ahead through covered walk way"
+	},
+
+	{
+		"start": "ssc_ie01",
+		"end": "gzang_ic02",
+		"description": "Enter through white double doors and go through covered walkway"
+	},
+
+	{
+		"start": "bassine_c02",
+		"end": "edison_e01",
+		"description": "Turn left and walk straight all the way across brick floor up the stairs and enter through door at top"
+	},
+
+	{
+		"start": "edison_e01",
+		"end": "bassine_c02",
+		"description": "Exit out of building and turn right and head straight across brick floor till you reach other side"
+	},
+
+	{
+		"start": "edison_ie02",
+		"end": "edison_ie01",
+		"description": "Walk straight down hallway until end"
+	},
+
+		{
+		"start": "edison_ie01",
+		"end": "edison_ie02",
+		"description": "Walk straight down hallway until end"
+	},
+
+	{
+		"start": "edison_ie02",
+		"end": "edison_ic01",
+		"description": "Enter doors and take first stairwell on left to second floor"
+	},
+
+	{
+		"start": "edison_ic01",
+		"end": "edison_ie02",
+		"description": "Enter stairwell and go down to bottom floor and exit right towards door"
+	},
+
+// stairwell to exit to rooftop edison near parking lot
+	{
+		"start": "edison_ic01",
+		"end": "edison_e01",
+		"description": "Exit stairwell, turn left and walk to end of hall to exit outside of building"
+	},
+
+//stairwell to exit of rooftop near abelson
+	{
+		"start": "edison_ic01",
+		"end": "edison_e02",
+		"description": "Turn right towards closest door to exit outside of building"
+	},
+
+	{
+		"start": "edison_e02",
+		"end": "edison_ic01",
+		"description": "Enter building and take first stairwell on left to bottom floor"
+	},
+
+
+	{
+		"start": "edison_e01",
+		"end": "edison_ic02",
+		"description": "Enter doors and take first stairwell on right to bottom floor"
+	},
+
+	{
+		"start": "edison_ic02",
+		"end": "edison_ie01",
+		"description": "Exit stairwell and turn left, walk towards door and exit into hallway"
+	},
+
+	{
+		"start": "edison_ic02",
+		"end": "edison_e02",
+		"description": "Exit stairwell and turn right, walk towards end of hallway and exit outside"
+
+	},
+
+	{
+		"start": "edison_ic02",
+		"end": "edison_e01",
+		"description": "Exit stairwell and turn left, walk towards door and exit outside"
+
+	},
+
+	{
+		"start": "edison_ie01",
+		"end": "edison_ic02",
+		"description": "Enter door and take first stairwell on right to second floor"
+	},
+
+	{
+		"start": "edison_e02",
+		"end": "edison_e01",
+		"description": "Walk straight down hallway towards other exit"
+	},
+
+	{
+		"start": "edison_e01",
+		"end": "edison_e02",
+		"description": "Walk straight down hallway towards other exit"
+	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
 
 
 

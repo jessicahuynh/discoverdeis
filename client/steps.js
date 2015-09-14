@@ -149,7 +149,7 @@ Template.steps.rendered = function () {
 		});
 		markerCurrent = new google.maps.Marker({
 			position: new google.maps.LatLng(Session.get("currentLocation").x,Session.get("currentLocation").y),
-			icon: '/GoogleMapsMarkers/bluedot.png',
+			icon: '/GoogleMapsMarkers/bluedot.png', //Here is the blue dot
 			map:map.instance
 		});
 
