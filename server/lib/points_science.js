@@ -205,16 +205,16 @@ points_science = [
 	    "type": "crossing",
 	},
 
-	{
-	    "id": "gzang_ie02",//to edison
-	    "coordinate":new Point(42.366548, -71.258307),
-	    "type": "ientrance",
-	},
-	{
-	    "id": "gzang_ie03",//to abelson
-	    "coordinate":new Point(42.366601, -71.258352),
-	    "type": "ientrance",
-	},
+	// {
+	//     "id": "gzang_ie02",//to edison
+	//     "coordinate":new Point(42.366548, -71.258307),
+	//     "type": "ientrance",
+	// },
+	// {
+	//     "id": "gzang_ie03",//to abelson
+	//     "coordinate":new Point(42.366601, -71.258352),
+	//     "type": "ientrance",
+	// },
 	{
 	    "id": "abelson_e01",
 	    "coordinate":new Point(42.366669, -71.258500),
@@ -336,14 +336,14 @@ points_science = [
 	{
 		"id": "bassine_ic03", // gzang connector first floor ic
 		"coordinate": new Point(42.366940, -71.258132),
-		"type": "ientrance"
+		"type": "icrossing"
 	},
 
 		//Added on 9/14/15 --Dewar
 
 	{
-		"id": "gzang_ic01", // gzang IC near 
-		"coordinate": new Point(42.366476, -71.258457),
+		"id": "gzang_ic01", // gzang IC near shapiro entrance
+		"coordinate": new Point(42.366539, -71.258369),
 		"type": "icrossing"
 	},
 
@@ -382,6 +382,29 @@ points_science = [
 		"coordinate": new Point(42.366264, -71.258063),
 		"type": "icrossing"
 	},
+
+	{
+		"id": "abelson_ic02", //Abelson IC
+		"coordinate":new Point(42.366606, -71.258497),
+		"type": "icrossing"
+	},
+
+	{
+		"id": "gzang_ic03", // intersection after womans bathroom
+		"coordinate": new Point(42.366704, -71.258201),
+		"type": "icrossing"
+	},
+
+	{
+		"id": "gzang_ic03", // intersection after womans bathroom
+		"coordinate": new Point(42.366704, -71.258201),
+		"type": "icrossing"
+	},
+
+	
+
+
+	
 
 
 

@@ -843,14 +843,14 @@ paths_science = [
 
 	{
 		"start": "volen_ie03",
-		"end": "gzang_ie03",
-		"description": "Enter through CLOSED double doors and follow hallway all the way to the end until next set of double doors"
+		"end": "gzang_ic03",
+		"description": "Enter through double doors and walk straight ahead until you reach intersection"
 	},
 
 	{
-		"start": "gzang_ie03",
+		"start": "gzang_ic03",
 		"end": "volen_ie03",
-		"description": "Enter through double doors and follow hallway all the way to the end until next set of double doors"
+		"description": "Enter through closed double doors follow hallway up set of stairs and all the way to the end until next set of double doors"
 	},
 
 	{
@@ -868,13 +868,13 @@ paths_science = [
 	{
 		"start": "gzang_ic01",
 		"end": "gzang_ic02",
-		"description": "Turn right and follow hallway to the end until you reach intersection with three doors"
+		"description": "Turn and follow follow hallway all the way to end until you reach intersection with three doors"
 	},
 
 	{
 		"start": "gzang_ic02",
 		"end": "gzang_ic01",
-		"description": "Follow hallway down until you reach the end"
+		"description": "Follow hallway all the way down until you can no longer go straight"
 	},
 
 	{
@@ -1025,6 +1025,97 @@ paths_science = [
 		"end": "edison_e02",
 		"description": "Walk straight down hallway towards other exit"
 	},
+
+	{
+		"start": "gzang_ic01",
+		"end": "abelson_ic02",
+		"description": "Enter through two sets of doors on top of slopped ramp "
+	},
+
+	{
+		"start": "abelson_ic02",
+		"end": "gzang_ic01",
+		"description": "Enter through two sets of doors in front of you"
+	},
+
+	{
+		"start": "abelson_ic02",
+		"end": "gzang_ic01",
+		"description": "Enter through two sets of doors in front of you"
+	},
+
+	{
+		"start": "abelson_ic02",
+		"end": "abelson_ic01",
+		"description": "Exit stairwell, turn left and walk towards end of hall"
+	},
+
+
+	{
+		"start": "abelson_ic01",
+		"end": "abelson_ic02",
+		"description": "Walk straight down hallway until your near stairwell at exit"
+	},
+
+	{
+		"start": "abelson_ic02",
+		"end": "abelson_e01",
+		"description": "Walk down small set of stairs to exit"
+	},
+
+	{
+		"start": "abelson_e01",
+		"end": "abelson_ic02",
+		"description": "Enter building and walk up small set of stairs"
+	},
+
+	{
+		"start": "rosensweig_e03",
+		"end": "rosensweig_c01",
+		"description": "Exit out of building and head down stairs onto sidewalk"
+	},
+
+	{
+		"start": "rosensweig_c01",
+		"end": "rosensweig_e03",
+		"description": "Take stairs all the way up to glass door entrance"
+	},
+	
+	{
+		"start": "bassine_ic03",
+		"end": "gzang_ic03",
+		"description": "Head down steps and head down hallway"
+	},
+
+	{
+		"start": "gzang_ic03",
+		"end": "bassine_ic03",
+		"description": "Enter Bassine ahead hall and head up stairs"
+	},
+
+	{
+		"start": "bassine_e02",
+		"end": "bassine_c02",
+		"description": "After exiting, walk alongside building until you reach the end and take a left" 
+	},
+
+	{
+		"start": "bassine_c02",
+		"end": "bassine_e02",
+		"description": "Go up stairs and walk alongside building on red brick floor until you reach entrance on right"
+	},
+
+
+
+	
+
+
+
+
+
+
+
+
 
 
 
