@@ -263,7 +263,7 @@ points_science = [
 		"type": "icrossing"
 	},
 	{
-		"id": "rosenstiel_ic03", //stairwell
+		"id": "rosenstiel_ic03", //stairwell level two
 		"coordinate":new Point(42.365817, -71.257155),
 		"type": "icrossing"
 	},
@@ -335,7 +335,7 @@ points_science = [
 
 	{
 		"id": "bassine_ic03", // gzang connector first floor ic
-		"coordinate": new Point(42.366940, -71.258132),
+		"coordinate": new Point(42.366962, -71.258114),
 		"type": "icrossing"
 	},
 
@@ -400,6 +400,45 @@ points_science = [
 		"coordinate": new Point(42.366704, -71.258201),
 		"type": "icrossing"
 	},
+
+	{
+		"id": "gzang_ic03", 
+		"coordinate": new Point(42.366704, -71.258201),
+		"type": "icrossing"
+	},
+
+	//9/16/15 --Dewar Added
+	
+	{
+		"id": "volen_ic01", //volen stairwell near vertica
+		"coordinate": new Point(42.367038, -71.258984),
+		"type": "icrossing"
+	},
+
+	{
+		"id": "volen_ic03", //volen stairwell near vertica to third floor
+		"coordinate": new Point(42.367032, -71.259013),
+		"type": "icrossing"
+	},
+
+	{
+		"id": "bassine_ic04", //Bassine third floor stairwell
+		"coordinate": new Point(42.366980, -71.258098),
+		"type": "icrossing"
+	},
+
+	{
+		"id": "rosenstiel_ic04", //Rosenstiel stairwell level 3
+		"coordinate": new Point(42.365894, -71.257170),
+		"type": "icrossing"
+	},
+
+
+
+
+
+
+
 
 	
 

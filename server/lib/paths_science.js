@@ -42,7 +42,7 @@ paths_science = [
 	{
 		"start":"volen_ie03",
 		"end":"gzang_e01",
-		"description":"Turn left and exit through the entrance of Gerstenzang."	
+		"description":" Exit through the glass doors in front"	
 	},
 	{
 		"start":"gzang_e01",
@@ -139,16 +139,16 @@ paths_science = [
 		"end":"goldsmith_e01",
 		"description":"Turn left through two sets of double doors and head down three flights of stairs."
 	},
-	// {
-	// 	"start":"volen_e01",
-	// 	"end":"volen_ie02",
-	// 	"description":"Head right and walk up two flights of stairs. Turn to your left and head all the way to the end, then head up half a flight of stairs and turn left to the skywalk."
-	// },
-	// {
-	// 	"start":"volen_ie02",
-	// 	"end":"volen_e01",
-	// 	"description":"Turn right and head down half a flight of stairs. Go straight along this corridor until you reach the doors to the staircase at the end, and then head down two flights."
-	// },
+	{
+		"start":"volen_ic03",
+		"end":"volen_ie02",
+		"description":"Exit stairwell, Turn to your left and head all the way to the end, then head up half a flight of stairs and turn left to the skywalk."
+	},
+	{
+		"start":"volen_ie02",
+		"end":"volen_ic03",
+		"description":"Turn right and head down half a flight of stairs. Go straight along this corridor until you reach the doors to the staircase at the end"
+	},
 	{
 		"start":"volen_ie02",
 		"end":"goldsmith_ie02",
@@ -187,7 +187,7 @@ paths_science = [
 	{
 		"start":"feldberg_e01",
 		"end":"feldberg_ie01",
-		"description":"Pass down the hallwayt through Feldberg to the sign labeled Volen."
+		"description":"Pass down the hallway through Feldberg to the sign labeled Volen."
 	},
 	{
 		"start":"feldberg_e01",
@@ -771,25 +771,25 @@ paths_science = [
 	{
 		"start": "bassine_ic01",
 		"end": "bassine_ic02",
-		"description": "Walk down hall until you reach stairwell on right, take it down one level to main floor"
+		"description": "Walk down hall until you reach stairwell on right, go to level one"
 	},
 
 	{
 		"start": "bassine_ic02",
 		"end": "bassine_ic01",
-		"description": "Walk up stairs and take a left down hallway until you reach elevators on your right"
+		"description": "Walk up stairs to level two and take a left down hallway until you reach elevators on your right"
 	},
 
 	{
 		"start": "bassine_ic02",
 		"end": "bassine_e01",
-		"description": "Enter stairwell on right and go up to level two then exit to outside door on right"
+		"description": "Enter stairwell on right and go up to level two"
 	},
 
 	{
 		"start": "bassine_e01",
 		"end": "bassine_ic02",
-		"description": "Enter stairwell on left and go down to level two then exit and use door on right"
+		"description": "Enter stairwell on left and go down to level one then exit and use door on right"
 	},
 
 	{
@@ -1104,6 +1104,139 @@ paths_science = [
 		"end": "bassine_e02",
 		"description": "Go up stairs and walk alongside building on red brick floor until you reach entrance on right"
 	},
+
+	//9/16/15 --Dewar Added
+
+	{
+		"start": "volen_e01",
+		"end": "volen_ic01",
+		"description": "Turn right and go to end of hallway until stairwell on right"
+	},
+
+	{
+		"start": "volen_ic01",
+		"end": "volen_e01",
+		"description": "Go down to bottom level, exit stairwell and then exit building through glass door in front"
+	},
+
+	{
+		"start": "volen_ic02",
+		"end": "volen_ic01",
+		"description": "Head straight and go to end of hallway until stairwell on right"
+	},
+
+	{
+		"start": "volen_ic01",
+		"end": "volen_ic02",
+		"description": "Head straight until you reach double wooden doors"
+	},
+
+	{
+		"start": "volen_ic01",
+		"end": "volen_e02",
+		"description": "Go up stairwell to second floor, exit and turn right, go straight until you reach small set of steps, exit through glass doors"
+	},
+
+	{
+		"start": "volen_e02",
+		"end": "volen_ic01",
+		"description": "Go up small set of steps, keep heading straight pass the fork until you reach stairwell on left and kitchen on right"
+	},
+
+	{
+		"start": "volen_ic02",
+		"end": "volen_ic03",
+		"description": "Go up stairwell to level three"
+	},
+
+	{
+		"start": "volen_ic03",
+		"end": "volen_ic02",
+		"description": "Go down stairwell to level two"
+	},
+
+	{
+		"start": "bassine_ic02",
+		"end": "bassine_ic04",
+		"description": "Go up stairwell to level three"
+	},
+
+	{
+		"start": "bassine_ic04",
+		"end": "bassine_ic02",
+		"description": "Go down stairwell to level two"
+	},
+
+	{
+		"start": "bassine_ic04",
+		"end": "goldsmith_ie02",
+		"description": "Go all the way down the hallway until you white double doors with handles"
+	},
+
+	{
+		"start": "goldsmith_ie02",
+		"end": "bassine_ic04",
+		"description": "Enter through white double doors on right near lounge area and go all the way down hallway until you reach stairwell on right"
+	},
+
+	{
+		"start": "rosenstiel_ic03",
+		"end": "rosenstiel_ic04",
+		"description": "Go up stairwell to level three"
+	},
+
+	{
+		"start": "rosensweig_e03",
+		"end": "rosensweig_e02",
+		"description": "Enter glass/metal door and cut straight through to other side"
+	},
+
+	{
+		"start": "rosensweig_e02",
+		"end": "rosensweig_e03",
+		"description": "Enter glass/metal door and cut straight through to other side"
+	},
+
+	{
+		"start": "rosenstiel_ic04",
+		"end": "rosensweig_e03",
+		"description": "Exit stairwell turn right and take first exit outside on right"
+	},
+
+	{
+		"start": "rosensweig_e03",
+		"end": "rosenstiel_ic04",
+		"description": "Enter and turn left, take first stairwell on left"
+	},
+
+
+	{
+		"start": "rosenstiel_ic04",
+		"end": "rosensweig_e02",
+		"description": "Exit stairwell turn right and take first exit outside on left"
+	},
+
+	{
+		"start": "rosenstiel_e02",
+		"end": "rosenstiel_ic04",
+		"description": "Enter and turn right, take first stairwell on left"
+	},
+
+	{
+		"start": "rosenstiel_ic04",
+		"end": "rosensweig_e01",
+		"description": "Exit stairwell turn right, go down hallway, enter pass double white doors to glass doors leading outside "
+	},
+
+	{
+		"start": "rosensweig_e01",
+		"end": "rosenstiel_ic04",
+		"description": "Enter building and go down hallway, enter pass double white doors and head straight until stairwell on left"
+	},
+
+
+
+
 
 
 
