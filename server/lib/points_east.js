@@ -113,3 +113,7 @@ points_east = [
 	    "type":"entrance"
 	},
 ]
+function Point(x,y) {
+	this.x = x;
+	this.y = y;
+}
