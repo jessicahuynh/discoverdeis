@@ -451,17 +451,17 @@ paths_gym = [
 	{
 		"start":"police_e01",
 		"end":"healthcenter_c01",
-		"description":"Exit the public safety building and walk toward the paking lot."
+		"description":"Exit the public safety building and walk toward the parking lot."
 	},
 	{
 		"start":"castle_e01",
 		"end":"rosenstiel_c03",
-		"description":"Walking down the slope with Castle on your left side."
+		"description":"Walk down the slope with Castle on your left side."
 	},
 	{
 		"start":"rosenstiel_c03",
 		"end":"castle_e01",
-		"description":"Walking up the slope with Castle on your right side."
+		"description":"Walk up the slope with Castle on your right side."
 	},
 	{
 		"start":"rubenstein_c01",
@@ -471,17 +471,17 @@ paths_gym = [
 	{
 		"start":"rosenstiel_c03",
 		"end":"rubenstein_c01",
-		"description":"Walking down the stairs."
+		"description":"Walk down the stairs."
 	},
 	{
 		"start":"rubenstein_c01",
 		"end":"rosenstiel_c03",
-		"description":"Walking up the stairs."
+		"description":"Walk up the stairs."
 	},
 	{
 		"start":"healthcenter_c01",
 		"end":"rubenstein_c01",
-		"description":"Waking up the slope toward the Loop Road."
+		"description":"Walk up the slope toward Loop Road."
 	},
 	{
 		"start":"healthcenter_e01",

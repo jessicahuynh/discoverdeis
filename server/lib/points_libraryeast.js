@@ -158,7 +158,7 @@ points_libraryeast = [
 	//east
 	{
 	    "id": "rubenstein_c01",
-	    "coordinate":new Point(42.366592, -71.255205),
+	    "coordinate":new Point(42.366635, -71.255343),
 	    "type": "crossing",
 	},
 	{

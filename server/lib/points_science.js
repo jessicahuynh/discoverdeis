@@ -186,7 +186,7 @@ points_science = [
 	},
 	{
 	    "id": "rosenstiel_c01",
-	    "coordinate":new Point(42.366065, -71.256331),
+	    "coordinate":new Point(42.366087, -71.256404),
 	    "type": "crossing",
 	},
 	{

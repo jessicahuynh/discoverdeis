@@ -157,11 +157,6 @@ paths_libraryeast = [
 	    "end":"library_c04",
 	    "description": "Walk up to the first crossroads",
 	},
-	{	
-	    "start":"rubenstein_c01",
-	    "end":"rosenstiel_c01",
-	    "description": "Walk along the parking lot on the right to stop sign",
-	},
 	{
 	    "start":"rosenstiel_c01",
 	    "end":"rubenstein_c01",
