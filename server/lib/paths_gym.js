@@ -373,8 +373,23 @@ paths_gym = [
 	},
 	{
 		"start":"rosenstiel_c01",
+		"end":"squirebridge_c01",
+		"description":"Cross the sidewalk to the top of the steps."
+	},
+	{
+		"start":"squirebridge_c01",
+		"end":"rosenstiel_c01",
+		"description":"Cross the sidewalk."
+	},
+	{
+		"start":"squirebridge_c01",
 		"end":"mailman_c01",
-		"description":"Go down the stairs to little plate form."
+		"description":"Climb down the stairs to the next landing."
+	},
+	{
+		"start":"mailman_c01",
+		"end":"squirebridge_c01",
+		"description":"Head up the stairs."
 	},
 	{
 		"start":"mailman_c01",
@@ -395,6 +410,16 @@ paths_gym = [
 		"start":"mailman_e01",
 		"end":"mailman_c01",
 		"description":"Turn right."
+	},
+	{
+		"start":"squirebridge_c01",
+		"end":"mainentrance_c02",
+		"description":"Go downhill along Loop Road."
+	},
+	{
+		"start":"mainentrance_c02",
+		"end":"squirebridge_c01",
+		"description":"Go uphill along Loop Road."
 	},
 	//connecting to castle
 	{

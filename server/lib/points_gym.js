@@ -12,6 +12,11 @@ points_gym = [
 		"type":"entrance",
 		"getTo":"Head to Squire Bridge's entrance next to Mailman House."
 	},
+	{
+		"id":"squirebridge_c01", //sidewalk right before steps
+		"coordinate":new Point(42.365992, -71.256324),
+		"type":"crossing"
+	},
 	//mods
 	{
 		"id":"uppermods_e01",
