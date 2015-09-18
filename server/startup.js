@@ -27,7 +27,7 @@ Meteor.startup(function() {
 	}
 	
 	if (Paths.find().count() == 0) {
-		var pathFiles = [paths_massellchapels,paths_southcampus,paths_gym,paths_admin, paths_science,paths_northrabb,paths_mandelquad,paths_library,paths_east,paths_usdan,paths_grad,paths_ibs];
+		var pathFiles = [paths_massellchapels,paths_southcampus,paths_gym,paths_admin, paths_science,paths_northrabb,paths_mandelquad,paths_library,paths_east,paths_usdan,paths_grad,paths_ibs,paths_bernstein];
 		
 		pathFiles.forEach(function(pathFile) {
 			pathFile.forEach(function(path) {
