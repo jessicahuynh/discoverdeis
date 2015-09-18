@@ -322,6 +322,31 @@ points_gym = [
 		"id":"sstreet_c05",
 		"coordinate": new Point(42.364348, -71.258715),
 		"type":"crossing"
+	},
+	{
+		"id":"mainentrance_c01",
+		"coordinate": new Point(42.364908, -71.258321),
+		"type":"crossing"
+	},
+	{
+		"id":"mainentrance_c02", // double crosswalk along old south street
+		"coordinate": new Point(42.364968, -71.258359),
+		"type":"crossing"
+	},
+	{
+		"id":"mainentrance_c03",
+		"coordinate":new Point(42.364837, -71.258586),
+		"type":"crossing"
+	},
+	{
+		"id":"mainentrance_c04", // crosswalk on loop road across from double sidewalk
+		"coordinate":new Point(42.365104, -71.258465),
+		"type":"crossing"
+	},
+	{
+		"id":"mainentrance_c05",
+		"coordinate":new Point(42.364971, -71.258734),
+		"type":"crossing"
 	}
 
 ]

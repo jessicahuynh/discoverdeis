@@ -767,5 +767,95 @@ paths_gym = [
 		"start":"village_c04",
 		"end":"sstreet_c05",
 		"description":"Walk uphill on the sidewalk next to South Street, heading towards the main entrance."
+	},
+	{
+		"start":"sstreet_c03",
+		"end":'mainentrance_c01',
+		"description":"Walk up the main entrance road (Old South Street) towards the information booth in front."
+	},
+	{
+		"start":"mainentrance_c01",
+		"end":"sstreet_c03",
+		"description":"Walk down the sidewalk to South Street."
+	},
+	{
+		"start":"sstreet_c04",
+		"end":"mainentrance_c01",
+		"description":"Walk up the main entrance road (Old South Street) towards the information booth in front."
+	},
+	{
+		"start":"mainentrance_c01",
+		"end":"sstreet_c04",
+		"description":"Walk down the sidewalk to South Street."
+	},
+	{
+		"start":"mainentrance_c01",
+		"end":"mainentrance_c02",
+		"description":"Cross the sidewalk."
+	},
+	{
+		"start":"mainentrance_c02",
+		"end":"mainentrance_c01",
+		"description":"Cross the sidewalk to the island with the main entrance sign and gardens."
+	},
+	{
+		"start":"mainentrance_c02",
+		"end":"sstreet_c02",
+		"description":"Walk down the sidewalk to South Street."
+	},
+	{
+		"start":"sstreet_c02",
+		"end":"mainentrance_c02",
+		"description":"Walk up the main entrance road (Old South Street) towards the information booth in front."
+	},
+	{
+		"start":"sstreet_c05",
+		"end":"mainentrance_c03",
+		"description":"Walk up the main entrance road (Old South Street) towards the information booth in front."
+	},
+	{
+		"start":"mainentrance_c03",
+		"end":"sstreet_c05",
+		"description":"Walk down the sidewalk to South Street."
+	},
+	{
+		"start":"mainentrance_c02",
+		"end":"mainentrance_c04",
+		"description":"Cross the sidewalk to the other side of Loop Road, next to the information booth."
+	},
+	{
+		"start":"mainentrance_c04",
+		"end":"mainentrance_c02",
+		"description":"Cross the sidewalk to Old South Street."
+	},
+	{
+		"start":"mainentrance_c03",
+		"end":"mainentrance_c05",
+		"description":"Cross the sidewalk."
+	},
+	{
+		"start":"mainentrance_c05",
+		"end":"mainentrance_c03",
+		"description":"Cross the sidewalk."
+	},
+	{
+		"start":"mainentrance_c04",
+		"end":"info_e01",
+		"description":"Head to the door of the information booth, located on this side."
+	},
+	{
+		"start":"info_e01",
+		"end":"mainentrance_c04",
+		"description":"Exit the info booth and head straight for the sidewalk in front."
+	},
+	{
+		"start":"mainentrance_c05",
+		"end":"info_e01",
+		"description":"Head to the door of the information booth, located on the far side."
+	},
+	{
+		"start":"info_e01",
+		"end":"mainentrance_c05",
+		"description":"Exit the info booth and turn right, cutting across the front of the building to the foot of the paved path leading uphill."
 	}
 ]
