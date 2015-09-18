@@ -10,7 +10,7 @@ The original team members were Jessica Huynh, Tianci Zhong, and Ziyu Qiu.
 * Ziyu Qiu '18
 * Limin Wang '16
 * Dewar Tan MA'16
-* Jane Kwon '16
+* Jane Kwon '18
 
 ### Help
 * Chi Zhang
