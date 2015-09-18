@@ -184,13 +184,12 @@ points_northrabb = [
 	    "coordinate":new Point(42.368438, -71.256215),
 	    "type":"crossing"
 	},
-	/////
 	{
 	    "id":"kutz_c06",
 	    "coordinate":new Point(42.368683, -71.256710),
 	    "type":"crossing"
 	},
-	/////
+
 
 ]
 
