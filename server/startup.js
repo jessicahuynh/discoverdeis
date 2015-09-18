@@ -16,7 +16,7 @@ Meteor.startup(function() {
 	}
 	
 	if (Intersections.find().count() == 0) {
-		var intersectFiles = [points_massellchapels,points_southcampus,points_gym,points_admin, points_science,points_northrabb,points_mandelquad,points_libraryeast,points_grad,points_ibs];
+		var intersectFiles = [points_massellchapels,points_southcampus,points_gym,points_admin, points_science,points_northrabb,points_mandelquad,points_libraryeast,points_grad,points_ibs,points_berstein];
 		
 		intersectFiles.forEach(function(intersectFile) {
 			intersectFile.forEach(function(point) {
