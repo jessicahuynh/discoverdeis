@@ -352,7 +352,18 @@ points_gym = [
 		"id":"mainentrance_c05",
 		"coordinate":new Point(42.364971, -71.258734),
 		"type":"crossing"
-	}
+	},
+	//health
+	{
+	    "id": "mailman_c01",
+	    "coordinate":new Point(42.365743, -71.256094),
+	    "type": "crossing",
+	},
+	{
+	    "id":"stonemanlot_e01",
+	    "coordinate":new Point(42.366425, -71.254895),
+	    "type":"entrance"
+	},
 
 ]
 
