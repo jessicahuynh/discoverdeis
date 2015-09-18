@@ -260,13 +260,23 @@ paths_gym = [
 	},
 	{
 		"start":"linsey_c01",
+		"end":"superconducting_c01",
+		"description":"Walk across the road at the crosswalk."
+	},
+	{
+		"start":"superconducting_c01",
+		"end":"linsey_c01",
+		"description":"Walk across the road at the crosswalk."
+	},
+	{
+		"start":"superconducting_c01",
 		"end":"healthcenter_c01",
-		"description":"Walk across the road at the crosswalk and go up the stairs."
+		"description":"Walk up the stairs."
 	},
 	{
 		"start":"healthcenter_c01",
-		"end":"linsey_c01",
-		"description":"Walk down the stairs and cross the road at the crosswalk."
+		"end":"superconducting_c01",
+		"description":"Walk down the stairs to the crosswalk."
 	},
 	// mods
 	{
@@ -655,5 +665,107 @@ paths_gym = [
 		"start":"lemberg_e01",
 		"end":"lemberg_c06",
 		"description":"Exit and turn right and go up the stairs."
+	},
+	{
+		"start":"lemberg_c04",
+		"end":"lemberg_c07",
+		"description":"Continue along South Street, passing Lemberg on your right towards the main entrance and Squire Bridge."
+	},
+	{
+		"start":"lemberg_c07",
+		"end":"lemberg_c04",
+		"description":"Continue along South Street, walking up the hill with Lemberg on your left."
+	},
+	{
+		"start":"lemberg_c03",
+		"end":"lemberg_c07",
+		"description":"Continue along Old South Street, away from Lemberg on your left, until you reach South Street."
+	},
+	{
+		"start":"lemberg_c07",
+		"end":"lemberg_c03",
+		"description":"Turn slightly downhill onto Old South Street, with the main entrance at your back as you enter."
+	},
+	{
+		"start":"lemberg_c07",
+		"end":"lemberg_c08",
+		"description":"Cross Old South Street, heading downhill towards the bridge."
+	},
+	{
+		"start":"lemberg_c08",
+		"end":"lemberg_c07",
+		"description":"Cross Old Street, heading uphill towards the train station."
+	},
+	{
+		"start":"lemberg_c08",
+		"end":"gosman_c01",
+		"description":"Walk along South Street towards the bridge and Gosman, keeping the main entrance on you left."
+	},
+	{
+		"start":"gosman_c01",
+		"end":"lemberg_c08",
+		"description":"Walk along South Street towards Lemberg Children's Center, keeping the main entrance on your right and the parking lot and fields on your left."
+	},
+	
+	// south street up to main entrance
+	{
+		"start":"superconducting_c01",
+		"end":"sstreet_c01",
+		"description":"Walk along South Street towards the bridge."
+	},
+	{
+		"start":"sstreet_c01",
+		"end":"superconducting_c01",
+		"description":"Walk along South Street towards the stairs beside the crosswalk."
+	},
+	{
+		"start":"sstreet_c01",
+		"end":"sstreet_c02",
+		"description":"Walk along South Street towards the main entrance, passing under the bridge."
+	},
+	{
+		"start":"sstreet_c02",
+		"end":"sstreet_c01",
+		"description":"Walk along South Street away from campus, passing under the bridge."
+	},
+	{
+		"start":"sstreet_c02",
+		"end":"sstreet_c03",
+		"description":"Carefully cross the main entrance road towards the sign in front, staying on this side of South Street."
+	},
+	{
+		"start":"sstreet_c03",
+		"end":"sstreet_c02",
+		"description":"Carefully cross the main entrance road towards the bridge, staying on this side of South Street."
+	},
+	{
+		"start":"sstreet_c03",
+		"end":"sstreet_c04",
+		"description":"Walk along the sidewalk past the sign and garden."
+	},
+	{
+		"start":"sstreet_c04",
+		"end":"sstreet_c03",
+		"description":"Walk along the sidewalk past the sign and garden."
+	},
+	{
+		"start":"sstreet_c04",
+		"end":"sstreet_c05",
+		"description":"Carefully cross the main entrance road, heading downhill towards the train station. Stay on this side of South Street."
+	},
+	{
+		"start":'sstreet_c05',
+		"end":'sstreet_c04',
+		"description":"Carefully cross the main entrance road, heading uphill. Stay on this side of South Street."
+	},
+	{
+		"start":"sstreet_c05",
+		"end":"village_c04",
+		"description":"Walk downhill on the sidewalk next to South Street, heading towards the train station.."
+	},
+	{
+		"start":"village_c04",
+		"end":"sstreet_c05",
+		"description":"Walk uphill on the sidewalk next to South Street, heading towards the main entrance."
 	}
 ]

@@ -188,11 +188,6 @@ points_gym = [
 		"type":"entrance"
 	},
 	{
-    	"id": 'sstreet_c01',
-    	"coordinate":new Point( 42.365759, -71.255193),
-    	"type": 'crossing',
-	},
-	{
 		"id":"healthcenter_c01",
 		"coordinate":new Point(42.366295, -71.255105),
 		"type":"crossing"
@@ -221,6 +216,11 @@ points_gym = [
 		"id":"superconducting_e01",
 		"coordinate":new Point(42.365910, -71.255390),
 		"type":"entrance"
+	},
+	{
+		"id":"superconducting_c01", // crosswalk at foot of stairs
+		"coordinate":new Point(42.366058, -71.254896),
+		"type":"crossing"
 	},
 
 
@@ -284,6 +284,43 @@ points_gym = [
 	{
 		"id":"lemberg_c06", // on the side, next to stairs
 		"coordinate":new Point(42.363331, -71.258897),
+		"type":"crossing"
+	},
+	{
+		"id":"lemberg_c07", // old south street meets south street, nearer train station
+		"coordinate":new Point(42.364198, -71.258687),
+		"type":"crossing"
+	},
+	{
+		"id":"lemberg_c08", // old south street meets south street, nearer the gym
+		"coordinate":new Point(42.364279, -71.258580),
+		"type":"crossing"
+	},
+	
+	// south street entrance stuff
+	{
+    	"id": 'sstreet_c01',
+    	"coordinate":new Point( 42.365759, -71.255193),
+    	"type": 'crossing',
+	},
+	{
+		"id":"sstreet_c02",
+		"coordinate": new Point(42.365136, -71.256888),
+		"type":"crossing"
+	},
+	{
+		"id":"sstreet_c03",
+		"coordinate": new Point(42.364974, -71.257233),
+		"type":'crossing'
+	},
+	{
+		"id":"sstreet_c04",
+		"coordinate": new Point(42.364476, -71.258539),
+		"type":"crossing"
+	},
+	{
+		"id":"sstreet_c05",
+		"coordinate": new Point(42.364348, -71.258715),
 		"type":"crossing"
 	}
 
