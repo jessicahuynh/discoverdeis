@@ -91,7 +91,7 @@ points_usdan = [
 	    "id":"levin_e02",
 	    "coordinate":new Point(42.367992, -71.256964),
 	    "type":"entrance"
-	},
+	}
 ]
 function Point(x,y) {
 	this.x = x;
