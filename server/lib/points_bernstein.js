@@ -2,7 +2,7 @@
 
 points_bernstein = [
 	{
-		"id":"bernstein_e01",
+		"id":"irving_e01",
 		"coordinate":new Point(42.365245, -71.259522),
 		"type":"entrance"
 	},
@@ -34,6 +34,36 @@ points_bernstein = [
 	{
 		"id":"gryzmish_c02",
 		"coordinate":new Point(42.365613, -71.258398),
+		"type":"crossing"
+	},
+	{
+		"id":"bernstein_e01",
+		"coordinate":new Point(42.365151, -71.259527),
+		"type":"entrance"
+	},
+	{
+		"id":"bernstein_c04",
+		"coordinate":new Point(42.365429, -71.259935),
+		"type":"crossing"
+	},
+	{
+		"id":"gryzmish_c03",
+		"coordinate":new Point(42.365601, -71.259648),
+		"type":"crossing"
+	},
+	{
+		"id":"gryzmish_c04",
+		"coordinate":new Point(42.365668, -71.257984),
+		"type":"crossing"
+	},
+	{
+		"id":"gryzmish_c05",
+		"coordinate":new Point(42.365790, -71.259432),
+		"type":"crossing"
+	},
+	{
+		"id":"bernstein_c05",
+		"coordinate":new Point(42.365351, -71.259656),
 		"type":"crossing"
 	}
 
