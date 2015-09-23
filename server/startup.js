@@ -16,7 +16,21 @@ Meteor.startup(function() {
 	}
 	
 	if (Intersections.find().count() == 0) {
-		var intersectFiles = [points_massellchapels,points_southcampus,points_gym,points_admin, points_science,points_northrabb,points_mandelquad,points_library,points_usdan,points_east,points_grad,points_ibs,points_bernstein];
+		var intersectFiles = [
+			points_massellchapels,
+			points_southcampus,
+			points_gym,
+			points_admin, 
+			points_science,
+			points_northrabb,
+			points_mandelquad,
+			points_library,
+			points_usdan,
+			points_east,
+			points_grad,
+			points_ibs,
+			points_bernstein
+		];
 
 		
 		intersectFiles.forEach(function(intersectFile) {
@@ -27,7 +41,21 @@ Meteor.startup(function() {
 	}
 	
 	if (Paths.find().count() == 0) {
-		var pathFiles = [paths_massellchapels,paths_southcampus,paths_gym,paths_admin, paths_science,paths_northrabb,paths_mandelquad,paths_library,paths_east,paths_usdan,paths_grad,paths_ibs,paths_bernstein];
+		var pathFiles = [
+			paths_massellchapels, 
+			paths_southcampus,	
+			paths_gym,
+			paths_admin, 
+			paths_science,
+			paths_northrabb,
+			paths_mandelquad,
+			paths_library,
+			paths_east,
+			paths_usdan,
+			paths_grad,
+			paths_ibs,
+			paths_bernstein
+		];
 		
 		pathFiles.forEach(function(pathFile) {
 			pathFile.forEach(function(path) {

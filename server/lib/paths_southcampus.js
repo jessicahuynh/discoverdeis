@@ -3,477 +3,477 @@ paths_southcampus = [
 {
     "start":"fellowsgarden_c01",
     "end":"fellowsgarden_c02",
-    "description": "Walk toward the physics building",
+    "description": "Walk toward the physics building"
 },
 {
     "start":"fellowsgarden_c02",
     "end":"fellowsgarden_c03",
-    "description": "Walk along the Fellows Garden",
+    "description": "Walk along the Fellows Garden"
 },
 {
     "start":"fellowsgarden_c02",
     "end":"fellowsgarden_c01",
-    "description": "Walk pass the physics building and SSC will be on your left",
+    "description": "Walk pass the physics building and SSC will be on your left"
 },
 {
     "start":"fellowsgarden_c03",
     "end":"fellowsgarden_c02",
-    "description": "Walk along the Fellows Garden",
+    "description": "Walk along the Fellows Garden"
 },
 {
     "start":"scc_c01",
     "end":"scc_c03",
-    "description": "Walk along the fellows garden",
+    "description": "Walk along the fellows garden"
 },
 {
     "start":"scc_c03",
     "end":"scc_c01",
-    "description": "Walk along the fellows garden",
+    "description": "Walk along the fellows garden"
 },
 {
     "start":"scc_c03",
     "end":"scc_e01",
-    "description": "Entrance to SCC is right ahead",
+    "description": "Entrance to SCC is right ahead"
 },
 {
     "start":"scc_e01",
     "end":"scc_c03",
-    "description": "Exit SCC",
+    "description": "Exit SCC"
 },
 {
     "start":"scc_e01",
     "end":"scc_i01",
-    "description": "Walk through SCC",
+    "description": "Walk through SCC"
 },
 {
     "start":"scc_i01",
     "end":"scc_e01",
-    "description": "Walk towards the exit",
+    "description": "Walk towards the exit"
 },
 {
     "start":"scc_i01",
     "end":"scc_e03",
-    "description": "Walk towards the exit",
+    "description": "Walk towards the exit"
 },
 {
     "start":"scc_e03",
     "end":"scc_i01",
-    "description": "Walk through SCC",
+    "description": "Walk through SCC"
 },
 {
     "start":"scc_e03",
     "end":"scc_c06",
-    "description": "Exit SCC and walk across the lawn",
+    "description": "Exit SCC and walk across the lawn"
 },
 {
     "start":"scc_c06",
     "end":"scc_e03",
-    "description": "Walk across the lawn and SCC is right ahead",
+    "description": "Walk across the lawn and SCC is right ahead"
 },
 {
     "start":"scc_c06",
     "end":"scc_c07",
-    "description": "Take the right path and walk down",
+    "description": "Take the right path and walk down"
 },
 {
     "start":"scc_c07",
     "end":"scc_c06",
-    "description": "Continue walking up the street",
+    "description": "Continue walking up the street"
 },
 {
     "start":"scc_c07",
     "end":"scc_c08",
-    "description": "Continue walking down toward the theatre",
+    "description": "Continue walking down toward the theatre"
 },
 {
     "start":"scc_c08",
     "end":"scc_c07",
-    "description": "Walk along the path in the lawn toward the blue building",
+    "description": "Walk along the path in the lawn toward the blue building"
 },
 {
     "start":"scc_c08",
     "end":"admissions_c01",
-    "description": "Walk across the road",
+    "description": "Walk across the road"
 },
 {
     "start":"facultycenter_e01",
     "end":"facultycenter_c01",
-    "description": "Walk outside of the entrance and go downstairs, then walk along to the first crossing",
+    "description": "Walk outside of the entrance and go downstairs, then walk along to the first crossing"
 },
 {
     "start":"facultycenter_c01",
     "end":"facultycenter_e01",
-    "description": "Walk towards the Faculty Club and go upstairs, keeping SCC at back",
+    "description": "Walk towards the Faculty Club and go upstairs, keeping SCC at back"
 },
 {
     "start":"facultycenter_e02",
     "end":"facultycenter_c02",
-    "description": "Walk outside of the entrance and go straight ahead toward the loop road",
+    "description": "Walk outside of the entrance and go straight ahead toward the loop road"
 },
 {
     "start":"facultycenter_c02",
     "end":"facultycenter_e02",
-    "description": "Walk towards the Faculty Club, keeping loop road at back",
+    "description": "Walk towards the Faculty Club, keeping loop road at back"
 },
 {
     "start":"shermanfunctionhall_e01",
     "end":"shermanfunctionhall_c02",
-    "description": "Turn left after getting out of the entrance, and walk along the road keeping Fellows Garden on the right",
+    "description": "Turn left after getting out of the entrance, and walk along the road keeping Fellows Garden on the right"
 },
 {
     "start":"shermanfunctionhall_c02",
     "end":"shermanfunctionhall_e01",
-    "description": "Walk along the road and choose the road on the right at crossing, keeping Fellows Garden on the left",
+    "description": "Walk along the road and choose the road on the right at crossing, keeping Fellows Garden on the left"
 },
 {
     "start":"shermanfunctionhall_e01",
     "end":"shermanfunctionhall_c01",
-    "description": "Walk along the road after getting out of the entrance, keeping Sherman on the right",
+    "description": "Walk along the road after getting out of the entrance, keeping Sherman on the right"
 },
 {
     "start":"shermanfunctionhall_c01",
     "end":"shermanfunctionhall_e01",
-    "description": "Walk along the road, keeping Fellows Garden at back and Sherman on the left",
+    "description": "Walk along the road, keeping Fellows Garden at back and Sherman on the left"
 },
 {
     "start":"shermanfunctionhall_c01",
     "end":"shermanfunctionhall_c02",
-    "description": "Walk along the road, keeping Fellows Garden on the right",
+    "description": "Walk along the road, keeping Fellows Garden on the right"
 },
 {
     "start":"shermanfunctionhall_c02",
     "end":"shermanfunctionhall_c01",
-    "description": "Walk along the road and choose the road on the left at crossing, keeping Fellows Garden on the left",
+    "description": "Walk along the road and choose the road on the left at crossing, keeping Fellows Garden on the left"
 },
 {
     "start":"shermanfunctionhall_c01",
     "end":"scc_c01",
-    "description": "Walk along the road, keeping Fellows Garden on the left",
+    "description": "Walk along the road, keeping Fellows Garden on the left"
 },
 {
     "start":"scc_c01",
     "end":"shermanfunctionhall_c01",
-    "description": "Walk along the road, keeping Fellows Garden on the right",
+    "description": "Walk along the road, keeping Fellows Garden on the right"
 },
 {
     "start":"shermanfunctionhall_c03",
     "end":"scc_c11",
-    "description": "Walk along the road towards SCC, keeping Sherman at back",
+    "description": "Walk along the road towards SCC, keeping Sherman at back"
 },
 {
     "start":"scc_c11",
     "end":"shermanfunctionhall_c03",
-    "description": "Walk along the road towards Sherman, keeping SCC at back",
+    "description": "Walk along the road towards Sherman, keeping SCC at back"
 },
 {
     "start":"shermanfunctionhall_c03",
     "end":"shermanfunctionhall_c01",
-    "description":"Walk along the road, keeping Sherman on the left",
+    "description":"Walk along the road, keeping Sherman on the left"
 },
 {
     "start":"shermanfunctionhall_c01",
     "end":"shermanfunctionhall_c03",
-    "description":"Walk towards the road, keeping Sherman on the right",
+    "description":"Walk towards the road, keeping Sherman on the right"
 },
 {
     "start":"shermanfunctionhall_c03",
     "end":"shapirodorm_c04",
-    "description":"Walk towards the loop road, keeping Sherman on the right and Faculty Club on the left",
+    "description":"Walk towards the loop road, keeping Sherman on the right and Faculty Club on the left"
 },
 {
     "start":"shapirodorm_c04",
     "end":"shermanfunctionhall_c03",
-    "description":"Walk along the road, keeping Sherman on the left and Faculty Club on the right",
+    "description":"Walk along the road, keeping Sherman on the left and Faculty Club on the right"
 },
 {
     "start":"shermanfunctionhall_c03",
     "end":"scc_c01",
-    "description":"Face towards Fellows Garden, leaving the way to loop road at back, and walk along the road",
+    "description":"Face towards Fellows Garden, leaving the way to loop road at back, and walk along the road"
 },
 {
     "start":"scc_c01",
     "end":"shermanfunctionhall_c03",
-    "description":"Leave Fellows Garden at back, walk along the road, keeping SCC on the left and Sherman on the right",
+    "description":"Leave Fellows Garden at back, walk along the road, keeping SCC on the left and Sherman on the right"
 },
 {
     "start":"scc_c11",
     "end":"shermanfunctionhall_c01",
-    "description":"Walk along the road, keeping Sherman on the left and Fellows Garden on the right",
+    "description":"Walk along the road, keeping Sherman on the left and Fellows Garden on the right"
 },
 {
     "start":"shermanfunctionhall_c01",
     "end":"scc_c11",
-    "description":"Walk along the road towards SCC, keeping Sherman on the right",
+    "description":"Walk along the road towards SCC, keeping Sherman on the right"
 },
 {
     "start":"shermanfunctionhall_e01",
     "end":"usen_c03",
-    "description":"Walk outside of the entrance, and walk along the road, facing towards Massell Quad and keeping Rosie South on the right",
+    "description":"Walk outside of the entrance, and walk along the road, facing towards Massell Quad and keeping Rosie South on the right"
 },
 {
     "start":"usen_c03",
     "end":"shermanfunctionhall_e01",
-    "description":"Walk along the road, keeping Sherman on the right",
+    "description":"Walk along the road, keeping Sherman on the right"
 },
 {
     "start":"admissions_c01",
     "end":"scc_c08",
-    "description": "Walk across the road",
+    "description": "Walk across the road"
 },
 {
     "start":"admissions_c01",
     "end":"theaterlot_c01",
-    "description": "Walk along the back of the Admissions building",
+    "description": "Walk along the back of the Admissions building"
 },
 {
     "start":"theaterlot_c01",
     "end":"admissions_c01",
-    "description": "Walk along the back of the Admissions building",
+    "description": "Walk along the back of the Admissions building"
 },
 {
     "start":"theaterlot_c01",
     "end":"theaterlot_e01",
-    "description": "Enter Theater Lot",
+    "description": "Enter Theater Lot"
 },
 {
     "start":"theaterlot_e01",
     "end":"theaterlot_c01",
-    "description": "Walk towards the circular building and exit Theater Lot",
+    "description": "Walk towards the circular building and exit Theater Lot"
 },
 {
     "start":"scc_c01",
     "end":"scc_c11",
-    "description": "Walk to the back of SCC",
+    "description": "Walk to the back of SCC"
 },
 {
     "start":"scc_c11",
     "end":"scc_c01",
-    "description": "Walk towards Fellows Garden",
-},
+    "description": "Walk towards Fellows Garden"
+}, 
 {
     "start":"scc_c03",
     "end":"scc_c02",
-    "description": "Walk towards Faculty Club",
+    "description": "Walk towards Faculty Club"
 },
 {
     "start":"scc_c02",
     "end":"scc_c03",
-    "description": "Walk towards SCC",
+    "description": "Walk towards SCC"
 },
 {
     "start":"scc_c02",
     "end":"fellowsgarden_c01",
-    "description": "Walk towards Science Complex",
+    "description": "Walk towards Science Complex"
 },
 {
     "start":"fellowsgarden_c01",
     "end":"scc_c02",
-    "description": "Walk towards the blue building",
+    "description": "Walk towards the blue building"
 },
 {
     "start":"fellowsgarden_c03",
     "end":"scc_c01",
-    "description": "Walk across Fellows Garden",
+    "description": "Walk across Fellows Garden"
 },
 {
     "start":"scc_c01",
     "end":"fellowsgarden_c03",
-    "description": "Walk across Fellows Garden",
+    "description": "Walk across Fellows Garden"
 },
 {
     "start":"scc_c12",
     "end":"fellowsgarden_c03",
-    "description": "Take the trail across Fellows Garden",
+    "description": "Take the trail across Fellows Garden"
 },
 {
     "start":"fellowsgarden_c03",
     "end":"scc_c12",
-    "description": "Take the trail across Fellows Garden",
+    "description": "Take the trail across Fellows Garden"
 },
 {
     "start":"fellowsgarden_c03",
     "end":"shermanfunctionhall_c02",
-    "description":"Walk along the road, keeping Fellows Garden on the left",
+    "description":"Walk along the road, keeping Fellows Garden on the left"
 },
 {
     "start":"shermanfunctionhall_c02",
     "end":"fellowsgarden_c03",
-    "description":"Walk along the road, keeping Fellows Garden on the right",
+    "description":"Walk along the road, keeping Fellows Garden on the right"
 },
 {
     "start":"shermanfunctionhall_c02",
     "end":"chapelsfield_c02",
-    "description":"Walk along the road, keeping Rosie East on the left and Fellows Garden at back",
+    "description":"Walk along the road, keeping Rosie East on the left and Fellows Garden at back"
 },
 {
     "start":"shermanfunctionhall_c02",
     "end":"volen_c02",
-    "description":"Walk along the road, keeping Volen on the right",
+    "description":"Walk along the road, keeping Volen on the right"
 },
 {
     "start":"volen_c02",
     "end":"shermanfunctionhall_c02",
-    "description":"Face towards Rosie East, and walk along the lane on the right",
+    "description":"Face towards Rosie East, and walk along the lane on the right"
 },
 {
     "start":"scc_c04",
     "end":"scc_c12",
-    "description": "Walk towards the middle trail in Fellows Garden",
+    "description": "Walk towards the middle trail in Fellows Garden"
 },
 {
     "start":"scc_c12",
     "end":"scc_c04",
-    "description": "Walk pass SCC down the load",
+    "description": "Walk pass SCC down the load"
 },
 {
     "start":"scc_c04",
     "end":"scc_c02",
-    "description": "Walk to the crossing and take the right",
+    "description": "Walk to the crossing and take the right"
 },
 {
     "start":"scc_c02",
     "end":"scc_c04",
-    "description": "Walk pass SCC down the road",
+    "description": "Walk pass SCC down the road"
 },
 {
     "start":"scc_c02",
     "end":"scc_c12",
-    "description": "Walk toward SCC a little bit",
+    "description": "Walk toward SCC a little bit"
 },
 {
     "start":"scc_c12",
     "end":"scc_c02",
-    "description": "Walk pass Fellows Garden to the road just ahead",
+    "description": "Walk pass Fellows Garden to the road just ahead"
 },
 {
     "start":"scc_c03",
     "end":"scc_c12",
-    "description": "Walk a little to where you can see the trails on your left",
+    "description": "Walk a little to where you can see the trails on your left"
 },
 {
     "start":"scc_c12",
     "end":"scc_c03",
-    "description": "Walk a little closer to the entrance of SCC",
+    "description": "Walk a little closer to the entrance of SCC"
 },
 {
     "start":"scc_c12",
     "end":"scc_c01",
-    "description": "Walk towards Sherman",
+    "description": "Walk towards Sherman"
 },
 {
     "start":"scc_c01",
     "end":"scc_c12",
-    "description": "Walk toward SCC",
+    "description": "Walk toward SCC"
 },
 {
     "start":"scc_c04",
     "end":"scc_c05",
-    "description": "Walk down the road",
+    "description": "Walk down the road"
 },
 {
     "start":"scc_c05",
     "end":"scc_c04",
-    "description": "Walk up the road",
+    "description": "Walk up the road"
 },
 {
     "start":"scc_c05",
     "end":"scc_c06",
-    "description": "Walk down the road towards the lawn",
+    "description": "Walk down the road towards the lawn"
 },
 {
     "start":"scc_c06",
     "end":"scc_c05",
-    "description": "Walk up the road",
+    "description": "Walk up the road"
 },
 {
     "start":"scc_c11",
     "end":"scc_c09",
-    "description": "Walk along the lane behind SCC",
+    "description": "Walk along the lane behind SCC"
 },
 {
     "start":"scc_c09",
     "end":"scc_c11",
-    "description": "Walk along the lane behind SCC",
+    "description": "Walk along the lane behind SCC"
 },
 {
     "start":"scc_c05",
     "end":"scc_c09",
-    "description": "Walk along the corridor in front of SCC",
+    "description": "Walk along the corridor in front of SCC"
 },
 {
     "start":"scc_c09",
     "end":"scc_c05",
-    "description": "Walk along the corridor in front of SCC",
+    "description": "Walk along the corridor in front of SCC"
 },
 {
     "start":"scc_i01",
     "end":"scc_e02",
-    "description": "Walk to the exit",
+    "description": "Walk to the exit"
 },
 {
     "start":"scc_e02",
     "end":"scc_i01",
-    "description": "Enter SCC",
+    "description": "Enter SCC"
 },
 {
     "start":"scc_e02",
     "end":"scc_c04",
-    "description": "Continue walk away from SCC",
+    "description": "Continue walk away from SCC"
 },
 {
     "start":"scc_c04",
     "end":"scc_e02",
-    "description": "Walk towards the entrance to SCC",
+    "description": "Walk towards the entrance to SCC"
 },
 {
     "start":"scc_c09",
     "end":"scc_c10",
-    "description": "Walk down the trail to the main road",
+    "description": "Walk down the trail to the main road"
 },
 {
     "start":"scc_c10",
     "end":"scc_c09",
-    "description": "Walk towards SCC",
+    "description": "Walk towards SCC"
 },
 {
     "start":"scc_c10",
     "end":"scc_c08",
-    "description": "Walk along Loop Road",
+    "description": "Walk along Loop Road"
 },
 {
     "start":"scc_c08",
     "end":"scc_c10",
-    "description": "Walk along Loop Road",
+    "description": "Walk along Loop Road"
 },
 {
     "start":"scc_e03",
     "end":"scc_c13",
-    "description": "Exit SCC",
+    "description": "Exit SCC"
 },
 {
     "start":"scc_c13",
     "end":"scc_e03",
-    "description": "SCC is right ahead",
+    "description": "SCC is right ahead"
 },
 {
     "start":"scc_c13",
     "end":"scc_c09",
-    "description": "Walk along SCC with SCC on your right",
+    "description": "Walk along SCC with SCC on your right"
 },
 {
     "start":"scc_c09",
     "end":"scc_c13",
-    "description": "Walk along SCC with SCC on your left",
+    "description": "Walk along SCC with SCC on your left"
 },
 {
     "start":"scc_c13",
     "end":"scc_c05",
-    "description": "Walk along SCC with SCC on your left",
+    "description": "Walk along SCC with SCC on your left"
 },
 {
     "start":"scc_c05",
     "end":"scc_c13",
-    "description": "Walk along SCC with SCC on your right",
+    "description": "Walk along SCC with SCC on your right"
 },
 // south of loop road
 {
@@ -515,7 +515,7 @@ paths_southcampus = [
     "start":"admissions_c04",
     "end":"admissions_c01",
     "description":"Walk along Loop Road, with Admissions up ahead on your left."
-},
+}, 
 {
     "start":"admissions_c03",
     "end":"admissions_c04",
@@ -1158,7 +1158,7 @@ paths_southcampus = [
     "start":"village_c05",
     "end":"epstein_c01",
     "description":"Cross the driveway, downhill."
-},
+}, 
 {
     "start":"epstein_c01",
     "end":"village_c05",
