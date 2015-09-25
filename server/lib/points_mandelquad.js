@@ -20,6 +20,39 @@ points_mandelquad = [
 	    "type": "crossing",
 	},
 	
+	//
+	{
+		"id":"schneider_e01",
+		"coordinate":new Point(42.369297, -71.259199),
+		"type":"entrance"
+	},
+	{
+		"id":"heller_e02",
+		"coordinate":new Point(42.369275, -71.258761),
+		"type":"entrance"
+	},
+    {
+		"id":"schneider_e02",
+		"coordinate":new Point(42.369234, -71.259373),
+		"type":"entrance"
+	},
+    {
+		"id":"heller_c04",
+		"coordinate":new Point(42.369230, -71.260563),
+		"type":"crossing"
+	},
+    {
+		"id":"heller_c05",
+		"coordinate":new Point(42.369107, -71.259945),
+		"type":"crossing"
+	},
+    {
+		"id":"heller_c06",
+		"coordinate":new Point(42.368122, -71.258582),
+		"type":"crossing"
+	},
+	//
+
 	{
 	    "id": "mandel_e01",
 	    "coordinate":new Point(42.369592, -71.258119),

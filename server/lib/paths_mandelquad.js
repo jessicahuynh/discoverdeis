@@ -39,6 +39,96 @@ paths_mandelquad = [
 	    "end":"schneider_e01",
 	    "description": "turn right and Walk towards the side of the building and enter the entrance. Here Schneider is",
 	},
+
+	//
+	{
+	    "start":"heller_c02",
+	    "end":"heller_c01",
+	    "description": "Turn left to the parking lot",
+	},
+    {
+	    "start":"heller_c02",
+	    "end":"heller_c03",
+	    "description": "walk along the road",
+	},
+    {
+	    "start":"heller_c03",
+	    "end":"heller_c02",
+	    "description": "walk along the road",
+	},
+	{
+	    "start":"heller_c01",
+	    "end":"heller_e01",
+	    "description": "Walk towards the side of the building and enter the entrance. Here Heller is",
+	},
+    {
+	    "start":"heller_c04",
+	    "end":"heller_c05",
+	    "description": "Turn left and walk along the road, you are in a parking lot behind the Heller and you can see a little road on your left",
+	},
+    {
+	    "start":"heller_c05",
+	    "end":"heller_c04",
+	    "description": "Walk along the road to the cossing",
+	},
+    {
+	    "start":"heller_c03",
+	    "end":"heller_c04",
+	    "description": "Walk along the road to the cossing",
+	},
+    {
+	    "start":"heller_c04",
+	    "end":"heller_c03",
+	    "description": "Walk along the road",
+	},
+    {
+	    "start":"heller_c05",
+	    "end":"heller_c06",
+	    "description": "Go straight and follow the road and you reach the deep part of the parking lot",
+	},
+    {
+	    "start":"heller_c06",
+	    "end":"heller_c05",
+	    "description": "follow the road and you watch for the little road on your right",
+	},
+    {
+	    "start":"heller_c03",
+	    "end":"heller_e02",
+	    "description": "Walk through the forest in front of you and enter the entrance. You got Heller",
+	},
+    {
+	    "start":"heller_e02",
+	    "end":"heller_c03",
+	    "description": "Walk through the forest in front of you to the road and you can see the zebra crossing",
+	},
+    {
+	    "start":"heller_c03",
+	    "end":"schneider_e01",
+	    "description": "turn right and Walk towards the side of the building and enter the entrance. Here Schneider is",
+	},
+    {
+	    "start":"heller_c05",
+	    "end":"schneider_e02",
+	    "description": "turn left and walk towards the side of the building and enter the entrance. Here Schneider is",
+	},
+    {
+	    "start":"schneider_e02",
+	    "end":"heller_c05",
+	    "description": "walk straight to the crossing",
+	},
+    {
+	    "start":"schneider_e01",
+	    "end":"heller_c03",
+	    "description": "just walk ahead and there is a road with zebra crossing",
+	},
+	//
+
+
+
+
+
+
+
     {
 	    "start":"schneider_e01",
 	    "end":"heller_c03",
