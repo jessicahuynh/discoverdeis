@@ -1,6 +1,11 @@
 Template.locationProfile.helpers({
 	location:function() {
-		thisLoc = Locations.findOne({_id:Session.get("viewLocation")});
+
+		var full_url = document.URL; // Get current url
+		var url_array = full_url.split('/') // Split the string into an array with / as separator
+		var last_segment = url_array[url_array.length-1];  // Get the last part of the array (-1)
+
+		thisLoc = Locations.findOne({id:last_segment});
 		// console.log("^^^^^^^^"+thisLoc.coordinates);
 		Session.setPersistent("thisLoc",thisLoc);
 		return thisLoc;
