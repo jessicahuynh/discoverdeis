@@ -1,16 +1,19 @@
 locations_rooms = [
-// 	{
-// 		"id":"domenics",
-// 		"name":"Domenic's",
-// 		"nickname":"domenics",
-// 		"coordinates": [
-// 			new Point(), 
-// 			],
-// 		"function":"",
-// 		"description":"",
-// 		"category":["dining"],
-// 		"entrances":[],
-// 	},
+	{
+		"id":"domenics",
+		"name":"Domenic's",
+		"nickname":"domenics",
+		"coordinates": [
+			new Point(42.364534, -71.264081),
+			new Point(42.364606, -71.264116),
+			new Point(42.364636, -71.264204),
+			new Point(42.364544, -71.264203) 
+			],
+		"function":"",
+		"description":"",
+		"category":["dining"],
+		"entrances":["domenics_e01"],
+	},
 	{
 		"id":"dd",
 		"name":"Dunkin' Donuts",
@@ -43,18 +46,6 @@ locations_rooms = [
 		"entrances":["einstein_e01"],
 		"area":["lower campus"]
 	},
-// 	{
-// 		"id":"facultyclub",
-// 		"name":"Faculty Club",
-// 		"nickname":"faculty club",
-// 		"coordinates": [
-// 			new Point(), 
-// 			],
-// 		"function":"",
-// 		"description":"",
-// 		"category":["dining"],
-// 		"entrances":[],
-// 	},
 	{
 		"id":"shermandining",
 		"name":"Sherman Dining Hall",

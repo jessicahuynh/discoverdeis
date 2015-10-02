@@ -5,6 +5,11 @@ locations_rooms = [
 		"type":"entrance"
 	},
 	{
+		"id":"domenics_e01",
+		"coordinate":new Point(42.364545, -71.264145),
+		"type":"entrance"
+	}
+	{
 		"id":"einstein_e01",
 		"coordinate":new Point(42.365679, -71.260320),
 		"type":"entrance"	

@@ -154,7 +154,61 @@ paths_rooms = [
 		"end":"shermanfunctionhall_e02",
 		"description":"Exit Sherman Dining Hall and turn right. Get out of the building through the door on your left."
 	},
-
+	{
+		"start":"samuellemberg_e01",
+		"end":"domenics_e01",
+		"description":"Get into the building. Walk forward along the hall way and turn slightly left to the staircase. Walk upstairs and exit the staircase. Turn slightly left. The Domenics (also called the World Court) is right in front of you."
+	},
+	{
+		"start":"samuellemberg_e02",
+		"end":"domenics_e01",
+		"description":"Get into the building. Walk forward and the Domenics (also called the World Court) is right in front of you."
+	},
+	{
+		"start":"domenics_e01",
+		"end":"samuellemberg_e01",
+		"description":"Turn slightly left to the staircase. Get downstairs and exit staircase. Turn slightly left and walk along the hall way. Exit the building throught the door in front of you."
+	},
+	{
+		"start":"domenics_e01",
+		"end":"samuellemberg_e02",
+		"description":"Get out of the building through the door in front of you."
+	},
+	{
+		"start":"",
+		"end":"",
+		"description":""
+	},
+	{
+		"start":"",
+		"end":"",
+		"description":""
+	},
+	{
+		"start":"",
+		"end":"",
+		"description":""
+	},
+	{
+		"start":"",
+		"end":"",
+		"description":""
+	},
+	{
+		"start":"",
+		"end":"",
+		"description":""
+	},
+	{
+		"start":"",
+		"end":"",
+		"description":""
+	},
+	{
+		"start":"",
+		"end":"",
+		"description":""
+	},
 ]
 
 function Point(x,y) {
