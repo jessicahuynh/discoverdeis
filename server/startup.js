@@ -35,7 +35,7 @@ Meteor.startup(function() {
 	if (Intersections.find().count() == 0) {
 		var intersectFiles = [
 			points_centralCampus,
-			points_lowerDorms.js
+			points_lowerDorms,
 			points_massellchapels,
 			points_southcampus,
 			points_gym,
@@ -61,7 +61,8 @@ Meteor.startup(function() {
 	
 	if (Paths.find().count() == 0) {
 		var pathFiles = [
-			paths_massellchapels, 
+			paths_massellchapels,
+			paths_lowerDorms, 
 			paths_southcampus,	
 			paths_gym,
 			paths_admin, 

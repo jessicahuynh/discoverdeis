@@ -23,7 +23,7 @@ points_admin = [
 		"id":"bernsteinparkinglot_c01",
 		"coordinate":new Point(42.364784, -71.260249),
 		"type":"crossing"
-	}
+	},
 	{
 		"id":"irving_e01",
 		"coordinate":new Point(42.365245, -71.259522),
