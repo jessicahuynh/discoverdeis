@@ -229,5 +229,35 @@ paths_usdan = [
 	    "start":"usdan_c09",
 	    "end":"usdan_c10",
 	    "description": "Walk along the small path toward the library.",
-	}
+	},
+	{
+		"start":"library_c03",
+		"end":"usdan_e02",
+		"description":"Turn slightly right. The door to upperUsdan is in front of you."
+	},
+	{
+		"start":"usdan_c10",
+		"end":"usdan_e03",
+		"description":"Turn slightly left. The door to upperUsdan is in front of you."
+	},
+	{
+		"start":"usdan_e02",
+		"end":"library_c03",
+		"description":"Exit the building. Turn slightly right to the crossing in front of the library."
+	},
+	{
+		"start":"usdan_e03",
+		"end":"usdan_c10",
+		"description":"Exit the building and turn left to the crossing."
+	},
+	{
+		"start":"goldfarb_e02",
+		"end":"usdan_e02",
+		"description":"Exit the library. Go straight. The door to the Upper Usdan is to your left."
+	},
+	{
+		"start":"usdan_e02",
+		"end":"goldfarb_e02",
+		"description":"Exit the building. and turn right. Go straight. The library is in front of you."
+	},
 ]

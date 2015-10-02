@@ -19,10 +19,11 @@ locations_rooms = [
 		"coordinate":new Point(42.366601, -71.260660),
 		"type":"entrance"	
 	},
-	// {
-	// 	"id":"starbucksHeller",
-		
-	// },
+	{
+		"id":"starbucksHeller_e01",
+		"coordinate":new Point(42.369288, -71.259132),
+		"type":"entrance"
+	},
 	{
 		"id":"starbucksLib_e01",
 		"coordinate":new Point(42.367859, -71.258533),
@@ -68,11 +69,11 @@ locations_rooms = [
 		"coordinate":new Point(42.369068, -71.256097),
 		"type":"entrance"
 	},
-	// {
-	// 	"id":"mail",
-	// 	"coordinate":new Point(),
-	// 	"type":"entrance"
-	// },
+	{
+		"id":"mail_e01",
+		"coordinate":new Point(42.368163, -71.256443),
+		"type":"entrance"
+	},
 	{
 		"id":"registrar_e01",
 		"coordinate":new Point(42.369037, -71.255955),

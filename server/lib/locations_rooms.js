@@ -61,7 +61,7 @@ locations_rooms = [
 		"function":"Sherman is an all-you-can-eat dining hall and is the only integrated kosher cafeteria in the United States.",
 		"description":"Sherman Dining Hall is one of main dining facilities on campus. It is an all-you-care-to- eat buffet style option. Sherman is unique in that it is the only integrated kosher (Jewish dietary law) cafeteria in the country, where all students can eat together in the same place. Options include grilled foods, a sandwich station, a salad bar, pizza, a stir fry bar, omelet stations, a gluten free section, a crepe station, vegan and vegetarian options, as well as a large dessert selection. Furthermore, students can submit recipes from home and receive notice as to when these coveted meals will be served in Sherman.",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["shermandining_e01"],
 		"area":["lower campus"]
 	},
 		{
@@ -77,7 +77,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[""],
+		"entrances":["starbucksHeller_e01"],
 		"area":["upper campus"]
 	},
 		{
@@ -225,7 +225,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["offices"],
-		"entrances":[],
+		"entrances":["mail_e01"],
 		"area":["upper campus"]
 	},
 	{

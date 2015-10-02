@@ -568,7 +568,7 @@ locations = [
 			new Point(42.367777,-71.256451), 
 			new Point(42.368243,-71.256259)],
 		"description":"Usdan Student Center contains an a la carte style dining hall, a post office, an ATM, the Student Service Bureau (where you can lease microwaves or refrigerators, sign up for newspaper delivery, and rent movies, among other things), offices offices, and a variety of meeting spaces. It is a busy meeting place for students and faculty – especially between classes or at meals. The convenience store, also located inside Usdan, is open until 2am seven days a week and has everything from laundry detergent to midnight snacks available. Usdan also houses the Hiatt Career Center, Academic Services, Department of Community Living, and Student Financial Services. Services at the Hiatt Career Center are free to students and alumni. Services include one-on-one career counseling sessions, a network of over 25,000 internships, assistance in writing resumes and cover letters, and interview prep. Usdan is also home to the study abroad offices – over a third of the Junior class goes abroad every year! If you’d like to explore Usdan, you’ll find the dining hall, post office, and some offices on the lower level.",
-		"entrances":["usdan_e01"],
+		"entrances":["usdan_e01","usdan_e02","usdan_e03"],
 		"category":["student life"],
 		"area":["upper campus"]
 		},

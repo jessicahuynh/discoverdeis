@@ -175,40 +175,100 @@ paths_rooms = [
 		"description":"Get out of the building through the door in front of you."
 	},
 	{
-		"start":"",
-		"end":"",
-		"description":""
+		"start":"schneider_e01",
+		"end":"starbucksHeller_e01",
+		"description":"?????????????????????????????????"
 	},
 	{
-		"start":"",
-		"end":"",
-		"description":""
+		"start":"schneider_e02",
+		"end":"starbucksHeller_e01",
+		"description":"?????????????????????????????????"
 	},
 	{
-		"start":"",
-		"end":"",
-		"description":""
+		"start":"starbucksHeller_e01",
+		"end":"schneider_e01",
+		"description":"?????????????????????????????????"
 	},
 	{
-		"start":"",
-		"end":"",
-		"description":""
+		"start":"starbucksHeller_e01",
+		"end":"schneider_e02",
+		"description":"?????????????????????????????????"
 	},
 	{
-		"start":"",
-		"end":"",
-		"description":""
+		"start":"heller_e01",
+		"end":"starbucksHeller_e01",
+		"description":"?????????????????????????????????"
 	},
 	{
-		"start":"",
-		"end":"",
-		"description":""
+		"start":"heller_e02",
+		"end":"starbucksHeller_e01",
+		"description":"?????????????????????????????????"
 	},
 	{
-		"start":"",
-		"end":"",
-		"description":""
+		"start":"starbucksHeller_e01",
+		"end":"heller_e01",
+		"description":"?????????????????????????????????"
 	},
+	{
+		"start":"starbucksHeller_e01",
+		"end":"heller_e02",
+		"description":"?????????????????????????????????"
+	},
+	{
+		"start":"usdan_e01",
+		"end":"mail_e01",
+		"description":"Get into the building. Walk downstairs and turn back to the right. The mail room is on your left."
+	},
+	{
+		"start":"mail_e01",
+		"end":"usdan_e01",
+		"description":"Walk upstairs for one floor. Get out of the building."
+	},
+	{
+		"start":"usdan_e02",
+		"end":"mail_e01",
+		"description":"Walk downstairs and turn right. Walk along the hall way. Go past the dining area to lower Usdan. Continue walking past the Hoot Market and go through the inner door. The mail room is on your left."
+	},
+	{
+		"start":"usdan_e03",
+		"end":"mail_e01",
+		"description":"Walk downstairs and turn left. Walk along the hall way. Go past the dining area to lower Usdan. Continue walking past the Hoot Market and go through the inner door. The mail room is on your left."
+	},
+	{
+		"start":"mail_e01",
+		"end":"usdan_e02",
+		"description":"Exit mail room and turn right. Walk through the door and keep going on the hall way all the way down to the end. Then go up through the stairs on the left."
+	},
+	{
+		"start":"mail_e01",
+		"end":"usdan_e03",
+		"description":"Exit mail room and turn right. Walk through the door and keep going on the hall way all the way down to the end. Then go up through the stairs on the right."
+	},
+	// {
+	// 	"start":"",
+	// 	"end":"",
+	// 	"description":""
+	// },
+	// {
+	// 	"start":"",
+	// 	"end":"",
+	// 	"description":""
+	// },
+	// {
+	// 	"start":"",
+	// 	"end":"",
+	// 	"description":""
+	// },
+	// {
+	// 	"start":"",
+	// 	"end":"",
+	// 	"description":""
+	// },
+	// {
+	// 	"start":"",
+	// 	"end":"",
+	// 	"description":""
+	// },
 ]
 
 function Point(x,y) {

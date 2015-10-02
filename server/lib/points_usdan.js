@@ -91,6 +91,16 @@ points_usdan = [
 	    "id":"levin_e02",
 	    "coordinate":new Point(42.367992, -71.256964),
 	    "type":"entrance"
+	},
+	{
+		"id":"usdan_e02",
+		"coordinate":new Point(42.368100, -71.257340),
+		"type":"entrance"
+	},
+	{
+		"id":"usdan_e03",
+		"coordinate":new Point(42.368267, -71.257278),
+		"type":"entrance"
 	}
 ]
 function Point(x,y) {
