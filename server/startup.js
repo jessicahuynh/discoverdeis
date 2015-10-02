@@ -1,7 +1,24 @@
 Meteor.startup(function() {
 	if (Locations.find().count() == 0) {
 		// list of all of the files containing location data
-		var locFiles = [locations_admission,locations_arts,locations_athletics,locations_dorms,locations_east,locations_ibs,locations_mandelHellerLibrary,locations_massellChapels,locations_oldSt,locations_parking,locations_presidential,locations_scienceComplex,locations_transport,locations_usdan,locations_artinstallations,locations_rooms];
+		var locFiles = [
+			locations_admission,
+			locations_arts,
+			locations_athletics,
+			locations_dorms,
+			locations_east,
+			locations_ibs,
+			locations_mandelHellerLibrary,
+			locations_massellChapels,
+			locations_oldSt,
+			locations_parking,
+			locations_presidential,
+			locations_scienceComplex,
+			locations_transport,
+			locations_usdan,
+			locations_artinstallations,
+			locations_rooms
+		];
 		
 		locFiles.forEach(function(locFile) {
 			locFile.forEach(function(location) {
@@ -17,6 +34,8 @@ Meteor.startup(function() {
 	
 	if (Intersections.find().count() == 0) {
 		var intersectFiles = [
+			points_centralCampus,
+			points_lowerDorms.js
 			points_massellchapels,
 			points_southcampus,
 			points_gym,
@@ -29,7 +48,6 @@ Meteor.startup(function() {
 			points_east,
 			points_grad,
 			points_ibs,
-			points_bernstein,
 			points_rooms
 		];
 
