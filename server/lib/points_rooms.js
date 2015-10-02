@@ -1,89 +1,99 @@
-locations_rooms = [
+points_rooms = [
 	{
 		"id":"dd_e01",
 		"coordinate":new Point(42.363174, -71.260471),
 		"type":"entrance"
 	},
 	{
-		"id":"domenics_e01",
+		"id":"domenics_ie01",
 		"coordinate":new Point(42.364545, -71.264145),
-		"type":"entrance"
-	}
+		"type":"ientrance"
+	},
 	{
-		"id":"einstein_e01",
+		"id":"einstein_ie01",
 		"coordinate":new Point(42.365679, -71.260320),
-		"type":"entrance"	
+		"type":"ientrance"	
 	},
 	{
-		"id":"shermandining_e01",
+		"id":"shermandining_ie01",
 		"coordinate":new Point(42.366601, -71.260660),
-		"type":"entrance"	
+		"type":"ientrance"	
 	},
 	{
-		"id":"starbucksHeller_e01",
+		"id":"starbucksHeller_ie01",
 		"coordinate":new Point(42.369288, -71.259132),
-		"type":"entrance"
+		"type":"ientrance"
 	},
 	{
-		"id":"starbucksLib_e01",
+		"id":"starbucksLib_ie01",
 		"coordinate":new Point(42.367859, -71.258533),
-		"type":"entrance"
+		"type":"ientrance"
 	},
 	{
-		"id":"peets_e01",
+		"id":"peets_ie01",
 		"coordinate":new Point(42.365971, -71.258058),
-		"type":"entrance"
+		"type":"ientrance"
 	},
 	{
-		"id":"peets_e02",
+		"id":"peets_ie02",
 		"coordinate":new Point(42.365985, -71.257966),
-		"type":"entrance"
+		"type":"ientrance"
 	},
 	{
-		"id":"stein_e01",
+		"id":"stein_ie01",
 		"coordinate":new Point(42.366539, -71.260597),
-		"type":"entrance"	
+		"type":"ientrance"	
 	},
 	{
-		"id":"isso_e01",
+		"id":"isso_ie01",
 		"coordinate":new Point(42.369068, -71.256097),
-		"type":"entrance"
+		"type":"ientrance"
 	},
 	{
-		"id":"mail_e01",
+		"id":"mail_ie01",
 		"coordinate":new Point(42.368163, -71.256443),
-		"type":"entrance"
+		"type":"ientrance"
 	},
 	{
-		"id":"registrar_e01",
+		"id":"registrar_ie01",
 		"coordinate":new Point(42.369037, -71.255955),
-		"type":"entrance"
+		"type":"ientrance"
 	},
 	{
-		"id":"bookStore_e01",
-		"coordinate":new Point(42.366575, -71.260783),
-		"type":"entrance"	
-	},
-	{
-		"id":"usdanBoulevard_e01",
+		"id":"bookStore_ie01",
 		"coordinate":new Point(42.368231, -71.256927),
-		"type":"entrance"
+		"type":"ientrance"	
 	},
 	{
-		"id":"usdanCafe_e01",
+		"id":"usdanBoulevard_ie01",
+		"coordinate":new Point(42.368231, -71.256927),
+		"type":"ientrance"
+	},
+	{
+		"id":"usdanCafe_ie01",
 		"coordinate":new Point(42.368197, -71.256902),
-		"type":"entrance"
+		"type":"ientrance"
 	},	
 	{
-		"id":"cStore_e01",
+		"id":"cStore_ie01",
 		"coordinate":new Point(42.368205, -71.256710),
-		"type":"entrance"
+		"type":"ientrance"
 	},
 	{
-		"id":"usdanLouisDeli_e01",
+		"id":"usdanLouisDeli_ie01",
 		"coordinate":new Point(42.368084, -71.257230),
-		"type":"entrance"
+		"type":"ientrance"
  	},
+ 	{
+ 		"id":"usdan_ic01",
+ 		"coordinate":new Point(42.368173, -71.257227),
+ 		"type":"icrossing"
+ 	},
+  	{
+ 		"id":"gameRoom_ie01",
+ 		"coordinate":new Point(42.368222, -71.256862),
+ 		"type":"ientrance"
+ 	}
 	// {
 	// 	"id":"fieldhouse",
 	// 	"coordinate":new Point(),

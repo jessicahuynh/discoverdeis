@@ -12,7 +12,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":["domenics_e01"],
+		"entrances":["domenics_ie01"],
 	},
 	{
 		"id":"dd",
@@ -43,7 +43,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":["einstein_e01"],
+		"entrances":["einstein_ie01"],
 		"area":["lower campus"]
 	},
 	{
@@ -61,7 +61,7 @@ locations_rooms = [
 		"function":"Sherman is an all-you-can-eat dining hall and is the only integrated kosher cafeteria in the United States.",
 		"description":"Sherman Dining Hall is one of main dining facilities on campus. It is an all-you-care-to- eat buffet style option. Sherman is unique in that it is the only integrated kosher (Jewish dietary law) cafeteria in the country, where all students can eat together in the same place. Options include grilled foods, a sandwich station, a salad bar, pizza, a stir fry bar, omelet stations, a gluten free section, a crepe station, vegan and vegetarian options, as well as a large dessert selection. Furthermore, students can submit recipes from home and receive notice as to when these coveted meals will be served in Sherman.",
 		"category":["dining"],
-		"entrances":["shermandining_e01"],
+		"entrances":["shermandining_ie01"],
 		"area":["lower campus"]
 	},
 		{
@@ -77,7 +77,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":["starbucksHeller_e01"],
+		"entrances":["starbucksHeller_ie01"],
 		"area":["upper campus"]
 	},
 		{
@@ -93,7 +93,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":["starbucksLib_e01"],
+		"entrances":["starbucksLib_ie01"],
 		"area":["upper campus"]
 	},
 		{
@@ -109,7 +109,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":["peets_e01","peets_e02"],
+		"entrances":["peets_ie01","peets_ie02"],
 		"area":["upper campus","science complex"]
 	},
 		{
@@ -125,7 +125,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":["stein_e01"],
+		"entrances":["stein_ie01"],
 		"area":["lower campus"]
 	},
 	{
@@ -145,7 +145,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":["usdanBoulevard_e01"],
+		"entrances":["usdanBoulevard_ie01","usdan_e02","usdan_e03"],
 		"area":["upper campus"]
 	},
 	{
@@ -161,7 +161,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":["usdanCafe_e01"],
+		"entrances":["usdanCafe_ie01"],
 		"area":["upper campus"]
 	},	
 {
@@ -177,7 +177,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":["cStore_e01"],
+		"entrances":["cStore_ie01"],
 		"area":["upper campus"]
 	},
 {
@@ -193,7 +193,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":["usdanLouisDeli_e01"],
+		"entrances":["usdanLouisDeli_ie01"],
 		"area":["upper campus"]
  },
 	{
@@ -209,7 +209,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["offices"],
-		"entrances":["isso_e01"],
+		"entrances":["isso_ie01"],
 		"area":["upper campus"]
 	},
 	{
@@ -225,7 +225,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["offices"],
-		"entrances":["mail_e01"],
+		"entrances":["mail_ie01"],
 		"area":["upper campus"]
 	},
 	{
@@ -241,7 +241,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["offices"],
-		"entrances":["registrar_e01"],
+		"entrances":["registrar_ie01"],
 		"area":["upper campus"]
 	},
 	{
@@ -257,7 +257,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["student life"],
-		"entrances":["bookStore_e01"],
+		"entrances":["bookStore_ie01"],
 		"area":["lower campus"]
 	},
 	{
@@ -273,7 +273,23 @@ locations_rooms = [
 		"category":["athletics","student life"],
 		"entrances":[],
 		"area":["athletics","athletic complex"]
-	}
+	},
+	{
+		"id":"gameRoom",
+		"name":"Game Room",
+		"nickname":"Game Room",
+		"coordinates": [
+			new Point(42.368258, -71.256904), 
+			new Point(42.368212, -71.256794),
+			new Point(42.368305, -71.256773),
+			new Point(42.368327, -71.256899),
+			],
+		"function":"",
+		"description":"",
+		"category":["student life"],
+		"entrances":["gameRoom_ie01"],
+		"area":["upper campus"]
+	},
 ]
 
 function Point(x,y) {
