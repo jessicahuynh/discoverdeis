@@ -1,0 +1,163 @@
+paths_rooms = [
+	{
+		"start":"villiage_c03",
+		"end":"dd_e01",
+		"description":"Walk towards the door near the path, Dunkin' Donuts is right in front of you."
+	},
+	{
+		"start":"dd_e01",
+		"end":"villiage_c03",
+		"description":"Walk towards the crossing under the stairs."
+	},
+	{
+		"start":"einstein_e01",
+		"end":"scc_e01",
+		"description":"Exit Einstein. Turn slightly right and walk along the hall way. Exit SCC throught the door in front of you."
+	},
+	{
+		"start":"einstein_e01",
+		"end":"scc_e02",
+		"description":"Exit Einstein. Immediately turn right and go straight. Get out of SCC through the door in front of you."
+	},
+	{
+		"start":"einstein_e01",
+		"end":"scc_e03",
+		"description":"Exit Einstein. Immediately turn right and turn right again. Walk out through the door in front of you."
+	},
+	{
+		"start":"einstein_e01",
+		"end":"scc_e04",
+		"description":"Exit Einstein. Immediately turn left and exit through the door in front of you."
+	},
+	{
+		"start":"scc_e01",
+		"end":"einstein_e01",
+		"description":"Get into the green building(SCC), walk forward and turn slightly right. Einstein is near the lobby."
+	},
+	{
+		"start":"scc_e02",
+		"end":"einstein_e01",
+		"description":"Get into the green building(SCC), and walk forward. Einstein is on your left."
+	},
+	{
+		"start":"scc_e03",
+		"end":"einstein_e01",
+		"description":"Get into the green building(SCC), walk forward and turn left. Einstein is on your left near the lobby."
+	},
+	{
+		"start":"scc_e04",
+		"end":"einstein_e01",
+		"description":"Get into the green building(SCC). Einstein is on your right near the lobby."
+	},
+		{
+		"start":"farber_e01",
+		"end":"starbucksLib_e01",
+		"description":"Get into Farber Library. Starbucks is right in front of you."
+	},
+	{
+		"start":"farber_ie01",
+		"end":"starbucksLib_e01",
+		"description":"Turn to the left side of the stairs. Starbucks is right beside there."
+	},
+	{
+		"start":"starbucksLib_e01",
+		"end":"farber_e01",
+		"description":"?????????????????????????????????"
+	},
+	{
+		"start":"starbucksLib_e01",
+		"end":"farber_ie01",
+		"description":"?????????????????????????????????"
+	},
+	{
+		"start":"ssc_ic02",
+		"end":"peets_e01",
+		"description":"?????????????????????????????????"
+	},
+	{
+		"start":"scc_e04",
+		"end":"peets_e02",
+		"description":"?????????????????????????????????"
+	},
+	{
+		"start":"scc_e03",
+		"end":"peets_e02",
+		"description":"?????????????????????????????????"
+	},
+	{
+		"start":"shermanfunctionhall_e01",
+		"end":"stein_e01",
+		"description":"Get into the Sherman Function Hall and turn left. Walk along the hall way. The stein is on your right."
+	},
+	{
+		"start":"shermanfunctionhall_e02",
+		"end":"stein_e01",
+		"description":"Walk upstairs and immediately turn right. Walk along the hall way. The stein is on your right."
+	},
+	{
+		"start":"stein_e01",
+		"end":"shermanfunctionhall_e01",
+		"description":"Exit Stein and turn left. Walk down the stairs on your left."
+	},
+	{
+		"start":"stein_e01",
+		"end":"shermanfunctionhall_e02",
+		"description":"Exit Stein and turn left. Walk out from the door on your right."
+	},
+	{
+		"start":"einstein_e01",
+		"end":"bookStore_e01",
+		"description":"Walk deeper into Einstein. The book store is on your right."
+	},
+	{
+		"start":"bookStore_e01",
+		"end":"einstein_e01",
+		"description":"Exit book store. Go straight and turn left to exit Einstein."
+	},
+	{
+		"start":"kutz_e01",
+		"end":"isso_e01",
+		"description":"Get into Kutz Hall. Walk up the stairs on your left. The International Students and Scholar's Office is on your left."
+	},
+	{
+		"start":"isso_e01",
+		"end":"kutz_e01",
+		"description":"Get out of isso and walk down the stairs. Exit Kutz Hall through the door on your right."
+	},
+	{
+		"start":"kutz_e01",
+		"end":"registrar_e01",
+		"description":"Get into Kutz Hall. Turn right and walk along the hall way. Watch out, the registrar office is on your left."
+	},
+	{
+		"start":"kutz_e01",
+		"end":"register_e01",
+		"description":"Turn right to the hall way. Exit Kutz Hall through the door on your left."
+	},
+	{
+		"start":"shermanfunctionhall_e01",
+		"end":"shermandining_e01",
+		"description":"Get into the Sherman Function Hall. Walk downstairs and turn left."
+	},
+	{
+		"start":"shermanfunctionhall_e02",
+		"end":"shermandining_e01",
+		"description":"Get into the Sherman Function Hall and immediately turn right."
+	},
+	{
+		"start":"shermandining_e01",
+		"end":"shermanfunctionhall_e01",
+		"description":"Exit Sherman Dining Hall and turn right. Walk up throught the stairs on your right."
+	},
+	{
+		"start":"shermandining_e01",
+		"end":"shermanfunctionhall_e02",
+		"description":"Exit Sherman Dining Hall and turn right. Get out of the building through the door on your left."
+	},
+
+]
+
+function Point(x,y) {
+	this.x = x;
+	this.y = y;
+}

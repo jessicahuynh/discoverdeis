@@ -24,7 +24,7 @@ locations_rooms = [
 		"function":"Dunkin' sells donuts.",
 		"description": "",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["dd_e01"],
 		"area":["lower campus"]
 	},
 	{
@@ -40,7 +40,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["einstein_e01"],
 		"area":["lower campus"]
 	},
 // 	{
@@ -86,7 +86,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":[""],
 		"area":["upper campus"]
 	},
 		{
@@ -102,7 +102,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["starbucksLib_e01"],
 		"area":["upper campus"]
 	},
 		{
@@ -118,7 +118,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["peets_e01","peets_e02"],
 		"area":["upper campus","science complex"]
 	},
 		{
@@ -134,7 +134,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["stein_e01"],
 		"area":["lower campus"]
 	},
 	{
@@ -218,7 +218,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["offices"],
-		"entrances":[],
+		"entrances":["isso_e01"],
 		"area":["upper campus"]
 	},
 	{
@@ -250,7 +250,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["offices"],
-		"entrances":[],
+		"entrances":["registrar_e01"],
 		"area":["upper campus"]
 	},
 	{
@@ -266,7 +266,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["student life"],
-		"entrances":[],
+		"entrances":["bookStore_e01"],
 		"area":["lower campus"]
 	},
 	{

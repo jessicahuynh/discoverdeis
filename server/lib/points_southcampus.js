@@ -101,6 +101,11 @@ points_southcampus = [
     "type": "crossing",
 },
 {
+    "id":"scc_e04",
+    "coordinate":new Point(42.365784, -71.260279),
+    "type":"entrance"
+}
+{
     "id": "facultycenter_e01",
     "coordinate":new Point(42.365761, -71.260940),
     "type": "entrance",
