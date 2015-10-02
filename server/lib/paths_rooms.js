@@ -240,7 +240,7 @@ paths_rooms = [
 		"description":"Walk upstairs for one floor. Get out of the building."
 	},
 
-	////////////////////////////
+	//routes in side usdan
 	{
 		"start":"usdan_e02",
 		"end":"usdan_ic01",

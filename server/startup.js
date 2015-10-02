@@ -1,7 +1,7 @@
 Meteor.startup(function() {
 	if (Locations.find().count() == 0) {
 		// list of all of the files containing location data
-		var locFiles = [locations,locations_artinstallations,locations_dorms,locations_parking,locations_transport,locations_rooms];
+		var locFiles = [locations_admission,locations_arts,locations_athletics,locations_dorms,locations_east,locations_ibs,locations_mandelHellerLibrary,locations_massellChapels,locations_oldSt,locations_parking,locations_presidential,locations_scienceComplex,locations_transport,locations_usdan,locations_artinstallations,locations_rooms];
 		
 		locFiles.forEach(function(locFile) {
 			locFile.forEach(function(location) {
