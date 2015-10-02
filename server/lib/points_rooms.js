@@ -61,7 +61,7 @@ points_rooms = [
 	},
 	{
 		"id":"bookStore_ie01",
-		"coordinate":new Point(42.368231, -71.256927),
+		"coordinate":new Point(42.365687, -71.260403),
 		"type":"ientrance"	
 	},
 	{
