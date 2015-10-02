@@ -145,7 +145,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["usdanBoulevard_e01"],
 		"area":["upper campus"]
 	},
 	{
@@ -161,7 +161,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["usdanCafe_e01"],
 		"area":["upper campus"]
 	},	
 {
@@ -177,7 +177,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["cStore_e01"],
 		"area":["upper campus"]
 	},
 {
@@ -193,7 +193,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["usdanLouisDeli_e01"],
 		"area":["upper campus"]
  },
 	{
@@ -271,6 +271,7 @@ locations_rooms = [
 		"function":"The Fieldhouse is home to Brandeis basketball and volleyball. Many events, such as graduation, are held here as well.",
 		"description":"",
 		"category":["athletics","student life"],
+		"entrances":[],
 		"area":["athletics","athletic complex"]
 	}
 ]

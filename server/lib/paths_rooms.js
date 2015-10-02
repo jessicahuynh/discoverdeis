@@ -234,16 +234,16 @@ paths_rooms = [
 		"end":"mail_e01",
 		"description":"Walk downstairs and turn left. Walk along the hall way. Go past the dining area to lower Usdan. Continue walking past the Hoot Market and go through the inner door. The mail room is on your left."
 	},
-	{
-		"start":"mail_e01",
-		"end":"usdan_e02",
-		"description":"Exit mail room and turn right. Walk through the door and keep going on the hall way all the way down to the end. Then go up through the stairs on the left."
-	},
-	{
-		"start":"mail_e01",
-		"end":"usdan_e03",
-		"description":"Exit mail room and turn right. Walk through the door and keep going on the hall way all the way down to the end. Then go up through the stairs on the right."
-	},
+	// {
+	// 	"start":"mail_e01",
+	// 	"end":"usdan_e02",
+	// 	"description":"Exit mail room and turn right. Walk through the door and keep going on the hall way all the way down to the end. Then go up through the stairs on the left."
+	// },
+	// {
+	// 	"start":"mail_e01",
+	// 	"end":"usdan_e03",
+	// 	"description":"Exit mail room and turn right. Walk through the door and keep going on the hall way all the way down to the end. Then go up through the stairs on the right."
+	// },
 	// {
 	// 	"start":"",
 	// 	"end":"",

@@ -22,6 +22,46 @@ paths_gym = [
 	},
 	// fields and stuff
 	{
+		"start":"athleticslot_e01",
+		"end":"athleticslot_e03",
+		"description":"Walk halfway across the parking lot, to where the parking lot meets the path leading down to the fields."
+	},
+	{
+		"start":"athleticslot_e03",
+		"end":"athleticslot_e01",
+		"description":"Cut across the parking lot to the road that leads out to South Street."
+	},
+	{
+		"start":"athleticslot_e02",
+		"end":"athleticslot_e03",
+		"description":"Walk halfway across the parking lot, to where the parking lot meets the path leading down to the fields."
+	},
+	{
+		"start":"athleticslot_e03",
+		"end":"athleticslot_e02",
+		"description":"Cut across the parking lot towards Lemberg and the track, away from Gosman."
+	},
+	{
+		"start":"athleticslot_e02",
+		"end":"gordonfield_e01",
+		"description":"Head along the sidewalk, between the baseball field and track."
+	},
+	{
+		"start":"gordonfield_e01",
+		"end":"athleticslot_e02",
+		"description":"Exit the track and take the sidewalk left, towards the parking lot."
+	},
+	{
+		"start":"athleticslot_e03",
+		"end":"gordonfield_e01",
+		"description":"Walk down the path towards the track."
+	},
+	{
+		"start":"gordonfield_e01",
+		"end":"athleticslot_e03",
+		"description":"Walk up the sidewalk towards the parking lot."
+	},
+	{
 		"start":"athleticslot_e02",
 		"end":"gordonfield_e02",
 		"description":"Facing the track, take the rightmost concrete sidewalk."
@@ -41,6 +81,69 @@ paths_gym = [
 		"end":"gordonfield_e02",
 		"description":"Head straight up the track to the other side."
 	},
+	{
+		"start":"gordonfield_e01",
+		"end":"gordonfield_e02",
+		"description":"Walk around the curve of the track to the gate on the other side."
+	},
+	{
+		"start":"gordonfield_e02",
+		"end":"gordonfield_e01",
+		"description":"Walk around the curve of the track to the gate on the other side."
+	},
+	{
+		"start":"athleticslot_e03",
+		"end":"steindiamond_e02",
+		"description":"Walk down the path and onto the grass to the baseball field."
+	},
+	{
+		"start":"steindiamond_e02",
+		"end":"athleticslot_e03",
+		"description":"Climb up the small hill and onto the path to the parking lot."
+	},
+	{
+		"start":"athleticslot_e03",
+		"end":"marcusfield_e01",
+		"description":"Walk down the path and then onto the grass between the baseball field and track until you reach the softball field in the back."
+	},
+	{
+		"start":"marcusfield_e01",
+		"end":"athleticslot_e03",
+		"description":"Walk along the grass between the baseball field and the track until you reach the parking lot next to South Street."
+	},
+	{
+		"start":"gosman_c02",
+		"end":"marcusfield_e02",
+		"description":"Cut through the back parking lot and walk along the path until you reach the softball field."
+	},
+	{
+		"start":"marcusfield_e02",
+		"end":"gosman_c02",
+		"description":"Take the sidewalk behind the baseball field until you reach the main road behind Gosman next to the tennis courts."
+	},
+	{
+		"start":"marcusfield_e01",
+		"end":"gordonfield_e01",
+		"description":"Walk along the edge of the track and enter the gate on your left."
+	},
+	{
+		"start":"gordonfield_e01",
+		"end":"marcusfield_e01",
+		"description":"Exit the track and turn right, following the edge of the track until you reach the softball field."
+	},
+	
+	{
+		"start":"marcusfield_e01",
+		"end":"marcusfield_e02",
+		"description":"Cut across the softball field."
+	},
+	{
+		"start":"marcusfield_e02",
+		"end":"marcusfield_e01",
+		"description":"Cut across the softball field."
+	},
+	
+	//connecting fields to lemberg
 	{
 		"start":"gordonfield_e03",
 		"end":"lemberg_c02",
@@ -279,6 +382,36 @@ paths_gym = [
 		"description":"Walk down the stairs to the crosswalk."
 	},
 	// mods
+	{
+		"start":"linsey_c04",
+		"end":"uppermods_c01",
+		"description":"Take the small set of stairs down to the Upper Mods."
+	},
+	{
+		"start":"uppermods_c01",
+		"end":"linsey_c04",
+		"description":"Take the set of stairs up to South Street."
+	},
+	{
+		"start":"uppermods_c01",
+		"end":"linsey_c03",
+		"description":"Walk down to the main road."
+	},
+	{
+		"start":"linsey_c03",
+		"end":"uppermods_c01",
+		"description":"Head past the recycling and trash dumpsters to the gravel path."
+	},
+	{
+		"start":"uppermods_c01",
+		"end":'uppermods_e01',
+		"description":"Turn left towards the Upper Mods."
+	},
+	{
+		"start":"uppermods_e01",
+		"end":"uppermods_c01",
+		"description":"Turn right onto the gravel path."
+	},
 	{
 		"start":"linsey_c03",
 		"end":"uppermods_e01",

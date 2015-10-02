@@ -44,26 +44,6 @@ locations_rooms = [
 		"coordinate":new Point(42.366539, -71.260597),
 		"type":"entrance"	
 	},
-	// {
-	// 	"id":"usdanBoulevard",
-	// 	"coordinate":new Point(),
-	// 	"type":"entrance"
-	// },
-	// {
-	// 	"id":"usdanCafe",
-	// 	"coordinate":new Point(),
-	// 	"type":"entrance"
-	// },	
-	// {
-	// 	"id":"cStore",
-	// 	"coordinate":new Point(),
-	// 	"type":"entrance"
-	// },
-	// {
-	// 	"id":"usdanLouisDeli",
-	// 	"coordinate":new Point(),
-	// 	"type":"entrance"
- // 	},
 	{
 		"id":"isso_e01",
 		"coordinate":new Point(42.369068, -71.256097),
@@ -84,6 +64,26 @@ locations_rooms = [
 		"coordinate":new Point(42.366575, -71.260783),
 		"type":"entrance"	
 	},
+	{
+		"id":"usdanBoulevard_e01",
+		"coordinate":new Point(42.368231, -71.256927),
+		"type":"entrance"
+	},
+	{
+		"id":"usdanCafe_e01",
+		"coordinate":new Point(42.368197, -71.256902),
+		"type":"entrance"
+	},	
+	{
+		"id":"cStore_e01",
+		"coordinate":new Point(42.368205, -71.256710),
+		"type":"entrance"
+	},
+	{
+		"id":"usdanLouisDeli_e01",
+		"coordinate":new Point(42.368084, -71.257230),
+		"type":"entrance"
+ 	},
 	// {
 	// 	"id":"fieldhouse",
 	// 	"coordinate":new Point(),
