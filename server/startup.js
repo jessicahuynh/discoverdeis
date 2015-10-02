@@ -29,7 +29,8 @@ Meteor.startup(function() {
 			points_east,
 			points_grad,
 			points_ibs,
-			points_bernstein
+			points_bernstein,
+			points_rooms
 		];
 
 		
@@ -54,7 +55,8 @@ Meteor.startup(function() {
 			paths_usdan,
 			paths_grad,
 			paths_ibs,
-			paths_bernstein
+			paths_bernstein,
+			paths_rooms
 		];
 		
 		pathFiles.forEach(function(pathFile) {
