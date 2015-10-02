@@ -1,7 +1,24 @@
 Meteor.startup(function() {
 	if (Locations.find().count() == 0) {
 		// list of all of the files containing location data
-		var locFiles = [locations,locations_artinstallations,locations_dorms,locations_parking,locations_transport,locations_rooms];
+		var locFiles = [
+			locations_admission,
+			locations_arts,
+			locations_athletics,
+			locations_dorms,
+			locations_east,
+			locations_ibs,
+			locations_mandelHellerLibrary,
+			locations_massellChapels,
+			locations_oldSt,
+			locations_parking,
+			locations_presidential,
+			locations_scienceComplex,
+			locations_transport,
+			locations_usdan,
+			locations_artinstallations,
+			locations_rooms
+		];
 		
 		locFiles.forEach(function(locFile) {
 			locFile.forEach(function(location) {
@@ -16,7 +33,24 @@ Meteor.startup(function() {
 	}
 	
 	if (Intersections.find().count() == 0) {
-		var intersectFiles = [points_massellchapels,points_southcampus,points_gym,points_admin, points_science,points_northrabb,points_mandelquad,points_libraryeast,points_grad,points_ibs,points_bernstein];
+		var intersectFiles = [
+			points_centralCampus,
+			points_lowerDorms.js
+			points_massellchapels,
+			points_southcampus,
+			points_gym,
+			points_admin, 
+			points_science,
+			points_northrabb,
+			points_mandelquad,
+			points_library,
+			points_usdan,
+			points_east,
+			points_grad,
+			points_ibs,
+			points_rooms
+		];
+
 		
 		intersectFiles.forEach(function(intersectFile) {
 			intersectFile.forEach(function(point) {
@@ -26,7 +60,22 @@ Meteor.startup(function() {
 	}
 	
 	if (Paths.find().count() == 0) {
-		var pathFiles = [paths_massellchapels,paths_southcampus,paths_gym,paths_admin, paths_science,paths_northrabb,paths_mandelquad,paths_libraryeast,paths_grad,paths_ibs];
+		var pathFiles = [
+			paths_massellchapels, 
+			paths_southcampus,	
+			paths_gym,
+			paths_admin, 
+			paths_science,
+			paths_northrabb,
+			paths_mandelquad,
+			paths_library,
+			paths_east,
+			paths_usdan,
+			paths_grad,
+			paths_ibs,
+			paths_bernstein,
+			paths_rooms
+		];
 		
 		pathFiles.forEach(function(pathFile) {
 			pathFile.forEach(function(path) {

@@ -25,6 +25,11 @@ points_gym = [
 		"getTo":"Head to the road leading out of the Upper Mods."
 	},
 	{
+		"id":"uppermods_c01",
+		"coordinate":new Point(42.365980, -71.254080),
+		"type":"crossing"
+	},
+	{
 		"id":"lowermods_e01",
 		"coordinate":new Point(42.365694, -71.253384),
 		"type":"entrance",
@@ -182,6 +187,11 @@ points_gym = [
 	{
 		"id":"athleticslot_e02", //next to gordon field
 		"coordinate":new Point(42.364224, -71.257695),
+		"type":"entrance"
+	},
+	{
+		"id":"athleticslot_e03", // path
+		"coordinate":new Point(42.364568, -71.256865),
 		"type":"entrance"
 	},
 
@@ -352,7 +362,18 @@ points_gym = [
 		"id":"mainentrance_c05",
 		"coordinate":new Point(42.364971, -71.258734),
 		"type":"crossing"
-	}
+	},
+	//health
+	{
+	    "id": "mailman_c01",
+	    "coordinate":new Point(42.365743, -71.256094),
+	    "type": "crossing",
+	},
+	{
+	    "id":"stonemanlot_e01",
+	    "coordinate":new Point(42.366425, -71.254895),
+	    "type":"entrance"
+	},
 
 ]
 

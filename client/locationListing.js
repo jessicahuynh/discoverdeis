@@ -1,6 +1,6 @@
 Template.locationListing.helpers({
 	locationId:function() {
-		return this._id;
+		return this.id;
 	},
 	status:function() {
 		var thisId = this._id;
@@ -48,7 +48,7 @@ Template.locationListing.helpers({
 
 Template.locationListing.events({
 	'click a.go-to-location':function(event) {
-		Session.setPersistent("viewLocation",this._id);
+		Session.setPersistent("viewLocation",this.id);
 		Session.set("prev",Router.current().route.path());
 	},
 	'click a.go-to-navigate':function(event) {

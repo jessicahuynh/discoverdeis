@@ -1,16 +1,19 @@
 locations_rooms = [
-// 	{
-// 		"id":"domenics",
-// 		"name":"Domenic's",
-// 		"nickname":"domenics",
-// 		"coordinates": [
-// 			new Point(), 
-// 			],
-// 		"function":"",
-// 		"description":"",
-// 		"category":["dining"],
-// 		"entrances":[],
-// 	},
+	{
+		"id":"domenics",
+		"name":"Domenic's",
+		"nickname":"domenics",
+		"coordinates": [
+			new Point(42.364534, -71.264081),
+			new Point(42.364606, -71.264116),
+			new Point(42.364636, -71.264204),
+			new Point(42.364544, -71.264203) 
+			],
+		"function":"",
+		"description":"",
+		"category":["dining"],
+		"entrances":["domenics_ie01"],
+	},
 	{
 		"id":"dd",
 		"name":"Dunkin' Donuts",
@@ -24,7 +27,7 @@ locations_rooms = [
 		"function":"Dunkin' sells donuts.",
 		"description": "",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["dd_e01"],
 		"area":["lower campus"]
 	},
 	{
@@ -40,21 +43,9 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["einstein_ie01"],
 		"area":["lower campus"]
 	},
-// 	{
-// 		"id":"facultyclub",
-// 		"name":"Faculty Club",
-// 		"nickname":"faculty club",
-// 		"coordinates": [
-// 			new Point(), 
-// 			],
-// 		"function":"",
-// 		"description":"",
-// 		"category":["dining"],
-// 		"entrances":[],
-// 	},
 	{
 		"id":"shermandining",
 		"name":"Sherman Dining Hall",
@@ -70,7 +61,7 @@ locations_rooms = [
 		"function":"Sherman is an all-you-can-eat dining hall and is the only integrated kosher cafeteria in the United States.",
 		"description":"Sherman Dining Hall is one of main dining facilities on campus. It is an all-you-care-to- eat buffet style option. Sherman is unique in that it is the only integrated kosher (Jewish dietary law) cafeteria in the country, where all students can eat together in the same place. Options include grilled foods, a sandwich station, a salad bar, pizza, a stir fry bar, omelet stations, a gluten free section, a crepe station, vegan and vegetarian options, as well as a large dessert selection. Furthermore, students can submit recipes from home and receive notice as to when these coveted meals will be served in Sherman.",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["shermandining_ie01"],
 		"area":["lower campus"]
 	},
 		{
@@ -86,7 +77,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["starbucksHeller_ie01"],
 		"area":["upper campus"]
 	},
 		{
@@ -102,7 +93,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["starbucksLib_ie01"],
 		"area":["upper campus"]
 	},
 		{
@@ -118,7 +109,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["peets_ie01","peets_ie02"],
 		"area":["upper campus","science complex"]
 	},
 		{
@@ -134,7 +125,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["stein_ie01"],
 		"area":["lower campus"]
 	},
 	{
@@ -154,7 +145,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["usdanBoulevard_ie01","usdan_e02","usdan_e03"],
 		"area":["upper campus"]
 	},
 	{
@@ -170,7 +161,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["usdanCafe_ie01"],
 		"area":["upper campus"]
 	},	
 {
@@ -186,7 +177,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["cStore_ie01"],
 		"area":["upper campus"]
 	},
 {
@@ -202,7 +193,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["dining"],
-		"entrances":[],
+		"entrances":["usdanLouisDeli_ie01"],
 		"area":["upper campus"]
  },
 	{
@@ -218,7 +209,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["offices"],
-		"entrances":[],
+		"entrances":["isso_ie01"],
 		"area":["upper campus"]
 	},
 	{
@@ -234,7 +225,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["offices"],
-		"entrances":[],
+		"entrances":["mail_ie01"],
 		"area":["upper campus"]
 	},
 	{
@@ -250,7 +241,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["offices"],
-		"entrances":[],
+		"entrances":["registrar_ie01"],
 		"area":["upper campus"]
 	},
 	{
@@ -266,7 +257,7 @@ locations_rooms = [
 		"function":"",
 		"description":"",
 		"category":["student life"],
-		"entrances":[],
+		"entrances":["bookStore_ie01"],
 		"area":["lower campus"]
 	},
 	{
@@ -280,8 +271,25 @@ locations_rooms = [
 		"function":"The Fieldhouse is home to Brandeis basketball and volleyball. Many events, such as graduation, are held here as well.",
 		"description":"",
 		"category":["athletics","student life"],
+		"entrances":[],
 		"area":["athletics","athletic complex"]
-	}
+	},
+	{
+		"id":"gameRoom",
+		"name":"Game Room",
+		"nickname":"Game Room",
+		"coordinates": [
+			new Point(42.368258, -71.256904), 
+			new Point(42.368212, -71.256794),
+			new Point(42.368305, -71.256773),
+			new Point(42.368327, -71.256899),
+			],
+		"function":"",
+		"description":"",
+		"category":["student life"],
+		"entrances":["gameRoom_ie01"],
+		"area":["upper campus"]
+	},
 ]
 
 function Point(x,y) {
