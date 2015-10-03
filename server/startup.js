@@ -35,7 +35,7 @@ Meteor.startup(function() {
 	if (Intersections.find().count() == 0) {
 		var intersectFiles = [
 			points_centralCampus,
-			points_lowerDorms.js
+			points_lowerDorms,
 			points_massellchapels,
 			points_southcampus,
 			points_gym,
