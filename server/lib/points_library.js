@@ -50,6 +50,37 @@ points_library = [
 	    "id": "library_c05",
 	    "coordinate":new Point(42.367712, -71.257475),
 	    "type": "crossing",
+	},
+	///for library hidden path
+	{
+	    "id": "library_c06",
+	    "coordinate":new Point(42.368664, -71.257593),
+	    "type": "crossing",
+	},
+	{
+	    "id": "library_c07",
+	    "coordinate":new Point(42.368089, -71.257799),
+	    "type": "crossing",
+	},
+	{
+	    "id": "library_c08",
+	    "coordinate":new Point(42.368031, -71.257820),
+	    "type": "crossing",
+	},
+	{
+	    "id": "library_c09",
+	    "coordinate":new Point(42.368039, -71.257820),
+	    "type": "crossing",
+	},
+	{
+	    "id": "library_c10",
+	    "coordinate":new Point(42.367809, -71.257961),
+	    "type": "crossing",
+	},
+	{
+	    "id": "librarylot_e02",
+	    "coordinate":new Point(42.368853, -71.257698),
+	    "type": "entrance",
 	}
 
 ]
