@@ -264,6 +264,23 @@ locations_parking = [
 		"area":["upper campus"]
 	},
 
+	{
+		"id":"southresidenceparking",
+		"name":"South Residence Parking Lot",
+		"nickname":"South Residence lot",
+		"coordinates":[
+			new Point(42.363529, -71.262857),
+			new Point(42.363089, -71.263212),
+			new Point(42.362842, -71.262506),
+			new Point(42.363140, -71.261921),
+			new Point(42.363258, -71.261857),
+		],
+		"category":["parking"],
+		"nearby":["ridgewoodB,zivB,zivA,lemberg"],
+		"entrances":[],
+		"area":["lower campus"]
+	},
+
 ]
 
 function Point(x,y) {

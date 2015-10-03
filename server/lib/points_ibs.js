@@ -65,13 +65,13 @@ points_ibs=[
 		"type":"entrance"
 	},
 	{
-		"id":"theaterlot_e05",
+		"id":"southlot_e01",
 		"coordinate":new Point(42.363017, -71.263217),
 		"type":"entrance"
 	},
 	{
-		"id":"theaterlot_e06",
-		"coordinate":new Point(42.363412, -71.262456),
+		"id":"southlot_e02",
+		"coordinate":new Point(42.363203, -71.261777),
 		"type":"entrance"
 	},
 
@@ -110,6 +110,20 @@ points_ibs=[
 		"coordinate":new Point(42.364519, -71.262828),
 		"type":"crossing"
 	},
+
+	//Added by Dewar
+	{
+		"id":"southlot_c01",
+		"coordinate":new Point(42.362438, -71.263005),
+		"type":"crossing"
+	},
+
+	{
+		"id":"theaterlot_c02",
+		"coordinate":new Point(42.363335, -71.263346),
+		"type":"crossing"
+	}
+
 
 ]
 

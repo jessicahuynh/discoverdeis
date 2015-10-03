@@ -38,6 +38,7 @@
 </div>
 
 
+
 <div class="row">
 	<div class="col-sm-8">
 		<p>{{function}}</p>
@@ -46,6 +47,10 @@
 	<div class="col-sm-4">
 		<div class="go-to-navigate desktopGo">
 			<a href="{{pathFor 'graph'}}"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Go</a>
+		</div>
+		<div class="go-to-navigate desktopGo">
+			<a href="mailto:?subject=Come Join me at Brandeis University! &amp;body=You can find me here at {{name}} %0D%0A %0D%0A {{currentSiteShare}}"
+   title="Share by Email"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Share</a>
 		</div>
 		{{> hours}}
 	</div>

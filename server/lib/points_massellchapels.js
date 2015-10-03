@@ -1,20 +1,4 @@
 points_massellchapels = [
-	// {
-	// 	"id":"building_e01",
-	// 	"coordinate":new Point(),
-	// 	"type":"entrance"
-	// },
-	// {
-	// 	"id":"buildingid_c01",
-	// 	"coordinate":new Point(),
-	// 	"type":"crossing"
-	// },
-	// {
-	// 	"id":"buildingid_i01",
-	// 	"coordinate":new Point(),
-	// 	"type":"inside"
-	// },
-
 	{
 		"id":"chapelsfield_c01",
 		"coordinate":new Point(42.367309, -71.259245),
