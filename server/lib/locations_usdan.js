@@ -41,6 +41,7 @@ locations_usdan = [
 			new Point(42.367728, -71.257779), 
 			new Point(42.367751, -71.257513),],
 		"category":["landscape","art"],
+		"entrances":["mandelpeacegarden_e01","mandelpeacegarden_e02",],
 		"area":["upper campus"]
 	},
 

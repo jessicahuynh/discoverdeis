@@ -72,16 +72,6 @@ paths_mandelquad = [
 	    "description": "Walk along the road to the cossing",
 	},
     {
-	    "start":"heller_c03",
-	    "end":"heller_c04",
-	    "description": "Walk along the road to the cossing",
-	},
-    {
-	    "start":"heller_c04",
-	    "end":"heller_c03",
-	    "description": "Walk along the road",
-	},
-    {
 	    "start":"heller_c05",
 	    "end":"heller_c06",
 	    "description": "Go straight and follow the road and you reach the deep part of the parking lot",
@@ -90,6 +80,16 @@ paths_mandelquad = [
 	    "start":"heller_c06",
 	    "end":"heller_c05",
 	    "description": "follow the road and you watch for the little road on your right",
+	},
+	{
+	    "start":"heller_c05",
+	    "end":"schneider_e03",
+	    "description": "Go up the stairs, and enter the building ahead.",
+	},
+	{
+	    "start":"schneider_e03",
+	    "end":"heller_c05",
+	    "description": "Go down the stairs.",
 	},
     {
 	    "start":"heller_c03",
@@ -330,23 +330,63 @@ paths_mandelquad = [
 	},
 	{
 	    "start":"mandel_c01",
+	    "end":"heller_c03",
+	    "description": "Walk along the path until you see a pedestrian cross.",
+	},
+	{
+	    "start":"heller_c03",
+	    "end":"mandel_c01",
+	    "description": "Walk along the path, then cross the street.",
+	},
+	{
+	    "start":"mandel_c01",
+	    "end":"heller_c03",
+	    "description": "Cross the street.",
+	},
+	{
+	    "start":"abraham_c01",
+	    "end":"heller_c03",
+	    "description": "Cross the street.",
+	},
+	{
+	    "start":"abraham_c01",
 	    "end":"abraham_e01",
-	    "description": "Walk straight until you are at a small intersection. Take the path on your right and continue ahead. You should see the entrance to Abraham Shapiro Academic Complex straight ahead.",
+	    "description": "Walk up the steps. The entrance to Abraham Shapiro Academic Complex is straight ahead.",
 	},
 	{
 	    "start":"abraham_e01",
-	    "end":"mandelJewish_e01",
-	    "description": "Walk straight until you are at a crossroads on the large road.",
+	    "end":"abraham_c01",
+	    "description": "Go down the steps.",
 	},
 	{
 	    "start":"mandelJewish_e01",
+	    "end":"mandelJewish_c01",
+	    "description": "Cross the road ahead.",
+	},
+	{
+	    "start":"mandelJewish_c01",
+	    "end":"mandelJewish_e01",
+	    "description": "When you see the pedestrian cross, cross the road and walk straight to enter Mandel Center for Studies in Jewish Education.",
+	},
+	{
+	    "start":"mandelJewish_c01",
+	    "end":"schneider_c01",
+	    "description": "Walk towards the crossroads of small paths.",
+	},
+	{
+	    "start":"schneider_c01",
 	    "end":"schneider_e01",
-	    "description": "Cross the road and walk straight.",
+	    "description": "Turn towards the building on your right and walk towards the double doors to enter The Schneider Building.",
 	},
 	{
 	    "start":"schneider_e01",
-	    "end":"mandelJewish_e01",
-	    "description": "Cross the road and walk straight.",
+	    "end":"schneider_c01",
+	    "description": "Walk towards the crossroads of small paths nearest to your left.",
+	},
+	{
+	    "start":"schneider_c01",
+	    "end":"mandelJewish_c01",
+	    "description": "Walk along the path.",
 	},
 	{
 	    "start":"heller_c03",
@@ -357,6 +397,46 @@ paths_mandelquad = [
 	    "start":"mandel_c01",
 	    "end":"heller_c03",
 	    "description": "Walk along the left path.",
+	},
+	{
+	    "start":"heller_c03",
+	    "end":"schneider_c01",
+	    "description": "Go along the Loop Road.",
+	},
+	{
+	    "start":"schneider_c01",
+	    "end":"heller_c03",
+	    "description": "Go along the Loop Road.",
+	},
+	{
+	    "start":"mandelJewish_c01",
+	    "end":"heller_c04",
+	    "description": "Continue on the Loop Road.",
+	},
+	{
+	    "start":"heller_c04",
+	    "end":"mandelJewish_c01",
+	    "description": "Go along the Loop Road, passing the parking lot on your right.",
+	},
+	{
+	    "start":"heller_c04",
+	    "end":"hellerparkinglot_e02",
+	    "description": "To enter the Heller Parking lot, make a left turn.",
+	},
+	{
+	    "start":"hellerparkinglot_e02",
+	    "end":"heller_c04",
+	    "description": "Go towards the path to continue on Loop Road.",
+	},
+	{
+	    "start":"hellerparkinglot_e01",
+	    "end":"heller_c05",
+	    "description": "Walk straight.",
+	},
+	{
+	    "start":"heller_c05",
+	    "end":"hellerparkinglot_e01",
+	    "description": "Walk straight to enter Heller Parking Lot.",
 	},
 	//////
 

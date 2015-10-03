@@ -101,6 +101,16 @@ points_usdan = [
 		"id":"usdan_e03",
 		"coordinate":new Point(42.368267, -71.257278),
 		"type":"entrance"
+	},
+	{
+	    "id": "mandelpeacegarden_e01",
+	    "coordinate":new Point(42.367781, -71.257699),
+	    "type": "entrance",
+	},
+	{
+	    "id": "mandelpeacegarden_e02",
+	    "coordinate":new Point(42.367747, -71.257673),
+	    "type": "entrance",
 	}
 ]
 function Point(x,y) {

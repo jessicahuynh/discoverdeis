@@ -260,7 +260,7 @@ locations_parking = [
 		],
 		"category":["parking"],
 		"nearby":["schneider","harlan"],
-		"entrances":[],
+		"entrances":["hellerparkinglot_e01", "hellerparkinglot_e02"],
 		"area":["upper campus"]
 	},
 

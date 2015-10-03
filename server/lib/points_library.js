@@ -50,7 +50,7 @@ points_library = [
 	    "id": "library_c05",
 	    "coordinate":new Point(42.367712, -71.257475),
 	    "type": "crossing",
-	},
+	}
 
 ]
 

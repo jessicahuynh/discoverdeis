@@ -5,6 +5,11 @@ points_mandelquad = [
 	    "type": "entrance",
 	},
 	{
+		"id":"heller_e02",
+		"coordinate":new Point(42.369275, -71.258761),
+		"type":"entrance"
+	},
+	{
 	    "id": "heller_c01",
 	    "coordinate":new Point(42.369217, -71.258240),
 	    "type": "crossing",
@@ -18,23 +23,6 @@ points_mandelquad = [
 	    "id": "heller_c03",
 	    "coordinate":new Point(42.369563, -71.258777),
 	    "type": "crossing",
-	},
-	
-	//
-	{
-		"id":"schneider_e01",
-		"coordinate":new Point(42.369297, -71.259199),
-		"type":"entrance"
-	},
-	{
-		"id":"heller_e02",
-		"coordinate":new Point(42.369275, -71.258761),
-		"type":"entrance"
-	},
-    {
-		"id":"schneider_e02",
-		"coordinate":new Point(42.369234, -71.259373),
-		"type":"entrance"
 	},
     {
 		"id":"heller_c04",
@@ -51,6 +39,69 @@ points_mandelquad = [
 		"coordinate":new Point(42.368122, -71.258582),
 		"type":"crossing"
 	},
+	{
+		"id":"hellerparkinglot_e01",
+		"coordinate":new Point(42.369066, -71.259993),
+		"type":"entrance"
+	},
+	{
+		"id":"hellerparkinglot_e02",
+		"coordinate":new Point(42.369239, -71.260532),
+		"type":"entrance"
+	},
+	
+	//
+	{
+		"id":"abraham_e01",
+		"coordinate":new Point(42.369650, -71.259241),
+		"type":"entrance"
+	},
+	{
+		"id":"abraham_c01",
+		"coordinate":new Point(42.369614, -71.258906),
+		"type":"crossing"
+	},
+	{
+		"id":"mandelJewish_e01",
+		"coordinate":new Point(42.369592, -71.259345),
+		"type":"entrance"
+	},
+	{
+		"id":"mandelJewish_c01",
+		"coordinate":new Point(42.369464, -71.259302),
+		"type":"crossing"
+	},
+	{
+		"id":"towerlot_e01",
+		"coordinate":new Point(42.369904, -71.258679),
+		"type":"entrance"
+	},
+	{
+		"id":"towerlot_e02",
+		"coordinate":new Point(42.369990, -71.258506),
+		"type":"entrance"
+	},
+	{
+		"id":"schneider_e01",
+		"coordinate":new Point(42.369297, -71.259199),
+		"type":"entrance"
+	},
+	{
+		"id":"schneider_e02",
+		"coordinate":new Point(42.369234, -71.259373),
+		"type":"entrance"
+	},
+	{
+		"id":"schneider_e03",
+		"coordinate":new Point(42.369187, -71.259692),
+		"type":"entrance"
+	},
+	{
+		"id":"schneider_c01",
+		"coordinate":new Point(42.369501, -71.259162),
+		"type":"crossing"
+	},
+	
 	//
 
 	{

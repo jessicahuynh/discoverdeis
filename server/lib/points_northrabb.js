@@ -105,36 +105,6 @@ points_northrabb = [
 		"type":"crossing"
 	},
 	{
-		"id":"abraham_e01",
-		"coordinate":new Point(42.369650, -71.259241),
-		"type":"entrance"
-	},
-	{
-		"id":"mandelJewish_e01",
-		"coordinate":new Point(42.369592, -71.259345),
-		"type":"entrance"
-	},
-	{
-		"id":"schneider_e01",
-		"coordinate":new Point(42.369297, -71.259199),
-		"type":"entrance"
-	},
-	{
-		"id":"heller_e02",
-		"coordinate":new Point(42.369275, -71.258761),
-		"type":"entrance"
-	},
-	{
-		"id":"towerlot_e01",
-		"coordinate":new Point(42.369904, -71.258679),
-		"type":"entrance"
-	},
-	{
-		"id":"towerlot_e02",
-		"coordinate":new Point(42.369990, -71.258506),
-		"type":"entrance"
-	},
-	{
 		"id":"kutzlot_e01",
 		"coordinate":new Point(42.368793, -71.256466),
 		"type":"entrance"
