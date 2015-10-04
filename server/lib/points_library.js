@@ -78,6 +78,11 @@ points_library = [
 	    "type": "crossing",
 	},
 	{
+	    "id": "librarylot_e01",
+	    "coordinate":new Point(42.369162, -71.258147),
+	    "type": "entrance",
+	},
+	{
 	    "id": "librarylot_e02",
 	    "coordinate":new Point(42.368853, -71.257698),
 	    "type": "entrance",
