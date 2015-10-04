@@ -251,13 +251,13 @@ paths_usdan = [
 		"description":"Exit the building and turn left to the crossing."
 	},
 	{
-		"start":"goldfarb_e02",
+		"start":"library_c08",
 		"end":"usdan_e02",
-		"description":"Exit the library. Go straight. The door to the Upper Usdan is to your left."
+		"description":"Go straight. The door to the Upper Usdan is to your left."
 	},
 	{
 		"start":"usdan_e02",
-		"end":"goldfarb_e02",
-		"description":"Exit the building. and turn right. Go straight. The library is in front of you."
+		"end":"library_c08",
+		"description":"Exit the building and turn right. Go straight."
 	},
 ]

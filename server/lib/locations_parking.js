@@ -62,7 +62,7 @@ locations_parking = [
 			new Point(42.368845, -71.257814), 
 			new Point(42.368924, -71.257598)],
 		"category":["parking"],
-		"entrances":["librarylot_e01"],
+		"entrances":["librarylot_e01", "librarylot_e02"],
 		"area":["upper campus","libraries"]
 	},
 	{

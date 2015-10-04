@@ -512,6 +512,16 @@ paths_massellchapels = [
 	},
 	{
 		"start":"harlan_c01",
+		"end":"heller_c04",
+		"description":"Continue walking on the Loop Road."
+	},
+	{
+		"start":"heller_c04",
+		"end":"harlan_c01",
+		"description":"Continue walking on the Loop Road."
+	},
+	{
+		"start":"harlan_c01",
 		"end":"harlan_e01",
 		"description":"The Halan Chapel is right beside you."
 	},

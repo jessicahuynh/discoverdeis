@@ -64,7 +64,7 @@ points_library = [
 	},
 	{
 	    "id": "library_c08",
-	    "coordinate":new Point(42.368031, -71.257820),
+	    "coordinate":new Point(42.368061, -71.257816),
 	    "type": "crossing",
 	},
 	{
