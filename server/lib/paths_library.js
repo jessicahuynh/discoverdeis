@@ -144,9 +144,29 @@ paths_library = [
 	},
 	////
 	{
+	    "start":"librarylot_e01",
+	    "end":"heller_c01",
+	    "description": "Continue walking. You are now at Library Parking Lot",
+	},
+	{
+	    "start":"heller_c01",
+	    "end":"librarylot_e01",
+	    "description": "Walk on the path ahead.",
+	},
+	{
+	    "start":"librarylot_e01",
+	    "end":"librarylot_e02",
+	    "description": "Walk through the parking lot until you see a set of stairs ahead of you.",
+	},
+	{
+	    "start":"librarylot_e02",
+	    "end":"librarylot_e01",
+	    "description": "Walk through the parking lot until you reach the other end.",
+	},
+	{
 	    "start":"librarylot_e02",
 	    "end":"library_c04",
-	    "description": "Walk on the path straight ahead and continue until you are at an intersection..",
+	    "description": "Walk on the path straight ahead and continue until you are at an intersection.",
 	},
 	{
 	    "start":"librarylot_e02",
