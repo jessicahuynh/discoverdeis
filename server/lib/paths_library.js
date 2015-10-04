@@ -221,41 +221,41 @@ paths_library = [
 	{
 	    "start":"library_c09",
 	    "end":"library_c10",
-	    "description": "Go through the green area next to the library until you are at a corner.",
+	    "description": "Go through the green area.",
 	},
 	{
 	    "start":"library_c10",
 	    "end":"library_c09",
-	    "description": "Go through the green area next to the library on your left.",//**check this
+	    "description": "Go through the green area.",
 	},
 	{
 	    "start":"library_c10",
 	    "end":"library_c02",
-	    "description": "Go up the stairs on your right.", //**check this
+	    "description": "Go up the stairs on your left.",
 	},
 	{
 	    "start":"library_c02",
 	    "end":"library_c10",
-	    "description": "Walk straight and go down the stairs on your left.", //**check this
+	    "description": "Walk straight and go down the stairs on your right.",
 	},
 	{
 	    "start":"library_c10",
 	    "end":"goldfarb_e01",
-	    "description": "Make a left turn. The entrance to Goldfarb Library is on your left.", //**check this
+	    "description": "Make a right turn. The entrance to Goldfarb Library is on your right.",
 	},
 	{
 	    "start":"goldfarb_e01",
 	    "end":"library_c10",
-	    "description": "Exit Goldfarb Library and make a right turn. Walk straight until you are at the corner of the building.", //**check this
+	    "description": "Exit Goldfarb Library and make a left turn. Walk straight until you are at the corner of the building.",
 	},
 	{
 	    "start":"library_c10",
 	    "end":"farber_e01",
-	    "description": "Make a left turn and walk straight. The entrance to Farber Library is ahead.", //**check this
+	    "description": "Make a right turn and walk straight. The entrance to Farber Library is ahead.",
 	},
 	{
 	    "start":"farber_e01",
 	    "end":"library_c10",
-	    "description": "Exit Farber Library and walk across until you are at the corner of the building on your left.", //**check this
+	    "description": "Exit Farber Library and walk across. In front of the stairs, make a left turn.",
 	}
 ]
