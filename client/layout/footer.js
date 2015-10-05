@@ -20,7 +20,7 @@ Template.footer.helpers({
        return Locations.findOne({"name":Session.get("inLocation")[0].name});
    },
    inLocationId:function() {
-       return this._id;
+       return this.id;
    },
    inOrNear:function() {
        if (Session.get("inLocation")[1] == "in") {
