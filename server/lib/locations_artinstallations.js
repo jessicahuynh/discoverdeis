@@ -40,7 +40,7 @@ locations_artinstallations = [
 		"nickname":"Six Magnolia Trees",
 		"function":"These six magnolia trees were planted in memory of the Holocaust.",
 		"description":"They are both symbolic of the past and representative of our optimism for the future. Planted by the students of Brandeis University Yom HaShoah at April 22, 2004.",
-		"coordinates": {"type":"Polygon","coordinates":[
+		"coordinates": {"type":"Point","coordinates":[
 			[[42.368132, -71.260572]]
 		]},
 		"category":["landscape"],
@@ -50,7 +50,7 @@ locations_artinstallations = [
 		"id":"ruach_yisrael",
 		"nickname":"Ruach Yisrael",
 		"name":"Ruach Yisrael: The Spirit of Israel",
-		"coordinates": {"type":"Polygon","coordinates":[
+		"coordinates": {"type":"Point","coordinates":[
 			[[42.368080, -71.260727]]
 		]},
 		"category":["art"],
@@ -61,7 +61,7 @@ locations_artinstallations = [
 		"name":"Memorial to the Martyrs of the Holocaust",
 		"nickname":"Martyrs of the Holocaust Memorial",
 		"function":"This monument is in memory of the six million Jews who perished in the Holocaust.",
-		"coordinates": {"type":"Polygon","coordinates":[
+		"coordinates": {"type":"Point","coordinates":[
 			[[42.368295, -71.260781]]
 		]},
 		"category":["art"],
@@ -71,7 +71,7 @@ locations_artinstallations = [
 		"id":"chapelstriangle",
 		"name":"Chapels Pond Triangle",
 		"nickname":"Chapels Pond Triangle",
-		"coordinates": {"type":"Polygon","coordinates":[
+		"coordinates": {"type":"Point","coordinates":[
 			[[42.368235, -71.260346]]
 		]},
 		"category":["art"],
@@ -81,7 +81,7 @@ locations_artinstallations = [
 		"id":"praying_human",
 		"name":"Submitting human in front of the Chapels",
 		"nickname":"Praying human",
-		"coordinates": {"type":"Polygon","coordinates":[
+		"coordinates": {"type":"Point","coordinates":[
 			[[42.368463, -71.260944]]
 		]},
 		"category":["art"],
@@ -93,7 +93,7 @@ locations_artinstallations = [
 		"nickname":"Inspiration",
 		"function":"Inspiration is a steel piece by American Rita Blitt.",
 		"description":"The description on the plaque reads \"Gift of the artist in memory of her mother, Dorothy Sofnas Copaken, who devoted her life to the establishment of Israel as a national Jewish homeland.\" There is a larger version of Inspiration installed in Kansas City, Missouri.",
-		"coordinates": {"type":"Polygon","coordinates":[
+		"coordinates": {"type":"Point","coordinates":[
 			[[42.362478, -71.260400]]
 		]},
 		"category":["art"],
@@ -103,7 +103,7 @@ locations_artinstallations = [
 		"id":"chopelas",
 		"name":"Tree in Memory of Mark S. Chopelas",
 		"nickname":"Mark S. Chopelas memorial tree",
-		"coordinates": {"type":"Polygon","coordinates":[
+		"coordinates": {"type":"Point","coordinates":[
 			[[42.362997, -71.260077]]
 		]},
 		"function":"This tree was planted in memory of Mark S. Chopelas (1963-2003).",
@@ -115,7 +115,7 @@ locations_artinstallations = [
 		"id":"familyatplay",
 		"name":"Family At Play, 1968",
 		"nickname":"Family at Play",
-		"coordinates": {"type":"Polygon","coordinates":[
+		"coordinates": {"type":"Point","coordinates":[
 			[[42.365552, -71.258741]]
 		]},
 		"function":"This bronze sculpture by Chaim Gross was the gift of Antje and Leonard L. Farber.",
@@ -126,7 +126,7 @@ locations_artinstallations = [
 		"id":"jcm",
 		"name":"Joseph C. Mandel, 1999",
 		"nickname":"JCM",
-		"coordinates": {"type":"Polygon","coordinates":[
+		"coordinates": {"type":"Point","coordinates":[
 			[[42.369448, -71.257032]]
 		]},
 		"function":"The sculpture was created and donated to Brandeis University by Joseph C. Mandel on October 26, 2010.",
