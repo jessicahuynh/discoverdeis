@@ -84,7 +84,6 @@ Meteor.methods({
 
 	getNearest: function(location) {
 		var points = CornerPoints.find().fetch();
-		console.log(points);
 		//console.log(location);
 
 		// hold the current iteration

@@ -151,7 +151,7 @@ Template.debugger.rendered = function() {
 					new google.maps.InfoWindow({
 				      content: theLocs[this.index].nickname + " (" + theLocs[this.index].name + ")<br>Entrances: "+theLocs[this.index].entrances+"<br>I Crossings: "+theLocs[this.index].icrossings,
 				      maxWidth: 200,
-					  position:new google.maps.LatLng(theLocs[this.index].coordinates.coordinates[0][0],theLocs[this.index].coordinates.coordinates[0][1])
+					  position:new google.maps.LatLng(theLocs[this.index].coordinates.coordinates[0][0][0],theLocs[this.index].coordinates.coordinates[0][0][1])
 				  }).open(map.instance,this);
 				});  
 			}
