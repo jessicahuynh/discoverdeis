@@ -20,7 +20,8 @@ locations_admission = [
 			[42.366355, -71.260985],
 			[42.366438, -71.260810],
 			[42.366627, -71.260942],
-			[42.366688, -71.260810]]]},
+			[42.366688, -71.260810]]
+		]},
 		"entrances":["shermanfunctionhall_e01","shermanfunctionhall_e02"]
 	},
 	admissions = {
@@ -33,7 +34,8 @@ locations_admission = [
 			[42.364489, -71.260878], 
 			[42.364150, -71.261231], 
 			[42.364074, -71.261022],
-			[42.364386, -71.260705]]]},
+			[42.364386, -71.260705]]
+		]},
 		"function":"Admissions hosts tours and provides information about Brandeis to any interested parties.",
 		"category":["offices"],
 		"entrances":["admissions_e01","admissions_e02"],
@@ -68,7 +70,8 @@ locations_admission = [
 			[[42.366813,-71.259628],
 			[42.366375,-71.260151],
 			[42.365813,-71.259543],
-			[42.366023,-71.259101]]]},
+			[42.366023,-71.259101]]
+		]},
 		"function": "Fellows Garden is a nice place to hangout with friends in nice weather",
 		"description":"Fellows Garden was dedicated on the occasion of Brandeis University's twenty-fifth commencement.",
 		"category":["landscape"],
@@ -83,7 +86,8 @@ locations_admission = [
 			[[42.365256, -71.260295],
 			[42.364860, -71.260703],
 			[42.365101, -71.261341],
-			[42.365428, -71.260770]]]},
+			[42.365428, -71.260770]]
+		]},
 		"function": "Great Lawn is a nice place to hangout with friends in nice weather",
 		"description":"The Great Lawn is one of students’ favorite expanses of green on campus. Here you will typically see students doing their homework, playing frisbee, or just catching some afternoon sunshine between classes. It is also the setting for our activities fair, which takes place at the beginning of each semester, when over 260 clubs recruit first-years and continuing undergrads to their groups.",
 		"category":["landscape"],
@@ -91,8 +95,3 @@ locations_admission = [
 		"area":["lower campus"]
 	},
 ]
-
-function Point(x,y) {
-	this.x = x;
-	this.y = y;
-}
