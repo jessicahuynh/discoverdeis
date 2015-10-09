@@ -41,7 +41,7 @@ Meteor.methods({
 
 		for (var i = 0; i < Locations.find().count(); i++) {
 			// if the given Point is in the location, return the location
-			Meteor.call("pointIncluded",Locations.find().fetch()[i].coordinates,current,
+			Meteor.call("pointIncluded",Locations.find().fetch()[i].coordinates.coordinates[0],current,
 				function(error, data) {
 					if (error) {
 						console.log(error);
@@ -71,7 +71,7 @@ Meteor.methods({
 						console.log(error);
 					}
 					else {
-						// console.log("got the nearest location: " + data.name);
+						//console.log("got the nearest location: " + data.name);
 						location = [data[0], "near", data[1]];
 						
 						
@@ -84,6 +84,7 @@ Meteor.methods({
 
 	getNearest: function(location) {
 		var points = CornerPoints.find().fetch();
+		console.log(points);
 		//console.log(location);
 
 		// hold the current iteration
@@ -95,7 +96,7 @@ Meteor.methods({
 		// theNearest
 		// theNearestDistance
 
-		previousClosest= points[0];
+		previousClosest = points[0];
 		previousClosestDistance = 1000000000000;
 		theNearestDistance = 100000000000;
 
@@ -142,10 +143,10 @@ Meteor.methods({
 		var R = 6371000; // metres
 		//console.log(start.point+end.point);
 
-		var lat1 = start.x;
-		var lat2 = end.x;
-		var lon1 = start.y;
-		var lon2 = end.y;
+		var lat1 = start[0];
+		var lat2 = end[0];
+		var lon1 = start[1];
+		var lon2 = end[1];
 
 		var p1 = lat1 * (Math.PI / 180);
 		var p2 = lat2 * (Math.PI / 180);
