@@ -161,6 +161,26 @@ points_northrabb = [
 	    "type":"crossing"
 	},
 	/////
+	{
+	    "start":"northquadlot_e01",
+	    "end":"reitman_c01",
+	    "description": "Walk straight to the end of the building on your left.",
+	},
+	{
+	    "start":"reitman_c01",
+	    "end":"northquadlot_e01",
+	    "description": "Walk past the stairs to the end of the parking lot.",
+	},
+	{
+	    "start":"reitman_c01",
+	    "end":"northquadlot_e02",
+	    "description": "Walk straight to the end of the parking lot.",
+	},
+	{
+	    "start":"northquadlot_e02",
+	    "end":"reitman_c01",
+	    "description": "Walk straight until you see a set of stairs on your right.",
+	},
 
 ]
 
