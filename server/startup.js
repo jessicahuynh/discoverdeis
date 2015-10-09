@@ -23,10 +23,22 @@ Meteor.startup(function() {
 		locFiles.forEach(function(locFile) {
 			locFile.forEach(function(location) {
 				Locations.insert(location);
-				var c = location.coordinates;
+				var c = null;
+				if (location.coordinates.type == "Point") {
+					c = location.coordinates.coordinates;
+				}
+				else {
+					c = location.coordinates.coordinates[0];
+				}
 				
 				c.forEach(function(point) {
-					CornerPoints.insert({"point":point,"name":location.name});
+					CornerPoints.insert({
+					"point":
+						{
+							"type":"Point",
+							"coordinates":point
+						},
+					"name":location.name});
 				})
 			});
 		});		

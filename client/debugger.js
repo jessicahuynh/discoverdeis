@@ -43,7 +43,7 @@ Template.debugger.rendered = function() {
 		var outsideCrossings = Intersections.find({"type":"crossing"}).fetch();
 		outsideCrossings.forEach(function(point) {
 			var marker = new google.maps.Marker({
-				position: new google.maps.LatLng(point.coordinate.x,point.coordinate.y),
+				position: new google.maps.LatLng(point.coordinate.coordinates[0],point.coordinate.coordinates[1]),
 				map:map.instance,
 				title:point.id,
 				icon:'/GoogleMapsMarkers/red_MarkerC.png'
@@ -55,7 +55,7 @@ Template.debugger.rendered = function() {
 		var outsideEntrances = Intersections.find({"type":"entrance"}).fetch();
 		outsideEntrances.forEach(function(point) {
 			var marker = new google.maps.Marker({
-				position: new google.maps.LatLng(point.coordinate.x,point.coordinate.y),
+				position: new google.maps.LatLng(point.coordinate.coordinates[0],point.coordinate.coordinates[1]),
 				map:map.instance,
 				title:point.id,
 				icon:'/GoogleMapsMarkers/red_MarkerE.png'
@@ -67,7 +67,7 @@ Template.debugger.rendered = function() {
 		var insideCrossings = Intersections.find({"type":"icrossing"}).fetch();
 		insideCrossings.forEach(function(point) {
 			var marker = new google.maps.Marker({
-				position: new google.maps.LatLng(point.coordinate.x,point.coordinate.y),
+				position: new google.maps.LatLng(point.coordinate.coordinates[0],point.coordinate.coordinates[1]),
 				map:map.instance,
 				title:point.id,
 				icon:'/GoogleMapsMarkers/yellow_MarkerC.png'
@@ -79,7 +79,7 @@ Template.debugger.rendered = function() {
 		var insideEntrances = Intersections.find({"type":"ientrance"}).fetch();
 		insideEntrances.forEach(function(point) {
 			var marker = new google.maps.Marker({
-				position: new google.maps.LatLng(point.coordinate.x,point.coordinate.y),
+				position: new google.maps.LatLng(point.coordinate.coordinates[0],point.coordinate.coordinates[1]),
 				map:map.instance,
 				title:point.id,
 				icon:'/GoogleMapsMarkers/yellow_MarkerE.png'
@@ -94,8 +94,8 @@ Template.debugger.rendered = function() {
 			var start = Intersections.findOne({"id":path.start});
 			var end = Intersections.findOne({"id":path.end});
 			var theRoute = [
-				new google.maps.LatLng(start.coordinate.x,start.coordinate.y),
-				new google.maps.LatLng(end.coordinate.x,end.coordinate.y)	
+				new google.maps.LatLng(start.coordinate.coordinates[0],start.coordinate.coordinates[1]),
+				new google.maps.LatLng(end.coordinate.coordinates[0],end.coordinate.coordinates[1])	
 			];
 			
 			var contentString = "<b>" + path.start + "</b> to <b>" + path.end+"</b>: "+path.description+"<br>";
@@ -118,7 +118,7 @@ Template.debugger.rendered = function() {
 			  new google.maps.InfoWindow({
 			      content: contentString,
 			      maxWidth: 200,
-				  position:new google.maps.LatLng(start.coordinate.x,start.coordinate.y)
+				  position:new google.maps.LatLng(start.coordinate.coordinates[0],start.coordinate.coordinates[1])
 			  }).open(map.instance,this);
 			});  
 		});
@@ -126,11 +126,11 @@ Template.debugger.rendered = function() {
 		/* BUILDINGS */
 		var theLocs = Locations.find().fetch();
 		for (var i = 0; i < theLocs.length; i++) {
-			if (theLocs[i].coordinates.length > 1) {
+			if (theLocs[i].coordinates.type == "Polygon") {
 				var coords = [];
-				var locCoords = theLocs[i].coordinates;
+				var locCoords = theLocs[i].coordinates.coordinates[0];
 				locCoords.forEach(function(coord) {
-					coords.push(new google.maps.LatLng(coord.x,coord.y));
+					coords.push(new google.maps.LatLng(coord[0],coord[1]));
 				});
 				// repeat the first to close it up
 				coords.push(new google.maps.LatLng(locCoords[0].x,locCoords[0].y));
@@ -151,13 +151,13 @@ Template.debugger.rendered = function() {
 					new google.maps.InfoWindow({
 				      content: theLocs[this.index].nickname + " (" + theLocs[this.index].name + ")<br>Entrances: "+theLocs[this.index].entrances+"<br>I Crossings: "+theLocs[this.index].icrossings,
 				      maxWidth: 200,
-					  position:new google.maps.LatLng(theLocs[this.index].coordinates[0].x,theLocs[this.index].coordinates[0].y)
+					  position:new google.maps.LatLng(theLocs[this.index].coordinates.coordinates[0][0],theLocs[this.index].coordinates.coordinates[0][1])
 				  }).open(map.instance,this);
 				});  
 			}
 			else {
 				var marker = new google.maps.Marker({
-					position: new google.maps.LatLng(theLocs[i].coordinates[0].x,theLocs[i].coordinates[0].y),
+					position: new google.maps.LatLng(theLocs[i].coordinates.coordinates[0],theLocs[i].coordinates.coordinates[1]),
 					map:map.instance,
 					title:theLocs[i].name,
 					index:i,
@@ -168,7 +168,7 @@ Template.debugger.rendered = function() {
 					new google.maps.InfoWindow({
 				      content: theLocs[this.index].nickname + " (" + theLocs[this.index].name + ")<br>Entrances: "+theLocs[this.index].entrances,
 				      maxWidth: 200,
-					  position:new google.maps.LatLng(theLocs[this.index].coordinates[0].x,theLocs[this.index].coordinates[0].y)
+					  position:new google.maps.LatLng(theLocs[this.index].coordinates.coordinates[0],theLocs[this.index].coordinates.coordinates[1])
 				  }).open(map.instance,this);
 				});  
 			}
