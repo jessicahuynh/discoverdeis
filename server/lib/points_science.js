@@ -451,8 +451,3 @@ points_science = [
 
 
 ]
-
-function Point(x,y) {
-	this.x = x;
-	this.y = y;
-}7 

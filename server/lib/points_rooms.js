@@ -100,8 +100,3 @@ points_rooms = [
 	// 	"type":"entrance"
 	// }
 ]
-
-function Point(x,y) {
-	this.x = x;
-	this.y = y;
-}

@@ -233,8 +233,3 @@ points_mandelquad = [
 	    "type": "crossing",
 	},
 ]
-
-function Point(x,y) {
-	this.x = x;
-	this.y = y;
-}

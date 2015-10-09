@@ -113,7 +113,3 @@ points_usdan = [
 	    "type": "entrance",
 	}
 ]
-function Point(x,y) {
-	this.x = x;
-	this.y = y;
-}

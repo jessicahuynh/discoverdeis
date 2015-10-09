@@ -475,8 +475,3 @@ points_grad = [
 		"getTo":"Head to the fence opening between the commuter rail parking lot and the field that is farthest from the train station."
 	}
 ]
-
-function Point(x,y) {
-	this.x = x;
-	this.y = y;
-}

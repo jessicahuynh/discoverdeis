@@ -273,8 +273,3 @@ points_lowerDorms = [
     "getTo":"Head to the entrance of Village C next to Dunkin Donuts."
 },
 ]
-
-function Point(x,y) {
-    this.x = x;
-    this.y = y;
-}
