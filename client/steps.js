@@ -1,10 +1,7 @@
 
 count = 0;
 
-
-count = 0;
-
-$( window ).load(function() {
+$( window ).load(function() { //Wait for window to load so DeviceOrientationEvent can work
 	if (window.DeviceOrientationEvent) {
 	  // Listen for the deviceorientation event and handle the raw data
 	  window.addEventListener('deviceorientation', function(eventData) {
@@ -80,6 +77,7 @@ $( window ).load(function() {
 
 	  }, false);
 } 
+});
   
 
 
@@ -231,7 +229,7 @@ Template.steps.rendered = function () {
 		});
 		markerCurrent = new google.maps.Marker({
 			position: new google.maps.LatLng(Session.get("currentLocation").x,Session.get("currentLocation").y),
-			icon: '/GoogleMapsMarkers/bluedot.png', //Here is the blue dot
+			icon: Session.get("arrowDirection"), //Here directional arrow
 			map:map.instance
 		});
 
@@ -347,6 +345,7 @@ Template.steps.rendered = function () {
 			var theLatLng = new google.maps.LatLng(Session.get("currentLocation").x,Session.get("currentLocation").y);
 			map.instance.setCenter(theLatLng);
 			markerCurrent.setPosition(theLatLng);
+			markerCurrent.setIcon(Session.get("arrowDirection")); //Resets the icon so that we can get a different directional
 				// console.log("set center: " + middlestop.x + "," + middlestop.y);
 				// var theLatLngMiddle = new google.maps.LatLng(middlestop.x,middlestop.y);
 				// map.instance.setCenter(theLatLngMiddle);
