@@ -153,17 +153,49 @@ paths_usdan = [
 	{
 	    "start":"schwartz_e01",
 	    "end":"usdan_c02",
-	    "description": "Exit the building and trun right.",
+	    "description": "Exit the building and turn right.",
 	},
 	{
 	    "start":"usdan_c02",
 	    "end":"schwartz_e01",
 	    "description": "Walk toward the building with many stairs.",
 	},
+	////
+	{
+	    "start":"schwartz_e01",
+	    "end":"brown_ie01",
+	    "description": "Enter Schwartz. Walk straight past the staircase and continue on the path.",
+	},
+	{
+	    "start":"brown_ie01",
+	    "end":"schwartz_e01",
+	    "description": "Continue on your current path, and you will be at Schwartz.",
+	},
+	{
+	    "start":"brown_ie01",
+	    "end":"brown_e02",
+	    "description": "Walk straight. You will see a door on your right.",
+	},
+	{
+	    "start":"brown_e02",
+	    "end":"brown_ie01",
+	    "description": "Enter Brown and turn left.",
+	},
+	{
+	    "start":"brown_e01",
+	    "end":"brown_ie01",
+	    "description": "Enter Brown, turn left, and walk straight.",
+	},
+	{
+	    "start":"brown_e01",
+	    "end":"brown_ie01",
+	    "description": "Walk straight. You will see double doors on your right.",
+	},
+	////
 	{
 	    "start":"bassine_c03",
 	    "end":"brown_e01",
-	    "description": "Walk along the small and this the first building on your right.",
+	    "description": "Walk along the small and the the first building on your right is Brown.",
 	},
 	{
 	    "start":"brown_e01",
@@ -259,5 +291,46 @@ paths_usdan = [
 		"start":"usdan_e02",
 		"end":"library_c08",
 		"description":"Exit the building and turn right. Go straight."
+	},
+	////
+	{
+		"start":"pearlman_c02",
+		"end":"goldsmith_c02",
+		"description":"Turn right and go straight."
+	},
+	{
+		"start":"pearlman_c02",
+		"end":"goldsmith_c02",
+		"description":"Go straight until a set of stairs is to your left."
+	},
+	{
+		"start":"pearlman_c02",
+		"end":"pearlman_c01",
+		"description":"Continue on the path."
+	},
+	{
+		"start":"pearlman_c01",
+		"end":"pearlman_c02",
+		"description":"Continue on the path."
+	},
+	{
+		"start":"pearlman_c01",
+		"end":"pearlman_e02",
+		"description":"The entrance to Pearlman is straight ahead."
+	},
+	{
+		"start":"pearlman_e02",
+		"end":"pearlman_c01",
+		"description":"Exit Pearlman and go straight."
+	},
+	{
+		"start":"pearlman_e01",
+		"end":"library_c02",
+		"description":"Exit Pearlman and follow the path up the stairs."
+	},
+	{
+		"start":"library_c02",
+		"end":"pearlman_e01",
+		"description":"Go down the stairs to your ."
 	},
 ]

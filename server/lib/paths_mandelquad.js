@@ -568,43 +568,43 @@ paths_mandelquad = [
 	    "description": "Walk straight and go up the stairs on your left.",
 	},
 	{
-	    "start":"mandelHQuad_e01",
+	    "start":"mandelHQuad_c01",
 	    "end":"shiffman_e01",
 	    "description": "Walk straight and the entrance to Shiffman is on your right.",
 	},
 	{
 	    "start":"shiffman_e01",
-	    "end":"mandelHQuad_e01",
+	    "end":"mandelHQuad_c01",
 	    "description": "Walk straight until you see a set of stairs.",
 	},
 	{
-	    "start":"mandelHQuad_e01",
+	    "start":"mandelHQuad_c01",
 	    "end":"shiffman_c01",
 	    "description": "Walk to the intersection of paths in the center of the quad.",
 	},
 	{
 	    "start":"shiffman_c01",
-	    "end":"mandelHQuad_e01",
+	    "end":"mandelHQuad_c01",
 	    "description": "Walk straight towards the group of trees ahead until you see a set of stairs.",
 	},
 	{
-	    "start":"mandelHQuad_e01",
+	    "start":"mandelHQuad_c01",
 	    "end":"rabb_c03",
 	    "description": "Take the left path and walk straight.",
 	},
 	{
 	    "start":"rabb_c03",
-	    "end":"mandelHQuad_e01",
+	    "end":"mandelHQuad_c01",
 	    "description": "Follow the path you are on and walk towards the group of trees until you see a set of stairs.",
 	},
 	{
-	    "start":"mandelHQuad_e01",
+	    "start":"mandelHQuad_c01",
 	    "end":"shiffman_e03",
 	    "description": "Take the right path and walk straight. The entrance to Shiffman is ahead.",
 	},
 	{
 	    "start":"shiffman_e03",
-	    "end":"mandelHQuad_e01",
+	    "end":"mandelHQuad_c01",
 	    "description": "Walk towards the intersection of paths surrounded by trees.",
 	},
 	/////

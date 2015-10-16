@@ -47,11 +47,11 @@ paths_northrabb = [
 	},
 	{
 		"start":"scheffres_c02",
-		"end":"mandelHQuad_e01",
+		"end":"mandelHQuad_c01",
 		"description":"Go up the set of stairs surrounded by trees and continue on the path until you see an intersection of paths."
 	},
 	{
-		"start":"mandelHQuad_e01",
+		"start":"mandelHQuad_c01",
 		"end":"scheffres_c02",
 		"description":"Go down the set of stairs on the left of Shiffman."
 	},
@@ -333,6 +333,27 @@ paths_northrabb = [
 		"start":"reitman_e01",
 		"end":"northquadlot_e01",
 		"description":"Follow the large path."
+	},
+	///16
+	{
+		"start":"reitman_c01",
+		"end":"northquadlot_e01",
+		"description":"Follow the path to the end of the parking lot."
+	},
+	{
+		"start":"northquadlot_e01",
+		"end":"reitman_c01",
+		"description":"Follow the path to the middle of the parking lot."
+	},
+	{
+		"start":"reitman_c01",
+		"end":"northquadlot_e02",
+		"description":"Continue on the path to the end of the parking lot."
+	},
+	{
+		"start":"northquadlot_e02",
+		"end":"reitman_c01",
+		"description":"Follow the path to the middle of the parking lot."
 	},
 	////new
 
