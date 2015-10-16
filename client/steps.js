@@ -1,6 +1,86 @@
 
 count = 0;
 
+$( window ).load(function() { //Wait for window to load so DeviceOrientationEvent can work
+	if (window.DeviceOrientationEvent) {
+	  // Listen for the deviceorientation event and handle the raw data
+	  window.addEventListener('deviceorientation', function(eventData) {
+
+	    // alpha is the compass direction the device is facing in degrees
+	    var dir = eventData.alpha
+
+//Depending on the Compass Direction Angle an arrow will be pointing to the corrected direction and will be set as a session variable
+	if(dir >= 348)
+	  Session.set("arrowDirection", "/arrows/arrowNBW.png")
+	else if(dir >= 337)
+		Session.set("arrowDirection", "/arrows/arrowNNW.png")
+	else if(dir >= 326)
+		Session.set("arrowDirection", "/arrows/arrowNWBN.png")
+	else if(dir >= 315)
+	  Session.set("arrowDirection", "/arrows/arrowNW.png")
+	else if(dir >= 303)
+		Session.set("arrowDirection", "/arrows/arrowNWBW.png")
+	else if(dir>= 292)
+	  Session.set("arrowDirection", "/arrows/arrowWNW.png")
+	else if(dir>= 281)
+		Session.set("arrowDirection", "/arrows/arrowWBN.png")
+	else if(dir>= 270)
+		Session.set("arrowDirection", "/arrows/arrowW.png")
+	else if(dir>= 258)
+		Session.set("arrowDirection", "/arrows/arrowWBS.png")
+	else if(dir>= 247)	
+		Session.set("arrowDirection", "/arrows/arrowWSW.png")
+	else if(dir>= 236)
+		Session.set("arrowDirection", "/arrows/arrowSWBW.png")
+	else if(dir>= 225)		
+		Session.set("arrowDirection", "/arrows/arrowSW.png")
+	else if(dir>= 213)
+		Session.set("arrowDirection", "/arrows/arrowSWBS.png")
+	else if(dir>= 202)
+		Session.set("arrowDirection", "/arrows/arrowSSW.png")
+	else if(dir>= 191)
+		Session.set("arrowDirection", "/arrows/arrowSBW.png")
+	else if(dir>= 180)
+		Session.set("arrowDirection", "/arrows/arrowS.png")
+	else if(dir>= 168)	
+		Session.set("arrowDirection", "/arrows/arrowSBE.png")
+	else if(dir>= 157)
+		Session.set("arrowDirection", "/arrows/arrowSSE.png")
+	else if(dir>= 146)
+		Session.set("arrowDirection", "/arrows/arrowSEBS.png")
+	else if(dir>= 135)
+		Session.set("arrowDirection", "/arrows/arrowSE.png")
+	else if(dir>= 123)
+		Session.set("arrowDirection", "/arrows/arrowSEBE.png")
+	else if(dir>= 112)
+		Session.set("arrowDirection", "/arrows/arrowESE.png")
+	else if(dir>= 101)
+		Session.set("arrowDirection", "/arrows/arrowEBS.png")
+	else if(dir>= 90)
+		Session.set("arrowDirection", "/arrows/arrowE.png")
+	else if(dir>= 78)
+		Session.set("arrowDirection", "/arrows/arrowEBN.png")
+	else if(dir>= 67)
+		Session.set("arrowDirection", "/arrows/arrowENE.png")
+	else if(dir>= 56)
+		Session.set("arrowDirection", "/arrows/arrowNEBE.png")
+	else if(dir>= 45)	
+		Session.set("arrowDirection", "/arrows/arrowNE.png")
+	else if(dir>= 33)	
+		Session.set("arrowDirection", "/arrows/arrowNEBN.png")
+	else if(dir>= 22)
+		Session.set("arrowDirection", "/arrows/arrowNNE.png")
+	else if(dir>= 11)
+		Session.set("arrowDirection", "/arrows/arrowNBE.png")
+	else
+	  	Session.set("arrowDirection", "/arrows/arrowN.png")
+
+	  }, false);
+} 
+});
+  
+
+
 Template.steps.helpers({
 	routeStartStop: function() {
 		return Session.get("routeStartStop");
@@ -149,7 +229,7 @@ Template.steps.rendered = function () {
 		});
 		markerCurrent = new google.maps.Marker({
 			position: new google.maps.LatLng(Session.get("currentLocation").x,Session.get("currentLocation").y),
-			icon: '/GoogleMapsMarkers/bluedot.png', //Here is the blue dot
+			icon: Session.get("arrowDirection"), //Here directional arrow
 			map:map.instance
 		});
 
@@ -265,6 +345,7 @@ Template.steps.rendered = function () {
 			var theLatLng = new google.maps.LatLng(Session.get("currentLocation").x,Session.get("currentLocation").y);
 			map.instance.setCenter(theLatLng);
 			markerCurrent.setPosition(theLatLng);
+			markerCurrent.setIcon(Session.get("arrowDirection")); //Resets the icon so that we can get a different directional
 				// console.log("set center: " + middlestop.x + "," + middlestop.y);
 				// var theLatLngMiddle = new google.maps.LatLng(middlestop.x,middlestop.y);
 				// map.instance.setCenter(theLatLngMiddle);
