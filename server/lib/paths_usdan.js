@@ -80,16 +80,48 @@ paths_usdan = [
 	    "end":"rosenstiel_c03",
 	    "description":"Keeping the castle on your left, walk down the main road."  
 	},
+	////
 	{
 	    "start":"usdan_c01",
+	    "end":"crown_c01",
+	    "description": "Take the left road and continue until you are at an intersection.",
+	},
+	{
+	    "start":"crown_c01",
+	    "end":"usdan_c01",
+	    "description": "Make a right turn and continue until you are at an intersection.",
+	},
+	{
+	    "start":"crown_c01",
 	    "end":"usdan_c02",
-	    "description": "Take either the left road, or the stairs straight ahead to Usdan",
+	    "description": "Make a left turn and continue on your current path.",
 	},
 	{
 	    "start":"usdan_c02",
-	    "end":"usdan_c01",
+	    "end":"crown_c01",
 	    "description":"Keep Usdan behind you on your left and walk along the main road downhill in the direction of the castle."
 	},
+	{
+	    "start":"crown_c01",
+	    "end":"crown_e01",
+	    "description": "Make a left turn and continue. The entrance to Lemberg Hall/Crown Center for Middle East Studies is on your right.",
+	},
+	{
+	    "start":"crown_e01",
+	    "end":"crown_c01",
+	    "description": "Exit Lemberg Hall/Crown Center for Middle East Studies, turn right, and continue on your current path.",
+	},
+	{
+	    "start":"brown_e03",
+	    "end":"crown_c01",
+	    "description": "Exit Brown, turn left, and continue on your current path.",
+	},
+	{
+	    "start":"crown_c01",
+	    "end":"brown_e03",
+	    "description": "Make a left turn and continue. The entrace to Brown is on your left.",
+	},
+	////
 	{
 	    "start":"rubenstein_c16",
 	    "end":"usdan_c01",
@@ -294,6 +326,31 @@ paths_usdan = [
 	},
 	////
 	{
+		"start":"usdan_c01",
+		"end":"usdan_c11",
+		"description":"Cross the street on the pedestrian crossing."
+	},
+	{
+		"start":"usdan_c11",
+		"end":"usdan_c01",
+		"description":"Cross the street on the pedestrian crossing."
+	},
+	{
+		"start":"usdan_c11",
+		"end":"usdan_c12",
+		"description":"Go up the stairs ahead of you."
+	},
+	{
+		"start":"usdan_c12",
+		"end":"usdan_c11",
+		"description":"Go down the stairs ahead of you."
+	},
+	{
+		"start":"usdan_c12",
+		"end":"usdan_c04",
+		"description":"Take the path on your right, walking past the statue."
+	},
+	{
 		"start":"pearlman_c02",
 		"end":"goldsmith_c02",
 		"description":"Turn right and go straight."
@@ -324,13 +381,63 @@ paths_usdan = [
 		"description":"Exit Pearlman and go straight."
 	},
 	{
+		"start":"pearlman_c03",
+		"end":"pearlman_e01",
+		"description":"Turn right and the enter through the double doors to get to Pearlman Hall."
+	},
+	{
 		"start":"pearlman_e01",
+		"end":"pearlman_c03",
+		"description":"Exit Pearlman."
+	},
+	{
+		"start":"pearlman_c03",
 		"end":"library_c02",
-		"description":"Exit Pearlman and follow the path up the stairs."
+		"description":"Go up the stairs ahead of you."
 	},
 	{
 		"start":"library_c02",
-		"end":"pearlman_e01",
-		"description":"Go down the stairs to your ."
+		"end":"pearlman_c03",
+		"description":"Go down the small set of stairs straight ahead of you."
+	},
+	{
+		"start":"library_c03",
+		"end":"mandelpeacegarden_e01",
+		"description":"Walk on the path to your right. You should see an opening to the Peace Circle (Mandel Peace Garden) on your right."
+	},
+	{
+		"start":"mandelpeacegarden_e01",
+		"end":"library_c03",
+		"description":"Exit the circle, turn left, and continue until you are at an intersection of paths."
+	},
+	{
+		"start":"library_c02",
+		"end":"mandelpeacegarden_e01",
+		"description":"Take the left path. You should see an opening to the Peace Circle (Mandel Peace Garden) on your right."
+	},
+	{
+		"start":"mandelpeacegarden_e01",
+		"end":"library_c02",
+		"description":"Exit the Peace Circle, turn left, and continue until you are at an intersection of paths."
+	},
+	{
+		"start":"library_c02",
+		"end":"mandelpeacegarden_e02",
+		"description":"Continue straight, and you should see an opening to the Peace Circle (Mandel Peace Garden) on your left."
+	},
+	{
+		"start":"mandelpeacegarden_e02",
+		"end":"library_c02",
+		"description":"Exit the Peace Circle, turn left, and continue until you are at an intersection of paths."
+	},
+	{
+		"start":"library_c05",
+		"end":"mandelpeacegarden_e02",
+		"description":"Continue straight, and you should see an opening to the Peace Circle (Mandel Peace Garden) on your right."
+	},
+	{
+		"start":"mandelpeacegarden_e02",
+		"end":"library_c05",
+		"description":"Exit the Peace Circle, turn right, and continue until you are at an intersection of paths."
 	},
 ]

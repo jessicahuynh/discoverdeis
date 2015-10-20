@@ -33,7 +33,7 @@ points_usdan = [
 	},
 	{
 	    "id":"pearlman_e01",
-	    "coordinate":new Point(42.367498, -71.257879),
+	    "coordinate":new Point(42.367603, -71.257915),
 	    "type":"entrance"
 	},
 	{
@@ -60,6 +60,11 @@ points_usdan = [
 	    "id":"crown_e01",
 	    "coordinate":new Point(42.367305, -71.256555),
 	    "type":"entrance"
+	},
+	{
+	    "id":"crown_c01",
+	    "coordinate":new Point(42.367476, -71.256561),
+	    "type":"crossing"
 	},
 	// usdan
 	{
@@ -115,6 +120,16 @@ points_usdan = [
 	{
 	    "id": "usdan_c10",
 	    "coordinate":new Point(42.368353, -71.257438),
+	    "type": "crossing",
+	},
+	{
+	    "id": "usdan_c11",
+	    "coordinate":new Point(42.367491, -71.256178),
+	    "type": "crossing",
+	},
+	{
+	    "id": "usdan_c12",
+	    "coordinate":new Point(42.367695, -71.256530),
 	    "type": "crossing",
 	},
 	{
