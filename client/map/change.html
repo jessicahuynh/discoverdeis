@@ -5,7 +5,7 @@
 	<div class="tab-content" id="navpanels">
 		<div id="loadingPanel">{{> loading}}</div>
 		
-		<div class="col-sm-12">
+		<div class="col-sm-12" id="container1">
 			<form id="navform" name="navform">
 				<!-- start -->
 				<div class="form-group col-sm-5">
@@ -45,18 +45,20 @@
 				<p>{{routeStartStop}}</p>
 				<p class="help-block">{{routeEstimate}}</p>
 			</div> -->
-		</div>
+		</div>		
 		
-			
-		<!-- <div role="tabpanel" class="tab-pane col-sm-6" id="routePane">
-			<button type="click" id="stepsButton" name="stepsButton" class="btn btn-primary pull-right">Step-by-Step</button>
-			<ul>{{#each stops}}
-				<li>{{stopDescription}}</li>{{/each}}</ul>
-		</div> -->
-		
-			
-		<div role="tabpanel" class="tab-pane col-sm-12" id="mapPane">
-			<div id="map-nav">{{> googleMap name="navMap" options=navMapOptions}}</div>
+		<div id="container2">
+			<!-- map -->
+			<div role="tabpanel" class="tab-pane col-sm-12" id="mapPane">
+				<div id="map-nav" style="height:500px">{{> googleMap name="navMap" options=navMapOptions}}</div>
+			</div>
+
+			<!-- steps -->
+			<div role="tabpanel" class="tab-pane col-sm-6" id="routePane">
+				<button type="click" id="stepsButton" name="stepsButton" class="btn btn-primary pull-right">Step-by-Step</button>
+				<ul>{{#each stops}}
+					<li>{{stopDescription}}</li>{{/each}}</ul>
+			</div>
 		</div>
 		
 	</div>

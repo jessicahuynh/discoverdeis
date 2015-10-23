@@ -62,12 +62,32 @@ ul.-autocomplete-list {
 	}
 }
 
-/* keep the route description a reasonable height */
+/* keep the route description a reasonable height, and adjust its position onto the map */
 @media (min-width:769px) {
 	#routePane {
 		max-height:25em;
 		overflow-y:scroll;
+		z-index: 3;
+		right: 0px;
+		top: 70px;
+		position: absolute;
+		background: rgba(255,255,255,0.7)
 	}
+}
+
+/* container that contain the map and the steps */
+#container2 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+/* adjust the map position under the steps */
+#mapPane {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 70px;
 }
 
 #loadingPanel {
