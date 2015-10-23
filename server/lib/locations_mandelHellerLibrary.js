@@ -72,7 +72,7 @@ locations_mandelHellerLibrary=[
 			new Point(42.369392, -71.257481), 
 			new Point(42.369507, -71.257322),],
 		"category":["academics"],
-		"entrances":["olin-sang_e01", "olin-sang_ie01", "olin-sang_e02"],
+		"entrances":["olin-sang_e01", "olin-sang_ie01", "olin-sang_e02", "olin-sang_e03"],
 		"area":["upper campus","mandel"]
 	},
 	goldfarb = {

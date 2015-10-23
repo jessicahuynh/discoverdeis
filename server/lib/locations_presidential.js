@@ -9,6 +9,7 @@ locations_presidential = [
 			new Point(42.365046,-71.259492), 
 			new Point(42.36489,-71.259837)],
 		"category":["administrative"],
+		"entrances":["bernstein_e01"],
 		"area":["lower campus"]
 		},
 	epstein = {
@@ -36,6 +37,7 @@ locations_presidential = [
 			new Point(42.365577,-71.259025), 
 			new Point(42.365417,-71.259403)],
 		"category":["administrative"],
+		"entrances":["gryzmish_e01"],
 		"area":["lower campus"]
 		},
 
@@ -49,6 +51,7 @@ locations_presidential = [
 			new Point(42.36529,-71.259006), 
 			new Point(42.365076,-71.259521)],
 		"category":["administrative"],
+		"entrances":["irving_e01","irving_e02"],
 		"area":["lower campus"]
 		},
 ]

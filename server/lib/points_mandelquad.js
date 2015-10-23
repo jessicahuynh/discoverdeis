@@ -151,6 +151,11 @@ points_mandelquad = [
 	    "type": "entrance",
 	},
 	{
+	    "id": "olin-sang_e03",
+	    "coordinate":new Point(42.369881, -71.257802),
+	    "type": "entrance",
+	},
+	{
 		//inner entrance btwn olin-sang and mandel center for humanities
 	    "id": "olin-sang_ie01",
 	    "coordinate":new Point(42.369640, -71.257862),

@@ -110,6 +110,15 @@ locations_artinstallations = [
 		"function":"The sculpture was created and donated to Brandeis University by Joseph C. Mandel on October 26, 2010.",
 		"category":["art"],
 		"area":["mandel", "upper campus"]
+	},
+	{
+		"id":"tree",
+		"name":"Tree, 1982",
+		"nickname":"Tree",
+		"coordinates":[new Point(42.367485, -71.257702)],
+		"function":"The stainless-steel sculpture created by Ernest Trova was the gift of Sandra and David Bakalar.",
+		"category":["art"],
+		"area":["upper campus", "brown"]
 	}
 
 	

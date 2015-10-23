@@ -195,6 +195,7 @@ locations_parking = [
 		],
 		"category":["parking"],
 		"nearby":["bernstein-marcus","stop_admissions","greatlawn","slosberg"],
+		"entrances":["bernsteinparkinglot_e01"],
 		"area":["lower campus"]
 	},
 	{
@@ -212,6 +213,7 @@ locations_parking = [
 		"description":"Parking for vehicles bearing red permit . Violators towed at owener's expense.",
 		"category":["parking"],
 		"nearby":["shapirodorm"],
+		"entrances":["hlot_e01", "hlot_e02"],
 		"area":["lower campus"]
 	},
 	{
@@ -245,7 +247,7 @@ locations_parking = [
 		],
 		"category":["parking"],
 		"nearby":["spingold,ridgewoodB,zivB,zivA,lemberg,goldman"],
-		"entrances":[],
+		"entrances":["theaterlot_e01","theaterlot_e02","theaterlot_e03","theaterlot_e04"],
 		"area":["lower campus"]
 	},
 	{
@@ -277,7 +279,7 @@ locations_parking = [
 		],
 		"category":["parking"],
 		"nearby":["ridgewoodB,zivB,zivA,lemberg"],
-		"entrances":[],
+		"entrances":["southlot_e01","southlot_e02"],
 		"area":["lower campus"]
 	},
 

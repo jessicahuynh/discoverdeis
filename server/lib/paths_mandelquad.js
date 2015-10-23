@@ -607,6 +607,31 @@ paths_mandelquad = [
 	    "end":"mandelHQuad_c01",
 	    "description": "Walk towards the intersection of paths surrounded by trees.",
 	},
+	{
+	    "start":"golding_c01",
+	    "end":"olin-sang_c01",
+	    "description": "Continue on your current path.",
+	},
+	{
+	    "start":"olin-sang_c01",
+	    "end":"golding_c01",
+	    "description": "Continue on your current path.",
+	},
+	{
+	    "start":"olin-sang_c01",
+	    "end":"olin-sang_e03",
+	    "description": "Walk straight towards the grey double doors on your left. Walking through those doors will lead you to Olin-Sang 101.",
+	},
+	{
+	    "start":"olin-sang_e03",
+	    "end":"olin-sang_c01",
+	    "description": "Exit Olin-Sang 101. Walk straight onto the path.",
+	},
+	{
+	    "start":"olin-sang_e03",
+	    "end":"olin-sang_ie01",
+	    "description": "Exit Olin-Sang 101 through the wooden doors across from you and turn right. Continue walking straight.",
+	},
 	/////
 	
 ]

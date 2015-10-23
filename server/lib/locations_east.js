@@ -54,7 +54,7 @@ locations_east = [
 			new Point(42.367576, -71.255094), 
 			new Point(42.367591, -71.254939),],
 		"category":["student life"],
-		"entrances":["icc_e01"],
+		"entrances":["icc_e01", "icc_e02"],
 		"area":["upper campus","east"]
 	},
 	mailman = {

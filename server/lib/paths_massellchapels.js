@@ -609,6 +609,7 @@ paths_massellchapels = [
 		"start":"museum_c01",
 		"end":"facultycenter_c02",
 		"description":"Walk along the loop road. The faculty center is on your right."
-	}
+	},
+	//10/23
 
 ]
