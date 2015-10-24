@@ -14,7 +14,7 @@ locations_mandelHellerLibrary=[
 			new Point(42.369258, -71.259346),
 			new Point(42.369166, -71.259735),],
 		"category":["offices","academics"],
-		"entrances":["schneider_e01"],
+		"entrances":["schneider_e01", "schneider_e02", "schneider_e03"],
 		"area":["upper campus"]
 	},
 	{
@@ -121,7 +121,7 @@ locations_mandelHellerLibrary=[
 			new Point(42.369158,-71.259171)],
 		"function":"Heller-Brown is home to the Heller School for Social Policy and Management, one of the top ten schools of social policy in the United States and one of the eight approved U.S. training institutions for World Bank Scholars.",
 		"category":["academics"],
-		"entrances":["heller_e01"],
+		"entrances":["heller_e01", "heller_e02", "starbucksHeller_ie01"],
 		"area":["upper campus"]
 		},
 	rabb = {

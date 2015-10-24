@@ -438,8 +438,28 @@ paths_mandelquad = [
 	    "end":"hellerparkinglot_e01",
 	    "description": "Walk straight to enter Heller Parking Lot.",
 	},
-	//////
-
+	//
+	{
+	    "start":"hellerparkinglot_e01",
+	    "end":"hellerparkinglot_e03",
+	    "description": "Walk across the parking lot diagonally towards the trees ahead.",
+	},
+	{
+	    "start":"hellerparkinglot_e03",
+	    "end":"hellerparkinglot_e01",
+	    "description": "Walk across the parking lot towards the path.",
+	},
+	{
+	    "start":"hellerparkinglot_e02",
+	    "end":"hellerparkinglot_e03",
+	    "description": "Turn right and walk along the trees to your right until you see an opening.",
+	},
+	{
+	    "start":"hellerparkinglot_e03",
+	    "end":"hellerparkinglot_e02",
+	    "description": "Turn left and continue walking.",
+	},
+	//
 	{
 	    "start":"shiffman_c01",
 	    "end":"rabb_c03",
@@ -470,8 +490,6 @@ paths_mandelquad = [
 	    "end":"golding_c02",
 	    "description": "Walk out the building to the first intersection",
 	},
-
-	/////
 	{
 	    "start":"golding_c02",
 	    "end":"shiffman_e02",

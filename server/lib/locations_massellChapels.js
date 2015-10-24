@@ -65,6 +65,7 @@ locations_massellChapels = [
 		"function":"The Chapels Field Wetland acts as a catchment basin for water from upper campus, preventing the flooding of Massell Quad and the Chapels.",
 		"description":"",
 		"category":["landscape"],
+		"entrances":["bethlehem_c01"],
 		"area":["upper campus","chapels"],
 		"nearby":["chapelsfield","berlin","bethlehem","harlan","farber"],
 		"coordinates":[new Point(42.368033, -71.259924),
