@@ -77,10 +77,9 @@ Meteor.methods({
 			});		
 			var theNearest = nearestPoint.fetch()[0];
 			console.log(theNearest);
-			console.log(theNearest.coordinate.coordinates[0]);
 			var theNearestDistance = 1000000000;
 			Meteor.call("distance",
-				location,
+				current,
 				{"x":theNearest.coordinate.coordinates[0],"y":theNearest.coordinate.coordinates[1]},
 				function(error,data) {
 					if (error) {
@@ -205,7 +204,7 @@ Meteor.methods({
 	/* returns the distance between two points 
 	* adapted from http://www.movable-type.co.uk/scripts/latlong.html */
 	distance: function(start, end) {
-		console.log(JSON.stringify(start)+JSON.stringify(end));
+		//console.log(JSON.stringify(start)+JSON.stringify(end));
 		var R = 6371000; // metres
 
 		var lat1 = start.x;
