@@ -83,6 +83,7 @@ Meteor.methods({
 	},
 
 	getNearest: function(location) {
+		console.log(location);
 		var nearestPoint = Intersections.find({
 			"coordinate":{
 				$near: {
@@ -93,11 +94,9 @@ Meteor.methods({
 					$minDistance: 0,
 				}
 			}
-		});
-		console.log(nearestPoint.fetch()[0]);
-		
+		});		
 		var theNearest = nearestPoint.fetch()[0];
-		console.log(theNearest.coordinate.coordinates);
+		console.log(theNearest);
 		var theNearestDistance = 1000000000;
 		Meteor.call("distance",
 			location,
