@@ -76,6 +76,7 @@ Meteor.methods({
 			});		
 			var theNearest = nearestPoint.fetch()[0];
 			console.log(nearestPoint.fetch());
+			console.log(nearestPoint.fetch().length);
 			var theNearestDistance = 1000000000;
 			Meteor.call("distance",
 				current,
