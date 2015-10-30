@@ -1,4 +1,6 @@
 Meteor.startup(function() {
+	Intersections._ensureIndex({"coordinate":"2dsphere"});
+	
 	if (Locations.find().count() == 0) {
 		// list of all of the files containing location data
 		var locFiles = [
@@ -64,7 +66,6 @@ Meteor.startup(function() {
 				// CornerPoints.insert(gjpoint);
 			});
 		});
-		Intersections._ensureIndex({coordinate:"2dsphere"});
 	}
 	
 	if (Paths.find().count() == 0) {
