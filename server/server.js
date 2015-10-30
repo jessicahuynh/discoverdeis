@@ -64,19 +64,54 @@ Meteor.methods({
 		// pass current
 		//console.log(locatedHere);
 		if (!locatedHere) {
-			Meteor.call("getNearest",
-				current,
-				function (error, data) {
+			var nearestPoint = Intersections.find({
+				"coordinate":{
+					$near: {
+						$geometry: {
+							type: "Point" ,
+							"coordinates": [ current.y , current.x ]
+						},
+						$minDistance: 0,
+					}
+				}
+			});		
+			var theNearest = nearestPoint.fetch()[0];
+			console.log(theNearest);
+			var theNearestDistance = 1000000000;
+			Meteor.call("distance",
+				location,
+				{"x":theNearest.coordinate.coordinates[0],"y":theNearest.coordinate.coordinates[1]},
+				function(error,data) {
 					if (error) {
 						console.log(error);
 					}
 					else {
-						console.log("returned:"+data);
-						location = [data[0], "near", data[1]];
-						return location;
+						//console.log("returned" + data);
+						theNearestDistance = data;
+						if (theNearestDistance < 1000000) {
+							return [theNearest,"near",theNearestDistance];
+						}
+						else {
+							console.log("You are off campus");
+							return;
+						}
 					}
 				}
 			);
+			
+			// Meteor.call("getNearest",
+			// 	current,
+			// 	function (error, data) {
+			// 		if (error) {
+			// 			console.log(error);
+			// 		}
+			// 		else {
+			// 			console.log("returned:"+data);
+			// 			location = [data[0], "near", data[1]];
+			// 			return location;
+			// 		}
+			// 	}
+			// );
 		}
 	},
 
@@ -107,7 +142,6 @@ Meteor.methods({
 					//console.log("returned" + data);
 					theNearestDistance = data;
 					if (theNearestDistance < 1000000) {
-						console.log(JSON.stringify(theNearest));
 						return [theNearest,theNearestDistance];
 					}
 					else {
