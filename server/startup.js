@@ -31,19 +31,9 @@ Meteor.startup(function() {
 					c = location.coordinates.coordinates[0];
 				}
 				
-				c.forEach(function(point) {
-					CornerPoints.insert({
-					"point":
-						{
-							"type":"Point",
-							"coordinates":point
-						},
-					"name":location.name});
-				})
 			});
 		});		
 	}
-	console.log(CornerPoints.find().fetch());
 	
 	if (Intersections.find().count() == 0) {
 		var intersectFiles = [
@@ -68,6 +58,10 @@ Meteor.startup(function() {
 		intersectFiles.forEach(function(intersectFile) {
 			intersectFile.forEach(function(point) {
 				Intersections.insert(point);
+				
+				var gjpoint = point.coordinate;
+				gjpoint.id = point.id;
+				CornerPoints.insert(gjpoint);
 			});
 		});
 	}
@@ -142,8 +136,5 @@ Meteor.startup(function() {
 	}
 	console.log(Map.find().count());
 	console.log("startup end");
-	
-	console.log(CornerPoints.find().fetch());
-
 
 });
