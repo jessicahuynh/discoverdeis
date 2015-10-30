@@ -95,13 +95,13 @@ Meteor.methods({
 				}
 			}
 		);
-		console.log(nearestPoint);
+		console.log(nearestPoint[0]);
 		
 		var theNearest = nearestPoint[0];
 		var theNearestDistance = 0;
 		Meteor.call("distance",
 			location,
-			theNearest,
+			theNearest.coordinate.coordinates,
 			function(error,data) {
 				if (error) {
 					console.log(error);
