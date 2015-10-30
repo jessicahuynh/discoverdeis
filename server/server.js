@@ -95,9 +95,9 @@ Meteor.methods({
 				}
 			}
 		});
-		console.log(nearestPoint.fetch()[0]);
+		console.log(nearestPoint[0]);
 		
-		var theNearest = nearestPoint.fetch()[0];
+		var theNearest = nearestPoint[0];
 		var theNearestDistance = 0;
 		Meteor.call("distance",
 			location,
