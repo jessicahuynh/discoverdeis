@@ -30,8 +30,19 @@ Meteor.methods({
 
 			}
 		}
+		
+		var inLoc = Locations.find({
+			"coordinates":{
+				$geoWithin: {
+					$geometry: {
+						type: "Polygon",
+						"coordinates": [current.y, current.x]
+					}
+				}
+			}
+		});
 	
-		return included;
+		return inLoc.fetch()[0];
 	},
 
 	/* Search through all locations to see where you are */
@@ -93,113 +104,15 @@ Meteor.methods({
 						}
 						else {
 							console.log("off campus");
-							return;
+							return null;
 						}
 					}
 				}
 			);
-			
-			// Meteor.call("getNearest",
-			// 	current,
-			// 	function (error, data) {
-			// 		if (error) {
-			// 			console.log(error);
-			// 		}
-			// 		else {
-			// 			console.log("returned:"+data);
-			// 			location = [data[0], "near", data[1]];
-			// 			return location;
-			// 		}
-			// 	}
-			// );
+
 		}
 	},
 
-	getNearest: function(location) {
-		console.log(location);
-		var nearestPoint = Intersections.find({
-			"coordinate":{
-				$near: {
-					$geometry: {
-						type: "Point" ,
-						"coordinates": [ location.y , location.x ]
-					},
-					$minDistance: 0,
-				}
-			}
-		});		
-		var theNearest = nearestPoint.fetch()[0];
-		console.log(theNearest);
-		var theNearestDistance = 1000000000;
-		Meteor.call("distance",
-			location,
-			{"x":theNearest.coordinate.coordinates[0],"y":theNearest.coordinate.coordinates[1]},
-			function(error,data) {
-				if (error) {
-					console.log(error);
-				}
-				else {
-					//console.log("returned" + data);
-					theNearestDistance = data;
-					if (theNearestDistance < 1000000) {
-						return [theNearest,theNearestDistance];
-					}
-					else {
-						console.log("You are off campus");
-						return;
-					}
-				}
-			}
-		);
-
-		// hold the current iteration
-		// nearLocationDistance is the distance to the point
-		// nearLocation is the object itself containing a point and a name
-		// previousClosest is the previous nearestLocation
-		// previousClosestDistance is the previous location's distance
-
-		// theNearest
-		// theNearestDistance
-
-		// previousClosest = points[0];
-		// previousClosestDistance = 1000000000000;
-		// theNearestDistance = 100000000000;
-
-		// for (var i = 0; i < points.length; i++) {
-		// 	//console.log(JSON.stringify(location)+JSON.stringify(points[i]));
-		// 	Meteor.call("distance",
-		// 		location,
-		// 		points[i].point,
-		// 		function(error,data) {
-		// 			if (error) {
-		// 				console.log(error);
-		// 			}
-		// 			else {
-		// 				//console.log(data);
-		// 				nearLocationDistance = data;							
-		// 			}
-		// 		}
-		// 		);
-		// 	nearLocation = points[i];
-		// 	//console.log(nearLocationDistance + "<" + theNearestDistance);
-		// 	if (nearLocationDistance < theNearestDistance) {
-		// 		theNearest = nearLocation;
-		// 		theNearestDistance = nearLocationDistance;
-		// 	}
-		// 	previousClosest = nearLocation;
-		// 	previousClosestDistance = nearLocationDistance;
-		// }
-		// //console.log("nearest distance location:" + theNearestDistance + JSON.stringify(theNearest));
-		// if (theNearestDistance < 10000000) {
-		// 	// console.log(JSON.stringify(theNearest));
-		// 	return [theNearest,theNearestDistance];
-		// }
-		// else {
-		// 	console.log("You are off campus.");
-		// 	return;
-		// }
-
-	},
 
 	/* returns the distance between two points 
 	* adapted from http://www.movable-type.co.uk/scripts/latlong.html */

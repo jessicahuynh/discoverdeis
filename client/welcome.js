@@ -20,7 +20,7 @@ Template.welcome.helpers({
 			
 		}
 		if (name == null) {
-			return "You're off campus";
+			return "You're off campus!";
 		}
 	},
 	locationMapOptions: function() {
