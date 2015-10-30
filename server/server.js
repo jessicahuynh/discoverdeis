@@ -108,6 +108,7 @@ Meteor.methods({
 				else {
 					theNearestDistance = data;
 					if (theNearestDistance < 1000000) {
+						console.log('got it!');
 						return [theNearest,theNearestDistance];
 					}
 					else {
@@ -170,7 +171,7 @@ Meteor.methods({
 	/* returns the distance between two points 
 	* adapted from http://www.movable-type.co.uk/scripts/latlong.html */
 	distance: function(start, end) {
-		//console.log(JSON.stringify(start)+JSON.stringify(end));
+		console.log(JSON.stringify(start)+JSON.stringify(end));
 		var R = 6371000; // metres
 		//console.log(start.point+end.point);
 
