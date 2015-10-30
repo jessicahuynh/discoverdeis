@@ -1,5 +1,6 @@
 Meteor.startup(function() {
 	Intersections._ensureIndex({"coordinate":"2dsphere"});
+	Locations._ensureIndex({"coordinates":"2dsphere"});
 	
 	if (Locations.find().count() == 0) {
 		// list of all of the files containing location data
