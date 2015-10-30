@@ -1,6 +1,5 @@
 Meteor.startup(function() {
-	Intersections._ensureIndex({"coordinate":"2dsphere"});
-	Locations._ensureIndex({"coordinates":"2dsphere"});
+	CornerPoints._ensureIndex({"coordinate":"2dsphere"});
 	
 	if (Locations.find().count() == 0) {
 		// list of all of the files containing location data
@@ -26,6 +25,7 @@ Meteor.startup(function() {
 		locFiles.forEach(function(locFile) {
 			locFile.forEach(function(location) {
 				Locations.insert(location);
+				
 				var c = null;
 				if (location.coordinates.type == "Point") {
 					c = location.coordinates.coordinates;
@@ -33,7 +33,12 @@ Meteor.startup(function() {
 				else {
 					c = location.coordinates.coordinates[0];
 				}
-				
+				c.forEach(function(point) { 
+					var gjpoint = point;
+					gjpoint.name = location.name;
+					CornerPoints.insert(gjpoint); 
+ 				});
+
 			});
 		});		
 	}
@@ -61,10 +66,6 @@ Meteor.startup(function() {
 		intersectFiles.forEach(function(intersectFile) {
 			intersectFile.forEach(function(point) {
 				Intersections.insert(point);
-				
-				// var gjpoint = point.coordinate;
-				// gjpoint.id = point.id;
-				// CornerPoints.insert(gjpoint);
 			});
 		});
 	}

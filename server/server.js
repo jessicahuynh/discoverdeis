@@ -63,7 +63,7 @@ Meteor.methods({
 		}
 						
 		if (!locatedHere) {
-			var nearestPoint = Intersections.find({
+			var nearestPoint = CornerPoints.find({
 				"coordinate":{
 					$near: {
 						$geometry: {
@@ -88,17 +88,7 @@ Meteor.methods({
 						//console.log("returned" + data);
 						theNearestDistance = data;
 						if (theNearestDistance < 1000000) {
-							var nearestLoc = Locations.find({
-								"coordinates": {
-									$near: {
-										$geometry: {
-											"type":"Point",
-											"coordinates":[current.y,current.x]
-										}
-									}
-								}
-							});
-							return [nearestLoc.fetch()[0],"near",theNearestDistance];
+							return [theNearest,"near",theNearestDistance];
 						}
 						else {
 							console.log("off campus");
