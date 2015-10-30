@@ -92,13 +92,14 @@ Meteor.methods({
 					{ 
 						$geometry: { 
 							type: "Point", 
-							coordinates: [ Session.get("currentLocation").x, Session.get("currentLocation").y ] }, 
+							coordinates: [location.x, location.y ] }, 
 						$minDistance: 0, 
 						$maxDistance: 500
 					} 
 				}
 			}
 		);
+		console.log(nearestPoint);
 		
 		var theNearest = Intersections.find({id:nearestPoint[0].id});
 		var theNearestDistance = 0;
