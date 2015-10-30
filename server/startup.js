@@ -34,7 +34,7 @@ Meteor.startup(function() {
 				else {
 					c = location.coordinates.coordinates[0];
 				}
-				CornerPoints.insert({"coordinate":c,"name":location.name});
+				CornerPoints.insert({"coordinate":{"type":"Point","coordinates":c},"name":location.name});
 				
 			});
 		});		
