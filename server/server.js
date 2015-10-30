@@ -12,12 +12,12 @@ Meteor.methods({
 		// create arrays of the x and y coordinates of the polygon
 		var xArray = [];
 		for (var i = 0; i < numVert; i++) {
-			xArray.push(vertices[i].x);
+			xArray.push(vertices[i][0]);
 		}
 		
 		var yArray = [];
 		for (var i = 0; i < numVert; i++) {
-			yArray.push(vertices[i].y);
+			yArray.push(vertices[i][1]);
 		}
 
 		for (var i = 0, j = numVert - 1; i < numVert; j = i++) {
@@ -30,19 +30,8 @@ Meteor.methods({
 
 			}
 		}
-		
-		var inLoc = Locations.find({
-			"coordinates":{
-				$geoWithin: {
-					$geometry: {
-						type: "Polygon",
-						"coordinates": [current.y, current.x]
-					}
-				}
-			}
-		});
 	
-		return inLoc.fetch()[0];
+		return included;
 	},
 
 	/* Search through all locations to see where you are */
@@ -52,7 +41,9 @@ Meteor.methods({
 
 		for (var i = 0; i < Locations.find().count(); i++) {
 			// if the given Point is in the location, return the location
-			Meteor.call("pointIncluded",Locations.find().fetch()[i].coordinates.coordinates[0],current,
+			Meteor.call("pointIncluded",
+				Locations.find().fetch()[i].coordinates.coordinates[0],
+				current,
 				function(error, data) {
 					if (error) {
 						console.log(error);
