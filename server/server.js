@@ -90,7 +90,7 @@ Meteor.methods({
 						if (theNearestDistance < 1000000) {
 							var locWithin = Locations.find({
 								"coordinates":{
-									$geoIntersections: {
+									$geoIntersects: {
 										$geometry: {
 											type:"Point",
 											"coordinates":[current.y,current.x]
