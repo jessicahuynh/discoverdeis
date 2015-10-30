@@ -100,7 +100,7 @@ Meteor.methods({
 		var theNearestDistance = 1000000000;
 		Meteor.call("distance",
 			location,
-			theNearest.coordinate.coordinates,
+			{"x":theNearest.coordinate.coordinates[0],"y":theNearest.coordinate.coordinates[1]},
 			function(error,data) {
 				if (error) {
 					console.log(error);
