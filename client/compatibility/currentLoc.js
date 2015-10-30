@@ -3,7 +3,7 @@ navigator.geolocation.watchPosition(function (position) {
 	Session.setPersistent("currentLocation", current);
 	
 	Meteor.call("searchLocations",
-	Session.get("currentLocation"),
+		Session.get("currentLocation"),
 		function (error, data) {
 			if (error) {
 				console.log(error);
