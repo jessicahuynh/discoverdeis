@@ -43,6 +43,7 @@ Meteor.startup(function() {
 			});
 		});		
 	}
+	console.log(CornerPoints.find().fetch());
 	
 	if (Intersections.find().count() == 0) {
 		var intersectFiles = [
@@ -141,6 +142,8 @@ Meteor.startup(function() {
 	}
 	console.log(Map.find().count());
 	console.log("startup end");
+	
+	console.log(CornerPoints.find().fetch());
 
 
 });
