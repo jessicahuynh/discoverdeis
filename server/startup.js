@@ -59,11 +59,12 @@ Meteor.startup(function() {
 			intersectFile.forEach(function(point) {
 				Intersections.insert(point);
 				
-				var gjpoint = point.coordinate;
-				gjpoint.id = point.id;
-				CornerPoints.insert(gjpoint);
+				// var gjpoint = point.coordinate;
+				// gjpoint.id = point.id;
+				// CornerPoints.insert(gjpoint);
 			});
 		});
+		db.intersections.createIndex({coordinate:"2dsphere"});
 	}
 	
 	if (Paths.find().count() == 0) {
