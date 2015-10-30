@@ -91,7 +91,7 @@ Meteor.methods({
 						coordinates: [ location.y , location.x ]
 					},
 					$maxDistance: 0,
-					$minDistance: 100>
+					$minDistance: 100
 				}
 			}
 		);
