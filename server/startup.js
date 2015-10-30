@@ -64,7 +64,7 @@ Meteor.startup(function() {
 				// CornerPoints.insert(gjpoint);
 			});
 		});
-		db.intersections.createIndex({coordinate:"2dsphere"});
+		Intersections._ensureIndex({coordinate:"2dsphere"});
 	}
 	
 	if (Paths.find().count() == 0) {
