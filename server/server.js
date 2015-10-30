@@ -83,12 +83,12 @@ Meteor.methods({
 	},
 
 	getNearest: function(location) {
+		console.log(location);
 		var points = CornerPoints.find().fetch();
 		
 		var nearestPoint = CornerPoints.find(
 			{
-				location:{
-					$near: 
+				$near: 
 					{ 
 						$geometry: { 
 							type: "Point", 
@@ -96,7 +96,7 @@ Meteor.methods({
 						$minDistance: 0, 
 						$maxDistance: 500
 					} 
-				}
+				
 			}
 		);
 		console.log(nearestPoint);
