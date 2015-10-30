@@ -32,6 +32,7 @@ Meteor.startup(function() {
 					c = location.coordinates.coordinates;
 				}
 				else {
+					// use first entrance
 					c = location.coordinates.coordinates[0][0];
 				}
 				CornerPoints.insert({"coordinate":{"type":"Point","coordinates":c},"name":location.name});
@@ -88,9 +89,9 @@ Meteor.startup(function() {
 		
 		pathFiles.forEach(function(pathFile) {
 			pathFile.forEach(function(path) {
-				console.log("path###############");
-				console.log(Intersections.findOne({"id":path.start}));
-				console.log(Intersections.findOne({"id":path.end}));
+				//console.log("path###############");
+				//console.log(Intersections.findOne({"id":path.start}));
+				//console.log(Intersections.findOne({"id":path.end}));
 				Meteor.call("distance",
 					Intersections.findOne({"id":path.start}).coordinate,
 					Intersections.findOne({"id":path.end}).coordinate,
@@ -130,7 +131,7 @@ Meteor.startup(function() {
 	if (Hours.find().count()==0){
 		var hoursFile=operationhours;
 		hoursFile.forEach(function(hour) {
-			console.log(hour);
+			//console.log(hour);
 			Hours.insert(hour);
 			
 		});
