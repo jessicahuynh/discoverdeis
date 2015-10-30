@@ -90,8 +90,8 @@ Meteor.methods({
 						type: "Point" ,
 						coordinates: [ location.y , location.x ]
 					},
-					$maxDistance: 0,
-					$minDistance: 10000
+					$maxDistance: 10000,
+					$minDistance: 0
 				}
 			}
 		});
