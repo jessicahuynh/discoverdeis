@@ -29,7 +29,7 @@ Meteor.startup(function() {
 				
 				var c = null;
 				if (location.coordinates.type == "Point") {
-					c = location.coordinates.coordinates[0];
+					c = location.coordinates.coordinates;
 				}
 				else {
 					c = location.coordinates.coordinates[0][0];
