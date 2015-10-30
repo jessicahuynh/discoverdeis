@@ -84,7 +84,43 @@ Meteor.methods({
 
 	getNearest: function(location) {
 		var points = CornerPoints.find().fetch();
-		console.log(points);
+		
+		var nearestPoint = CornerPoints.find(
+			{
+				location:{
+					$near: 
+					{ 
+						$geometry: { 
+							type: "Point", 
+							coordinates: [ Session.get("currentLocation").x, Session.get("currentLocation").y ] }, 
+						$minDistance: 0, 
+						$maxDistance: 500
+					} 
+				}
+			}
+		);
+		
+		var theNearest = Intersections.find({id:nearestPoint[0].id});
+		var theNearestDistance = 0;
+		Meteor.call("distance",
+			location,
+			theNearest,
+			function(error,data) {
+				if (error) {
+					console.log(error);
+				}
+				else {
+					theNearestDistance = data;
+					if (theNearestDistance < 1000000) {
+						return [theNearest,theNearestDistance];
+					}
+					else {
+						console.log("You are off campus");
+						return;
+					}
+				}
+			}
+		);
 
 		// hold the current iteration
 		// nearLocationDistance is the distance to the point
@@ -95,43 +131,43 @@ Meteor.methods({
 		// theNearest
 		// theNearestDistance
 
-		previousClosest = points[0];
-		previousClosestDistance = 1000000000000;
-		theNearestDistance = 100000000000;
+		// previousClosest = points[0];
+		// previousClosestDistance = 1000000000000;
+		// theNearestDistance = 100000000000;
 
-		for (var i = 0; i < points.length; i++) {
-			//console.log(JSON.stringify(location)+JSON.stringify(points[i]));
-			Meteor.call("distance",
-				location,
-				points[i].point,
-				function(error,data) {
-					if (error) {
-						console.log(error);
-					}
-					else {
-						//console.log(data);
-						nearLocationDistance = data;							
-					}
-				}
-				);
-			nearLocation = points[i];
-			//console.log(nearLocationDistance + "<" + theNearestDistance);
-			if (nearLocationDistance < theNearestDistance) {
-				theNearest = nearLocation;
-				theNearestDistance = nearLocationDistance;
-			}
-			previousClosest = nearLocation;
-			previousClosestDistance = nearLocationDistance;
-		}
-		//console.log("nearest distance location:" + theNearestDistance + JSON.stringify(theNearest));
-		if (theNearestDistance < 10000000) {
-			// console.log(JSON.stringify(theNearest));
-			return [theNearest,theNearestDistance];
-		}
-		else {
-			console.log("You are off campus.");
-			return;
-		}
+		// for (var i = 0; i < points.length; i++) {
+		// 	//console.log(JSON.stringify(location)+JSON.stringify(points[i]));
+		// 	Meteor.call("distance",
+		// 		location,
+		// 		points[i].point,
+		// 		function(error,data) {
+		// 			if (error) {
+		// 				console.log(error);
+		// 			}
+		// 			else {
+		// 				//console.log(data);
+		// 				nearLocationDistance = data;							
+		// 			}
+		// 		}
+		// 		);
+		// 	nearLocation = points[i];
+		// 	//console.log(nearLocationDistance + "<" + theNearestDistance);
+		// 	if (nearLocationDistance < theNearestDistance) {
+		// 		theNearest = nearLocation;
+		// 		theNearestDistance = nearLocationDistance;
+		// 	}
+		// 	previousClosest = nearLocation;
+		// 	previousClosestDistance = nearLocationDistance;
+		// }
+		// //console.log("nearest distance location:" + theNearestDistance + JSON.stringify(theNearest));
+		// if (theNearestDistance < 10000000) {
+		// 	// console.log(JSON.stringify(theNearest));
+		// 	return [theNearest,theNearestDistance];
+		// }
+		// else {
+		// 	console.log("You are off campus.");
+		// 	return;
+		// }
 
 	},
 
