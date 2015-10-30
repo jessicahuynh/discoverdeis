@@ -21,30 +21,47 @@ function getRoute(starts, ends) {
 				var nearestIntersection = null;
 				var distNearestIntersection = 1000000000;
 				
-				var i = Intersections.find().fetch();
-				i.forEach(function(intersection) {
-					Meteor.call("distance",
-						Session.get("currentLocation"),
-						intersection.coordinate,
-						function(error,data) {
-							if (error) {
-								console.log(error);
+				var nearest = Intersections.find({
+					"coordinate":{
+						$near:{
+							$geometry: {
+								"type":"Point",
+								"coordinates":[Session.get("currentLocation").y, Session.get("currentLocation").x]
 							}
-							else {
-								if (data < distNearestIntersection) {
-									distNearestIntersection = data;
-									nearestIntersection = intersection.id;
+						}
+					}
+				});
+				
+				route = getShortestRoute(null,[nearest.fetch()[0]],Locations.findOne({"name":ends}).entrances);
+				if (route != null) {
+					getRouteDescription(route);
+					Session.set("route",route);
+				}
+				
+				// var i = Intersections.find().fetch();
+				// i.forEach(function(intersection) {
+				// 	Meteor.call("distance",
+				// 		Session.get("currentLocation"),
+				// 		intersection.coordinate,
+				// 		function(error,data) {
+				// 			if (error) {
+				// 				console.log(error);
+				// 			}
+				// 			else {
+				// 				if (data < distNearestIntersection) {
+				// 					distNearestIntersection = data;
+				// 					nearestIntersection = intersection.id;
 									
-									route = getShortestRoute(null,[nearestIntersection],Locations.findOne({"name":ends}).entrances);
-									//console.log("*" + route);
-									if (route != null) {
-										getRouteDescription(route);
-										Session.set("route",route);
-									}
-								}
-							}
-						});
-				});				
+				// 					route = getShortestRoute(null,[nearestIntersection],Locations.findOne({"name":ends}).entrances);
+				// 					//console.log("*" + route);
+				// 					if (route != null) {
+				// 						getRouteDescription(route);
+				// 						Session.set("route",route);
+				// 					}
+				// 				}
+				// 			}
+				// 		});
+				// });				
 				
 			}
 		}

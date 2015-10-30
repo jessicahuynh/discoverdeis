@@ -67,7 +67,7 @@ Meteor.methods({
 				"coordinate":{
 					$near: {
 						$geometry: {
-							type: "Point" ,
+							"type": "Point" ,
 							"coordinates": [ current.y , current.x ]
 						}
 					}
