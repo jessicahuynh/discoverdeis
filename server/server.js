@@ -172,14 +172,14 @@ Meteor.methods({
 	/* returns the distance between two points 
 	* adapted from http://www.movable-type.co.uk/scripts/latlong.html */
 	distance: function(start, end) {
-		console.log(JSON.stringify(start)+JSON.stringify(end));
+		//console.log(JSON.stringify(start)+JSON.stringify(end));
 		var R = 6371000; // metres
 		//console.log(start.point+end.point);
 
-		var lat1 = start[0];
-		var lat2 = end[0];
-		var lon1 = start[1];
-		var lon2 = end[1];
+		var lat1 = start.x;
+		var lat2 = end.x;
+		var lon1 = start.y;
+		var lon2 = end.y;
 
 		var p1 = lat1 * (Math.PI / 180);
 		var p2 = lat2 * (Math.PI / 180);
