@@ -89,7 +89,7 @@ Meteor.methods({
 						theNearestDistance = data;
 						if (theNearestDistance < 1000000) {	
 							console.log(Locations.findOne({"name":theNearest.name}));
-							return [theNearest,"near",theNearestDistance];
+							return [Locations.findOne({"name":theNearest.name}),"near",theNearestDistance];
 						}
 						else {
 							console.log("off campus");
