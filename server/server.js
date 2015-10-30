@@ -91,6 +91,7 @@ Meteor.methods({
 						//console.log("returned" + data);
 						theNearestDistance = data;
 						if (theNearestDistance < 1000000) {
+							console.log([JSON.stringify(theNearest),"near",theNearestDistance])
 							return [theNearest,"near",theNearestDistance];
 						}
 						else {
