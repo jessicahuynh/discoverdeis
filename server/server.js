@@ -91,11 +91,11 @@ Meteor.methods({
 						coordinates: [ location.y , location.x ]
 					},
 					$maxDistance: 0,
-					$minDistance: 100
+					$minDistance: 10000
 				}
 			}
 		});
-		console.log(nearestPoint[0]);
+		console.log(nearestPoint);
 		
 		var theNearest = nearestPoint[0];
 		var theNearestDistance = 0;
