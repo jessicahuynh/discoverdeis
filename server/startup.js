@@ -27,14 +27,7 @@ Meteor.startup(function() {
 			locFile.forEach(function(location) {
 				Locations.insert(location);
 				
-				var c = null;
-				if (location.coordinates.type == "Point") {
-					c = location.coordinates.coordinates;
-				}
-				else {
-					// use first entrance
-					c = location.coordinates.coordinates[0][0];
-				}
+				var c = location.coordinates.coordinates[0][0];
 				CornerPoints.insert({"coordinate":{"type":"Point","coordinates":c},"name":location.name});
 				
 			});
