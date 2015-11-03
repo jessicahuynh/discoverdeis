@@ -48,7 +48,7 @@ points_northrabb = [
 	},
 	{
 		"id":"gordon_ie01",
-		"coordinate":new Point(42.369508, -71.255938),
+		"coordinate":new Point(42.369588, -71.256014),
 		"type":"ientrance"
 	},
 	

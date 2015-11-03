@@ -407,7 +407,7 @@ locations_dorms = [
 			new Point(42.362955, -71.261101)],
 		"category":["dorm"],
 		"nearby":["ridgewoodB","ridgewoodC","ziv127","ziv128","ziv130","epstein"],
-		"entrances":["ziv129_e01","ziv129_e02","ziv129_e03","village"],
+		"entrances":["ziv129_e01","ziv129_e02","ziv129_e03"],
 		"area":["lower campus","ziv"]
 	},
 	{
@@ -427,7 +427,7 @@ locations_dorms = [
 			new Point(42.363425, -71.261041)],
 		"category":["dorm"],
 		"nearby":["ridgewoodB","ridgewoodC","ziv127","ziv128","ziv129","epstein"],
-		"entrances":["ziv130_e01","ziv130_e02","ziv130_e03","village"],
+		"entrances":["ziv130_e01","ziv130_e02","ziv130_e03"],
 		"area":["lower campus","ziv"]
 	},
 	eastShapiro = {

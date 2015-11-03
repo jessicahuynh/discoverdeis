@@ -271,7 +271,7 @@ locations_rooms = [
 		"function":"The Fieldhouse is home to Brandeis basketball and volleyball. Many events, such as graduation, are held here as well.",
 		"description":"",
 		"category":["athletics","student life"],
-		"entrances":[],
+		"entrances":["fieldhouse_ie01"],
 		"area":["athletics","athletic complex"]
 	},
 	{

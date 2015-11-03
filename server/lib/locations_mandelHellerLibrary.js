@@ -93,7 +93,7 @@ locations_mandelHellerLibrary=[
 			new Point(42.368674, -71.257622),],
 		"category":["academics"],
 		"description": "Goldfarb/Farber Libraries house ever growing collections and reference resources in creative arts, humanities, government documents, Judaica, and social sciences. Research materials are extremely accessible to students due to the online availability of resources, and additional resources are made available through the Boston Library Consortium and the Interlibrary Loan system. The library offers services for students including a listening center, computer labs, study rooms, a media lab that helps students edit their films and soundtracks, as well as the Writing Center. The Writing Center assists students in all aspects of writing their papers, from brainstorming to editing. Recently, a new café was added to the Green Room section of the library.",
-		"entrances":["goldfarb_e01","goldfarb_e02"],
+		"entrances":["goldfarb_e01","goldfarb_e02", "library_ie01"],
 		"area":["upper campus","libraries"]
 	},
 	farber = {
@@ -106,7 +106,7 @@ locations_mandelHellerLibrary=[
 			new Point(42.367823,-71.258354), 
 			new Point(42.367688,-71.25867)],
 		"category":["library"],
-		"entrances":["farber_e01"],
+		"entrances":["farber_e01", "farber_ie01"],
 		"area":["upper campus","libraries"]
 		},
 

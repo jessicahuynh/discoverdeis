@@ -28,7 +28,7 @@ locations_usdan = [
 			new Point(42.367938, -71.257330),
 			new Point(42.367883, -71.257026),],
 		"category":["student life"],
-		"entrances":["levin_e01","levin_e02",],
+		"entrances":["levin_e01","levin_e02"],
 		"area":["upper campus"]
 	},
 	{
@@ -71,7 +71,7 @@ locations_usdan = [
 			new Point(42.367169,-71.256718), 
 			new Point(42.367266,-71.257265)],
 		"category":["academics"],
-		"entrances":["brown_e01","brown_e02", "brown_ie01"],
+		"entrances":["brown_e01","brown_e02", "brown_ie01", "brown_e03"],
 		"area":["upper campus"]
 		},
 	castle = {
