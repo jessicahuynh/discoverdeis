@@ -1,7 +1,6 @@
 navigator.geolocation.watchPosition(function (position) {
 	var current = new Point(position.coords.latitude, position.coords.longitude);
 	Session.setPersistent("currentLocation", current);
-	console.log(Session.get("currentLocation"));
 	
 	Meteor.call("searchLocations",
 		Session.get("currentLocation"),
@@ -10,7 +9,6 @@ navigator.geolocation.watchPosition(function (position) {
 				console.log(error);
 			}
 			else {
-				console.log(data);
 				Session.setPersistent("inLocation", data);
 			}
 		}	

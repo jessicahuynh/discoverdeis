@@ -23,9 +23,9 @@ Template.welcome.helpers({
 				
 			}
 		}
-		else {
-			return "You're off campus! There's lots to do off campus, but unfortunately I can't tell you about it.";
-		}
+		
+		return "You're off campus! There's lots to do off campus, but unfortunately I can't tell you about it.";
+		
 	},
 	locationMapOptions: function() {
 		if (GoogleMaps.loaded()) {
