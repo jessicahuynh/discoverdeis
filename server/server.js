@@ -71,8 +71,7 @@ Meteor.methods({
 				}
 			});		
 			var theNearest = nearestPoint.fetch()[0];
-			console.log(nearestPoint.fetch());
-			console.log(nearestPoint.fetch().length);
+
 			var theNearestDistance = 1000000000;
 			Meteor.call("distance",
 				current,
@@ -82,10 +81,9 @@ Meteor.methods({
 						console.log(error);
 					}
 					else {
-						//console.log("returned" + data);
 						theNearestDistance = data;
 						if (theNearestDistance < 1000000) {	
-							console.log(Locations.findOne({"name":theNearest.name}));
+							console.log([Locations.findOne({"name":theNearest.name}),"near",theNearestDistance]);
 							return [Locations.findOne({"name":theNearest.name}),"near",theNearestDistance];
 						}
 						else {
