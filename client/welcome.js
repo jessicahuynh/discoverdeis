@@ -7,7 +7,7 @@ offCampus = {
 Template.welcome.helpers({
 	inLocation: function () {
 		console.log(Session.get("inLocation"));
-		var name = "You're off campus";
+		var name = "off";
 		if (Session.get("inLocation")[1] == "in") {
 			return Locations.findOne({ "name": Session.get("inLocation")[0].name }).name;
 		}	
@@ -20,7 +20,7 @@ Template.welcome.helpers({
 			}
 			
 		}
-		if (!name) {
+		if (name == "off") {
 			return "You're off campus! There's lots to do off campus, but unfortunately I can't tell you about it.";
 		}
 	},

@@ -3,6 +3,7 @@ Session.setDefault("inLocation",[Locations.findOne({"id":"volen"}),"in"]);
 navigator.geolocation.watchPosition(function (position) {
 	var current = new Point(position.coords.latitude, position.coords.longitude);
 	Session.setPersistent("currentLocation", current);
+	console.log(Session.get("currentLocation"));
 	
 	Meteor.call("searchLocations",
 		Session.get("currentLocation"),
@@ -26,8 +27,3 @@ navigator.geolocation.watchPosition(function (position) {
 	}
 	
 });
-
-function Point(x,y) {
-	this.x = x;
-	this.y = y;
-}
