@@ -83,8 +83,9 @@ Meteor.methods({
 					else {
 						theNearestDistance = data;
 						if (theNearestDistance < 1000000) {	
-							console.log([Locations.findOne({"name":theNearest.name}),"near",theNearestDistance]);
-							return [Locations.findOne({"name":theNearest.name}),"near",theNearestDistance];
+							var n = [Locations.findOne({"name":theNearest.name}),"near",theNearestDistance];
+							console.log(n);
+							return n;
 						}
 						else {
 							console.log("off campus");
