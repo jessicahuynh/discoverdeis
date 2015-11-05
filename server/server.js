@@ -50,16 +50,13 @@ Meteor.methods({
 					}
 					else {
 						locatedHere = data;
+						
+						if (locatedHere) {
+							location = [Locations.find().fetch()[i], "in"];
+							return location;
+						}
 					}
 			});
-			
-			
-			if (locatedHere) {
-				location = [Locations.find().fetch()[i], "in"];
-				return location;
-			}
-
-
 		}
 						
 		if (!locatedHere) {
