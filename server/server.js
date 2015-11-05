@@ -84,8 +84,7 @@ Meteor.methods({
 						theNearestDistance = data;
 						if (theNearestDistance < 1000000) {	
 							var n = [Locations.findOne({"name":theNearest.name}),"near",theNearestDistance];
-							console.log(nearestPoint.fetch()[1]);
-							console.log('CCC'+Locations.findOne({"name":theNearest.name}).name);
+							console.log(Locations.findOne({"name":theNearest.name}).name);
 							return n;
 						}
 						else {

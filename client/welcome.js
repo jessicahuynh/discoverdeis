@@ -9,7 +9,7 @@ Template.welcome.helpers({
 		var inLoc = Session.get("inLocation");
 		console.log(inLoc);
 		
-		if (inLoc[0] != null || typeof inLoc != "undefined" || inLoc != null) {
+		if (inLoc[0] != null && typeof inLoc != "undefined" && inLoc != null) {
 			var name = Locations.findOne({ "name": inLoc[0].name }).name;
 			if (inLoc[1] == "in") {
 				return name;
