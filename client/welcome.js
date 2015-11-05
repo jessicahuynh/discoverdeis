@@ -9,7 +9,7 @@ Template.welcome.helpers({
 		var inLoc = Session.get("inLocation");
 		console.log(inLoc);
 		
-		if (inLoc[0] != null && typeof inLoc != "undefined" && inLoc != null) {
+		if (typeof inLoc != "undefined" && inLoc != null && inLoc[0] != null) {
 			var name = Locations.findOne({ "name": inLoc[0].name }).name;
 			if (inLoc[1] == "in") {
 				return name;
@@ -24,8 +24,9 @@ Template.welcome.helpers({
 				
 			}
 		}
-		
-		return "You're off campus! There's lots to do off campus, but unfortunately I can't tell you about it.";
+		else {
+			return "You're off campus! There's lots to do off campus, but unfortunately I can't tell you about it.";
+		}
 		
 	},
 	locationMapOptions: function() {

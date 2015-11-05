@@ -66,7 +66,8 @@ Meteor.methods({
 						$geometry: {
 							"type": "Point" ,
 							"coordinates": [ current.y , current.x ]
-						}
+						},
+						$maxDistance: 5000000
 					}
 				}
 			});		
@@ -84,7 +85,7 @@ Meteor.methods({
 						theNearestDistance = data;
 						if (theNearestDistance < 1000000) {	
 							var n = [Locations.findOne({"name":theNearest.name}),"near",theNearestDistance];
-							console.log(Locations.findOne({"name":theNearest.name}).name);
+							console.log("near " + Locations.findOne({"name":theNearest.name}).name);
 							return n;
 						}
 						else {
