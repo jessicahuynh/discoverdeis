@@ -8,7 +8,7 @@ Template.welcome.helpers({
 	inLocation: function () {
 		console.log(Session.get("inLocation"));
 		
-		if (Session.get("inLocation")[0] != null) {
+		if (Session.get("inLocation")[0] != null || typeof Session.get("inLocation") != "undefined" || Session.get("inLocation") != null) {
 			var name = Locations.findOne({ "name": Session.get("inLocation")[0].name }).name;
 			if (Session.get("inLocation")[1] == "in") {
 				return name;

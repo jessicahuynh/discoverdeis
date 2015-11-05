@@ -36,8 +36,8 @@ Meteor.methods({
 
 	/* Search through all locations to see where you are */
 	searchLocations: function(current) {
-		location = null;
-		locatedHere = null;
+		var location = null;
+		var locatedHere = null;
 
 		for (var i = 0; i < Locations.find().count(); i++) {
 			// if the given Point is in the location, return the location
