@@ -1,4 +1,5 @@
 Session.setDefault("inLocation",[Locations.findOne({"id":"volen"}),"in"]);
+console.log("default:"+Session.get("inLocation")[0].name);
 
 navigator.geolocation.watchPosition(function (position) {
 	var current = new Point(position.coords.latitude, position.coords.longitude);
