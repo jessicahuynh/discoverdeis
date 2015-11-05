@@ -67,6 +67,7 @@ Meteor.methods({
 							"type": "Point" ,
 							"coordinates": [ current.y , current.x ]
 						},
+						$minDistance: 0,
 						$maxDistance: 5000000
 					}
 				}
