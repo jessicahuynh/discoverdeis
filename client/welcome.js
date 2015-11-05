@@ -7,21 +7,21 @@ offCampus = {
 Template.welcome.helpers({
 	inLocation: function () {
 		console.log(Session.get("inLocation"));
-		var name = Locations.findOne({ "name": Session.get("inLocation")[0].name }).name;
+		var name = "You're off campus";
 		if (Session.get("inLocation")[1] == "in") {
-			return name;
+			return Locations.findOne({ "name": Session.get("inLocation")[0].name }).name;
 		}	
 		else {
 			if (Session.get("unit") == "m") {
-				return Math.round(Session.get("inLocation")[2]) + "m from " + name;
+				return Math.round(Session.get("inLocation")[2]) + "m from " + Locations.findOne({ "name": Session.get("inLocation")[0].name }).name;
 			}
 			else {
-				return Math.floor(Math.round(Session.get("inLocation")[2]*3.28)) + "ft from " + name;
+				return Math.floor(Math.round(Session.get("inLocation")[2]*3.28)) + "ft from " + Locations.findOne({ "name": Session.get("inLocation")[0].name }).name;
 			}
 			
 		}
 		if (!name) {
-			return "You're off campus!";
+			return "You're off campus! There's lots to do off campus, but unfortunately I can't tell you about it.";
 		}
 	},
 	locationMapOptions: function() {
