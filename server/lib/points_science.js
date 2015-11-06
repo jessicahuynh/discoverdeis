@@ -139,11 +139,11 @@ points_science = [
 	    "coordinate":new Point(42.366195, -71.256540),
 	    "type":"entrance"
 	},
-	{
-	    "id":"sciencevisitorlot_e01",
-	    "coordinate":new Point(42.366509, -71.256858),
-	    "type":"entrance"
-	},
+	// {
+	//     "id":"sciencevisitorlot_e01",
+	//     "coordinate":new Point(42.366509, -71.256858),
+	//     "type":"entrance"
+	// },
 	{
 	    "id":"sciencelot_e01",
 	    "coordinate":new Point(42.366189, -71.256172),

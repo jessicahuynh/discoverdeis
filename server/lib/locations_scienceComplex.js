@@ -15,8 +15,8 @@ locations_scienceComplex = [
 						(examples include experimental psychology, computational neuroscience, and cellular \
 						and molecular neurobiology).",
 		"category":["academics","offices"],
-		"entrances":["volen_e01","volen_ie02","volen_ie03","feldberg_ie01"],
-		"icrossings":["volen_ic02"],
+		"entrances":["volen_e01","volen_ie02","volen_ie03","feldberg_ie01", "volen_e02"],
+		"icrossings":["volen_ic01","volen_ic02", "volen_ic03"],
 		"nearby":["feldberg","gzang","goldsmith","chapelsfield"],
 		"area":["upper campus","science complex"]
 	},
@@ -33,7 +33,7 @@ locations_scienceComplex = [
 		"function": "Bassine Science Building is home to biology at Brandeis.",
 		"description":"There are many labs here.",
 		"category":["academics","offices"],
-		"entrances":["bassine_e01","bassine_e02","bassine_e03"],
+		"entrances":["bassine_e01","bassine_e02","bassine_e03", "bassine_ie01"],
 		"area":["upper campus","science complex"]
 
 	},
@@ -80,7 +80,7 @@ locations_scienceComplex = [
 			new Point(42.366304, -71.257812), 
 			new Point(42.366647, -71.258526)],
 		"category":["library","academics"],
-		"entrances":["gzang_e01","gzang_e02","gzang_ie01","gzang_ie02","gzang_ie03","volen_ie03"],
+		"entrances":["gzang_e01","gzang_e02","volen_ie03"],
 		"area":["upper campus","science complex"]
 	},
 	pearlman = {
@@ -123,7 +123,7 @@ locations_scienceComplex = [
 		],
 		"function":"Edison-Lecks is home to chemistry.",
 		"category":["academics"],
-		"entrances":["edison_e01","gzang_ie02"],
+		"entrances":["edison_e01", "edison_e02", "edison_ie01", "edison_ie02"],
 		"area":["upper campus","science complex"]
 	},
 	abelson = {
@@ -136,7 +136,7 @@ locations_scienceComplex = [
 			new Point(42.366157, -71.258709), 
 			new Point(42.366220, -71.258861)],
 		"category":["academics"],
-		"entrances":["abelson_e01","abelson_e02","abelson_c01","gzang_ie03"],
+		"entrances":["abelson_e01","abelson_e02","abelson_c01","abelson_e03"],
 		"function":"Ableson is home to physics.",
 		"area":["upper campus","science complex"]
 		},
@@ -156,7 +156,7 @@ locations_scienceComplex = [
 		],
 		"description":"The Carl J. Shapiro Science Center is home to many of our undergraduate science programs. The center is comprised of three main centers, the Gerstenzang Science Library (commonly referred to as G-Zang by students), and other research facilities. The first center is the Brandeis University National Center for Behavioral Genomics which focuses on brain function and behavior in addition to finding therapeutic strategies for brain disease and dysfunction. The second is The Volen Center, or National Center for Complex Systems, in which faculty and students study the brain and intelligence. This center’s staff specialize in artificial intelligence, cognitive science, and various neuroscience topics (examples include experimental psychology, computational neuroscience, and cellular and molecular neurobiology). The final center is The Brandeis Materials Research Science and Engineering Center which focuses on developing the relationship between biology and materials science via a top-down and bottom-up method. Each center was founded with interdisciplinary study in mind. In fact, a few classes are taught by faculty of varying disciplines – one class is even taught by three professors – a biologist, a chemist, and a physicist. This interdisciplinary approach is different from the instruction methods at most universities. Beyond the centers, faculty and students from many departments collaborate in research, in the classrooms and in the labs. The Leo Gerstenzang Complex has traditional lab areas as well as special classrooms for teaching math and science. Brandeis Students have many opportunities to engage in research during their undergraduate years. In fact, since 2003, undergraduate students have co-authored over one hundred and thirty published articles. ",
 		"category":["academics","student life"],
-		"entrances":["ssc_e01","ssc_e02","ssc_e03","ssc_ie01"],
+		"entrances":["ssc_e01","ssc_e02","ssc_e03","ssc_e04","ssc_ie01"],
 		"area":["upper campus","science complex"]
 		},
 	{

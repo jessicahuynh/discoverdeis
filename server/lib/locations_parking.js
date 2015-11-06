@@ -9,7 +9,7 @@ locations_parking = [
 			new Point(42.364272,-71.257766),
 			new Point(42.364914,-71.256057), ],
 		"category":["parking"],
-		"entrances":["athleticslot_e01","athleticslot_e02"],
+		"entrances":["athleticslot_e01","athleticslot_e02", "athleticslot_e03"],
 		"area":["athletics","athletic complex"]
 	},
 	{
@@ -102,7 +102,7 @@ locations_parking = [
 			new Point(42.366187, -71.257086), 
 			new Point(42.366530, -71.256810)],
 		"category":["parking"],
-		"entrances":["sciencevisitorlot_e01"],
+		"entrances":["edison_c03"],
 		"area":["upper campus","science complex"]
 	},
 	{
@@ -115,7 +115,7 @@ locations_parking = [
 			new Point(42.366308, -71.257368), 
 			new Point(42.366636, -71.257060)],
 		"category":["parking"],
-		"entrances":["sciencespeciallot_e01"],
+		"entrances":["bassine_c01"],
 		"area":["upper campus","science complex"]
 	},
 	{
