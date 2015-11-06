@@ -26,17 +26,31 @@ Template.layout.events({
      'click #searchGlass':function(event) {
          event.preventDefault();
          searchShow();
+         //original code:
+         //
+         // if ($(window).width() > 768) {
+         //     $("#searchBox").toggle("slow").focus();
+         // }
+         // else {
+         //     if ($("#searchForm").css("display") == "none") {
+         //         $("#searchForm").toggle();
+         //         $("#searchBox").focus();
+         //     }
+         //     else {
+         //         $("#searchForm").toggle();
+         //     }
+         // }
      },
-     // 'click #navbar-hamburger':function(event) { //only works for web 
-     //     if (!boxClosed) {
-     //        searchShow();
-     //     }
-     // },
-     'click #page-content':function(event) { //works fine for mobile, semi-works for web
+     'click #navbar-hamburger':function(event) { //only works for web 
          if (!boxClosed) {
             searchShow();
          }
      },
+     // 'click #page-content':function(event) { //works fine for mobile, semi-works for web
+     //     if (!boxClosed) {
+     //        searchShow();
+     //     }
+     // },
      'click .back':function(event) {
          event.preventDefault();
          Router.go(Session.get("prev"));
