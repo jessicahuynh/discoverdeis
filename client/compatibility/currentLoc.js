@@ -13,6 +13,7 @@ navigator.geolocation.watchPosition(function (position) {
 				inLoc = data;
 				console.log("data"+data);
 				console.log("inLoc"+inLoc);
+				Session.setPersistent("inLocation",inLoc);
 			}
 		}	
 	);
