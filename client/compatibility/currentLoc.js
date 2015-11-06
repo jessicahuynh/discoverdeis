@@ -11,10 +11,13 @@ navigator.geolocation.watchPosition(function (position) {
 			}
 			else {
 				inLoc = data;
+				console.log("data"+data);
+				console.log("inLoc"+inLoc);
 			}
 		}	
 	);
 	Session.setPersistent("inLocation",inLoc);
+	console.log(Session.get("inLocation"));
 	
 	if (Session.get("currentLocation").x == null || Session.get("currentLocation").x == undefined) {
 	    $("#permissionsAlert").show();
