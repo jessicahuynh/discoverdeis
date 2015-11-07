@@ -82,7 +82,7 @@ Session.setDefault("routeStartStop","Enter a start and end location to get start
 
 Template.change.rendered = function () {
 	Session.set("pageTitle","Navigate");
-	Session.set("listenTo","Enter a start and end location to get started!");
+	Session.set("listenTo","");
 	
 	//graph = new Graph(Map.findOne());
 	/*console.log(graph);	*/
@@ -269,7 +269,6 @@ Template.change.helpers({
 	},
 	currentDescription:function() {
 		currDescript=Session.get("listenTo")[count];
-		$("#descriptionText").html(currDescript);
 		return currDescript;
 	},
 	naviMapOptions: function() {
