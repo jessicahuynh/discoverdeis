@@ -1,6 +1,7 @@
 Session.setDefault("searchTerm","");
 Session.setDefault("prev","/");
-boxClosed=true;
+Session.set("boxClosed",true);
+Session.set("searched", false); //used only for desk/laptop
 
 Template.layout.helpers({
     mobileTitle:function() {
@@ -25,24 +26,19 @@ Template.layout.events({
      },
      'click #searchGlass':function(event) {
          event.preventDefault();
-         if ($(window).width() > 768) {
-            searchShow();
+         if ($(window).width() > 768) { //desk/laptop
+            webSearch();
          }
-         else {
-            if ($("#searchForm").css("display") == "none") {
-                 $("#searchForm").toggle();
-                 $("#searchBox").focus();
-            }
-            else {
-                 $("#searchForm").toggle();
-            }
+         else { //mobile
+            mobileSearch();
          }
      },
-     'click #navbar-hamburger':function(event) { //web
-         if (!boxClosed) {
-            searchShow();
+     'click #links':function(event) {
+         if (!Session.get("boxClosed")) {
+            webSearch();
          }
      },
+
      'click .back':function(event) {
          event.preventDefault();
          Router.go(Session.get("prev"));
@@ -52,6 +48,12 @@ Template.layout.events({
             Blaze.renderWithData(Template.locationProfile,Session.get("viewLocation"),this);
          }
          //Session.set("prev","");
+         if (Session.get("searched")) {
+            Session.set("boxClosed",false);
+         }
+         if ($(window).width() < 768) {
+            mobileSearch();
+         }
      },
      'click .nav-link':function(event) {
          slideNav();
@@ -63,6 +65,27 @@ Template.layout.rendered = function() {
    
    document.getElementById("searchBox").value = Session.get("searchTerm");
 };
+
+function webSearch() {
+    $("#searchBox").toggle("slow").focus();
+    if (!Session.get("boxClosed")) {
+       Session.set("boxClosed",true);
+       Session.set("searched", true);
+    } else {
+       Session.set("boxClosed",false);
+       Session.set("searched", true);
+    }
+}
+
+function mobileSearch() {
+    if ($("#searchForm").css("display") == "none") {
+        $("#searchForm").toggle();
+        $("#searchBox").focus();
+    }
+    else {
+        $("#searchForm").toggle();
+    }
+}
 
 // Adapted from http://jsbin.com/eHAfIhI/1/edit?html,css,js,output
 function slide() {
@@ -88,15 +111,6 @@ function slide() {
 
 
     });
-}
-
-function searchShow() {//only called if not mobile
-    $("#searchBox").toggle("slow").focus();
-    if (!boxClosed) {
-       boxClosed=true;
-    } else {
-        boxClosed=false;
-    }
 }
 
 function slideNav() {
