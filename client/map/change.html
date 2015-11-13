@@ -49,16 +49,16 @@
 			</div>
 			<!-- description -->
 			<div class="panel-group  col-sm-12" id="routePane">
-			    <div class="panel panel-default">
+			    <div class="panel">
 			    	<div>
 			    		<!-- previous button -->
-						<div role="tabpanel" class="tab-pane col-sm-1" id="prevStep"> 
+						<div role="tabpanel" class="tab-pane " id="prevStep"> 
 							<a href="#">
 								<span class="glyphicon glyphicon-chevron-left"></span>
 							</a>
 						</div>
 
-				      	<div class="panel-heading  col-sm-8">			
+				      	<div class="panel-heading  col-sm-12">			
 							<!-- current step description -->
 							<div role="tabpanel" class="panel-title col-sm-12" id="descriptionText"> 
 								{{currentDescription}}
@@ -66,7 +66,7 @@
 							
 						</div>
 						<!-- next button -->
-						<div role="tabpanel" class="tab-pane col-sm-1" id="nextStep"> 
+						<div role="tabpanel" class="tab-pane " id="nextStep"> 
 							<a href="#">
 								<span class="glyphicon glyphicon-chevron-right"></span>
 							</a>
@@ -74,11 +74,13 @@
 					</div>
 
 			      	<div id="collapse1" class="panel-collapse collapse">
-			        	<ul class="list-group">
+			        	<ul class="list-group" id="descriptionList">
 			        		{{#each stops}}
-			          			<li class="list-group-item">{{stopDescription}}</li>
-			        		{{/each}}			        		
-			        	</ul>
+			          			<li class="list-group-item">
+			          				{{stopDescription}}
+			          			</li>
+			        		{{/each}}
+			        	</ul>			        		
 			      	</div>
 			      	<div class="col-sm-12">
 			        	<a data-toggle="collapse" href="#collapse1">

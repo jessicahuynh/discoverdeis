@@ -1,4 +1,23 @@
+//currentLocation
+//route:array of stops
+//routeToTake:array of paths
+//routeStartStop: one sentence info about "from ...to ..."
+//routeToTake : description of current step
+//routeDist: route distance
+//startstop : start entrance
+//laststop : end entrance
+//navigateTo : start building
+//navigateFrom : end building
+//countRefresh: next step
+//countPrev: previous step
+//arrowDirection
+//listenTo
+//inLocation
+
+
 count = 0;
+Session.set("countPrev",count);
+Session.set("countNext",count);
 
 $( window ).load(function() { //Wait for window to load so DeviceOrientationEvent can work
 	if (window.DeviceOrientationEvent) {
@@ -120,6 +139,7 @@ Template.change.onCreated(function () {
 	graph = new Graph(Map.findOne());
 	route = null;
 	routes = [];
+	routesForStep = [];
 	startstop = null;
 	laststop = null;
 
@@ -151,9 +171,9 @@ Template.change.onCreated(function () {
 			if (route != null){
 				for(var j = 0; j<route.length - 1; j++){
 					if(j == count){
-						addRoutes(route[j],route[j+1],"naviMap", map,'#00FFFF',route);
+						addRoutes(route[j],route[j+1],"naviMap", map,'#00FFFF',routes);
 					} else {
-						addRoutes(route[j],route[j+1],"naviMap", map,'#000000',route);
+						addRoutes(route[j],route[j+1],"naviMap", map,'#000000',routes);
 					}
 				}
 			}
@@ -191,9 +211,10 @@ Template.change.onCreated(function () {
 		})
 		//previous button
 		Tracker.autorun(function() {
-			console.log("in the autorun now for countPrev:" + Session.get("countPrev"));
 			var countPrev = Session.get("countPrev");
+			console.log("in the autorun now for countPrev:" + Session.get("countPrev"));
 			getStepDescription(route);
+			routesForStep=Session.get("routesForStep");
 			deleteRoutes(routesForStep);
 			routesForStep = [];
 			for(var j = 0; j<route.length - 1; j++){
@@ -207,9 +228,10 @@ Template.change.onCreated(function () {
 		})
 		//next button
 		Tracker.autorun(function() {
-			console.log("in the autorun now for countNext:" + Session.get("countNext"));
 			var countNext = Session.get("countNext");
+			console.log("in the autorun now for countNext:" + Session.get("countNext"));
 			getStepDescription(route);
+			routesForStep=Session.get("routesForStep");
 			deleteRoutes(routesForStep);
 			routesForStep = [];
 			for(var j = 0; j<route.length - 1; j++){
@@ -317,9 +339,16 @@ Template.change.events({
 		} else {
 			alert("You are at the first step.");
 		}
+		
+		//change one step discription
 		currDescript=Session.get("listenTo")[count];
 		$("#descriptionText").html(currDescript);
-
+		//redraw route
+		for(var i = 0; i<route.length - 1; i++){
+			routes[count].setOptions({strokeColor: '#00FFFF'});
+			console.log("change route back to black");
+		}
+		routes[count+1].setOptions({strokeColor: '#000000'});
 	},
 	"click #nextStep" : function(event) {
 		event.preventDefault();
@@ -330,14 +359,25 @@ Template.change.events({
 		} else {
 			alert("You reached your destination.");
 		}
+		
+		//change one step discription
 		currDescript=Session.get("listenTo")[count];
 		$("#descriptionText").html(currDescript);
+		
+		for(var i = 0; i<route.length - 1; i++){
+			routes[count].setOptions({strokeColor: '#00FFFF'});
+			console.log("change route back to black");
+		}
+		routes[count-1].setOptions({strokeColor: '#000000'});
 	},
 	"click #exchangeButton":function(event) {
 		var starts = document.getElementById("startpoint").value;
 		var ends = document.getElementById("endpoint").value;
+		count=0;
 		document.getElementById("endpoint").value = starts;
 		document.getElementById("startpoint").value = ends;
+		deleteRoutes(routesForStep);
+		routesForStep = [];
 	},
 	"submit #navform": function(event){
 		event.preventDefault();
@@ -453,8 +493,6 @@ function displayRouteStartStop() {
 	Session.set("routeStartStop",info);
 	console.log(Session.get("routeStartStop"));
 }
-
-
 
 function getRoute(starts, ends) {
 		// if it starts with a (, it's your current location
@@ -605,6 +643,7 @@ function addRoutes(startloc, endloc, mapOpt, map, lineColor, routes){
 
 function deleteRoutes(routes){
 	for(var j=0;j<routes.length;j++){
+		console.log("null"+j);
 		routes[j].setMap(null);
 	}
 	routes = [];
