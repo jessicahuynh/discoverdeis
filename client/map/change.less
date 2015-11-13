@@ -4,10 +4,16 @@
 @dark-blue: #003e8c;
 
 ul.-autocomplete-list {
-	.label {color:#000}
+	.-autocomplete-item {
+	    display: block;
+	    padding: 15px 20px;
+	    border-bottom: 1px solid #DDD;
+	    .label{
+	    	color:#000;
+	    }
+	}
 	.-autocomplete-item.selected {
-		// background:@dark-blue;
-		
+		// background:@dark-blue;	
 		.label {
 			color: #fff;
 		}
@@ -68,12 +74,13 @@ ul.-autocomplete-list {
 		max-height:25em;
 		overflow-y:scroll;
 		z-index: 3;
-		right: 0px;
+		right: 15px;
 		top: 70px;
 		width: 250px;
 		position: absolute;
 		background: rgba(255,255,255,0.7)
 	}
+
 }
 
 /* container that contain the map and the steps */
@@ -95,9 +102,22 @@ ul.-autocomplete-list {
 	display:none;
 }
 
+#prevStep {
+	width: 15px;
+	position:absolute;
+	right:230px;
+}
+#nextStep {
+	width: 15px;
+	position:absolute;
+	right:0px;
+}
 .infoAboutPath {
 	padding-top:1em;
 	display:none;
+}
+.panel-group{
+	background: rgba(255,255,255,0.7);
 }
 @media (min-width:769px) {
 	.infoAboutPath {display:block;}

@@ -4,7 +4,6 @@ Locations.initEasySearch(['name','nickname','function','category'],
 	}
 );
 
-
 Template.search.helpers({
 	searchTerm:function(){
 		
@@ -26,6 +25,28 @@ Template.voiceResults.helpers({
 		return Session.get("vresults");
 	}
 });
+
+Template.search.events({
+	'click #locations':function(event) {
+        if ($(window).width() > 768 && !Session.get("boxClosed")) {
+           searchShow();
+        }
+        else {
+           if ($("#searchForm").css("display") == "none") {
+                $("#searchForm").toggle();
+                $("#searchBox").focus();
+           }
+           else {
+                $("#searchForm").toggle();
+           }
+        }
+    }
+})
+
+function searchShow() {
+    $("#searchBox").toggle("slow").focus();
+    Session.set("boxClosed",true);
+}
 
 function displayVoiceSearchResults() {
 	if (Session.get("searchTerm") != "") {
