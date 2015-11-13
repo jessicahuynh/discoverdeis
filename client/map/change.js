@@ -14,19 +14,15 @@
 //listenTo
 //inLocation
 
-
 count = 0;
 Session.set("countPrev",count);
 Session.set("countNext",count);
-
 $( window ).load(function() { //Wait for window to load so DeviceOrientationEvent can work
 	if (window.DeviceOrientationEvent) {
 	  // Listen for the deviceorientation event and handle the raw data
 	  window.addEventListener('deviceorientation', function(eventData) {
-
 	    // alpha is the compass direction the device is facing in degrees
 	    var dir = eventData.alpha
-
 //Depending on the Compass Direction Angle an arrow will be pointing to the corrected direction and will be set as a session variable
 	if(dir >= 348)
 	  Session.set("arrowDirection", "/arrows/arrowNBW.png")
@@ -92,25 +88,17 @@ $( window ).load(function() { //Wait for window to load so DeviceOrientationEven
 		Session.set("arrowDirection", "/arrows/arrowNBE.png")
 	else
 	  	Session.set("arrowDirection", "/arrows/arrowN.png")
-
-	  }, false);
-} 
+	  	}, false);
+	} 
 });
-
 Session.setDefault("routeStartStop","Enter a start and end location to get started!");
-
 Template.change.rendered = function () {
 	Session.set("pageTitle","Navigate");
 	Session.set("listenTo","");
-	
-	//graph = new Graph(Map.findOne());
-	/*console.log(graph);	*/
-	
 	var navTo = Session.get("navigateTo");
 	if (navTo != "" && navTo != null) {
 		document.getElementById("endpoint").value = navTo;
 	}
-	
 	var navFrom = Session.get("navigateFrom");
 	if (navFrom != "" && navFrom != null) {
 		if (navFrom == "this_loc") {
@@ -119,8 +107,7 @@ Template.change.rendered = function () {
 		else {
 			document.getElementById("startpoint").value = navFrom;
 		}
-	}
-	
+	}	
 	if (navTo != "" && navTo != null && navFrom != null && navFrom != "") {	
 		$("#navform").submit();
 	}
@@ -129,12 +116,9 @@ Template.change.rendered = function () {
 			Session.set("navigateFrom","(" + Session.get("currentLocation").x + ", " + Session.get("currentLocation").y + ")");
 			document.getElementById("startpoint").value = Session.get("navigateFrom");
 			$("#navform").submit();
-			console.log("submitted");
 		}
 	}
-
 };
-
 Template.change.onCreated(function () {
 	graph = new Graph(Map.findOne());
 	route = null;
@@ -142,10 +126,8 @@ Template.change.onCreated(function () {
 	routesForStep = [];
 	startstop = null;
 	laststop = null;
-
 	GoogleMaps.load();
 	GoogleMaps.ready('naviMap',function(map) {
-		console.log("test google map ready");
 		var markerStart = new google.maps.Marker({
 			position: new google.maps.LatLng(Session.get("currentLocation").x, Session.get("currentLocation").y),
 			icon: '/GoogleMapsMarkers/green_MarkerA.png',
@@ -164,10 +146,8 @@ Template.change.onCreated(function () {
 		//if the route is changed, redraw the map
 		Tracker.autorun(function() {
 			route = Session.get("route");
-			console.log("test google map ready: " + route);
 			deleteRoutes(routes);
-			routes = [];
-			console.log("delete route");			
+			routes = [];			
 			if (route != null){
 				for(var j = 0; j<route.length - 1; j++){
 					if(j == count){
@@ -180,7 +160,6 @@ Template.change.onCreated(function () {
 		})
 		//move the Start Marker
 		Tracker.autorun(function() {
-			console.log("auto run startstop: " + startstop);
 			startstop = Session.get("startstop");
 			if (startstop != null) {
 				var startstopCor = findId(startstop);
@@ -188,18 +167,15 @@ Template.change.onCreated(function () {
 				map.instance.setCenter(theLatLng1);
 				markerStart.setPosition(theLatLng1);
 			}
-			console.log("move marker A");
 		})	
 		//move the End Marker
 		Tracker.autorun(function() {
-			console.log("auto run laststop: " + laststop);
 			laststop = Session.get("laststop");
 			if (laststop != null) {
 				var laststopCor = findId(laststop);
 				var theLatLng2 = new google.maps.LatLng(laststopCor.x,laststopCor.y);
 				markerEnd.setPosition(theLatLng2);	
 			}
-			console.log("move marker B");
 		})
 		//move the current marker when current location or angle is changed
 		Tracker.autorun(function() {
@@ -209,44 +185,8 @@ Template.change.onCreated(function () {
 			markerCurrent.setPosition(theLatLng);
 			markerCurrent.setIcon(Session.get("arrowDirection")); //Resets the icon so that we can get a different directional
 		})
-		//previous button
-		Tracker.autorun(function() {
-			var countPrev = Session.get("countPrev");
-			console.log("in the autorun now for countPrev:" + Session.get("countPrev"));
-			getStepDescription(route);
-			routesForStep=Session.get("routesForStep");
-			deleteRoutes(routesForStep);
-			routesForStep = [];
-			for(var j = 0; j<route.length - 1; j++){
-				if (j != countPrev){
-					addRoutes(route[j],route[j+1],'naviMap', map,'#000000',routesForStep);
-					console.log("draw route");
-				} else {
-					addRoutes(route[j],route[j+1],'naviMap', map,'#00FFFF',routesForStep);;
-				}
-			}
-		})
-		//next button
-		Tracker.autorun(function() {
-			var countNext = Session.get("countNext");
-			console.log("in the autorun now for countNext:" + Session.get("countNext"));
-			getStepDescription(route);
-			routesForStep=Session.get("routesForStep");
-			deleteRoutes(routesForStep);
-			routesForStep = [];
-			for(var j = 0; j<route.length - 1; j++){
-				if (j != countNext){
-					addRoutes(route[j],route[j+1],'naviMap', map,'#000000',routesForStep);
-					console.log("draw route");
-				} else {
-					addRoutes(route[j],route[j+1],'naviMap', map,'#00FFFF',routesForStep);;
-				}
-			}			
-		})
-
 	})	
 });
-
 Template.change.helpers({
 	stops: function() {
 		return Session.get("routeToTake");
@@ -306,7 +246,6 @@ Template.change.helpers({
 		return Session.get("routeStartStop");
 	},
 	routeEstimate:function() {
-		console.log(Session.get("routeDist"));
 		if (Session.get("routeToTake")[0][0] == "Y") {
 				return "no walking needed"
 		}
@@ -327,26 +266,21 @@ Template.change.helpers({
 		return Session.get("currentLocation");
 	}
 });
-
-
 Template.change.events({
 	"click #prevStep" : function(event) {
 		event.preventDefault();
 		if (count > 0){
 			count --;
 			Session.set("countPrev", count);
-			console.log(Session.get("countPrev"));
 		} else {
 			alert("You are at the first step.");
-		}
-		
+		}		
 		//change one step discription
 		currDescript=Session.get("listenTo")[count];
 		$("#descriptionText").html(currDescript);
-		//redraw route
+		//change route color
 		for(var i = 0; i<route.length - 1; i++){
 			routes[count].setOptions({strokeColor: '#00FFFF'});
-			console.log("change route back to black");
 		}
 		routes[count+1].setOptions({strokeColor: '#000000'});
 	},
@@ -355,18 +289,15 @@ Template.change.events({
 		if (count < (route.length - 2)){
 			count ++;
 			Session.set("countNext", count);
-			console.log(Session.get("countNext"));		
 		} else {
 			alert("You reached your destination.");
 		}
-		
 		//change one step discription
 		currDescript=Session.get("listenTo")[count];
 		$("#descriptionText").html(currDescript);
-		
+		//change route color
 		for(var i = 0; i<route.length - 1; i++){
 			routes[count].setOptions({strokeColor: '#00FFFF'});
-			console.log("change route back to black");
 		}
 		routes[count-1].setOptions({strokeColor: '#000000'});
 	},
@@ -381,23 +312,15 @@ Template.change.events({
 	},
 	"submit #navform": function(event){
 		event.preventDefault();
-
 		//console.log("before start: " + Session.get ("currentLocation").x + "," + Session.get ("currentLocation").y);
 		var starts = document.getElementById("startpoint").value;
 		var ends = document.getElementById("endpoint").value;
-		
 		// if starting is empty, assume current location
 		if (starts == "") {
 			document.getElementById("startpoint").value = "(" + Session.get("currentLocation").x +", "+Session.get("currentLocation").y+")";
 			starts = "(" + Session.get("currentLocation").x +", "+Session.get("currentLocation").y+")";
 		}
-		
-		console.log("start " + starts);
-		console.log("end "+ ends);
-		
 		Session.set("route",getRoute(starts, ends));
-		console.log(Session.get("route"));
-		
 		if (Session.get("route") != null) {
 			setStops();
 		}
@@ -423,98 +346,79 @@ Template.change.events({
 		document.getElementById("startpoint").value = "(" + Session.get("currentLocation").x + ", " + Session.get("currentLocation").y + ")";		
 	}
 });
-
 function setStops() {
 	Session.set("startstop", Session.get("route")[0]);
 	Session.set("laststop", Session.get("route")[Session.get("route").length - 1]);		
 	//session variable for steps.js
 	Session.set("routeForStep",Session.get("route"));
 	Session.set("destination", document.getElementById("endpoint").value);
-	
 	getRouteDescription(Session.get("route"));
 	Session.set("listenTo",Session.get("routeToTake"));
-	
 	$("#loadingPanel").css("display","none");		
 }
-
 function displayRouteStartStop() {
 	var info = "Enter a start and end location to get started.";
 	var start = null;
-	var end = null;
-	
+	var end = null;	
 	if (document.getElementById("startpoint") != null && document.getElementById("endpoint") != null) {
 		info = "From ";
 		if (document.getElementById("startpoint").value[0] == "(") {
 			start = Session.get("inLocation")[0].name;
 			if (Session.get("inLocation")[1] == "in") {
 				info += Session.get("inLocation")[0].name;
-			}
-			else {
+			} else {
 				info += "your current location near " + Session.get("inLocation")[0].name;
 			}
-		}
-		else {
+		} else {
 			start = document.getElementById("startpoint").value;
 			info+=document.getElementById("startpoint").value;
-		}
-		
+		}		
 		if (document.getElementById("endpoint").value != "") {
 			end = document.getElementById("endpoint").value;
 			info += " to "+document.getElementById("endpoint").value;
 		}
-	}
-	else {
+	} else {
 		if (Session.get("navigateTo") != "" && Session.get("navigateTo") != null) {
 			info = "From ";
 			if (Session.get("navigateFrom")[0] == "(") {
 				start = Session.get("inLocation")[0].name;
 				if (Session.get("inLocation")[1] == "in") {
 					info += "your current location in " +Session.get("inLocation")[0].name;
-				}
-				else {
+				} else {
 					info += "your current location near " + Session.get("inLocation")[0].name;
 				}
-			}
-			else {
+			} else {
 				start = Session.get("navigateFrom");
 				info+=Session.get("navigateFrom");
-			}
-			
+			}			
 			if (Session.get("navigateTo") != "")
 				end = Session.get("navigateTo");
 				info += " to "+Session.get("navigateTo");
 		}
-	}
-	
+	}	
 	if (start == end) {
 		info = "You're already at "+end;
-	}	
-		
+	}			
 	Session.set("routeStartStop",info);
-	console.log(Session.get("routeStartStop"));
 }
-
 function getRoute(starts, ends) {
 		// if it starts with a (, it's your current location
 		if (starts[0] == "(") {
 			// if you're in a building, return that building and go on as before
 			if (Session.get("inLocation")[1] == "in") {
 				starts = Locations.findOne({"name":Session.get("inLocation")[0].name}).name;
-				//console.log(starts);
-				
+				//console.log(starts);				
 				if (Session.get("inLocation")[0].name == ends) {
 					route = ["You're already here!"];
 				}
 				else {
 					route = getShortestRoute(Locations.findOne({"name":starts}).icrossings,Locations.findOne({"name":starts}).entrances,Locations.findOne({"name":ends}).entrances);
-				}
-				
+				}				
 			}
 			// else, go from the nearest intersection
 			else {
 				var nearestIntersection = null;
-				var distNearestIntersection = 1000000000;
-				
+				var distNearestIntersection = 1000000000;				
 				var i = Intersections.find().fetch();
 				i.forEach(function(intersection) {
 					Meteor.call("distance",
@@ -527,8 +431,7 @@ function getRoute(starts, ends) {
 							else {
 								if (data < distNearestIntersection) {
 									distNearestIntersection = data;
-									nearestIntersection = intersection.id;
-									
+									nearestIntersection = intersection.id;									
 									route = getShortestRoute(null,[nearestIntersection],Locations.findOne({"name":ends}).entrances);
 									//console.log("*" + route);
 									if (route != null) {
@@ -538,23 +441,19 @@ function getRoute(starts, ends) {
 								}
 							}
 						});
-				});				
-				
+				});								
 			}
 		}
-
 		// a location searched for
 		else {
 			if (starts == ends) {
-					route = ["You're already here!"];
-				}
-				else {
-					route = getShortestRoute(Locations.findOne({"name":starts}).icrossings,Locations.findOne({"name":starts}).entrances,Locations.findOne({"name":ends}).entrances);
-				}
+				route = ["You're already here!"];
+			} else {
+				route = getShortestRoute(Locations.findOne({"name":starts}).icrossings,Locations.findOne({"name":starts}).entrances,Locations.findOne({"name":ends}).entrances);
+			}
 		}
 		return route;
 }
-
 function getShortestRoute(icrossings,startEntrances,endEntrances) {
 	var theShortestDist = 1000000000;
 	var shortestRoute = null;	
@@ -570,7 +469,6 @@ function getShortestRoute(icrossings,startEntrances,endEntrances) {
 					var currentRoute = graph.findShortestPath(startEntrance, endEntrance);	
 					// if there's no route between the entrances, skip
 					if (currentRoute != null) {
-						console.log(currentRoute);
 						for (var i = 0; i < currentRoute.length - 2; i++) {
 							currentRouteDist += Paths.findOne({ "start": currentRoute[i], "end": currentRoute[i + 1] }).distance;
 						}
@@ -590,8 +488,6 @@ function getShortestRoute(icrossings,startEntrances,endEntrances) {
 	//console.log(shortestRoute);
 	return shortestRoute;
 }
-
-
 function findId(idToLookFor) {
 	var all_points=Intersections.find().fetch();
     for (var i = 0; i < all_points.length; i++) {
@@ -600,11 +496,8 @@ function findId(idToLookFor) {
         }
     }
 }
-
 var markers = [];
-
-function addMarkers(loc,mapOpt, map){
-	
+function addMarkers(loc,mapOpt, map){	
 	var point = findId(loc);
 	//GoogleMaps.ready(mapOpt,function(map) {
 		var marker = new google.maps.Marker({
@@ -613,16 +506,7 @@ function addMarkers(loc,mapOpt, map){
 		});
 		markers.push(marker);
 	//})
-
 }
-
-function deleteMarkers(){
-	for(var i=0;i<markers.length;i++){
-		markers[i].setMap(null);
-	}
-	markers= [];
-}
-
 function addRoutes(startloc, endloc, mapOpt, map, lineColor, routes){		
 	var start= findId(startloc);
 	var end = findId(endloc);
@@ -640,7 +524,6 @@ function addRoutes(startloc, endloc, mapOpt, map, lineColor, routes){
 	});
 	routes.push(drawr);
 }
-
 function deleteRoutes(routes){
 	for(var j=0;j<routes.length;j++){
 		console.log("null"+j);
@@ -648,7 +531,6 @@ function deleteRoutes(routes){
 	}
 	routes = [];
 }
-
 function getRouteDescription(route) {
 	var r = [];	
 	// push getTo of starting point if it exists
@@ -664,35 +546,27 @@ function getRouteDescription(route) {
 				var thePath = Paths.findOne({"start":route[i],"end":route[i+1]});
 				r.push(thePath.description);
 			}
-		}
-		else {
+		} else {
 			r.push("We don't seem to be able to get the routing data between these two!");
 		}		
 		Session.set("routeToTake",r);
 	}	
 }
 function getStepDescription(route) {
-	var r = [];
-		
+	var r = [];		
 	if (route != null && route != undefined && route.length != 1) {
 		var getToPath = "";
-		
-		//console.log(route);
 		//if there's a getTo
 		if (count == 0 && Intersections.findOne({"id":route[count]}).getTo != undefined) {
 			getToPath += Intersections.findOne({"id":route[count]}).getTo;
-		}
-		
+		}		
 		var thePath = Paths.findOne({"start":route[count],"end":route[count+1]});
-		r.push(getToPath + " " + thePath.description);
-	
-		
+		r.push(getToPath + " " + thePath.description);			
 	} else if (route.length == 1){
 		r.push("You have reached your destination!");
 	} else {
 		r.push("We don't seem to be able to find the routing data!");
-	}
-	
+	}	
 	Session.set("step",r);
 	Session.set("listenTo",r);
 }
