@@ -60,15 +60,13 @@ Template.locationProfile.rendered = function() {
 			var bounds = new google.maps.LatLngBounds();
 			var coords = [];
 			var thisLocCoords = thisLoc.coordinates.coordinates[0];
-			console.log(thisLocCoords);
 			thisLocCoords.forEach(function(coord) {
-				console.log(coord);
 				coords.push(new google.maps.LatLng(coord[0],coord[1]));
 				bounds.extend(new google.maps.LatLng(coord[0],coord[1]));
 			});
 			//repeat the first to close
-			coords.push(new google.maps.LatLng(thisLoc.coordinates.coordinates[0][0][0],thisLoc.coordinates[0][0][1]));
-			bounds.extend(new google.maps.LatLng(thisLoc.coordinates.coordinates[0][0][0],thisLoc.coordinates[0][0][1]));
+			coords.push(new google.maps.LatLng(thisLoc.coordinates.coordinates[0][0][0],thisLoc.coordinates.coordinates[0][0][1]));
+			bounds.extend(new google.maps.LatLng(thisLoc.coordinates.coordinates[0][0][0],thisLoc.coordinates.coordinates[0][0][1]));
 			
 			var polygon = new google.maps.Polygon({
 				paths:coords,
@@ -86,13 +84,13 @@ Template.locationProfile.rendered = function() {
 		else {
 			// just a point
 			var marker = new google.maps.Marker({
-				position:new google.maps.LatLng(thisLoc.coordinates.coordinates[0][0][0],thisLoc.coordinates.coordinates[0][0][1]),
+				position:new google.maps.LatLng(thisLoc.coordinates[0],thisLoc.coordinates[1]),
 				map:map.instance,
 				title:thisLoc.name,
 				icon:'/GoogleMapsMarkers/blue_MarkerL.png'
 			});
 			
-			map.instance.setCenter(new google.maps.LatLng(thisLoc.coordinates.coordinates[0][0][0],thisLoc.coordinates.coordinates[0][0][1]));
+			map.instance.setCenter(new google.maps.LatLng(thisLoc.coordinates[0],thisLoc.coordinates[1]));
 		}
 	});
 	
