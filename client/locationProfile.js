@@ -56,7 +56,7 @@ Template.locationProfile.rendered = function() {
 	
 	GoogleMaps.load();
 	GoogleMaps.ready('locMap',function(map) {
-		if (thisLoc.coordinates.length >1) {
+		if (thisLoc.coordinates.type == "Polygon") {
 			var bounds = new google.maps.LatLngBounds();
 			var coords = [];
 			var thisLocCoords = thisLoc.coordinates.coordinates[0];
