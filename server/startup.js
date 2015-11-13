@@ -35,7 +35,7 @@ Meteor.startup(function() {
 					// use first entrance
 					c = location.coordinates.coordinates[0][0];
 				}
-				CornerPoints.insert({"coordinate":{"type":"Point","coordinates":c},"name":location.name});
+				CornerPoints.insert({"coordinate":{"type":"Point","coordinates":[c[1],c[0]]},"name":location.name}); // need to flip x and y for geojson
 				
 			});
 		});		
