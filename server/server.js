@@ -76,7 +76,7 @@ searchLocations = function(current) {
 				}
 			}
 		});		
-		console.log(nearestPoint);
+		console.log(nearestPoint.fetch());
 		var theNearest = nearestPoint.fetch()[0];
 		
 		var n = distance(current,{"x":theNearest.coordinate.coordinates[0],"y":theNearest.coordinate.coordinates[1]});
