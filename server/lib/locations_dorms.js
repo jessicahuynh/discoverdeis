@@ -430,7 +430,7 @@ locations_dorms = [
 		]},
 		"category":["dorm"],
 		"nearby":["ridgewoodB","ridgewoodC","ziv127","ziv128","ziv130","epstein"],
-		"entrances":["ziv129_e01","ziv129_e02","ziv129_e03","village"],
+		"entrances":["ziv129_e01","ziv129_e02","ziv129_e03"],
 		"area":["lower campus","ziv"]
 	},
 	{
@@ -451,7 +451,7 @@ locations_dorms = [
 		]},
 		"category":["dorm"],
 		"nearby":["ridgewoodB","ridgewoodC","ziv127","ziv128","ziv129","epstein"],
-		"entrances":["ziv130_e01","ziv130_e02","ziv130_e03","village"],
+		"entrances":["ziv130_e01","ziv130_e02","ziv130_e03"],
 		"area":["lower campus","ziv"]
 	},
 	eastShapiro = {
@@ -469,7 +469,7 @@ locations_dorms = [
 		"function":"Shapiro Brothers Residence is the middle of the buildings in East, but is often considered part of Hass. It provides traditional dorm living for sophomores.",
 		"description":"Shapiro Brothers is one of the buildings in East Quad. East Quad is home to the majority of sophomores on campus. East Quad is comprised of four sections with six names: Hassenfeld-Krivof, Shapiro House, Pomerantz-Rubenstein and Swig, yet students refer to the main residence hall buildings as Hassenfeld and Pomerantz. East Quad is conveniently located across the street from Gosman Sports Center and steps away from the Health Center and the Intercultural Center. East was designed to maximize the potential of the residence living environment to become a tight-knit community. With open lounges on most floors, extended corridors, a community kitchen and large common areas, life in East is anything but dull. The top floors of East also provide residents with a clear, breathtaking view of the Boston skyline.",
 		"category":["dorm"],
-		"entrances":["eastHassenfeld_e02","eastShapiro_e01"],
+		"entrances":["eastHassenfeld_e02","eastShapiro_e01", "eastShapiro_e02"],
 		"nearby":["eastRubenstein","eastHassenfeld","icc"],
 		"area":["upper campus","east"]
 		},
@@ -495,7 +495,7 @@ locations_dorms = [
 		"function":"Pom has traditional dorm living for sophomores.",
 		"description":"Rubenstein-Pomerantz is one of the buildings in East Quad. East Quad is home to the majority of sophomores on campus. East Quad is comprised of four sections with six names: Hassenfeld-Krivof, Shapiro House, Pomerantz-Rubenstein and Swig, yet students refer to the main residence hall buildings as Hassenfeld and Pomerantz. East Quad is conveniently located across the street from Gosman Sports Center and steps away from the Health Center and the Intercultural Center. East was designed to maximize the potential of the residence living environment to become a tight-knit community. With open lounges on most floors, extended corridors, a community kitchen and large common areas, life in East is anything but dull. The top floors of East also provide residents with a clear, breathtaking view of the Boston skyline.",
 		"category":["dorm"],
-		"entrances":["eastRubenstein_e01"],
+		"entrances":["eastRubenstein_e01", "eastRubenstein_e02"],
 		"nearby":["eastShapiro","eastHassenfeld","icc"],
 		"area":["upper campus","east"]
 		},

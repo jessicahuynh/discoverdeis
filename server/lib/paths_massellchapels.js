@@ -609,6 +609,42 @@ paths_massellchapels = [
 		"start":"museum_c01",
 		"end":"facultycenter_c02",
 		"description":"Walk along the loop road. The faculty center is on your right."
-	}
+	},
+	//
+	{
+		"start":"hellerparkinglot_e03",
+		"end":"bethlehem_c01",
+		"description":"Enter the woods through the opening and follow the path through the woods until the end of the path."
+	},
+	{
+		"start":"bethlehem_c01",
+		"end":"hellerparkinglot_e03",
+		"description":"Enter the woods and follow the path through the woods going uphill. Heller Parking Lot is at the end of the path."
+	},
+	{
+		"start":"bethlehem_c01",
+		"end":"bethlehem_e01",
+		"description":"Get onto the cement path, turn right, and follow the path, walking by the lake. Bethlehem Chapel is on your left."
+	},
+	{
+		"start":"bethlehem_e01",
+		"end":"bethlehem_c01",
+		"description":"Walk on the path by the lake. Enter the woods at the opening and follow the path."
+	},
+	{
+		"start":"bethlehem_c01",
+		"end":"harlan_e01",
+		"description":"Get onto the cement path, turn left, and follow the path, walking by the lake. Harlan Chapel is on your right."
+	},
+	{
+		"start":"harlan_e01",
+		"end":"bethlehem_c01",
+		"description":"Exit Harlan and walk on the left path by the lake. The entrance to Bethlehem Chapel is ahead."
+	},
+	{
+		"start":"goldsmith_c02",
+		"end":"chapelsfield_c01",
+		"description":"Take the smaller path on your left, walking downhill with Chapels Field to your right."
+	},
 
 ]

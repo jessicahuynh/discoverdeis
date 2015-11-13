@@ -140,11 +140,6 @@ points_science = [
 	    "type":"entrance"
 	},
 	{
-	    "id":"sciencevisitorlot_e01",
-	    "coordinate":{"type":"Point","coordinates":[42.366509, -71.256858]},
-	    "type":"entrance"
-	},
-	{
 	    "id":"sciencelot_e01",
 	    "coordinate":{"type":"Point","coordinates":[42.366189, -71.256172]},
 	    "type":"entrance"

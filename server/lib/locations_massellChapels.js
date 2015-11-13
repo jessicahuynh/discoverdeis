@@ -59,6 +59,7 @@ locations_massellChapels = [
 		]},
 		"description":"Chapels Field is usually bustling with student activities ranging from sports events, such as Quidditch practice, to concerts, such as Springfest. The three chapels on Chapel’s Field represent three different faiths and surround a heart shaped pond. They are built in such a way that no chapel casts its shadow over another chapel, symbolizing our respect for pluralism and diversity. The university has added a Muslim Prayer Room to campus and has connections with various other religious groups off-campus to address the spiritual needs of all. In total, the Brandeis community represents seventeen recognized world religions.",
 		"category":["landscape"],
+		"entrances":["chapelsfield_c04", "chapelsfield_c03","chapelsfield_c02","chapelsfield_c01"],
 		"area":["upper campus","chapels"]
 		},
 	{
@@ -68,6 +69,7 @@ locations_massellChapels = [
 		"function":"The Chapels Field Wetland acts as a catchment basin for water from upper campus, preventing the flooding of Massell Quad and the Chapels.",
 		"description":"",
 		"category":["landscape"],
+		"entrances":["bethlehem_c01"],
 		"area":["upper campus","chapels"],
 		"nearby":["chapelsfield","berlin","bethlehem","harlan","farber"],
 		"coordinates": {"type":"Polygon","coordinates":[

@@ -10,7 +10,7 @@ locations_parking = [
 			[42.364914,-71.256057]]
 		]},
 		"category":["parking"],
-		"entrances":["athleticslot_e01","athleticslot_e02"],
+		"entrances":["athleticslot_e01","athleticslot_e02", "athleticslot_e03"],
 		"area":["athletics","athletic complex"]
 	},
 	{
@@ -110,7 +110,7 @@ locations_parking = [
 			[42.366530, -71.256810]]
 		]},
 		"category":["parking"],
-		"entrances":["sciencevisitorlot_e01"],
+		"entrances":["edison_c03"],
 		"area":["upper campus","science complex"]
 	},
 	{
@@ -124,7 +124,7 @@ locations_parking = [
 			[42.366636, -71.257060]]
 		]},
 		"category":["parking"],
-		"entrances":["sciencespeciallot_e01"],
+		"entrances":["bassine_c01"],
 		"area":["upper campus","science complex"]
 	},
 	{
@@ -274,7 +274,7 @@ locations_parking = [
 		]},
 		"category":["parking"],
 		"nearby":["schneider","harlan"],
-		"entrances":["hellerparkinglot_e01", "hellerparkinglot_e02"],
+		"entrances":["hellerparkinglot_e01", "hellerparkinglot_e02", "hellerparkinglot_e03"],
 		"area":["upper campus"]
 	},
 

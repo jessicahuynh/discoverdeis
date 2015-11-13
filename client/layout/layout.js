@@ -1,5 +1,6 @@
 Session.setDefault("searchTerm","");
 Session.setDefault("prev","/");
+boxClosed=true;
 
 Template.layout.helpers({
     mobileTitle:function() {
@@ -24,20 +25,32 @@ Template.layout.events({
      },
      'click #searchGlass':function(event) {
          event.preventDefault();
-         
-         if ($(window).width() > 768) {
-             $("#searchBox").toggle("slow").focus();
-         }
-         else {
-             if ($("#searchForm").css("display") == "none") {
-                 $("#searchForm").toggle();
-                 $("#searchBox").focus();
-             }
-             else {
-                 $("#searchForm").toggle();
-             }
+         searchShow();
+         //original code:
+         //
+         // if ($(window).width() > 768) {
+         //     $("#searchBox").toggle("slow").focus();
+         // }
+         // else {
+         //     if ($("#searchForm").css("display") == "none") {
+         //         $("#searchForm").toggle();
+         //         $("#searchBox").focus();
+         //     }
+         //     else {
+         //         $("#searchForm").toggle();
+         //     }
+         // }
+     },
+     'click #navbar-hamburger':function(event) { //only works for web 
+         if (!boxClosed) {
+            searchShow();
          }
      },
+     // 'click #page-content':function(event) { //works fine for mobile, semi-works for web
+     //     if (!boxClosed) {
+     //        searchShow();
+     //     }
+     // },
      'click .back':function(event) {
          event.preventDefault();
          Router.go(Session.get("prev"));
@@ -83,6 +96,26 @@ function slide() {
 
 
     });
+}
+
+function searchShow() {
+    if ($(window).width() > 768) {
+        $("#searchBox").toggle("slow").focus();
+         if (!boxClosed) {
+            boxClosed=true;
+         } else {
+            boxClosed=false;
+         }
+    }
+    else {
+         $("#searchForm").toggle();
+         if (!boxClosed) {
+             boxClosed=true;             
+         } else {
+             $("#searchBox").focus();
+             boxClosed=false;
+         }
+    }
 }
 
 function slideNav() {

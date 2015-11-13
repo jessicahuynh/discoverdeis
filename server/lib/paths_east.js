@@ -229,26 +229,118 @@ paths_east = [
 	    "end":"rubenstein_c07",
 	    "description": "Exit the building and walk on to the path.",
 	},
+	////10/23
 	{
 	    "start":"icc_c01",
-	    "end":"rubenstein_c07",
-	    "description": "Walk down the stairs and walk along the path.",
+	    "end":"icc_e02",
+	    "description": "Turn right and continue walking. The entrance to the ICC is on your left.",
 	},
 	{
-	    "start":"rubenstein_c07",
+	    "start":"icc_e02",
 	    "end":"icc_c01",
-	    "description": "Walk along the path and walk up the stairs.",
+	    "description": "Exit the ICC from the first floor. Turn left and continue.",
 	},
 	{
-	    "start":"rubenstein_c07",
+	    "start":"icc_c01",
+	    "end":"icc_c03",
+	    "description": "Take the path to your right and walk up the steps.",
+	},
+	{
+	    "start":"icc_c03",
+	    "end":"icc_c01",
+	    "description": "Walk down the steps and continue walking.",
+	},
+	{
+	    "start":"icc_c03",
 	    "end":"icc_e01",
-	    "description": "Walk down the stairs and the entrance is your right.",
+	    "description": "Turn left and continue. The entrance to the ICC is straight ahead.",
 	},
 	{
 	    "start":"icc_e01",
-	    "end":"rubenstein_c07",
-	    "description": "Exit the building and walk up the stairs.",
+	    "end":"icc_c03",
+	    "description": "Go towards the small number of steps on your right side.",
 	},
+	{
+	    "start":"icc_c03",
+	    "end":"eastRubenstein_e02",
+	    "description": "Turn right and continue. The entrance to Pomerantz is on your right.",
+	},
+	{
+	    "start":"eastRubenstein_e02",
+	    "end":"icc_c03",
+	    "description": "Exit Pomerantz and turn left towards the small number of steps on your right side.",
+	},
+	{
+	    "start":"icc_c03",
+	    "end":"eastShapiro_e02",
+	    "description": "Turn right and continue until the end of the path. The entrance to Hassenfeld is straight ahead.",
+	},
+	{
+	    "start":"eastShapiro_e02",
+	    "end":"icc_c03",
+	    "description": "Exit Hassenfeld. Continue walking until you see a few steps on your right side.",
+	},
+	{
+	    "start":"rubenstein_c07",
+	    "end":"icc_c02",
+	    "description": "Walk on the path that leads to the stairs and go up those stairs.",
+	},
+	{
+	    "start":"icc_c02",
+	    "end":"rubenstein_c07",
+	    "description": "Walk down the stairs and continue on to the path.",
+	},
+	{
+	    "start":"icc_c02",
+	    "end":"icc_e01",
+	    "description": "Walk straight. The entrance to the ICC is to your left.",
+	},
+	{
+	    "start":"icc_e01",
+	    "end":"icc_c02",
+	    "description": "Exit the ICC, turn right, and continue walking. Go down the steps.",
+	},
+	{
+	    "start":"icc_e01",
+	    "end":"eastRubenstein_e02",
+	    "description": "From the entrance to ICC, continue on the elevated path. The entrance to Pomerantz is on your right.",
+	},
+	{
+	    "start":"eastRubenstein_e02",
+	    "end":"icc_e01",
+	    "description": "Exit Pomerantz, turn left, and walk straight. The entrance to the ICC is ahead.",
+	},
+	{
+	    "start":"icc_e01",
+	    "end":"eastShapiro_e02",
+	    "description": "Walk straight, away from the entrance to ICC, until you are at the end of the elevated path. The entrance to Hassenfeld is ahead.",
+	},
+	{
+	    "start":"eastShapiro_e02",
+	    "end":"icc_e01",
+	    "description": "Walk straight, away from the entrance to Hassenfeld, until you are at the end of the elevated path. The entrance to the ICC is ahead.",
+	},
+	{
+	    "start":"eastShapiro_e02",
+	    "end":"eastRubenstein_e02",
+	    "description": "Walk straight, away from the entrance to Hassenfeld. On your left is the entrance to Pomerantz.",
+	},
+	{
+	    "start":"eastRubenstein_e02",
+	    "end":"eastShapiro_e02",
+	    "description": "Exit Pomerantz, turn right, and continue walking. The entrance to Hassenfeld is ahead.",
+	},
+	{
+	    "start":"icc_c03",
+	    "end":"icc_c02",
+	    "description": "Turn left and continue. Then, turn right, past the entrance to the ICC.",
+	},
+	{
+	    "start":"icc_c02",
+	    "end":"icc_c03",
+	    "description": "Continue on your current path, walking away from the stairs. Walk past the entrance to the ICC, turn right, and walk down the steps on your left.",
+	},
+	/////
 	{
 	    "start":"rubenstein_c07",
 	    "end":"eastShapiro_e01",
@@ -258,16 +350,6 @@ paths_east = [
 	    "start":"eastShapiro_e01",
 	    "end":"rubenstein_c07",
 	    "description": "Exit the building. Walk down the stairs and fellow along the path.",
-	},
-	{
-	    "start":"eastShapiro_e01",
-	    "end":"icc_c01",
-	    "description": "Exit the building. Walk along the building.",
-	},
-	{
-	    "start":"icc_c01",
-	    "end":"eastShapiro_e01",
-	    "description": "Walk along the path next to the building.",
 	},
 	{
 	    "start":"icc_c01",
@@ -293,5 +375,5 @@ paths_east = [
 	    "start":"icc_c01",
 	    "end":"eastShapiro_e01",
 	    "description": "Walk toward the small parking space.",
-	}
+	},
 ]

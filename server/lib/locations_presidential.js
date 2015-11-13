@@ -10,6 +10,7 @@ locations_presidential = [
 			[42.36489,-71.259837]]
 		]},
 		"category":["administrative"],
+		"entrances":["bernstein_e01"],
 		"area":["lower campus"]
 		},
 	epstein = {
@@ -39,6 +40,7 @@ locations_presidential = [
 			[42.365417,-71.259403]]
 		]},
 		"category":["administrative"],
+		"entrances":["gryzmish_e01"],
 		"area":["lower campus"]
 		},
 
@@ -53,6 +55,7 @@ locations_presidential = [
 			[42.365076,-71.259521]]
 		]},
 		"category":["administrative"],
+		"entrances":["irving_e01","irving_e02"],
 		"area":["lower campus"]
 		},
 ]

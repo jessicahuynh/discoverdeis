@@ -27,9 +27,9 @@ points_northrabb = [
 	},
 	{
 		//**
-		"id":"mandelHQuad_e01",
+		"id":"mandelHQuad_c01",
 		"coordinate":{"type":"Point","coordinates":[42.369398, -71.256887]},
-		"type":"entrance"
+		"type":"crossing"
 	},
 	{
 		"id":"gordon_e01",
@@ -48,7 +48,7 @@ points_northrabb = [
 	},
 	{
 		"id":"gordon_ie01",
-		"coordinate":{"type":"Point","coordinates":[42.369508, -71.255938]},
+		"coordinate":{"type":"Point","coordinates":[42.369588, -71.256014]},
 		"type":"ientrance"
 	},
 	

@@ -15,7 +15,7 @@ locations_mandelHellerLibrary=[
 			[42.369166, -71.259735]]
 		]},
 		"category":["offices","academics"],
-		"entrances":["schneider_e01"],
+		"entrances":["schneider_e01", "schneider_e02", "schneider_e03"],
 		"area":["upper campus"]
 	},
 	{
@@ -77,7 +77,7 @@ locations_mandelHellerLibrary=[
 			[42.369507, -71.257322]]
 		]},
 		"category":["academics"],
-		"entrances":["olin-sang_e01", "olin-sang_ie01", "olin-sang_e02"],
+		"entrances":["olin-sang_e01", "olin-sang_ie01", "olin-sang_e02", "olin-sang_e03"],
 		"area":["upper campus","mandel"]
 	},
 	goldfarb = {
@@ -99,7 +99,7 @@ locations_mandelHellerLibrary=[
 		]},
 		"category":["academics"],
 		"description": "Goldfarb/Farber Libraries house ever growing collections and reference resources in creative arts, humanities, government documents, Judaica, and social sciences. Research materials are extremely accessible to students due to the online availability of resources, and additional resources are made available through the Boston Library Consortium and the Interlibrary Loan system. The library offers services for students including a listening center, computer labs, study rooms, a media lab that helps students edit their films and soundtracks, as well as the Writing Center. The Writing Center assists students in all aspects of writing their papers, from brainstorming to editing. Recently, a new café was added to the Green Room section of the library.",
-		"entrances":["goldfarb_e01","goldfarb_e02"],
+		"entrances":["goldfarb_e01","goldfarb_e02", "library_ie01"],
 		"area":["upper campus","libraries"]
 	},
 	farber = {
@@ -113,7 +113,7 @@ locations_mandelHellerLibrary=[
 			[42.367688,-71.25867]]
 		]},
 		"category":["library"],
-		"entrances":["farber_e01"],
+		"entrances":["farber_e01", "farber_ie01"],
 		"area":["upper campus","libraries"]
 		},
 
@@ -129,7 +129,7 @@ locations_mandelHellerLibrary=[
 		]},
 		"function":"Heller-Brown is home to the Heller School for Social Policy and Management, one of the top ten schools of social policy in the United States and one of the eight approved U.S. training institutions for World Bank Scholars.",
 		"category":["academics"],
-		"entrances":["heller_e01"],
+		"entrances":["heller_e01", "heller_e02", "starbucksHeller_ie01"],
 		"area":["upper campus"]
 		},
 	rabb = {

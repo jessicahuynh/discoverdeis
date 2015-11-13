@@ -30,7 +30,7 @@ locations_usdan = [
 			[42.367883, -71.257026]]
 		]},
 		"category":["student life"],
-		"entrances":["levin_e01","levin_e02",],
+		"entrances":["levin_e01","levin_e02"],
 		"area":["upper campus"]
 	},
 	{
@@ -44,7 +44,7 @@ locations_usdan = [
 			[42.367751, -71.257513]]
 		]},
 		"category":["landscape","art"],
-		"entrances":["mandelpeacegarden_e01","mandelpeacegarden_e02",],
+		"entrances":["mandelpeacegarden_e01","mandelpeacegarden_e02"],
 		"area":["upper campus"]
 	},
 
@@ -61,7 +61,7 @@ locations_usdan = [
 			[42.367494,-71.257484]]
 		]},
 		"category":["academics"],
-		"entrances":["schwartz_e01"],
+		"entrances":["schwartz_e01","brown_ie01"],
 		"area":["upper campus"],
 		"nearby":["brown","mandelpeacegarden","usdan","levin"]
 		},
@@ -75,7 +75,7 @@ locations_usdan = [
 			[42.367169,-71.256718], 
 			[42.367266,-71.257265]]]},
 		"category":["academics"],
-		"entrances":["brown_e01"],
+		"entrances":["brown_e01","brown_e02", "brown_ie01", "brown_e03"],
 		"area":["upper campus"]
 		},
 	castle = {
@@ -94,6 +94,18 @@ locations_usdan = [
 		"entrances":["castle_e01","castle_e02"],
 		"area":["upper campus"]
 	},
-
+	crown = {
+		"id":"crown",
+		"name":"Lemberg Hall Crown Center for Middle East Studies",
+		"nickname":"Crown",
+		"coordinates":[
+			new Point(42.367353, -71.256519),
+			new Point(42.367314, -71.256338), 
+			new Point(42.367180, -71.256386), 
+			new Point(42.367212, -71.256574)],
+		"category":["academics"],
+		"entrances":["crown_e01"],
+		"area":["upper campus"]
+	},
 
 ]

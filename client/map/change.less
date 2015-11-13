@@ -1,0 +1,104 @@
+/* the reference CSS to modify: https://github.com/mizzao/meteor-autocomplete/blob/master/autocomplete.css */
+
+@deis-blue: #0070FF;
+@dark-blue: #003e8c;
+
+ul.-autocomplete-list {
+	.label {color:#000}
+	.-autocomplete-item.selected {
+		// background:@dark-blue;
+		
+		.label {
+			color: #fff;
+		}
+	}
+}
+
+#navform {
+	div.getCurrentContainer {
+		padding-top:.5em;
+	}
+	
+	a#getCurrentLoc {
+		border-bottom:none;
+		color:@deis-blue;
+		padding-bottom:.1em;
+	}
+	
+	a#getCurrentLoc:focus, a#getCurrentLoc:hover, a#getCurrentLoc:active {
+		background:transparent;
+		text-decoration:none;
+		border-bottom:1px dashed @deis-blue;
+	}
+}
+
+@media (min-width:769px) {
+	#navmenu {display:none;}
+	#navpanels div.tab-pane {
+		display:block;
+	}
+}
+
+#navmenu {
+	display:none;
+	width:100%;
+	padding-left:15px;
+	padding-right:15px;
+	padding-bottom:1em;
+	
+	ul {
+		margin:0 auto;
+	}
+	
+	
+	li {
+		width:calc(~'33% - 1px');
+		text-align:center;
+		
+		a {
+			border-radius:0;
+			text-transform:uppercase;
+		}
+	}
+}
+
+/* keep the route description a reasonable height, and adjust its position onto the map */
+@media (min-width:769px) {
+	#routePane {
+		max-height:25em;
+		overflow-y:scroll;
+		z-index: 3;
+		right: 0px;
+		top: 70px;
+		width: 250px;
+		position: absolute;
+		background: rgba(255,255,255,0.7)
+	}
+}
+
+/* container that contain the map and the steps */
+#container2 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+/* adjust the map position under the steps */
+#mapPane {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 70px;
+}
+
+#loadingPanel {
+	display:none;
+}
+
+.infoAboutPath {
+	padding-top:1em;
+	display:none;
+}
+@media (min-width:769px) {
+	.infoAboutPath {display:block;}
+}

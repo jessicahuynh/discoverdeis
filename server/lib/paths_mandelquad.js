@@ -438,8 +438,28 @@ paths_mandelquad = [
 	    "end":"hellerparkinglot_e01",
 	    "description": "Walk straight to enter Heller Parking Lot.",
 	},
-	//////
-
+	//
+	{
+	    "start":"hellerparkinglot_e01",
+	    "end":"hellerparkinglot_e03",
+	    "description": "Walk across the parking lot diagonally towards the trees ahead.",
+	},
+	{
+	    "start":"hellerparkinglot_e03",
+	    "end":"hellerparkinglot_e01",
+	    "description": "Walk across the parking lot towards the path.",
+	},
+	{
+	    "start":"hellerparkinglot_e02",
+	    "end":"hellerparkinglot_e03",
+	    "description": "Turn right and walk along the trees to your right until you see an opening.",
+	},
+	{
+	    "start":"hellerparkinglot_e03",
+	    "end":"hellerparkinglot_e02",
+	    "description": "Turn left and continue walking.",
+	},
+	//
 	{
 	    "start":"shiffman_c01",
 	    "end":"rabb_c03",
@@ -470,8 +490,6 @@ paths_mandelquad = [
 	    "end":"golding_c02",
 	    "description": "Walk out the building to the first intersection",
 	},
-
-	/////
 	{
 	    "start":"golding_c02",
 	    "end":"shiffman_e02",
@@ -568,44 +586,69 @@ paths_mandelquad = [
 	    "description": "Walk straight and go up the stairs on your left.",
 	},
 	{
-	    "start":"mandelHQuad_e01",
+	    "start":"mandelHQuad_c01",
 	    "end":"shiffman_e01",
 	    "description": "Walk straight and the entrance to Shiffman is on your right.",
 	},
 	{
 	    "start":"shiffman_e01",
-	    "end":"mandelHQuad_e01",
+	    "end":"mandelHQuad_c01",
 	    "description": "Walk straight until you see a set of stairs.",
 	},
 	{
-	    "start":"mandelHQuad_e01",
+	    "start":"mandelHQuad_c01",
 	    "end":"shiffman_c01",
 	    "description": "Walk to the intersection of paths in the center of the quad.",
 	},
 	{
 	    "start":"shiffman_c01",
-	    "end":"mandelHQuad_e01",
+	    "end":"mandelHQuad_c01",
 	    "description": "Walk straight towards the group of trees ahead until you see a set of stairs.",
 	},
 	{
-	    "start":"mandelHQuad_e01",
+	    "start":"mandelHQuad_c01",
 	    "end":"rabb_c03",
 	    "description": "Take the left path and walk straight.",
 	},
 	{
 	    "start":"rabb_c03",
-	    "end":"mandelHQuad_e01",
+	    "end":"mandelHQuad_c01",
 	    "description": "Follow the path you are on and walk towards the group of trees until you see a set of stairs.",
 	},
 	{
-	    "start":"mandelHQuad_e01",
+	    "start":"mandelHQuad_c01",
 	    "end":"shiffman_e03",
 	    "description": "Take the right path and walk straight. The entrance to Shiffman is ahead.",
 	},
 	{
 	    "start":"shiffman_e03",
-	    "end":"mandelHQuad_e01",
+	    "end":"mandelHQuad_c01",
 	    "description": "Walk towards the intersection of paths surrounded by trees.",
+	},
+	{
+	    "start":"golding_c01",
+	    "end":"olin-sang_c01",
+	    "description": "Continue on your current path.",
+	},
+	{
+	    "start":"olin-sang_c01",
+	    "end":"golding_c01",
+	    "description": "Continue on your current path.",
+	},
+	{
+	    "start":"olin-sang_c01",
+	    "end":"olin-sang_e03",
+	    "description": "Walk straight towards the grey double doors on your left. Walking through those doors will lead you to Olin-Sang 101.",
+	},
+	{
+	    "start":"olin-sang_e03",
+	    "end":"olin-sang_c01",
+	    "description": "Exit Olin-Sang 101. Walk straight onto the path.",
+	},
+	{
+	    "start":"olin-sang_e03",
+	    "end":"olin-sang_ie01",
+	    "description": "Exit Olin-Sang 101 through the wooden doors across from you and turn right. Continue walking straight.",
 	},
 	/////
 	
