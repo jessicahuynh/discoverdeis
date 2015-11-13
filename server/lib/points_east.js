@@ -8,7 +8,7 @@ points_east = [
 	},
 	{
 	    "id":"icc_e02",
-	    "coordinate":new Point(42.367705, -71.254953),
+	    "coordinate":{"type":"Point","coordinates":[42.367705, -71.254953]},
 	    "type":"entrance"
 	},
 	{
@@ -18,12 +18,12 @@ points_east = [
 	},
 	{
 	    "id":"icc_c02",
-	    "coordinate":new Point(42.367549, -71.254949),
+	    "coordinate":{"type":"Point","coordinates":[42.367549, -71.254949]},
 	    "type":"crossing"
 	},
 	{
 	    "id":"icc_c03",
-	    "coordinate":new Point(42.367746, -71.254839),
+	    "coordinate":{"type":"Point","coordinates":[42.367746, -71.254839]},
 	    "type":"crossing"
 	},
 	//east
@@ -114,7 +114,7 @@ points_east = [
 	},
 	{
 	    "id": "eastShapiro_e02",
-	    "coordinate":new Point(42.367722, -71.254607),
+	    "coordinate":{"type":"Point","coordinates":[42.367722, -71.254607]},
 	    "type": "entrance",
 	},
 	{
@@ -124,7 +124,7 @@ points_east = [
 	},
 	{
 	    "id": "eastRubenstein_e02",
-	    "coordinate":new Point(42.367686, -71.254751),
+	    "coordinate":{"type":"Point","coordinates":[42.367686, -71.254751]},
 	    "type": "entrance",
 	},
 	{

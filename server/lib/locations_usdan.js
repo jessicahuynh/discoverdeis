@@ -98,11 +98,12 @@ locations_usdan = [
 		"id":"crown",
 		"name":"Lemberg Hall Crown Center for Middle East Studies",
 		"nickname":"Crown",
-		"coordinates":[
-			new Point(42.367353, -71.256519),
-			new Point(42.367314, -71.256338), 
-			new Point(42.367180, -71.256386), 
-			new Point(42.367212, -71.256574)],
+		"coordinates":{"type":"Polygon","coordinates":[
+			[[42.367353, -71.256519],
+			[42.367314, -71.256338], 
+			[42.367180, -71.256386], 
+			[42.367212, -71.256574]]
+		]},
 		"category":["academics"],
 		"entrances":["crown_e01"],
 		"area":["upper campus"]

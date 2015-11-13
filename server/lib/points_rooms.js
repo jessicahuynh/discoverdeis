@@ -94,9 +94,5 @@ points_rooms = [
  		"coordinate":{"type":"Point","coordinates":[42.368222, -71.256862]},
  		"type":"ientrance"
  	}
-	// {
-	// 	"id":"fieldhouse",
-	// 	"coordinate":{"type":"Point","coordinates":[]},
-	// 	"type":"entrance"
-	// }
+
 ]

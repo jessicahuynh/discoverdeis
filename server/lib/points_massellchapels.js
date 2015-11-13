@@ -37,12 +37,12 @@ points_massellchapels = [
 	//
 	{
 		"id":"bethlehem_c01",
-		"coordinate":new Point(42.368712, -71.260308),
+		"coordinate":{"type":"Point","coordinates":[42.368712, -71.260308]},
 		"type":"crossing"
 	},
 	{
 		"id":"hellerparkinglot_e03",
-		"coordinate":new Point(42.369073, -71.260241),
+		"coordinate":{"type":"Point","coordinates":[42.369073, -71.260241]},
 		"type":"entrance"
 	},
 	//
