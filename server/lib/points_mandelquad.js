@@ -152,7 +152,7 @@ points_mandelquad = [
 	},
 	{
 	    "id": "olin-sang_e03",
-	    "coordinate":new Point(42.369881, -71.257802),
+	    "coordinate":{"type":"Point","coordinates":[42.369881, -71.257802]},
 	    "type": "entrance",
 	},
 	{
