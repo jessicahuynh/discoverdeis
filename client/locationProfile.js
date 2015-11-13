@@ -60,7 +60,9 @@ Template.locationProfile.rendered = function() {
 			var bounds = new google.maps.LatLngBounds();
 			var coords = [];
 			var thisLocCoords = thisLoc.coordinates.coordinates[0];
+			console.log(thisLocCoords);
 			thisLocCoords.forEach(function(coord) {
+				console.log(coord);
 				coords.push(new google.maps.LatLng(coord[0],coord[1]));
 				bounds.extend(new google.maps.LatLng(coord[0],coord[1]));
 			});
