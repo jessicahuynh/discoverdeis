@@ -84,13 +84,13 @@ Template.locationProfile.rendered = function() {
 		else {
 			// just a point
 			var marker = new google.maps.Marker({
-				position:new google.maps.LatLng(thisLoc.coordinates[0],thisLoc.coordinates[1]),
+				position:new google.maps.LatLng(thisLoc.coordinates.coordinates[0],thisLoc.coordinates.coordinates[1]),
 				map:map.instance,
 				title:thisLoc.name,
 				icon:'/GoogleMapsMarkers/blue_MarkerL.png'
 			});
 			
-			map.instance.setCenter(new google.maps.LatLng(thisLoc.coordinates[0],thisLoc.coordinates[1]));
+			map.instance.setCenter(new google.maps.LatLng(thisLoc.coordinates.coordinates[0],thisLoc.coordinates.coordinates[1]));
 		}
 	});
 	
