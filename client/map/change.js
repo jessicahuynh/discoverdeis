@@ -417,31 +417,48 @@ function getRoute(starts, ends) {
 			}
 			// else, go from the nearest intersection
 			else {
-				var nearestIntersection = null;
-				var distNearestIntersection = 1000000000;				
-				var i = Intersections.find().fetch();
-				i.forEach(function(intersection) {
-					Meteor.call("distance",
-						Session.get("currentLocation"),
-						intersection.coordinate,
-						function(error,data) {
-							if (error) {
-								console.log(error);
+				// var nearestIntersection = null;
+				// var distNearestIntersection = 1000000000;				
+				// var i = Intersections.find().fetch();
+				// i.forEach(function(intersection) {
+				// 	Meteor.call("distance",
+				// 		Session.get("currentLocation"),
+				// 		intersection.coordinate,
+				// 		function(error,data) {
+				// 			if (error) {
+				// 				console.log(error);
+				// 			}
+				// 			else {
+				// 				if (data < distNearestIntersection) {
+				// 					distNearestIntersection = data;
+				// 					nearestIntersection = intersection.id;									
+				// 					route = getShortestRoute(null,[nearestIntersection],Locations.findOne({"name":ends}).entrances);
+				// 					//console.log("*" + route);
+				// 					if (route != null) {
+				// 						getRouteDescription(route);
+				// 						Session.set("route",route);
+				// 					}
+				// 				}
+				// 			}
+				// 		});
+				// });			
+				var nearestIntersection = CornerPoints.find({
+					"coordinate":{
+						$near: {
+							$geometry: {
+								"type":"Point",
+								"coordinates": [Session.get("currentLocation").y, Session.get("currentLocation").x ]
 							}
-							else {
-								if (data < distNearestIntersection) {
-									distNearestIntersection = data;
-									nearestIntersection = intersection.id;									
-									route = getShortestRoute(null,[nearestIntersection],Locations.findOne({"name":ends}).entrances);
-									//console.log("*" + route);
-									if (route != null) {
-										getRouteDescription(route);
-										Session.set("route",route);
-									}
-								}
-							}
-						});
-				});								
+						}
+					}
+				});
+				var theNearest = nearestPoint.fetch()[0];
+				
+				var route = getShortestRoute(null, [theNearest],Locations.findOne({"name":ends}).entrances);
+				if (route != null) {
+					getRouteDescription(route);
+					Session.set("route",route);
+				}		
 			}
 		}
 		// a location searched for
