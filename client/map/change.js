@@ -484,7 +484,7 @@ function findId(idToLookFor) {
 	var all_points=Intersections.find().fetch();
     for (var i = 0; i < all_points.length; i++) {
         if (all_points[i].id == idToLookFor) {
-            return(all_points[i].coordinate);
+            return(all_points[i].coordinate.coordinates);
         }
     }
 }
@@ -493,7 +493,7 @@ function addMarkers(loc,mapOpt, map){
 	var point = findId(loc);
 	//GoogleMaps.ready(mapOpt,function(map) {
 		var marker = new google.maps.Marker({
-			position: new google.maps.LatLng(point.x,point.y),
+			position: new google.maps.LatLng(point[0],point[1]),
 			map:map.instance
 		});
 		markers.push(marker);
@@ -503,8 +503,8 @@ function addRoutes(startloc, endloc, mapOpt, map, lineColor, routes){
 	var start= findId(startloc);
 	var end = findId(endloc);
 	var theRoute = [
-		new google.maps.LatLng(start.x,start.y),
-		new google.maps.LatLng(end.x,end.y),
+		new google.maps.LatLng(start[0],start[1]),
+		new google.maps.LatLng(end[0],end[1]),
 	];
 	var drawr = new google.maps.Polyline({
 		path:theRoute,
@@ -518,7 +518,7 @@ function addRoutes(startloc, endloc, mapOpt, map, lineColor, routes){
 }
 function deleteRoutes(routes){
 	for(var j=0;j<routes.length;j++){
-		console.log("null"+j);
+		//console.log("null"+j);
 		routes[j].setMap(null);
 	}
 	routes = [];
