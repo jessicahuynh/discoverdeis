@@ -430,7 +430,7 @@ function getRoute(starts, ends) {
 				var theNearest = Intersections.findOne({"id":nearestIntersection.fetch()[0].id});
 				console.log(theNearest);
 				
-				var route = getShortestRoute(null, [theNearest],Locations.findOne({"name":ends}).entrances);
+				var route = getShortestRoute(null, [theNearest], Locations.findOne({"name":ends}).entrances);
 				console.log(route);
 				if (route != null) {
 					getRouteDescription(route);
@@ -449,6 +449,10 @@ function getRoute(starts, ends) {
 		return route;
 }
 function getShortestRoute(icrossings,startEntrances,endEntrances) {
+	console.log(startEntrances);
+	console.log(icrossings);
+	console.log(endEntrances);
+	
 	var theShortestDist = 1000000000;
 	var shortestRoute = null;	
 	if (icrossings != undefined && icrossings != null && icrossings.length > 0) {
