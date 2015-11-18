@@ -455,14 +455,13 @@ function getShortestRoute(icrossings,startEntrances,endEntrances) {
 		startEntrances = icrossings;
 	}	
 	if (startEntrances != undefined && endEntrances != undefined) {
-		console.log("do you go here?");
 		shortestRoute = Graph.findShortestPath(startEntrances[0],endEntrances[0]);		
 		var currentRouteDist = 0;	
 		if (startEntrances.length > 0 && endEntrances.length > 0) {
-			console.log("what about here?");
 			startEntrances.forEach(function (startEntrance) {
 				endEntrances.forEach(function (endEntrance) {
-					var currentRoute = Graph.findShortestPath(startEntrance, endEntrance);	
+					var currentRoute = Graph.findShortestPath(startEntrance, endEntrance);
+					console.log(currentRoute);	
 					// if there's no route between the entrances, skip
 					if (currentRoute != null) {
 						for (var i = 0; i < currentRoute.length - 2; i++) {
