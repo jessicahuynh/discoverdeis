@@ -450,12 +450,15 @@ function getShortestRoute(icrossings,startEntrances,endEntrances) {
 		startEntrances = icrossings;
 	}	
 	if (startEntrances != undefined && endEntrances != undefined) {
-		shortestRoute = Graph.findShortestPath(startEntrances[0],endEntrances[0]);		
+		shortestRoute = graph.findShortestPath(startEntrances[0],endEntrances[0]);
+		console.log(shortestRoute);
+				
 		var currentRouteDist = 0;	
 		if (startEntrances.length > 0 && endEntrances.length > 0) {
 			startEntrances.forEach(function (startEntrance) {
 				endEntrances.forEach(function (endEntrance) {
-					var currentRoute = Graph.findShortestPath(startEntrance, endEntrance);	
+					var currentRoute = graph.findShortestPath(startEntrance, endEntrance);
+					console.log(startEntrance + " " + endEntrance);
 					// if there's no route between the entrances, skip
 					if (currentRoute != null) {
 						for (var i = 0; i < currentRoute.length - 2; i++) {
