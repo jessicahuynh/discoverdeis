@@ -1,5 +1,5 @@
 Meteor.startup(function() {
-	IntersectionsYX._ensureIndex({"coordinate":"2dsphere"});
+	IntersectionsYX._ensureIndex({"coordinates":"2dsphere"});
 	CornerPoints._ensureIndex({"coordinate":"2dsphere"});
 	
 	if (Locations.find().count() == 0) {
