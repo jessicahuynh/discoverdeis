@@ -64,9 +64,10 @@ Meteor.startup(function() {
 		intersectFiles.forEach(function(intersectFile) {
 			intersectFile.forEach(function(point) {
 				Intersections.insert(point);
+				
 				var flipped = {"type":"Point","coordinates":[point.coordinate.coordinates[1],point.coordinate.coordinates[0]]};
-				IntersectionsYX.insert(flipped);
-				console.log(flipped);
+				
+				IntersectionsYX.insert({"id":point.id,"coordinate":flipped,"type":point.type,"getTo":point.getTo});
 			});
 		});
 	}
