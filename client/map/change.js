@@ -452,7 +452,7 @@ function getRoute(starts, ends) {
 						}
 					}
 				});
-				var theNearest = nearestPoint.fetch()[0];
+				var theNearest = nearestIntersection.fetch()[0];
 				console.log(theNearest);
 				
 				var route = getShortestRoute(null, [theNearest],Locations.findOne({"name":ends}).entrances);
