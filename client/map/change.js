@@ -430,10 +430,7 @@ function getRoute(starts, ends) {
 				var theNearest = nearestIntersection.fetch()[0].id;
 				
 				route = getShortestRoute(null, [theNearest], Locations.findOne({"name":ends}).entrances);
-				console.log(route);
-				if (route != null) {
-					getRouteDescription(route);
-				}		
+				console.log(route);	
 			}
 		}
 		// a location searched for
