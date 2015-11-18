@@ -163,7 +163,7 @@ Template.change.onCreated(function () {
 			startstop = Session.get("startstop");
 			if (startstop != null) {
 				var startstopCor = findId(startstop);
-				var theLatLng1 = new google.maps.LatLng(startstopCor.x,startstopCor.y);
+				var theLatLng1 = new google.maps.LatLng(startstopCor[0],startstopCor[1]);
 				map.instance.setCenter(theLatLng1);
 				markerStart.setPosition(theLatLng1);
 			}
@@ -173,7 +173,7 @@ Template.change.onCreated(function () {
 			laststop = Session.get("laststop");
 			if (laststop != null) {
 				var laststopCor = findId(laststop);
-				var theLatLng2 = new google.maps.LatLng(laststopCor.x,laststopCor.y);
+				var theLatLng2 = new google.maps.LatLng(laststopCor[0],laststopCor[1]);
 				markerEnd.setPosition(theLatLng2);	
 			}
 		})
