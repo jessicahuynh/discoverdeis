@@ -1,5 +1,5 @@
 Meteor.startup(function() {
-	Intersections._ensureIndex({"coordinate":"2dsphere"});
+	IntersectionsYX._ensureIndex({"coordinate":"2dsphere"});
 	CornerPoints._ensureIndex({"coordinate":"2dsphere"});
 	
 	if (Locations.find().count() == 0) {
@@ -64,6 +64,7 @@ Meteor.startup(function() {
 		intersectFiles.forEach(function(intersectFile) {
 			intersectFile.forEach(function(point) {
 				Intersections.insert(point);
+				IntersectionsYX.insert({"type":"Point","coordinates":[point.coordinate.coordinates[1],point.coordinate.coordinates[0]]})
 			});
 		});
 	}

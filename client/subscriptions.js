@@ -4,6 +4,8 @@ Meteor.subscribe("theCornerPoints");
 
 Meteor.subscribe("theIntersections");
 
+Meteor.subscribe("theIntersectionsYX");
+
 Meteor.subscribe("thePaths");
 
 Meteor.subscribe("theMap");

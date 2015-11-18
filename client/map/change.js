@@ -417,7 +417,7 @@ function getRoute(starts, ends) {
 			}
 			// else, go from the nearest intersection
 			else {
-				var nearestIntersection = Intersections.find({
+				var nearestIntersection = IntersectionsYX.find({
 					"coordinate":{
 						$near: {
 							$geometry: {
