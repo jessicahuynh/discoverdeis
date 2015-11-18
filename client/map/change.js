@@ -428,13 +428,11 @@ function getRoute(starts, ends) {
 					}
 				});
 				var theNearest = nearestIntersection.fetch()[0].id;
-				console.log(theNearest);
 				
-				var route = getShortestRoute(null, [theNearest], Locations.findOne({"name":ends}).entrances);
+				route = getShortestRoute(null, [theNearest], Locations.findOne({"name":ends}).entrances);
 				console.log(route);
 				if (route != null) {
 					getRouteDescription(route);
-					Session.set("route",route);
 				}		
 			}
 		}
@@ -460,8 +458,6 @@ function getShortestRoute(icrossings,startEntrances,endEntrances) {
 		if (startEntrances.length > 0 && endEntrances.length > 0) {
 			startEntrances.forEach(function (startEntrance) {
 				endEntrances.forEach(function (endEntrance) {
-					console.log(startEntrance);
-					console.log(endEntrance);
 					var currentRoute = Graph.findShortestPath(startEntrance, endEntrance);	
 					// if there's no route between the entrances, skip
 					if (currentRoute != null) {
