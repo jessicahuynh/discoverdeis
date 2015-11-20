@@ -349,6 +349,11 @@ paths_mandelquad = [
 	    "description": "Cross the street.",
 	},
 	{
+		"start":"heller_c03",
+		"end":"abraham_c01",
+		"description":"Cross Loop Road."
+	},
+	{
 	    "start":"abraham_c01",
 	    "end":"abraham_e01",
 	    "description": "Walk up the steps. The entrance to Abraham Shapiro Academic Complex is straight ahead.",
