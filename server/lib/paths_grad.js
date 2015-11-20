@@ -566,6 +566,7 @@ paths_grad = [
 	},
 	{
 		"start":"commuterrail_e01",
+		"end":"stop_trainstation_e01",
 		"description":"Cross Sawyer and head to the commuter rail station."
 	}
 ]
