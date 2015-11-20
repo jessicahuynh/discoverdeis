@@ -24,9 +24,10 @@ Template.nearbyLocs.helpers({
 	dist:function() {
 		var loc = Locations.findOne({"id":JSON.stringify(this).replace(/"([^"]+(?="))"/g, '$1')});
 		if (loc.entrances != null && loc.entrances != undefined) {
+			var end = Intersections.findOne({"id":loc.entrances[0]}).coordinate.coordinates;
 			Meteor.call("distance",
 				Session.get("currentLocation"),
-				Intersections.findOne({"id":loc.entrances[0]}).coordinate.coordinates,
+				new Point(end[0],end[1]),
 				function(error,data) {
 					if (error) {
 						console.log(error);
