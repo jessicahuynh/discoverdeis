@@ -229,7 +229,7 @@ points_massellchapels = [
 		"singlepoint":true
 	},
 	{
-		"id":"prayng_human_e01",
+		"id":"praying_human_e01",
 		"singlepoint":true
 	}
 ]
