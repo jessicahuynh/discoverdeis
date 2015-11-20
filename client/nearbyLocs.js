@@ -14,6 +14,10 @@ Template.nearbyLocs.helpers({
 			return "N/A";
 		}
 	},
+	nearbyid:function() {
+		var loc = Locations.findOne({"id":JSON.stringify(this).replace(/"([^"]+(?="))"/g, '$1')});
+		return loc.id;
+	},
 	nearbyindex:function() {
 		return "nearbydist"+this;
 	},
@@ -61,11 +65,6 @@ Template.nearbyLocs.events({
 		}
 		
 		Session.set("viewLocation",loc.id);
-		
-		console.log(Session.get("viewLocation"));
-		console.log(Session.get("prev"));
-		
-		Router.go('/viewLocation/'+loc.id);
 		
 		Session.set("pageTitle","Viewing " + loc.nickname);
 	}
