@@ -497,6 +497,17 @@ paths_grad = [
 		"description":"Cross South Street."
 	},
 	
+	{
+		"start":"clot_c01",
+		"end":"angleside_c01",
+		"description":"Walk down Angleside Road."
+	},
+	{
+		"start":"angleside_c01",
+		"end":"clot_c01",
+		"description":"Walk up Angleside Road towards the parking lot."
+	},
+	
 	// link up single points
 	{
 		"start":"inspiration_e01",
@@ -517,5 +528,25 @@ paths_grad = [
 		"start":"village_c04",
 		"end":"chopelas_e01",
 		"description":"Head to the sidewalk."
+	},
+	{
+		"start":"stop_charlesriver_e01",
+		"end":"angleside_c01",
+		"description":"Walk along Charles River Road towards the apartment buildings."
+	},
+	{
+		"start":"angleside_c01",
+		"end":"stop_charlesriver_e01",
+		"description":"Turn left and walk down Charles River Road to the bus shelter."
+	},
+	{
+		"start":"stop_c-lot_e01",
+		"end":"clot_c01",
+		"description":"Head to the intersection. The shuttle stop here is unmarked."
+	},
+	{
+		"start":"clot_c01",
+		"end":"stop_c-lot_e01",
+		"desciption":"Head over to the parking lot."
 	}
 ]

@@ -7,7 +7,8 @@ locations_transport = [
 		"function":"The Grad stop services both the campus and Waltham BranVan.",
 		"category":["transportation"],
 		"area":["lower campus","charles river"],
-		"nearby":["charlesrivercommons"]
+		"nearby":["charlesrivercommons"],
+		"entrances":["stop_charlesriver_e01"]
 	},
 	{
 		"id":"stop_c-lot",
@@ -16,7 +17,8 @@ locations_transport = [
 		"coordinates":{"type":"Point","coordinates":[42.359316, -71.258342]},
 		"function":"The C-Lot stop services the campus BranVan.",
 		"category":["transportation"],
-		"area":["lower campus","charles river"]
+		"area":["lower campus","charles river"],
+		"entrances":["stop_c-lot_e01"]
 	},
 	{
 		"id":"stop_567",

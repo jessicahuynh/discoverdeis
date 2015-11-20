@@ -183,6 +183,7 @@ points_grad = [
 		"type":"entrance",
 		"getTo":"Head out the entrance facing Grad 113, on the side with the bus stop."
 	},
+	
 	{
 		"id":"grad112_e01", //A
 		"coordinate":{"type":"Point","coordinates":[42.359517, -71.257061]},
@@ -474,6 +475,11 @@ points_grad = [
 		"type":"crossing",
 		"getTo":"Head to the fence opening between the commuter rail parking lot and the field that is farthest from the train station."
 	},
+	{
+		"id":"angleside_c01", //near apartments
+		"coordinate":{"type":"Point","coordinates":[42.359041, -71.256998]},
+		"type":"crossing"
+	},
 	
 	// single point entrances
 	{
@@ -482,6 +488,14 @@ points_grad = [
 	},
 	{
 		"id":"chopelas_e01",
+		"singlepoint":true
+	},
+	{
+		"id":"stop_charlesriver_e01",
+		"singlepoint":true
+	},
+	{
+		"id":"stop_c-lot_e01",
 		"singlepoint":true
 	}
 ]
