@@ -33,9 +33,9 @@ distance = function(start, end) {
 	var R = 6371000; // metres
 
 	var lat1 = start.x;
-	var lat2 = end.x;
+	var lat2 = end[0];
 	var lon1 = start.y;
-	var lon2 = end.y;
+	var lon2 = end[1];
 
 	var p1 = lat1 * (Math.PI / 180);
 	var p2 = lat2 * (Math.PI / 180);

@@ -66,6 +66,8 @@ Template.nearbyLocs.events({
 		
 		Session.set("viewLocation",loc.id);
 		
+		Router.go("/viewLocation/"+loc.id);
+		
 		Session.set("pageTitle","Viewing " + loc.nickname);
 	}
 });
