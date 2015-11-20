@@ -22,7 +22,7 @@ Template.nearbyLocs.helpers({
 		if (loc.entrances != null && loc.entrances != undefined) {
 			Meteor.call("distance",
 				Session.get("currentLocation"),
-				Intersections.findOne({"id":loc.entrances[0]}).coordinate,
+				Intersections.findOne({"id":loc.entrances[0]}).coordinate.coordinates,
 				function(error,data) {
 					if (error) {
 						console.log(error);
@@ -60,12 +60,12 @@ Template.nearbyLocs.events({
 			Session.set("prev","/locationList");
 		}
 		
-		Session.set("viewLocation",loc._id);
+		Session.set("viewLocation",loc.id);
 		
 		console.log(Session.get("viewLocation"));
 		console.log(Session.get("prev"));
 		
-		Router.go('/viewLocation/'+loc._id);
+		Router.go('/viewLocation/'+loc.id);
 		
 		Session.set("pageTitle","Viewing " + loc.nickname);
 	}
