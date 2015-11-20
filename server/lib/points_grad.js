@@ -473,5 +473,15 @@ points_grad = [
 		"coordinate":{"type":"Point","coordinates":[42.362408, -71.259738]},
 		"type":"crossing",
 		"getTo":"Head to the fence opening between the commuter rail parking lot and the field that is farthest from the train station."
+	},
+	
+	// single point entrances
+	{
+		"id":"inspiration_e01",
+		"singlepoint":true
+	},
+	{
+		"id":"chopelas_e01",
+		"singlepoint":true
 	}
 ]

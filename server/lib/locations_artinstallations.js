@@ -82,7 +82,8 @@ locations_artinstallations = [
 		"description":"The description on the plaque reads \"Gift of the artist in memory of her mother, Dorothy Sofnas Copaken, who devoted her life to the establishment of Israel as a national Jewish homeland.\" There is a larger version of Inspiration installed in Kansas City, Missouri.",
 		"coordinates": {"type":"Point","coordinates":[42.362478, -71.260400]},
 		"category":["art"],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"entrances":["inspiration_e01"]
 	},
 	{
 		"id":"chopelas",
@@ -92,7 +93,8 @@ locations_artinstallations = [
 		"function":"This tree was planted in memory of Mark S. Chopelas (1963-2003).",
 		"description":"The inscription on the plaque reads \"The Student Union of Brandeis University has planted this tree in memory of Mark S. \"Choppa\" Chopelas (April 3, 1963 - March 1, 2003). A devoted friend, mentor, and coach to all who knew him.\" A quote at the bottom of the plaque reads \"What we remember from childhood we remember forever...\" - Cynthia O'Nick\n\nThere is a fund in his name, the Mark Chopelas Youth Benefit Fund, that aids the children of Malden.",
 		"category":["landscape"],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"entrances":["chopelas_e01"]
 	},
 	{
 		"id":"familyatplay",
@@ -101,7 +103,8 @@ locations_artinstallations = [
 		"coordinates": {"type":"Point","coordinates":[42.365552, -71.258741]},
 		"function":"This bronze sculpture by Chaim Gross was the gift of Antje and Leonard L. Farber.",
 		"category":["art"],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"entrances":["familyatplay_e01"]
 	},
 	{
 		"id":"jcm",
@@ -110,7 +113,8 @@ locations_artinstallations = [
 		"coordinates": {"type":"Point","coordinates":[42.369448, -71.257032]},
 		"function":"The sculpture was created and donated to Brandeis University by Joseph C. Mandel on October 26, 2010.",
 		"category":["art"],
-		"area":["mandel", "upper campus"]
+		"area":["mandel", "upper campus"],
+		"entrances":["jcm_e01"]
 	},
 	{
 		"id":"tree",
@@ -119,7 +123,8 @@ locations_artinstallations = [
 		"coordinates":{"type":"Point","coordinates":[42.367485, -71.257702]},
 		"function":"The stainless-steel sculpture created by Ernest Trova was the gift of Sandra and David Bakalar.",
 		"category":["art"],
-		"area":["upper campus", "brown"]
+		"area":["upper campus", "brown"],
+		"entrances":["tree_e01"]
 	}
 
 	

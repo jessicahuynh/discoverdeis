@@ -652,4 +652,26 @@ paths_mandelquad = [
 	},
 	/////
 	
+	
+	// single points
+	{
+		"start":"jcm_e01",
+		"end":"shiffman_c01",
+		"description":"Walk away from the center of the quad, towards the sculpture."
+	},
+	{
+		"start":"shiffman_c01",
+		"end":"jcm_e01",
+		"description":"Walk towards the center of the quad, directly in front of Shiffman."
+	},
+	{
+		"start":"shiffman_c01",
+		"end":"mandelHQuad_c01",
+		"description":"Walk towards the staircase going down."
+	},
+	{
+		"start":"mandelHQuad_c01",
+		"end":"shiffman_c01",
+		"description":"Walk towards the sculpture in front of Shiffman."
+	}
 ]

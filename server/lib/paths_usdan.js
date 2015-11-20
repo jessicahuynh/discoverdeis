@@ -388,7 +388,37 @@ paths_usdan = [
 	{
 		"start":"pearlman_e01",
 		"end":"pearlman_c03",
-		"description":"Exit Pearlman."
+		"description":"Exit Pearlman through the side entrance."
+	},
+	{
+		"start":"pearlman_e03",
+		"end":"schwartz_c01",
+		"description":"Exit Pearlman through the back and head to the intersection."
+	},
+	{
+		"start":"schwartz_c01",
+		"end":"pearlman_e03",
+		"description":"Enter Pearlman through its back entrance."
+	},
+	{
+		"start":"pearlman_e02",
+		"end":"pearlman_e03",
+		"description":"Go up the stairs and exit Pearlman."
+	},
+	{
+		"start":"pearlman_e03",
+		"end":"pearlman_e02",
+		"description":"Go down the stairs."
+	},
+	{
+		"start":"pearlman_e02",
+		"end":"pearlman_e01",
+		"description":"Stay on the same level, but go further into the building and turn left."
+	},
+	{
+		"start":"pearlman_e01",
+		"end":"pearlman_e02",
+		"description":"Go down the hallway and turn right."
 	},
 	{
 		"start":"pearlman_c03",
@@ -440,4 +470,26 @@ paths_usdan = [
 		"end":"library_c05",
 		"description":"Exit the Peace Circle, turn right, and continue until you are at an intersection of paths."
 	},
+	
+	// paths to single points
+	{ 
+		"start":"tree_e01",
+		"end":"schwartz_c01",
+		"description":"Head away from Pearlman Hall, towards the garden."
+	},
+	{
+		"start":"schwartz_c01",
+		"end":"tree_e01",
+		'description':"Head to the metal statue."
+	},¶
+	{
+		"start":"tree_e01",
+		"end":"pearlman_e03",
+		"description":"Cross the parking lot and head to the back entrance of Pearlman Hall."
+	},
+	{
+		"start":"pearlman_e03",
+		"end":"tree_e01",
+		"description":"Exit Pearlman and head to the metal statue.¶"
+	}
 ]

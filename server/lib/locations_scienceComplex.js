@@ -100,7 +100,7 @@ locations_scienceComplex = [
 			[42.367367, -71.258206]]
 		]},
 		"category":["academics"],
-		"entrances":["pearlman_e01","pearlman_e02"],
+		"entrances":["pearlman_e01","pearlman_e02","pearlman_e03"],
 		"area":["upper campus"]
 	},
 	goldsmith = {

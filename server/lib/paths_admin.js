@@ -70,5 +70,18 @@ paths_admin = [
 		"start":"rosenstiel_c04",
 		"end":"info_c02",
 		"description":"Walk downhill along Loop Road."
+	},
+	
+	
+	// paths for single point locations
+	{
+		"start":"familyatplay_e01",
+		"end":"gryzmish_c02",
+		"description":"Walk back out to the main path."
+	},
+	{
+		"start":"gryzmish_c02",
+		"end":"familyatplay_e01",
+		"description":"Walk into the trees, a bit behind the administration buildings."
 	}
 ]

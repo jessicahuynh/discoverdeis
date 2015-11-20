@@ -42,6 +42,11 @@ points_usdan = [
 	    "type":"entrance"
 	},
 	{
+		"id":"pearlman_e03", //back near brown
+		"coordinate":{"type":"Point","coordinates":[42.367508, -71.257872]},
+		"type":"entrance"	
+	},
+	{
 	    "id":"pearlman_c01",
 	    "coordinate":{"type":"Point","coordinates":[42.367417, -71.258049]},
 	    "type":"crossing"
@@ -161,5 +166,11 @@ points_usdan = [
 	    "id": "mandelpeacegarden_e02",
 	    "coordinate":{"type":"Point","coordinates":[42.367747, -71.257673]},
 	    "type": "entrance",
+	},
+	
+	// single points
+	{
+		"id":"tree_e01",
+		"singlepoint":true
 	}
 ]

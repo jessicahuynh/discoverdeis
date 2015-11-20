@@ -67,8 +67,6 @@ Meteor.startup(function() {
 					point.type = "entrance";
 					// the single point's entrance is always the same as its location coordinate
 					point.coordinate = Locations.findOne({"id":point.id.replace('_e01','')}).coordinates;
-					
-					console.log(point);
 				}
 				
 				Intersections.insert(point);

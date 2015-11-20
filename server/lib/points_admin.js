@@ -88,5 +88,11 @@ points_admin = [
 		"id":"bernstein_c05",
 		"coordinate":{"type":"Point","coordinates":[42.365351, -71.259656]},
 		"type":"crossing"
+	},
+	
+	// add single point locations
+	{
+		"id":"familyatplay_e01",
+		"singlepoint":true
 	}
 ]

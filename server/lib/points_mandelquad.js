@@ -237,4 +237,11 @@ points_mandelquad = [
 	    "coordinate":{"type":"Point","coordinates":[42.369932, -71.258204]},
 	    "type": "crossing",
 	},
+	
+	
+	// single points
+	{
+		"id":"jcm_e01",
+		"singlepoint":true
+	}
 ]

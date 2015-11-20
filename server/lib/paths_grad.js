@@ -495,5 +495,27 @@ paths_grad = [
 		"start":"epstein_c01",
 		"end":"commuterrail_c01",
 		"description":"Cross South Street."
+	},
+	
+	// link up single points
+	{
+		"start":"inspiration_e01",
+		"end":"village_c05",
+		"description":"Turn towards the small silver statue."
+	},
+	{
+		"start":"village_c05",
+		"end":"inspiration_e01",
+		"description":"Head to the crosswalk right nearby."
+	},
+	{
+		"start":"chopelas_e01",
+		"end":"village_c04",
+		"description":"Turn towards the tree with a plaque at the bottom."
+	},
+	{
+		"start":"village_c04",
+		"end":"chopelas_e01",
+		"description":"Head to the sidewalk."
 	}
 ]
