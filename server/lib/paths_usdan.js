@@ -481,7 +481,7 @@ paths_usdan = [
 		"start":"schwartz_c01",
 		"end":"tree_e01",
 		'description':"Head to the metal statue."
-	},¶
+	},
 	{
 		"start":"tree_e01",
 		"end":"pearlman_e03",
