@@ -27,7 +27,8 @@ locations_transport = [
 		"coordinates":{"type":"Point","coordinates":[42.361128, -71.261215]},
 		"function":"The 567 shuttle stop serves the campus BranVan.",
 		"category":["transportation"],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"entrances":["stop_567_e01"]
 	},
 	{
 		"id":"stop_trainstation",
@@ -36,7 +37,8 @@ locations_transport = [
 		"coordinates":{"type":"Point","coordinates":[42.361712, -71.260823]},
 		"function":"The shuttle stop across from the train station serves the campus BranVan.",
 		"category":["transportation"],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"entrances":["stop_trainstation_e01"]
 	},
 	{
 		"id":"commuterrail",
@@ -66,7 +68,8 @@ locations_transport = [
 		"description":"The bus shelter itself was a gift of the Student Union 2013-2014.",
 		"category":["transportation"],
 		"nearby":["admissions","slosberg","bernstein-marcus","greatlawn","scc","ridgewoodA"],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"entrances":["stop_admissions_e01"]
 	},
 	{
 		"id":"stop_lemberg",
@@ -76,6 +79,18 @@ locations_transport = [
 		"function":"The Lemberg stop serves the campus BranVan.",
 		"category":["transportation"],
 		"nearby":["lemberg","rabbSchool","gordonfield"],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"entrances":["stop_lemberg_e01"]
+	},
+	{
+		"id":"stop_rabb",
+		"name":"Rabb Bus Shelter",
+		"nickname":"Rabb shuttle stop",
+		"coordinates":{"type":"Point","coordinates":[42.368683, -71.257204]},
+		"function":"The Rabb bus stop serves the campus and Waltham BranVans, along with the Cambridge/Boston shuttles.",
+		"category":["transportation"],
+		"nearby":["rabb","usdan"],
+		"area":["upper campus"],
+		"entrances":["stop_rabb_e01"]
 	}
 ]

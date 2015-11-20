@@ -375,4 +375,10 @@ points_gym = [
 	    "type":"entrance"
 	},
 
+
+	// single points
+	{
+		"id":"stop_lemberg_e01",
+		"singlepoint":true
+	}
 ]

@@ -1015,5 +1015,19 @@ paths_gym = [
 		"start":"info_e01",
 		"end":"mainentrance_c05",
 		"description":"Exit the info booth and turn right, cutting across the front of the building to the foot of the paved path leading uphill."
+	},
+	
+	
+	
+	// single points
+	{
+		"start":"stop_lemberg_e01",
+		"end":"lemberg_c02",
+		"description":"Head to the sign on a pole labelled shuttle stop."
+	},
+	{
+		"start":"lemberg_c02",
+		"end":"stop_lemberg_e01",
+		"description":"Head to the crosswalk."
 	}
 ]

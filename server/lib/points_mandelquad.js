@@ -243,5 +243,9 @@ points_mandelquad = [
 	{
 		"id":"jcm_e01",
 		"singlepoint":true
+	},
+	{
+		"id":"stop_rabb_e01",
+		"singlepoint":true
 	}
 ]

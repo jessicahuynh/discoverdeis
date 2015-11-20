@@ -672,6 +672,18 @@ paths_southcampus = [
     "start":"epstein_c01",
     "end":"village_c05",
     "description":"Cross the driveway, uphill."
+},
+
+// link up single points
+{
+    "start":"stop_admissions_e01",
+    "end":"admissions_c04",
+    "description":"Walk left, over to where the sidewalk meets the crosswalk."
+},
+{
+    "start":"admissions_c04",
+    "end":"stop_admissions_e01",
+    "description":"Head to the bus shelter."
 }
 
 ]

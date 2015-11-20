@@ -116,4 +116,10 @@ points_southcampus = [
     "type":"crossing"
 },
 
+// single points
+{
+    "id":"stop_admissions_e01",
+    "singlepoint":true
+}
+
 ]

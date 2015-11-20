@@ -673,5 +673,35 @@ paths_mandelquad = [
 		"start":"mandelHQuad_c01",
 		"end":"jcm_e01",
 		"description":"Walk towards the sculpture in front of Shiffman."
+	},
+	{
+		"start":"stop_rabb_e01",
+		"end":"usdan_c09",
+		"description":"Turn right and go down the sidewalk, towards Usdan."
+	},
+	{
+		"start":"usdan_c09",
+		"end":"stop_rabb_e01",
+		"description":"Continue down the sidewalk until you reach the bus shelter on your left."
+	},
+	{
+		"start":"stop_rabb_e01",
+		"end":"rabb_c01",
+		"description":"Cross Loop Road to the foot of the staircase."
+	},
+	{
+		"start":"rabb_c01",
+		"end":"stop_rabb_e01",
+		"description":"Cross Loop Road to the bus shelter."
+	},
+	{
+		"start":"stop_rabb_e01",
+		"end":"library_c04",
+		"description":"Turn right and head to the intersection."
+	},
+	{
+		"start":"library_c04",
+		"end":"stop_rabb_e01",
+		"description":"Head to the bus shelter across from the Rabb steps."
 	}
 ]

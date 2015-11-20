@@ -548,5 +548,24 @@ paths_grad = [
 		"start":"clot_c01",
 		"end":"stop_c-lot_e01",
 		"desciption":"Head over to the parking lot."
+	},
+	{
+		"start":"stop_567_e01",
+		"end":"ss567_c01",
+		"description":"Cross South Street. The shuttle stop is unmarked, directly across from 567."
+	},
+	{
+		"start":"ss567_c01",
+		"end":"stop_567_e01",
+		"description":"Cross South Street."
+	},
+	{
+		"start":"stop_trainstation_e01",
+		"end":"commuterrail_e01",
+		"description":"Cross the street and head to the corner of South Street and Sawyer."
+	},
+	{
+		"start":"commuterrail_e01",
+		"description":"Cross Sawyer and head to the commuter rail station."
 	}
 ]

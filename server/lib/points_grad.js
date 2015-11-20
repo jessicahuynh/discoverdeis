@@ -497,5 +497,13 @@ points_grad = [
 	{
 		"id":"stop_c-lot_e01",
 		"singlepoint":true
+	},
+	{
+		"id":"stop_567_e01",
+		"singlepoint":true
+	},
+	{
+		"id":"stop_trainstation_e01",
+		"singlepoint":true
 	}
 ]
