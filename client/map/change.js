@@ -336,6 +336,7 @@ Template.change.events({
 		}		
 		displayRouteStartStop();
 		// $("#routeTab").tab('show');
+		window.scrollBy(0,240);
 	},
 	"click input":function(event) {
 		event.target.value = '';
