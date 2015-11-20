@@ -63,11 +63,18 @@ Meteor.startup(function() {
 		
 		intersectFiles.forEach(function(intersectFile) {
 			intersectFile.forEach(function(point) {
+				if (point.singlepoint){
+					point.type = "entrance";
+					// the single point's entrance is always the same as its location coordinate
+					point.coordinate = Locations.findOne({"id":point.id.replace('_e01','')}).coordinates;
+				}
+				
 				Intersections.insert(point);
-				
+			
 				var flipped = {"type":"Point","coordinates":[point.coordinate.coordinates[1],point.coordinate.coordinates[0]]};
-				
+			
 				IntersectionsYX.insert({"id":point.id,"coordinate":flipped,"type":point.type,"getTo":point.getTo});
+				
 			});
 		});
 	}

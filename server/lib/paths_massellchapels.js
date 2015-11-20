@@ -646,5 +646,57 @@ paths_massellchapels = [
 		"end":"chapelsfield_c01",
 		"description":"Take the smaller path on your left, walking downhill with Chapels Field to your right."
 	},
+	
+	// connect to artwork
+	{
+		"start":"chapelsfield_c04",
+		"end":"magnolias_e01",
+		"description":"Walk to the side of Berlin Chapel, to the trees."
+	},
+	{
+		"start":"magnolias_e01",
+		"end":"chapelsfield_c04",
+		"description":"Walk to where the sidewalk meets the road."
+	},
+	{
+		"start":"ruach_yisrael_e01",
+		"end":"chapelsfield_c04",
+		"description":"Walk down the path until you reach the statue."
+	},
+	{
+		"start":"chapelsfield_c04",
+		"end":"ruach_yisrael_e01",
+		"description":"Walk down the sidewalk away from Berlin Chapel."
+	},
+	{
+		"start":"holocaust_rememberance_e01",
+		"end":"berlin_c01",
+		"description":"Walk down the road to the memorial in front of Berlin Chapel."
+	},
+	{
+		"start":"berlin_c01",
+		"end":"holocaust_rememberance_e01",
+		"description":"Walk up the steps onto Loop Road."
+	},
+	{
+		"start":"praying_human_e01",
+		"end":"berlin_c01",
+		"description":"Walk onto the grassy patch in front of Chapels' Pond to the statue of the human."
+	},
+	{
+		"start":"berlin_c01",
+		"end":"praying_human_e01",
+		"description":"Walk onto Loop Road, going downhill."
+	},
+	{
+		"start":"praying_human_e01",
+		"end":"harlan_e01",
+		"description":"Walk onto the grassy patch in front of Chapels' Pond to the statue."
+	},
+	{
+		"start":"harlan_e01",
+		"end":"praying_human_e01",
+		"description":"Walk onto Loop Road, going uphill."
+	}
 
 ]

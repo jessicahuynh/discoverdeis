@@ -43,7 +43,8 @@ locations_artinstallations = [
 		"coordinates": {"type":"Point","coordinates":[42.368132, -71.260572]
 		},
 		"category":["landscape"],
-		"area":["upper campus","chapels"]
+		"area":["upper campus","chapels"],
+		"entrances":["magnolias_e01"]
 	},
 	{
 		"id":"ruach_yisrael",
@@ -51,7 +52,8 @@ locations_artinstallations = [
 		"name":"Ruach Yisrael: The Spirit of Israel",
 		"coordinates": {"type":"Point","coordinates":[42.368080, -71.260727]},
 		"category":["art"],
-		"area":["upper campus","chapels"]
+		"area":["upper campus","chapels"],
+		"entrances":["ruach_yisrael_e01"]
 	},
 	{
 		"id":"holocaust_rememberance",
@@ -60,15 +62,8 @@ locations_artinstallations = [
 		"function":"This monument is in memory of the six million Jews who perished in the Holocaust.",
 		"coordinates": {"type":"Point","coordinates":[42.368295, -71.260781]},
 		"category":["art"],
-		"area":["upper campus","chapels"]
-	},
-	{
-		"id":"chapelstriangle",
-		"name":"Chapels Pond Triangle",
-		"nickname":"Chapels Pond Triangle",
-		"coordinates": {"type":"Point","coordinates":[42.368235, -71.260346]},
-		"category":["art"],
-		"area":["upper campus","chapels"]
+		"area":["upper campus","chapels"],
+		"entrances":["holocaust_rememberance_e01"]
 	},
 	{
 		"id":"praying_human",
@@ -76,7 +71,8 @@ locations_artinstallations = [
 		"nickname":"Praying human",
 		"coordinates": {"type":"Point","coordinates":[42.368463, -71.260944]},
 		"category":["art"],
-		"area":["upper campus","chapels"]
+		"area":["upper campus","chapels"],
+		"entrances":["praying_human_e01"]
 	},
 	{
 		"id":"inspiration",

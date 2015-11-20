@@ -211,5 +211,25 @@ points_massellchapels = [
 		"id":"shapirodorm_c04",
 		"coordinate":{"type":"Point","coordinates":[42.366284, -71.261363]},
 		"type":"crossing"
-	}	
+	},
+	
+	
+	// entrances for single points
+	{
+		"id":"magnolias_e01",
+		"getTo":"Walk over to the magnolia trees.",
+		"singlepoint":true
+	},
+	{
+		"id":"ruach_yisrael_e01",
+		"singlepoint":true
+	},
+	{
+		"id":"holocaust_rememberance_e01",
+		"singlepoint":true
+	},
+	{
+		"id":"prayng_human_e01",
+		"singlepoint":true
+	}
 ]
