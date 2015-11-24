@@ -36,6 +36,8 @@ function getRoute(starts, ends) {
 									nearestIntersection = intersection.id;
 									
 									route = getShortestRoute(null,[nearestIntersection],Locations.findOne({"name":ends}).entrances);
+									
+
 									//console.log("*" + route);
 									if (route != null) {
 										getRouteDescription(route);
@@ -90,8 +92,7 @@ function getShortestRoute(icrossings,startEntrances,endEntrances) {
 		
 						if (currentRouteDist < theShortestDist) {
 							theShortestDist = currentRouteDist;
-							shortestRoute = currentRoute;
-							
+							shortestRoute = currentRoute;							
 							// for the shortest path
 							Session.set("routeDist",theShortestDist);
 						}
@@ -189,7 +190,14 @@ function deleteRoutes(routes){
 
 function getRouteDescription(route) {
 	var r = [];
-	
+	var store = [];
+
+	//grab all the points of route
+	for(var i =0; i<route.length-1; i++) {
+		store.push( Intersections.findOne({"id": route[i]}).coordinate );
+	}
+		Session.set("route_points", store)
+
 	// push getTo of starting point if it exists
 	if (route[0] == "You're already here!") {
 		Session.set("routeToTake",route);
@@ -207,12 +215,11 @@ function getRouteDescription(route) {
 		}
 		else {
 			r.push("We don't seem to be able to get the routing data between these two!");
-		}
-		
+		}	
 		Session.set("routeToTake",r);
 	}
-	
 }
+
 
 function Point(x,y) {
 	this.x = x;

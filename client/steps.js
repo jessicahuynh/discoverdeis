@@ -217,6 +217,16 @@ Template.steps.rendered = function () {
 
 	GoogleMaps.load();
 	GoogleMaps.ready('stepMap',function(map){
+		autoNextStepRadius = new google.maps.Circle({
+			center: new google.maps.LatLng(Session.get("currentLocation").x,Session.get("currentLocation").y),
+		   	  radius: 2.5,
+		      strokeColor: '#FF0000',
+			  strokeOpacity: 0.8,
+			  strokeWeight: 2,
+			  fillColor: '#FF0000',
+			  fillOpacity: 0.35,
+		    map: map.instance
+		});
 		marker1 = new google.maps.Marker({
 			position: new google.maps.LatLng(startstop.x,startstop.y),
 			icon: '/GoogleMapsMarkers/green_MarkerA.png',
@@ -345,7 +355,17 @@ Template.steps.rendered = function () {
 			var theLatLng = new google.maps.LatLng(Session.get("currentLocation").x,Session.get("currentLocation").y);
 			map.instance.setCenter(theLatLng);
 			markerCurrent.setPosition(theLatLng);
-			markerCurrent.setIcon(Session.get("arrowDirection")); //Resets the icon so that we can get a different directional
+			markerCurrent.setIcon(Session.get("arrowDirection"));
+			console.log(getNextStep())
+			// console.log(GeoJSON.pointDistance(Session.get("currentLocation").x ,Session.get("currentLocation").y))
+			//wanna know if we should go next step
+			//checks first two points at beginning and draws line
+			//check proximity of point to slope
+
+
+
+
+			 //Resets the icon so that we can get a different directional
 				// console.log("set center: " + middlestop.x + "," + middlestop.y);
 				// var theLatLngMiddle = new google.maps.LatLng(middlestop.x,middlestop.y);
 				// map.instance.setCenter(theLatLngMiddle);
@@ -415,6 +435,19 @@ Template.steps.onCreated(function() {
 // 	return tfnext;
 // 	// Session.set("tfnext", tfnext);
 // }
+
+var currentStep = 0
+function getNextStep() {
+	steps = Session.get("route_points")
+	if(currentStep < steps.length) {
+		currentLocation = Session.get("currentLocation")
+		firstStepPoint_1 = steps[currentStep]
+		firstStepPoint_2 = steps[currentStep+1]
+		distance = Math.abs((firstStepPoint_2.x - firstStepPoint_1.x)*(firstStepPoint_1.y- currentLocation.y)) - ((firstStepPoint_1.x - currentLocation.x) * (firstStepPoint_2.y - firstStepPoint_1.y))
+		return distance;
+	}
+} 
+
 
 
 function getStepDescription(route) {
