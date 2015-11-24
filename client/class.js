@@ -1,6 +1,6 @@
 Template.class.helpers({
 	course:function(){
-		return Classes.find({"times.building": this.building}).fetch(); //_id: "bzicPp9cuf5noRvQa"
+		return Classes.find({"times.building": this.building}, {sort: { "code": 1}}).fetch(); //_id: "bzicPp9cuf5noRvQa"
 	},
 
 	instructor:function() {
