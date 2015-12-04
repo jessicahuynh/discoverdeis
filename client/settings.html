@@ -6,13 +6,31 @@
 			<div class="col-xs-6 text-left">
 				<label for="unit">Distance units</label>
 			</div>
-			<div class="col-xs-6 text-right">	
+			<div class="col-xs-6 text-right">
+			<div class = "bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-on bootstrap-switch-mini bootstrap-switch-id-switch-size bootstrap-switch-animate">	
 				<input type="checkbox" id="unit" class="switch" data-off-text="FT" data-on-text="M" data-off-color="info" data-handle-width="40" checked="{{unitCheck}}">
 			</div>
+		</div>
 		</div>
 		<p class="help-block">Choose either meters or feet to be used app-wide.</p>
 		
 	</div>
+	<hr/>
+
+	<div class="checkbox">
+		<div class="row">
+			<div class="col-xs-6 text-left">
+				<label for="orientation">Device Orientation</label>
+			</div>
+			<div class="col-xs-6 text-right">
+			<div class = "bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-on bootstrap-switch-mini bootstrap-switch-id-switch-size bootstrap-switch-animate">	
+				<input type="checkbox" id="orientation" class="deviceSwitch" data-off-text="Off" data-on-text="On" data-off-color="info" data-handle-width="40" checked="{{deviceOrientation}}">
+			</div>
+		</div>
+		</div>
+		<p class="help-block">Device Orientation Pointer for Maps</p>
+		
+</div>
 	
 	<div id="voiceSettingsDiv">
 	<!--<hr />

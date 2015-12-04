@@ -1,4 +1,5 @@
 Session.setDefault("unit","m");
+Session.setDefault("deviceOrientation","On");
 Session.setDefault("rate", 0.8);
 Session.setDefault("readingmode",false);
 
@@ -8,6 +9,7 @@ Template.settings.rendered = function() {
 	Session.set("listenTo","Change settings for Discover Deis here.");
 	
 	$(".switch").bootstrapSwitch();
+	$(".deviceSwitch").bootstrapSwitch();
 	
 	if (window.SpeechSynthesisUtterance === undefined) {
 			  $("#voiceSettingsDiv").hide();
@@ -19,6 +21,17 @@ Template.settings.rendered = function() {
 		}
 		else {
 			Session.setPersistent("unit","ft");
+		}
+	});
+
+
+	$("#orientation").on('switchChange.bootstrapSwitch', function(event, data) {
+		if ($("#orientation").is(":checked")) {
+			Session.setPersistent("deviceOrientation","On");
+		}
+		else {
+			Session.setPersistent("deviceOrientation","Off");
+
 		}
 	});
 
@@ -51,6 +64,14 @@ Template.settings.helpers({
 	},
 	readingmodeCheck:function() {
 		return Session.get("readingmode");
-	}
+	},
+
+	deviceOrientation: function(){
+		if (Session.get("deviceOrientation") == "On") {
+			return true;
+		} else {
+			return false;
+		}
+	},
 
 });
