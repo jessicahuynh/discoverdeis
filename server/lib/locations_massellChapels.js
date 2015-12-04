@@ -48,7 +48,7 @@ locations_massellChapels = [
 		"area":["upper campus","chapels"]
 		},
 	chapelsField = {
-		"id":"chapelsField",
+		"id":"chapelsfield",
 		"name":"Chapels Field",
 		"nickname":"Chapels Field",
 		"coordinates": {"type":"Polygon","coordinates":[

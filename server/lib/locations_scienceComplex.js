@@ -74,7 +74,7 @@ locations_scienceComplex = [
 		"area":["upper campus","science complex"]
 	},
 	gerstenzang = {
-		"id":"gerstenzang",
+		"id":"gzang",
 		"name":"Leo Gerstenzang Science Library",
 		"nickname":"Gzang",
 		"function":"Gzang is home to many large lecture halls, LTS, and genetic counseling, in addition to a library.",
