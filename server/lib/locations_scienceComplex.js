@@ -135,7 +135,7 @@ locations_scienceComplex = [
 	},
 	abelson = {
 		"id":"abelson",
-		"name":"Abelson-Bass-Yalem",
+		"name":"Abelson-Bass-Yalem Physics",
 		"nickname":"Abelson",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.366623, -71.258532], 

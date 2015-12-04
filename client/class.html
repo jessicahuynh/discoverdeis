@@ -10,16 +10,20 @@
     	</tr>
   	</thead>
   <tbody>
-    {{#each course}}
-	    <tr>
-	      	<td>{{this.code}}</td>
-	      	<td>{{this.name}}</td>
-	      	<td>{{classTime}}</td>
-	      	<td>{{instructor}}</td>
-	      	<td>{{this.times.room}}</td>
-	   
-	    </tr>
-    {{/each}}
+  	{{#if noClasses}}
+  		<tr> There are currently no classes scheduled here </tr>
+  	{{else}}
+	    {{#each course}}
+		    <tr>
+		      	<td>{{this.code}}</td>
+		      	<td>{{this.name}}</td>
+		      	<td>{{classTime}}</td>
+		      	<td>{{instructor}}</td>
+		      	<td>{{this.times.room}}</td>
+		   
+		    </tr>
+	    {{/each}}
+    {{/if}}
   </tbody>
 </table>
 </template>
