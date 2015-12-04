@@ -1,20 +1,21 @@
 Template.locationProfile.helpers({
 	location:function() {
 
-		var full_url = document.URL; // Get current url
-		var url_array = full_url.split('/') // Split the string into an array with / as separator
-		var last_segment = url_array[url_array.length-1];  // Get the last part of the array (-1)
-		Session.set("currentSite", full_url);
-		Session.set("currentName", last_segment);
-		thisLoc = Locations.findOne({id:last_segment});
-		// console.log("^^^^^^^^"+thisLoc.coordinates);
-		Session.setPersistent("thisLoc",thisLoc);
-		return thisLoc;
+		if (Session.get("prev") != "/selfguide" && Session.get("prev") != "/locationList") {
+			var full_url = document.URL; // Get current url
+			var url_array = full_url.split('/') // Split the string into an array with / as separator
+			var last_segment = url_array[url_array.length-1];  // Get the last part of the array (-1)
+			Session.set("currentSite", full_url);
+			Session.set("currentName", last_segment);
+			thisLoc = Locations.findOne({id:last_segment});
+			// console.log("^^^^^^^^"+thisLoc.coordinates);
+			Session.setPersistent("thisLoc",thisLoc);
+		}
+		return Session.get("thisLoc");
 	},
 
 	currentSiteShare:function() { //Returns current URL for MailTo
-		link = Session.get("currentSite");
-		return link;
+		return "/viewLocation/"+Session.get("thisLoc");
 	},
 
 	categories:function() {
@@ -41,7 +42,7 @@ Template.locationProfile.helpers({
 
 Template.locationProfile.events({
 	'click .go-to-navigate':function(event) {
-		Session.set("navigateTo",thisLoc.name);
+		Session.set("navigateTo",Session.get("thisLoc").name);
 	}
 });
 

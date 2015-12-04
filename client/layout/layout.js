@@ -42,17 +42,9 @@ Template.layout.events({
      'click .back':function(event) {
          event.preventDefault();
          Router.go(Session.get("prev"));
-         if (Session.get("prev").indexOf("viewLocation") != -1) {
-             console.log("back to a profile");
 
-            Blaze.renderWithData(Template.locationProfile,Session.get("viewLocation"),this);
-         }
-         //Session.set("prev","");
          if (Session.get("searched")) {
             Session.set("boxClosed",false);
-         }
-         if ($(window).width() < 768) {
-            mobileSearch();
          }
      },
      'click .nav-link':function(event) {
