@@ -99,5 +99,8 @@ Template.welcome.events({
 		
 		Session.set("navigateTo",document.getElementById("endpoint").value);
 		Router.go('/navigate');
+	},
+	'click #editCurrent':function(event) {
+		Session.set("navigateTo",document.getElementById("endpoint").value);
 	}
 });

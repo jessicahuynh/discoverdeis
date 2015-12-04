@@ -4,18 +4,22 @@
 	
 		<div id="locationName">
 			<p><span class="glyphicon glyphicon-map-marker"></span> current location</p>
-			<p class="currentLocText">{{inLocation}}</p>
+			<p class="currentLocText">
+				<a href="{{pathFor 'change'}}" id="editCurrent">
+					{{inLocation}}<span class="editCurrentLoc glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="sr-only">Advanced</span>
+				</a>
+			</p>
 		</div>
 	
 	
 	
-		<div id ="goToLoc">
+		<div id="goToLoc">
 			<p>Where do you want to go?</p>
 			<form id="navform" class="form-inline">
 				<label for="endpoint" class="sr-only">Destination</label>
 				{{> inputAutocomplete settings=settings id="endpoint" class="form-control input input-lg" placeholder="Shapiro" }}
 				<!--<input type="text" id="endpoint" class="form-control input input-lg" placeholder="Shapiro">-->
-				<button type="submit" class="btn btn-lg btn-primary" id="startNav"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Take Me There</button>
+				<button type="submit" class="btn btn-lg btn-primary" id="startNav"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;Take Me There</button>
 				<span class="clear">&nbsp;</span>
 			</form>
 		</div>
