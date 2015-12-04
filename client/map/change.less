@@ -30,8 +30,7 @@ ul.-autocomplete-list {
 	
 	a#getCurrentLoc:focus, a#getCurrentLoc:hover, a#getCurrentLoc:active {
 		background:transparent;
-		text-decoration:none;
-		border-bottom:1px dashed @deis-blue;
+		text-decoration:underline;
 	}
 }
 
@@ -80,11 +79,21 @@ ul.-autocomplete-list {
 
 }
 
+#container1 {
+	margin-left:0;
+	padding-left:0;
+}
+
 /* container that contain the map and the steps */
 #container2 {
 	width: 100%;
 	height: 100%;
 	position: relative;
+}
+@media (max-width:768px) {
+	#container2 {
+		margin-top:6em;
+	}
 }
 
 /* adjust the map position under the steps */
