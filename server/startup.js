@@ -147,6 +147,33 @@ Meteor.startup(function() {
 			
 		});
 	}
+
+	if (Classes.find().count()==0){
+		course.forEach(function( course) {
+			Classes.insert(course);
+	})
+
+		instructor.forEach(function(instructor) {
+			Instructors.insert(instructor)
+		});
+
+		section.forEach(function(section) {
+			theCourse = Classes.findOne({ id: section.course});
+			if(theCourse != undefined) {
+				Classes.update({ id: section.course},
+					{ $set: {   "times": section.times[0],
+								"instructor": Instructors.findOne({id: section.instructors[0]}),
+					 		} 
+				});					
+			}
+		})
+
+		//Remove all the classes with building fields
+		Classes.remove({"times.building": null})
+	}
+
+
+	
 	console.log(Map.find().count());
 	console.log("startup end");
 

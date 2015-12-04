@@ -1,0 +1,25 @@
+<template name="class">
+<table class="table table-hover table-striped" id="nearbylocs">
+  	<thead>
+    	<tr>
+			<th>Course Number</th>
+			<th>Course Title</th>
+			<th>Time</th>
+			<th>Instructor</th>
+			<th>Room Number</th>
+    	</tr>
+  	</thead>
+  <tbody>
+    {{#each course}}
+	    <tr>
+	      	<td>{{this.code}}</td>
+	      	<td>{{this.name}}</td>
+	      	<td>{{classTime}}</td>
+	      	<td>{{instructor}}</td>
+	      	<td>{{this.times.room}}</td>
+	   
+	    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</template>
