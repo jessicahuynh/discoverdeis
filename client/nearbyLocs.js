@@ -68,7 +68,7 @@ Template.nearbyLocs.events({
 		var loc = Locations.findOne({"id":JSON.stringify(this).replace(/"([^"]+(?="))"/g, '$1')});
 		
 		
-		Session.setPersistent("thisLoc",loc);
+		Session.set("thisLoc",loc);
 		
 		Session.set("pageTitle","Viewing " + loc.nickname);
 		Router.go("/viewLocation/"+loc.id);

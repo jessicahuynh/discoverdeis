@@ -9,7 +9,7 @@ Template.locationProfile.helpers({
 			Session.set("currentName", last_segment);
 			thisLoc = Locations.findOne({id:last_segment});
 			// console.log("^^^^^^^^"+thisLoc.coordinates);
-			Session.setPersistent("thisLoc",thisLoc);
+			Session.set("thisLoc",thisLoc);
 		}
 		return Session.get("thisLoc");
 	},

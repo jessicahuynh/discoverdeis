@@ -48,8 +48,10 @@ Template.locationListing.helpers({
 
 Template.locationListing.events({
 	'click a.go-to-location':function(event) {
-		Session.setPersistent("viewLocation",this.id);
-		Session.set("prev",Router.current().route.path());
+		Session.set("viewLocation",this.id);
+		Session.set("thisLoc",this);
+		
+		Session.set("prev","/locationList");
 	},
 	'click a.go-to-navigate':function(event) {
 		Session.set("navigateTo",this.name);
