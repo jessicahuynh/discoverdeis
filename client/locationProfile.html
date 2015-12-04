@@ -32,8 +32,16 @@
 </div>
 
 <div class="row mobileGo">
-	<div class="go-to-navigate col-xs-12">
-		<a href="{{pathFor 'change'}}"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Go</a>
+	<div class="col-xs-6">
+		<div class="go-to-navigate">
+			<a href="{{pathFor 'change'}}"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Go</a>
+		</div>
+	</div>
+	<div class="col-xs-6">
+		<div class="go-to-navigate">
+			<a href="mailto:?subject=Come join me at Brandeis University! &amp;body=You can find me here at {{name}} %0D%0A %0D%0A {{currentSiteShare}}"
+	title="Share by Email"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Share</a>
+		</div>
 	</div>
 </div>
 
