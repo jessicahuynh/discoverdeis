@@ -255,7 +255,7 @@ Template.change.helpers({
 		}
 		else {
 				if (Session.get("routeDist") == "" || Session.get("routeDist")== null || Session.get("routeDist") == undefined || Session.get("routeDist") == NaN) {
-				return "";
+				return "enter a start and end location to get started";
 			}
 			else {	
 				return "about "+Math.ceil(Session.get("routeDist")*0.02)+ " minutes of walking";								
@@ -482,7 +482,7 @@ function getShortestRoute(icrossings,startEntrances,endEntrances) {
 			});
 		}
 	}	
-	//console.log(shortestRoute);
+	Session.set("routeDist",shortestRoute);
 	return shortestRoute;
 }
 function findId(idToLookFor) {
