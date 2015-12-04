@@ -1,5 +1,5 @@
 Session.setDefault("unit","m");
-Session.setDefault("deviceOrientation","On");
+Session.setDefault("deviceOrientation", true);
 Session.setDefault("rate", 0.8);
 Session.setDefault("readingmode",false);
 
@@ -27,10 +27,10 @@ Template.settings.rendered = function() {
 
 	$("#orientation").on('switchChange.bootstrapSwitch', function(event, data) {
 		if ($("#orientation").is(":checked")) {
-			Session.setPersistent("deviceOrientation","On");
+			Session.setPersistent("deviceOrientation",true);
 		}
 		else {
-			Session.setPersistent("deviceOrientation","Off");
+			Session.setPersistent("deviceOrientation",false);
 
 		}
 	});
@@ -67,7 +67,7 @@ Template.settings.helpers({
 	},
 
 	deviceOrientation: function(){
-		if (Session.get("deviceOrientation") == "On") {
+		if (Session.get("deviceOrientation")) {
 			return true;
 		} else {
 			return false;

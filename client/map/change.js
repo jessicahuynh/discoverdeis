@@ -183,7 +183,11 @@ Template.change.onCreated(function () {
 			var theLatLng = new google.maps.LatLng(Session.get("currentLocation").x,Session.get("currentLocation").y);
 			map.instance.setCenter(theLatLng);
 			markerCurrent.setPosition(theLatLng);
-			markerCurrent.setIcon(Session.get("arrowDirection")); //Resets the icon so that we can get a different directional
+			if (Session.get("deviceOrientation")) {
+				markerCurrent.setIcon(Session.get("arrowDirection")); //Resets the icon so that we can get a different directional
+			} else {
+				markerCurrent.setIcon("currentPosition.png");
+			}
 		})
 	})	
 });
