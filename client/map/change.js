@@ -470,20 +470,22 @@ function getShortestRoute(icrossings,startEntrances,endEntrances) {
 						for (var i = 0; i < currentRoute.length - 2; i++) {
 							currentRouteDist += Paths.findOne({ "start": currentRoute[i], "end": currentRoute[i + 1] }).distance;
 						}
-						// console.log(currentRoute + " " + currentRouteDist);		
+						//console.log(currentRoute + " " + currentRouteDist);		
 						if (currentRouteDist < theShortestDist) {
 							theShortestDist = currentRouteDist;
 							shortestRoute = currentRoute;							
 							// for the shortest path
 							Session.set("routeDist",theShortestDist);
 						}
+						Session.set("routeDist",theShortestDist);
 					}
 					currentRouteDist = 0;
 				});
 			});
+			
 		}
 	}	
-	Session.set("routeDist",shortestRoute);
+	
 	return shortestRoute;
 }
 function findId(idToLookFor) {

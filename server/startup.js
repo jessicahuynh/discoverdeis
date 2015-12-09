@@ -104,8 +104,8 @@ Meteor.startup(function() {
 				//console.log(Intersections.findOne({"id":path.start}));
 				//console.log(Intersections.findOne({"id":path.end}));
 				Meteor.call("distance",
-					Intersections.findOne({"id":path.start}).coordinate,
-					Intersections.findOne({"id":path.end}).coordinate,
+					{"x":Intersections.findOne({"id":path.start}).coordinate.coordinates[0],"y":Intersections.findOne({"id":path.start}).coordinate.coordinates[1]},
+					{"x":Intersections.findOne({"id":path.end}).coordinate.coordinates[0],"y":Intersections.findOne({"id":path.end}).coordinate.coordinates[1]},
 					function(error,data) {
 						if (error) {
 							console.log(error);

@@ -48,6 +48,7 @@ logging@1.0.8
 manuelschoebel:wait-on-lib@0.3.0
 matteodem:easy-search@1.6.4
 maxharris9:meteor-bootstrap-slider@0.9.0
+mdg:geolocation@1.1.0
 meteor@1.1.10
 meteor-base@1.0.1
 meteor-platform@1.2.3
