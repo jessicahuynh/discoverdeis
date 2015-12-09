@@ -161,7 +161,7 @@ Meteor.startup(function() {
 			theCourse = Classes.findOne({ id: section.course});
 			if(theCourse != undefined) {
 				if( section.times[0] != undefined) {
-					console.log(section.times[0]);
+					//console.log(section.times[0]);
 					Classes.update({ id: section.course},
 						{ $set: {   "times": section.times[0],
 									"instructor": Instructors.findOne({id: section.instructors[0]}),
