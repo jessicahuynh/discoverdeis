@@ -159,7 +159,7 @@ points_usdan = [
 	},
 	{
 		"id":"msa_e01",
-		"coordinate":{"type":"Point","coordinate":[42.368146, -71.256605]},
+		"coordinate":{"type":"Point","coordinates":[42.368146, -71.256605]},
 		"type":"ientrance"
 	},
 	{
