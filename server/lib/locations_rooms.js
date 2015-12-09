@@ -320,7 +320,7 @@ locations_rooms = [
 		"entrances":["dharmic_e01"],
 		"area":["lower campus"],
 		"nearby":["greatlawn"],
-		"coordinates":{"type":"Point","coordinates":[
+		"coordinates":{"type":"Polygon","coordinates":[
 			[[42.365609, -71.260204],
 			[42.365638, -71.260210],
 			[42.365609, -71.260303],
