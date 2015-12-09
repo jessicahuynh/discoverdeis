@@ -321,9 +321,24 @@ paths_rooms = [
 		"end":"usdan_e03",
 		"description":"Get up from the stairs on the right side."
 	},
+	{
+		"start":"usdan_e01",
+		"end":"msa_e01",
+		"description":"On your left, take the stairs down one flight and then enter the doors that say Muslim Worship Center, making sure to place your shoes in the rack."
+	},
+	{
+		"start":"msa_e01",
+		"end":"usdan_e01",
+		"description":"Retrieve your shoes and go up one flight of stairs to Usdan's primary entrance."
+	},
+	{
+		"start":"scc_e03",
+		"end":"dharmic_e01",
+		"description":"Go up the elevator (or up all three flights and across the skywalk). Remove your shoes and then enter."
+	},
+	{
+		"start":"dharmic_e01",
+		"end":"scc_e03",
+		"description":"Go either down the elevator or go down all the flights of stairs and exit towards the Great Lawn."
+	}
 ]
-
-function Point(x,y) {
-	this.x = x;
-	this.y = y;
-}

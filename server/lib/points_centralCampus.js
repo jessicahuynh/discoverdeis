@@ -159,4 +159,9 @@ points_centralCampus = [
     "coordinate":{"type":"Point","coordinates":[42.364019, -71.261467]},
     "type": "crossing",
 },
+{
+    "id":"dharmic_e01",
+    "coordinate":{"type":"Point","coordinates":[42.365611, -71.260249]},
+    "type":"ientrance"
+}
 ]
