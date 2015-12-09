@@ -2,22 +2,22 @@ paths_usdan = [
 	{
 	    "start":"library_c03",
 	    "end":"usdan_c10",
-	    "description": "Walk along the road beside the library",
+	    "description": "Walk along the road beside the library.",
 	},
 	{
 	    "start":"usdan_c10",
 	    "end":"library_c03",
-	    "description": "Walk along the road beside the library",
+	    "description": "Walk along the road beside the library.",
 	},
 	{
 	    "start":"library_c04",
 	    "end":"usdan_c10",
-	    "description": "Walk along the road beside the library",
+	    "description": "Walk along the road beside the library.",
 	},
 	{
 	    "start":"usdan_c10",
 	    "end":"library_c04",
-	    "description": "Walk along the road beside the library",
+	    "description": "Walk along the road beside the library.",
 	},
 	{
 		"start":"usdan_c08",

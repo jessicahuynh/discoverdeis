@@ -383,12 +383,12 @@ paths_science = [
 	{
 	    "start":"edison_c03",
 	    "end":"rosenstiel_c02",
-	    "description": "Walk down the samll slope.",
+	    "description": "Walk down the small slope.",
 	},
 	{
 	    "start":"rosenstiel_c02",
 	    "end":"edison_c03",
-	    "description": "Walk up the samll slope toward the buildings.",
+	    "description": "Walk up the small slope toward the buildings.",
 	},
 	{
 	    "start":"bassine_c03",
@@ -433,7 +433,7 @@ paths_science = [
 	{
 	    "start":"rosenstiel_e01",
 	    "end":"rosenstiel_c04",
-	    "description": "Walk toward the samll path.",
+	    "description": "Walk toward the small path.",
 	},
 	{
 	    "start":"rosenstiel_c04",

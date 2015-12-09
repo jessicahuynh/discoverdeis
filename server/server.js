@@ -79,7 +79,7 @@ searchLocations = function(current) {
 		//console.log(nearestPoint.fetch());
 		var theNearest = nearestPoint.fetch()[0];
 		
-		var n = distance(current,{"x":theNearest.coordinate.coordinates[1],"y":theNearest.coordinate.coordinates[0]});
+		var n = distance(current,{"x":theNearest.coordinates.coordinates[1],"y":theNearest.coordinates.coordinates[0]});
 		return [Locations.findOne({"name":theNearest.name}),"near",n];
 		
 	}

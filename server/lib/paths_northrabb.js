@@ -34,7 +34,28 @@ paths_northrabb = [
 		"end":"scheffres_c01",
 		"description":"Walk along the straight small path."
 	},
-	///////
+	//
+	{
+		"start":"gordon_c01",
+		"end":"reitman_e03",
+		"description":"Walk down the path on your right. The entrance to Reitman is on your left."
+	},
+	{
+		"start":"reitman_e03",
+		"end":"gordon_c01",
+		"description":"Exit Reitman and walk up the path on your right."
+	},
+	{
+		"start":"gordon_c01",
+		"end":"cable_e02",
+		"description":"Walk down the path on your right. The entrance to Cable is on your right."
+	},
+	{
+		"start":"cable_e02",
+		"end":"gordon_c01",
+		"description":"Exit Cable and walk up the path on your left."
+	},
+	//
 	{
 		"start":"scheffres_c02",
 		"end":"scheffres_e01",
