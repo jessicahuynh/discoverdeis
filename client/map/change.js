@@ -235,6 +235,7 @@ Template.change.helpers({
 	},
 	currentDescription:function() {
 		currDescript=Session.get("step")[count];
+		Session.set("listenTo",currDescript);
 		return currDescript;
 	},
 	naviMapOptions: function() {
@@ -281,6 +282,7 @@ Template.change.events({
 		}		
 		//change one step discription
 		currDescript=Session.get("step")[count];
+		Session.set("listenTo",currDescript);
 		$("#descriptionText").html(currDescript);
 		//change route color
 		for(var i = 0; i<route.length - 1; i++){
@@ -298,6 +300,7 @@ Template.change.events({
 		}
 		//change one step discription
 		currDescript=Session.get("step")[count];
+		Session.set("listenTo",currDescript);
 		$("#descriptionText").html(currDescript);
 		//change route color
 		for(var i = 0; i<route.length - 1; i++){
