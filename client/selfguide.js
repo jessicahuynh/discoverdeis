@@ -3,6 +3,9 @@ Template.selfguide.helpers({
 		setAudio(Session.get("inLocation")[0]);
 		return Locations.findOne({"name":Session.get("inLocation")[0].name});
 	},
+	currentSiteShare:function() { //Returns current URL for MailTo
+		return "http://leiner.cs-i.brandeis.edu:4200/viewLocation/"+Session.get("thisLoc").id;
+	},
 });
 
 Template.selfguide.events({

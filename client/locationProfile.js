@@ -15,7 +15,7 @@ Template.locationProfile.helpers({
 	},
 
 	currentSiteShare:function() { //Returns current URL for MailTo
-		return "/viewLocation/"+Session.get("thisLoc");
+		return "http://leiner.cs-i.brandeis.edu:4200/viewLocation/"+Session.get("thisLoc").id;
 	},
 
 	categories:function() {
