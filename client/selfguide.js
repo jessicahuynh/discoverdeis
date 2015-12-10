@@ -8,6 +8,7 @@ Template.selfguide.helpers({
 Template.selfguide.events({
 	'click #viewmore':function(event) {
 		Session.set("prev","/selfguide");
+		Session.set("thisLoc",Locations.findOne({"name":Session.get("inLocation")[0].name}));
 	}
 });
 
