@@ -7,7 +7,7 @@ offCampus = {
 Template.welcome.helpers({
 	inLocation: function () {
 		var inLoc = Session.get("inLocation");
-		console.log(inLoc);
+		//console.log(inLoc);
 		
 		if (typeof inLoc != "undefined" && inLoc != null && inLoc[0] != null) {
 			var name = Locations.findOne({ "name": inLoc[0].name }).name;

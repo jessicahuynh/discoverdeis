@@ -50,7 +50,7 @@ function applyIntent(intent,entities,mic) {
         }
         else if (intent == "navigate") {
             navigateCommand(entities);
-            console.log(entities);
+            //console.log(entities);
         }
         else if (intent == "app_help") {
            
@@ -93,7 +93,7 @@ function applyIntent(intent,entities,mic) {
             var loc = null;
             if (entities["deis_loc"].value == "this_loc") {
                 loc = Locations.findOne({"name":Session.get("inLocation")[0].name});
-                console.log(loc);
+                //console.log(loc);
             }
             else {
                 loc = Locations.findOne({"name":entities["deis_loc"].value});
@@ -302,7 +302,7 @@ function navigateCommand(entities) {
     }
     else {
        if (entities["deis_loc"] != undefined) {
-           console.log(entities["deis_loc"]);
+           //console.log(entities["deis_loc"]);
            disDestination = disambiguate(entities["deis_loc"].value);
            if (!disDestination) {
                if (Locations.findOne({"name":entities["deis_loc"].value}) != undefined) {
@@ -348,7 +348,7 @@ function navigateCommand(entities) {
     }
     
     if (disDestination || disStart) {
-        console.log(disambiguationChoices);        
+        //console.log(disambiguationChoices);        
     }
     else if (rSay != "Navigating to ") {
         numClarify = 0;

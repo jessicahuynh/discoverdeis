@@ -19,7 +19,7 @@ navigator.geolocation.watchPosition(function (position) {
 	    $("#permissionsAlert").show();
 	}
 	else {
-	    console.log("hide");
+	    //console.log("hide");
 		$("#permissionsAlert").hide();
 	}
 	

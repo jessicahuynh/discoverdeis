@@ -4,5 +4,5 @@ if (Session.get("uuid") == undefined || Session.get("uuid") == null || Session.g
 	Session.setPersistent("uuid",theID);
 }
 else {
-	console.log(Session.get("uuid"));
+	//console.log(Session.get("uuid"));
 }
