@@ -22,27 +22,27 @@ paths_usdan = [
 	{
 		"start":"usdan_c08",
 		"end":"usdan_c06",
-		"description": "Walk straight towards to the loop road after get out of the usdan",
+		"description": "Walk straight towards the Loop Road after leaving Usdan.",
 	},
 	{
 		"start":"usdan_c06",
 		"end":"usdan_c08",
-		"description": "Walk straight towards Usdan",
+		"description": "Walk straight towards Usdan.",
 	},
 	{
 		"start":"usdan_c08",
 		"end":"usdan_c09",
-		"description": "Turn to the left-hand side and walk along the road",
+		"description": "Turn to the left-hand side and walk along the road.",
 	},
 	{
 		"start":"usdan_c09",
 		"end":"usdan_c08",
-		"description": "Walk towards Usdan, keeping loop road on the left",
+		"description": "Walk towards Usdan, keeping loop road on the left.",
 	},
 	{
 		"start":"usdan_c08",
 		"end":"usdan_c05",
-		"description": "Turn to the right-hand side and walk along the road",
+		"description": "Turn to the right-hand side and walk along the road.",
 	},
 	{
 		"start":"usdan_c05",
@@ -52,35 +52,34 @@ paths_usdan = [
 	{
 		"start":"usdan_c09",
 		"end":"usdan_c07",
-		"description": "Walk towards the loop road",
+		"description": "Walk towards the large road (Loop Road).",
 	},
 	{
 		"start":"usdan_c07",
 		"end":"usdan_c09",
-		"description": "Walk towards the Libray, keeping loop road at back",
+		"description": "Walk towards the Libray, keeping Loop Road behind you.",
 	},
 	{
 		"start":"usdan_c09",
 		"end":"rabb_c01",
-		"description": "Walk towards the road on the left, and walk along to the loop road",
+		"description": "Walk towards the road on the left, and walk along the Loop Road.",
 	},
 	{
 		"start":"rabb_c01",
 		"end":"usdan_c09",
-		"description": "Walk towards Usdan, keeping Rabb at back",
+		"description": "Walk towards Usdan, keeping the large set of stairs behind you.",
 	},
 
 	{
 	    "start":"rosenstiel_c03",
 	    "end":"usdan_c01",
-	    "description": "Castle should be on your right, walk to the 3-way intersection",
+	    "description": "When the castle is on your right, walk towards the 3-way intersection.",
 	},
 	{
 	    "start":"usdan_c01",
 	    "end":"rosenstiel_c03",
 	    "description":"Keeping the castle on your left, walk down the main road."  
 	},
-	////
 	{
 	    "start":"usdan_c01",
 	    "end":"crown_c01",
@@ -125,12 +124,12 @@ paths_usdan = [
 	{
 	    "start":"rubenstein_c16",
 	    "end":"usdan_c01",
-	    "description": "Take the left road down to the next intersection with castle on your left",
+	    "description": "Take the left road, down to the next intersection keeping castle on your left",
 	},
 	{
 	    "start":"usdan_c01",
 	    "end":"rubenstein_c16",
-	    "description": "With the castle on your right, continue up to the next intersection with loop road.",
+	    "description": "With the castle on your right, continue up to the next intersection with Loop Road.",
 	},
 	{
 	    "start":"usdan_c02",
@@ -145,17 +144,17 @@ paths_usdan = [
 	{
 	    "start":"usdan_c03",
 	    "end":"usdan_c04",
-	    "description": "Walk past the statue and under the overhead building bridge to Usdan.",
+	    "description": "Walk past the statue, and go under the overhead building/bridge to Usdan.",
 	},
 	{
 	    "start":'usdan_c04',
 	    "end":"usdan_c03",
-	    "description":"Go right under the overhead building bridge, keeping right and going past the gray statue."
+	    "description":"Go under the overhead building/bridge, keeping right and going past the gray statue."
 	},
 	{
 	    "start":"usdan_c02",
 	    "end":"usdan_c04",
-	    "description": "Walk left past the statue and under the overhead building bridge to Usdan",
+	    "description": "Walk left, past the statue, and under the overhead building bridge to Usdan.",
 	},
 	{
 	    "start":"usdan_c04",
@@ -470,8 +469,6 @@ paths_usdan = [
 		"end":"library_c05",
 		"description":"Exit the Peace Circle, turn right, and continue until you are at an intersection of paths."
 	},
-	
-	// paths to single points
 	{ 
 		"start":"tree_e01",
 		"end":"schwartz_c01",

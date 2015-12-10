@@ -1,9 +1,9 @@
-//fellowsgarden, scc,sherman, facultycenter,admission, slosberg
+//fellowsgarden, Shapiro Campus Center (SCC),sherman, facultycenter,admission, slosberg
 paths_southcampus = [
 {
     "start":"fellowsgarden_c01",
     "end":"fellowsgarden_c02",
-    "description": "Walk toward the physics building."
+    "description": "Continue on your current path, toward the large glass building, the Shapiro Science Center."
 },
 {
     "start":"fellowsgarden_c02",
@@ -13,7 +13,7 @@ paths_southcampus = [
 {
     "start":"fellowsgarden_c02",
     "end":"fellowsgarden_c01",
-    "description": "Walk past the physics building. The SSC will be on your left."
+    "description": "Continue on your current path. There should be a large glass building (the Shapiro Science Center) on your left."
 },
 {
     "start":"fellowsgarden_c03",
@@ -33,17 +33,17 @@ paths_southcampus = [
 {
     "start":"scc_c03",
     "end":"scc_e01",
-    "description": "The entrance to the SCC is ahead."
+    "description": "The entrance to the Shapiro Campus Center (SCC) is ahead."
 },
 {
     "start":"scc_e01",
     "end":"scc_c03",
-    "description": "Exit SCC."
+    "description": "Exit Shapiro Campus Center (SCC)."
 },
 {
     "start":"scc_e01",
     "end":"scc_i01",
-    "description": "Walk through SCC."
+    "description": "Walk through Shapiro Campus Center (SCC)."
 },
 {
     "start":"scc_i01",
@@ -58,17 +58,17 @@ paths_southcampus = [
 {
     "start":"scc_e03",
     "end":"scc_i01",
-    "description": "Walk through SCC."
+    "description": "Walk through the Shapiro Campus Center (SCC)."
 },
 {
     "start":"scc_e03",
     "end":"scc_c06",
-    "description": "Exit SCC and walk across the lawn."
+    "description": "Exit the Shapiro Campus Center (SCC) and walk across the lawn."
 },
 {
     "start":"scc_c06",
     "end":"scc_e03",
-    "description": "Walk across the lawn, and the entrance to the SCC is right."
+    "description": "Walk across the lawn, and the entrance to the Shapiro Campus Center (SCC) is right."
 },
 {
     "start":"scc_c06",
@@ -103,7 +103,7 @@ paths_southcampus = [
 {
     "start":"facultycenter_c01",
     "end":"facultycenter_e01",
-    "description": "Walk towards the Faculty Club and go up the stairs, keeping SCC behind you."
+    "description": "Walk towards the Faculty Club and go up the stairs, keeping Shapiro Campus Center (SCC) behind you."
 },
 {
     "start":"facultycenter_e02",
@@ -158,12 +158,12 @@ paths_southcampus = [
 {
     "start":"shermanfunctionhall_c03",
     "end":"scc_c11",
-    "description": "Walk along the road towards SCC, keeping Sherman behind you."
+    "description": "Walk along the road towards the Shapiro Campus Center (SCC, large and flat turquoise building), keeping Sherman behind you."
 },
 {
     "start":"scc_c11",
     "end":"shermanfunctionhall_c03",
-    "description": "Walk along the road towards Sherman, keeping SCC behind you."
+    "description": "Walk along the road towards Sherman, keeping Shapiro Campus Center (SCC) behind you."
 },
 {
     "start":"shermanfunctionhall_c03",
@@ -193,7 +193,7 @@ paths_southcampus = [
 {
     "start":"scc_c01",
     "end":"shermanfunctionhall_c03",
-    "description":"Leave Fellows Garden, walk along the road, keeping SCC on the left and Sherman on the right."
+    "description":"Leave Fellows Garden, walk along the road, keeping Shapiro Campus Center (SCC) on the left and Sherman on the right."
 },
 {
     "start":"scc_c11",
@@ -203,7 +203,7 @@ paths_southcampus = [
 {
     "start":"shermanfunctionhall_c01",
     "end":"scc_c11",
-    "description":"Walk along the road towards SCC, keeping Sherman on the right."
+    "description":"Walk along the road towards Shapiro Campus Center (SCC), keeping Sherman on the right."
 },
 {
     "start":"shermanfunctionhall_e01",
@@ -243,7 +243,7 @@ paths_southcampus = [
 {
     "start":"scc_c01",
     "end":"scc_c11",
-    "description": "Walk to the back of SCC."
+    "description": "Walk to the back of Shapiro Campus Center (SCC)."
 },
 {
     "start":"scc_c11",
@@ -258,7 +258,7 @@ paths_southcampus = [
 {
     "start":"scc_c02",
     "end":"scc_c03",
-    "description": "Walk towards SCC."
+    "description": "Walk towards Shapiro Campus Center (SCC)."
 },
 {
     "start":"scc_c02",
@@ -323,7 +323,7 @@ paths_southcampus = [
 {
     "start":"scc_c12",
     "end":"scc_c04",
-    "description": "Walk past SCC down the road."
+    "description": "Walk past Shapiro Campus Center (SCC) down the road."
 },
 {
     "start":"scc_c04",
@@ -333,12 +333,12 @@ paths_southcampus = [
 {
     "start":"scc_c02",
     "end":"scc_c04",
-    "description": "Walk pass SCC down the road."
+    "description": "Walk past Shapiro Campus Center (SCC) down the road."
 },
 {
     "start":"scc_c02",
     "end":"scc_c12",
-    "description": "Walk toward SCC a little bit."
+    "description": "Walk toward Shapiro Campus Center (SCC) a little bit."
 },
 {
     "start":"scc_c12",
@@ -348,12 +348,12 @@ paths_southcampus = [
 {
     "start":"scc_c03",
     "end":"scc_c12",
-    "description": "Walk a little to where you can see the trails on your left."
+    "description": "Walk straight until you can see the trails on your left."
 },
 {
     "start":"scc_c12",
     "end":"scc_c03",
-    "description": "Walk a little closer to the entrance of SCC."
+    "description": "Walk towards the entrance of the Shapiro Campus Center (SCC)."
 },
 {
     "start":"scc_c12",
@@ -363,7 +363,7 @@ paths_southcampus = [
 {
     "start":"scc_c01",
     "end":"scc_c12",
-    "description": "Walk toward SCC."
+    "description": "Walk toward the Shapiro Campus Center (SCC)."
 },
 {
     "start":"scc_c04",
@@ -388,22 +388,22 @@ paths_southcampus = [
 {
     "start":"scc_c11",
     "end":"scc_c09",
-    "description": "Walk along the lane behind SCC."
+    "description": "Walk along the lane behind the Shapiro Campus Center (SCC)."
 },
 {
     "start":"scc_c09",
     "end":"scc_c11",
-    "description": "Walk along the lane behind SCC."
+    "description": "Walk along the lane behind the Shapiro Campus Center (SCC)."
 },
 {
     "start":"scc_c05",
     "end":"scc_c09",
-    "description": "Walk along the corridor in front of SCC."
+    "description": "Walk along the corridor in front of Shapiro Campus Center (SCC)."
 },
 {
     "start":"scc_c09",
     "end":"scc_c05",
-    "description": "Walk along the corridor in front of SCC."
+    "description": "Walk along the corridor in front of Shapiro Campus Center (SCC)."
 },
 {
     "start":"scc_i01",
@@ -413,17 +413,17 @@ paths_southcampus = [
 {
     "start":"scc_e02",
     "end":"scc_i01",
-    "description": "Enter the SCC."
+    "description": "Enter the Shapiro Campus Center (SCC)."
 },
 {
     "start":"scc_e02",
     "end":"scc_c04",
-    "description": "Continue walk away from SCC."
+    "description": "Continue walk away from Shapiro Campus Center (SCC)."
 },
 {
     "start":"scc_c04",
     "end":"scc_e02",
-    "description": "Walk towards the entrance to the SCC, the turquoise building."
+    "description": "Walk towards the entrance to the Shapiro Campus Center (SCC), the turquoise building."
 },
 {
     "start":"scc_c09",
@@ -433,7 +433,7 @@ paths_southcampus = [
 {
     "start":"scc_c10",
     "end":"scc_c09",
-    "description": "Walk towards SCC."
+    "description": "Walk towards Shapiro Campus Center (SCC)."
 },
 {
     "start":"scc_c10",
@@ -448,32 +448,32 @@ paths_southcampus = [
 {
     "start":"scc_e03",
     "end":"scc_c13",
-    "description": "Exit SCC."
+    "description": "Exit Shapiro Campus Center (SCC)."
 },
 {
     "start":"scc_c13",
     "end":"scc_e03",
-    "description": "SCC is right ahead."
+    "description": "Shapiro Campus Center (SCC) is right ahead."
 },
 {
     "start":"scc_c13",
     "end":"scc_c09",
-    "description": "Walk along SCC with SCC on your right."
+    "description": "Walk along Shapiro Campus Center (SCC), towards the gray platform."
 },
 {
     "start":"scc_c09",
     "end":"scc_c13",
-    "description": "Walk along SCC with SCC on your left."
+    "description": "Walk along the Shapiro Campus Center (SCC), towards the trees ahead."
 },
 {
     "start":"scc_c13",
     "end":"scc_c05",
-    "description": "Walk along SCC with SCC on your left."
+    "description": "Walk along Shapiro Campus Center (SCC) until you reach the end of the building and are on a larger gray path.."
 },
 {
     "start":"scc_c05",
     "end":"scc_c13",
-    "description": "Walk along SCC with SCC on your right."
+    "description": "Walk along Shapiro Campus Center (SCC) towards the gray platform.."
 },
 // south of loop road
 {
@@ -484,17 +484,17 @@ paths_southcampus = [
 {
     "start":"admissions_c05",
     "end":"scc_c06",
-    "description":"Head up hill with Bernstein-Marcus directly on your right."
+    "description":"Head uphill with Bernstein-Marcus directly on your right."
 },
 {
     "start":"scc_c08",
     "end":"admissions_c05",
-    "description":"Walk along Loop Road with Admissions behind you to your right and Bernstein-Marcus straight ahead."
+    "description":"Walk along Loop Road with Admissions behind you to your right, and Bernstein-Marcus will be straight ahead."
 },
 {
     "start":"admissions_c05",
     "end":"scc_c08",
-    "description":"Walk along Loop Road with the Great Lawn on your right and Admissions on your left up ahead."
+    "description":"Walk along Loop Road with the Great Lawn on your right, and Admissions will be on your left up ahead."
 },
 {
     "start":"admissions_c04",

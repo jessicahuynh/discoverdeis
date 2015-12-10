@@ -2,12 +2,12 @@ paths_science = [
 	{
 		"start":"volen_e01",
 		"end":"volen_c01",
-		"description":"Go out the main doors and to the center of the circular plaza."
+		"description":"Go out the main doors, and walk to the center of the circular plaza."
 	},
 	{
 		"start":"volen_c01",
 		"end":"volen_e01",
-		"description":"Go between the large glass doors located beneath the brick building."
+		"description":"Go through the large glass doors located beneath the brick building."
 	},
 	{
 		"start":"volen_c01",
@@ -112,7 +112,7 @@ paths_science = [
 	{
 		"start":"goldsmith_e01",
 		"end":"goldsmith_c01",
-		"description":"Walk forwards"
+		"description":"Walk forwards."
 	},
 	{
 		"start":"goldsmith_c01",
@@ -258,7 +258,7 @@ paths_science = [
 	{
 		"start":"ssc_e02",
 		"end":"ssc_ic02",
-		"description":"Enter and walk up the stairs."
+		"description":"Enter the building and walk up the stairs."
 	},
 	{
 		"start":"ssc_ic02",
@@ -333,7 +333,7 @@ paths_science = [
 	{
 	    "start":"edison_c03",
 	    "end":"bassine_c01",
-	    "description": "Contniue walking up the slope.",
+	    "description": "Continue walking up the slope.",
 	},
 	{
 	    "start":"bassine_c01",
@@ -508,7 +508,7 @@ paths_science = [
 	{
 	    "start":"edison_c02",
 	    "end":"rosensweig_e02",
-	    "description": "Walk toward the building next to the path way.",
+	    "description": "Walk toward the building next to the pathway.",
 	},
 	// {
 	//     "start":"gzang_ie01",
@@ -524,152 +524,152 @@ paths_science = [
 	{
 		"start":"abelson_e02",
 		"end": "abelson_c01",
-		"description": "When outside take a left"
+		"description": "When outside, take a left."
 	},
 
 	{
 		"start": "rosenstiel_e01",
 		"end": "rosenstiel_ic03",
-		"description": "Enter the building and take a right behind you towards the stairwell on the left of the elevator"
+		"description": "Enter the building. Then, take a right behind you towards the stairwell on the left of the elevator."
 	},
 
 	{
 		"start": "rosenstiel_ic03",
 		"end": "rosenstiel_e01",
-		"description": "Walk down the stairs to level one and exit to entrance around the corner"
+		"description": "Walk down the stairs to level one and exit to entrance around the corner."
 	},
 
 	{
 		"start": "rosenstiel_ic03",
 		"end": "rosenstiel_ic02",
-		"description": "Walk up the stairs to level two and head straight down the hall way to the double doors"
+		"description": "Walk up the stairs to level two and head straight down the hall way to the double doors."
 	},
 
 
 	{
 		"start": "rosenstiel_ic02",
 		"end": "ssc_e02",
-		"description": "Walk through the hallway towards the exit"
+		"description": "Walk through the hallway towards the exit."
 	},
 
 	{
 		"start": "ssc_e02",
 		"end": "rosenstiel_ic02",
-		"description": "Walk through the hall way"
+		"description": "Walk through the hallway."
 	},
 
 	{
 		"start": "rosenstiel_ic02",
 		"end": "ssc_e03",
-		"description": "Head up the stairs and exit outside the glass double doors ahead"
+		"description": "Head up the stairs and exit outside the glass double doors ahead."
 	},
 
 	{
 		"start": "ssc_e03",
 		"end": "edison_c01",
-		"description": "Walk outside and turn left"
+		"description": "Walk outside and turn left."
 	},
 
 	{
 		"start": "edison_c01",
 		"end": "ssc_e03",
-		"description": "Walk outside and turn right"
+		"description": "Walk outside and turn right."
 	},
 
 	{
 		"start": "edison_c01",
 		"end": "bassine_c02",
-		"description": "Walk outside and down the stairs across the parking lot"
+		"description": "Walk outside and down the stairs across the parking lot."
 	},
 
 	{
 		"start": "bassine_c01",
 		"end": "edison_c01",
-		"description": "Walk down stairs and turn right across parking lot"
+		"description": "Walk down stairs and turn right across parking lot."
 	},
 
 	{
 		"start": "bassine_c02",
 		"end": "gzang_c01",
-		"description": "Head up stairs, turn left and walk across brick floor"
+		"description": "Head up stairs, turn left and walk across brick floor."
 	},
 
 	{
 		"start": "gzang_c01",
 		"end": "bassine_c02",
-		"description": "Continue straight and turn left at end down the stairs"
+		"description": "Continue straight and turn left at end down the stairs."
 	},
 
 	{
 		"start": "volen_e02",
 		"end": "gzang_c01",
-		"description": "Exit outside, walk across brick floor"
+		"description": "Exit outside, and walk across brick floor."
 	},
 
 	{
 		"start": "gzang_c01",
 		"end": "volen_e02",
-		"description": "Head straight towards white building with double doors"
+		"description": "Head straight towards white building with double doors."
 	},
 
 	{
 		"start": "gzang_c01",
 		"end": "abelson_e03",
-		"description": "Turn left here and enter through door on right side"
+		"description": "Turn left here and enter through door on right side."
 	},
 
 	{
 		"start": "abelson_e03",
 		"end": "gzang_c01",
-		"description": "Walk outside and turn left"
+		"description": "Walk outside and turn left."
 	},
 
 	{
 		"start": "gzang_c01",
 		"end": "edison_e02",
-		"description": "Turn left here and enter through door on left side"
+		"description": "Turn left here and enter through door on left side."
 	},
 
 	{
 		"start": "edison_e02",
 		"end": "gzang_c01",
-		"description": "Walk outside and turn right"
+		"description": "Walk outside and turn right."
 	},
 
 	{
 		"start": "fellowsgarden_c02",
 		"end": "abelson_e02",
-		"description": "Walk up stairs bearing right and enter door at top"
+		"description": "Walk up stairs bearing right and enter door at top."
 	},
 
 	{
 		"start": "abelson_e02",
 		"end": "fellowsgarden_c02",
-		"description": "Exit outside and walk down stairs on right"
+		"description": "Exit outside and walk down stairs on right."
 	},
 
 	{
 		"start": "feldberg_c01",
 		"end": "fellowsgarden_c02",
-		"description": "Walk down path"
+		"description": "Walk down the path."
 	},
 
 	{
 		"start": "fellowsgarden_c02",
 		"end": "feldberg_c01",
-		"description": "Walk up path"
+		"description": "Walk up the path."
 	},
 
 	{
 		"start": "fellowsgarden_c02",
 		"end": "abelson_e01",
-		"description": "Walk up stairs and walk alongside building then enter door on the right near end of building"
+		"description": "Walk up the stairs, and walk alongside the building. Then, enter door on the right near end of building."
 	},
 
 	{
 		"start": "abelson_e01",
 		"end": "fellowsgarden_c02",
-		"description": "Exit to ouside and walk alongside building and down stairs at the end"
+		"description": "Exit to outside. Walk alongside the building and down stairs at the end."
 	},
 
 	// {
@@ -687,422 +687,422 @@ paths_science = [
 	{
 		"start": "abelson_c01",
 		"end": "gzang_e02",
-		"description": "Walk straight towards building with ramp and enter through door"
+		"description": "Walk straight towards building with ramp and enter through door."
 	},
 
 	{
 		"start": "gzang_e02",
 		"end": "abelson_c01",
-		"description": "Walk outside and head straight"
+		"description": "Walk outside and head straight."
 	},
 
 	{
 		"start": "abelson_c01",
 		"end": "ssc_e01",
-		"description": "Head around building to entrance"
+		"description": "Head around the building to entrance."
 	},
 
 	{
 		"start": "ssc_e01",
 		"end": "abelson_c01",
-		"description": "Exit out of building and take a right"
+		"description": "Exit out of the building and take a right."
 	},
 
 	{
 		"start": "ssc_e04",
 		"end": "abelson_c01",
-		"description": "Exit out of building and walk straight"
+		"description": "Exit out of the building and walk straight."
 	},
 
 	{
 		"start": "abelson_c01",
 		"end": "ssc_e04",
-		"description": "Walk alongside building on right and enter gray door"
+		"description": "Walk alongside the building on right and enter through gray door."
 	},
 
 	{
 		"start": "ssc_e04",
 		"end": "ssc_e03",
-		"description": "Walk straight across atrium toward set of double doors leading outside"
+		"description": "Walk straight across the atrium, toward set of double doors leading outside."
 	},
 
 	{
 		"start": "ssc_e03",
 		"end": "ssc_e04",
-		"description": "Walk straight across atrium toward doors leading outside"
+		"description": "Walk straight across the atrium, toward doors leading outside."
 	},
 
 	{
 		"start": "bassine_e01",
 		"end": "gzang_c01",
-		"description": "Exit out of building and take a right towards back of building"
+		"description": "Exit out of building and take a right towards back of building."
 	},
 
 	{
 		"start": "gzang_c01",
 		"end": "bassine_e01",
-		"description": "Go straight and take a left, take door that will be on left side"
+		"description": "Go straight and take a left, take door that will be on left side."
 	},
 //Added after errorfixed commit on 9/10/15-Dewar
 	{
 		"start": "bassine_e01",
 		"end": "bassine_ic01",
-		"description": "Enter building and walk down hall until you reach elevators on right"
+		"description": "Enter building and walk down hall until you reach elevators on right."
 	},
 
 	{
 		"start": "bassine_ic01",
 		"end": "bassine_e01",
-		"description": "Walk down hall until you reach the end of building"
+		"description": "Walk down hall until you reach the end of building."
 	},
 
 	{
 		"start": "bassine_e02",
 		"end": "bassine_ic01",
-		"description": "Enter building and walk up steps"
+		"description": "Enter building and walk up steps."
 	},
 
 	{
 		"start": "bassine_ic01",
 		"end": "bassine_e02",
-		"description": "Turn left and walk down steps to exit outside"
+		"description": "Turn left and walk down steps to exit outside."
 	},
 
 	{
 		"start": "bassine_ic01",
 		"end": "bassine_ic02",
-		"description": "Walk down hall until you reach stairwell on right, go to level one"
+		"description": "Walk down the hall until you reach the stairwell on the right. Go down to level one."
 	},
 
 	{
 		"start": "bassine_ic02",
 		"end": "bassine_ic01",
-		"description": "Walk up stairs to level two and take a left down hallway until you reach elevators on your right"
+		"description": "Walk up stairs to level two and take a left. Walk down the hallway until you reach elevators on your right."
 	},
 
 	{
 		"start": "bassine_ic02",
 		"end": "bassine_e01",
-		"description": "Enter stairwell on right and go up to level two"
+		"description": "Enter stairwell on right and go up to level two."
 	},
 
 	{
 		"start": "bassine_e01",
 		"end": "bassine_ic02",
-		"description": "Enter stairwell on left and go down to level one then exit and use door on right"
+		"description": "Enter stairwell on left and go down to level one. Then, exit and use door on right."
 	},
 
 	{
 		"start": "bassine_ic02",
 		"end": "bassine_ic03",
-		"description": "After exiting stairwell turn left and go straight until you reach elevators on your right"
+		"description": "After exiting stairwell, turn left and go straight until you reach elevators on your right."
 	},
 
 	{
 		"start": "bassine_ic03",
 		"end": "bassine_ic02",
-		"description": "Go down hallway until near the end and take stairwell going UP to the second floor"
+		"description": "Go down hallway until you are near the end. Take the stairwell going up to the second floor"
 	},
 
 	{
 		"start": "bassine_ie01",
 		"end": "bassine_ic03",
-		"description": "Walk up steps through double doors until your in front of elevator"
+		"description": "Walk up the steps through double doors until you're in front of elevator."
 	},
 
 	{
 		"start": "bassine_ic03",
 		"end": "bassine_ie01",
-		"description": "Walk down steps passing double doors"
+		"description": "Walk down steps passing double doors."
 	},
 
 	{
 		"start": "bassine_ie01",
 		"end": "gzang_e01",
-		"description": "Walk down steps make your first right around the corner to exit"
+		"description": "Walk down steps, and make your first right turn around the corner to exit."
 	},
 
 	{
 		"start": "gzang_e01",
 		"end": "bassine_ie01",
-		"description": "Enter building go straight and take a left"
+		"description": "Enter building, go straight, and take a left."
 	},
 
 	{
 		"start": "abelson_e02",
 		"end": "abelson_ic01",
-		"description": "Enter building go straight down hallway"
+		"description": "Enter building and go straight down the hallway."
 	},
 
 	{
 		"start": "abelson_ic01",
 		"end": "abelson_e02",
-		"description": "Walk straight ahead for door and exit outside"
+		"description": "Walk straight ahead for doors and exit."
 	},
 	//Added on 9/14/15 --Dewar
 
 	{
 		"start": "volen_ie03",
 		"end": "gzang_ic03",
-		"description": "Enter through double doors and walk straight ahead until you reach intersection"
+		"description": "Enter through double doors and walk straight ahead until you reach an intersection."
 	},
 
 	{
 		"start": "gzang_ic03",
 		"end": "volen_ie03",
-		"description": "Enter through closed double doors follow hallway up set of stairs and all the way to the end until next set of double doors"
+		"description": "Enter through closed double doors follow hallway up set of stairs and all the way to the end until next set of double doors."
 	},
 
 	{
 		"start": "gzang_e02",
 		"end": "gzang_ic01",
-		"description": "Head straight and down flight of stairs until you see hallway on right"
+		"description": "Head straight and go down flight of stairs until you see hallway on right."
 	},
 
 	{
 		"start": "gzang_ic01",
 		"end": "gzang_e02",
-		"description": "Head straight up flight of stairs and towards door exiting outside"
+		"description": "Head straight, go up flight of stairs, and walk towards door exiting outside."
 	},
 
 	{
 		"start": "gzang_ic01",
 		"end": "gzang_ic02",
-		"description": "Turn and follow follow hallway all the way to end until you reach intersection with three doors"
+		"description": "Turn and follow hallway all the way to the end until you reach intersection with three doors."
 	},
 
 	{
 		"start": "gzang_ic02",
 		"end": "gzang_ic01",
-		"description": "Follow hallway all the way down until you can no longer go straight"
+		"description": "Follow hallway all the way down until you can no longer go straight."
 	},
 
 	{
 		"start": "gzang_ic02",
 		"end": "gzang_e03",
-		"description": "Take door on left and exit outside"
+		"description": "Take door on left and exit outside."
 	},
 
 	{
 		"start": "gzang_e03",
 		"end": "gzang_ic02",
-		"description": "Enter through door"
+		"description": "Enter through door."
 	},
 
 	{
 		"start": "gzang_e03",
 		"end": "edison_c01",
-		"description": "Go straight and bear right"
+		"description": "Go straight and bear right."
 	},
 
 	{
 		"start": "edison_c01",
 		"end": "gzang_e03",
-		"description": "Turn left and enter through black door"
+		"description": "Turn left and enter through black door."
 	},
 
 	{
 		"start": "gzang_ic02",
 		"end": "edison_ie01",
-		"description": "Enter door on right into Edison Leeks building"
+		"description": "Enter door on right into Edison Leeks building."
 	},
 
 	{
 		"start": "edison_ie01",
 		"end": "gzang_ic02",
-		"description": "Exit out into hallway"
+		"description": "Exit out into hallway."
 	},
 
 	{
 		"start": "gzang_ic02",
 		"end": "ssc_ie01",
-		"description": "Enter door straight ahead through covered walk way"
+		"description": "Enter door straight ahead through covered walkway."
 	},
 
 	{
 		"start": "ssc_ie01",
 		"end": "gzang_ic02",
-		"description": "Enter through white double doors and go through covered walkway"
+		"description": "Enter through white double doors and go through covered walkway."
 	},
 
 	{
 		"start": "bassine_c02",
 		"end": "edison_e01",
-		"description": "Turn left and walk straight all the way across brick floor up the stairs and enter through door at top"
+		"description": "Turn left and walk straight all the way across brick floor up the stairs and enter through door at top."
 	},
 
 	{
 		"start": "edison_e01",
 		"end": "bassine_c02",
-		"description": "Exit out of building and turn right and head straight across brick floor till you reach other side"
+		"description": "Exit out of building and turn right. Head straight across brick floor till you reach other side."
 	},
 
 	{
 		"start": "edison_ie02",
 		"end": "edison_ie01",
-		"description": "Walk straight down hallway until end"
+		"description": "Walk straight down hallway until end."
 	},
 
 		{
 		"start": "edison_ie01",
 		"end": "edison_ie02",
-		"description": "Walk straight down hallway until end"
+		"description": "Walk straight down hallway until end."
 	},
 
 	{
 		"start": "edison_ie02",
 		"end": "edison_ic01",
-		"description": "Enter doors and take first stairwell on left to second floor"
+		"description": "Enter doors and take first stairwell on left to second floor."
 	},
 
 	{
 		"start": "edison_ic01",
 		"end": "edison_ie02",
-		"description": "Enter stairwell and go down to bottom floor and exit right towards door"
+		"description": "Enter stairwell and go down to bottom floor and exit right towards door."
 	},
 
 // stairwell to exit to rooftop edison near parking lot
 	{
 		"start": "edison_ic01",
 		"end": "edison_e01",
-		"description": "Exit stairwell, turn left and walk to end of hall to exit outside of building"
+		"description": "Exit stairwell, turn left and walk to end of hall to exit outside of building."
 	},
 
 //stairwell to exit of rooftop near abelson
 	{
 		"start": "edison_ic01",
 		"end": "edison_e02",
-		"description": "Turn right towards closest door to exit outside of building"
+		"description": "Turn right towards closest door to exit outside of building."
 	},
 
 	{
 		"start": "edison_e02",
 		"end": "edison_ic01",
-		"description": "Enter building and take first stairwell on left to bottom floor"
+		"description": "Enter building and take first stairwell on left to bottom floor."
 	},
 
 
 	{
 		"start": "edison_e01",
 		"end": "edison_ic02",
-		"description": "Enter doors and take first stairwell on right to bottom floor"
+		"description": "Enter doors and take first stairwell on right to bottom floor."
 	},
 
 	{
 		"start": "edison_ic02",
 		"end": "edison_ie01",
-		"description": "Exit stairwell and turn left, walk towards door and exit into hallway"
+		"description": "Exit stairwell and turn left, walk towards door and exit into hallway."
 	},
 
 	{
 		"start": "edison_ic02",
 		"end": "edison_e02",
-		"description": "Exit stairwell and turn right, walk towards end of hallway and exit outside"
+		"description": "Exit stairwell and turn right, walk towards end of hallway and exit outside."
 
 	},
 
 	{
 		"start": "edison_ic02",
 		"end": "edison_e01",
-		"description": "Exit stairwell and turn left, walk towards door and exit outside"
+		"description": "Exit stairwell and turn left, walk towards door and exit outside."
 
 	},
 
 	{
 		"start": "edison_ie01",
 		"end": "edison_ic02",
-		"description": "Enter door and take first stairwell on right to second floor"
+		"description": "Enter door and take first stairwell on right to second floor."
 	},
 
 	{
 		"start": "edison_e02",
 		"end": "edison_e01",
-		"description": "Walk straight down hallway towards other exit"
+		"description": "Walk straight down hallway towards other exit."
 	},
 
 	{
 		"start": "edison_e01",
 		"end": "edison_e02",
-		"description": "Walk straight down hallway towards other exit"
+		"description": "Walk straight down hallway towards other exit."
 	},
 
 	{
 		"start": "gzang_ic01",
 		"end": "abelson_ic02",
-		"description": "Enter through two sets of doors on top of slopped ramp "
+		"description": "Enter through two sets of doors on top of slopped ramp."
 	},
 
 	{
 		"start": "abelson_ic02",
 		"end": "gzang_ic01",
-		"description": "Enter through two sets of doors in front of you"
+		"description": "Enter through two sets of doors in front of you."
 	},
 
 	{
 		"start": "abelson_ic02",
 		"end": "gzang_ic01",
-		"description": "Enter through two sets of doors in front of you"
+		"description": "Enter through two sets of doors in front of you."
 	},
 
 	{
 		"start": "abelson_ic02",
 		"end": "abelson_ic01",
-		"description": "Exit stairwell, turn left and walk towards end of hall"
+		"description": "Exit stairwell, turn left and walk towards end of hall."
 	},
 
 
 	{
 		"start": "abelson_ic01",
 		"end": "abelson_ic02",
-		"description": "Walk straight down hallway until your near stairwell at exit"
+		"description": "Walk straight down hallway until your near stairwell at exit."
 	},
 
 	{
 		"start": "abelson_ic02",
 		"end": "abelson_e01",
-		"description": "Walk down small set of stairs to exit"
+		"description": "Walk down small set of stairs to exit."
 	},
 
 	{
 		"start": "abelson_e01",
 		"end": "abelson_ic02",
-		"description": "Enter building and walk up small set of stairs"
+		"description": "Enter building and walk up small set of stairs."
 	},
 
 	{
 		"start": "rosensweig_e03",
 		"end": "rosensweig_c01",
-		"description": "Exit out of building and head down stairs onto sidewalk"
+		"description": "Exit out of building and head down stairs onto sidewalk."
 	},
 
 	{
 		"start": "rosensweig_c01",
 		"end": "rosensweig_e03",
-		"description": "Take stairs all the way up to glass door entrance"
+		"description": "Take stairs all the way up to glass door entrance."
 	},
 	
 	{
 		"start": "bassine_ic03",
 		"end": "gzang_ic03",
-		"description": "Head down steps and head down hallway"
+		"description": "Head down steps and head down hallway."
 	},
 
 	{
 		"start": "gzang_ic03",
 		"end": "bassine_ic03",
-		"description": "Enter Bassine ahead hall and head up stairs"
+		"description": "Enter Bassine ahead hall and head up stairs."
 	},
 
 	{
 		"start": "bassine_e02",
 		"end": "bassine_c02",
-		"description": "After exiting, walk alongside building until you reach the end and take a left" 
+		"description": "After exiting, walk alongside building until you reach the end and take a left." 
 	},
 
 	{
 		"start": "bassine_c02",
 		"end": "bassine_e02",
-		"description": "Go up stairs and walk alongside building on red brick floor until you reach entrance on right"
+		"description": "Go up stairs and walk alongside building on red brick floor until you reach entrance on right."
 	},
 
 	//9/16/15 --Dewar Added
@@ -1110,170 +1110,127 @@ paths_science = [
 	{
 		"start": "volen_e01",
 		"end": "volen_ic01",
-		"description": "Turn right and go to end of hallway until stairwell on right"
+		"description": "Turn right and go to end of hallway until stairwell on right."
 	},
 
 	{
 		"start": "volen_ic01",
 		"end": "volen_e01",
-		"description": "Go down to bottom level, exit stairwell and then exit building through glass door in front"
+		"description": "Go down to bottom level, exit stairwell and then exit building through glass door in front."
 	},
 
 	{
 		"start": "volen_ic02",
 		"end": "volen_ic01",
-		"description": "Head straight and go to end of hallway until stairwell on right"
+		"description": "Head straight and go to end of hallway until stairwell on right."
 	},
 
 	{
 		"start": "volen_ic01",
 		"end": "volen_ic02",
-		"description": "Head straight until you reach double wooden doors"
+		"description": "Head straight until you reach double wooden doors."
 	},
 
 	{
 		"start": "volen_ic01",
 		"end": "volen_e02",
-		"description": "Go up stairwell to second floor, exit and turn right, go straight until you reach small set of steps, exit through glass doors"
+		"description": "Go up stairwell to second floor, exit and turn right, go straight until you reach small set of steps, exit through glass doors."
 	},
 
 	{
 		"start": "volen_e02",
 		"end": "volen_ic01",
-		"description": "Go up small set of steps, keep heading straight pass the fork until you reach stairwell on left and kitchen on right"
+		"description": "Go up small set of steps, keep heading straight pass the fork until you reach stairwell on left and kitchen on right."
 	},
 
 	{
 		"start": "volen_ic02",
 		"end": "volen_ic03",
-		"description": "Go up stairwell to level three"
+		"description": "Go up stairwell to level three."
 	},
 
 	{
 		"start": "volen_ic03",
 		"end": "volen_ic02",
-		"description": "Go down stairwell to level two"
+		"description": "Go down stairwell to level two."
 	},
 
 	{
 		"start": "bassine_ic02",
 		"end": "bassine_ic04",
-		"description": "Go up stairwell to level three"
+		"description": "Go up stairwell to level three."
 	},
 
 	{
 		"start": "bassine_ic04",
 		"end": "bassine_ic02",
-		"description": "Go down stairwell to level two"
+		"description": "Go down stairwell to level two."
 	},
 
 	{
 		"start": "bassine_ic04",
 		"end": "goldsmith_ie02",
-		"description": "Go all the way down the hallway until you white double doors with handles"
+		"description": "Go all the way down the hallway until you see white double doors with handles."
 	},
 
 	{
 		"start": "goldsmith_ie02",
 		"end": "bassine_ic04",
-		"description": "Enter through white double doors on right near lounge area and go all the way down hallway until you reach stairwell on right"
+		"description": "Enter through white double doors on right near lounge area and go all the way down hallway until you reach stairwell on right."
 	},
 
 	{
 		"start": "rosenstiel_ic03",
 		"end": "rosenstiel_ic04",
-		"description": "Go up stairwell to level three"
+		"description": "Go up stairwell to level three."
 	},
 
 	{
 		"start": "rosensweig_e03",
 		"end": "rosensweig_e02",
-		"description": "Enter glass/metal door and cut straight through to other side"
+		"description": "Enter glass/metal door and cut straight through to other side."
 	},
 
 	{
 		"start": "rosensweig_e02",
 		"end": "rosensweig_e03",
-		"description": "Enter glass/metal door and cut straight through to other side"
+		"description": "Enter glass/metal door and cut straight through to other side."
 	},
 
 	{
 		"start": "rosenstiel_ic04",
 		"end": "rosensweig_e03",
-		"description": "Exit stairwell turn right and take first exit outside on right"
+		"description": "Exit stairwell turn right and take first exit outside on right."
 	},
 
 	{
 		"start": "rosensweig_e03",
 		"end": "rosenstiel_ic04",
-		"description": "Enter and turn left, take first stairwell on left"
+		"description": "Enter and turn left, take first stairwell on left."
 	},
 
 
 	{
 		"start": "rosenstiel_ic04",
 		"end": "rosensweig_e02",
-		"description": "Exit stairwell turn right and take first exit outside on left"
+		"description": "Exit stairwell turn right and take first exit outside on left."
 	},
 
 	{
 		"start": "rosenstiel_e02",
 		"end": "rosenstiel_ic04",
-		"description": "Enter and turn right, take first stairwell on left"
+		"description": "Enter and turn right, take first stairwell on left."
 	},
 
 	{
 		"start": "rosenstiel_ic04",
 		"end": "rosensweig_e01",
-		"description": "Exit stairwell turn right, go down hallway, enter pass double white doors to glass doors leading outside "
+		"description": "Exit stairwell turn right, go down hallway, enter pass double white doors to glass doors leading outside."
 	},
 
 	{
 		"start": "rosensweig_e01",
 		"end": "rosenstiel_ic04",
-		"description": "Enter building and go down hallway, enter pass double white doors and head straight until stairwell on left"
+		"description": "Enter building and go down hallway, enter pass double white doors and head straight until stairwell on left."
 	},
-
-
-
-
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-
-	
-
-
-
-
 ]

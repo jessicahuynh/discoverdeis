@@ -2,7 +2,7 @@ paths_northrabb = [
 	{
 		"start":"cable_e01",
 		"end":"cable_c01",
-		"description":"Exit the residance hall and toward the larger road."
+		"description":"Exit the residence hall and toward the larger road."
 	},
 	{
 		"start":"cable_c01",
@@ -46,6 +46,16 @@ paths_northrabb = [
 		"description":"Exit Reitman and walk up the path on your right."
 	},
 	{
+		"start":"reitman_e03",
+		"end":"cable_c02",
+		"description":"Exit Reitman and make a left turn. Walk straight until you are at the parking lot."
+	},
+	{
+		"start":"cable_c02",
+		"end":"reitman_e03",
+		"description":"Walk straight until you are between two brick buildings. The entrance to Reitman is on your right."
+	},
+	{
 		"start":"gordon_c01",
 		"end":"cable_e02",
 		"description":"Walk down the path on your right. The entrance to Cable is on your right."
@@ -55,7 +65,6 @@ paths_northrabb = [
 		"end":"gordon_c01",
 		"description":"Exit Cable and walk up the path on your left."
 	},
-	//
 	{
 		"start":"scheffres_c02",
 		"end":"scheffres_e01",
@@ -95,7 +104,7 @@ paths_northrabb = [
 	{
 		"start":"reitman_e02",
 		"end":"gordon_c01",
-		"description":"Exit the residance hall and walk toward the small path."
+		"description":"Exit the residence hall and walk toward the small path."
 	},
 	{
 		"start":"gordon_c01",
@@ -105,9 +114,8 @@ paths_northrabb = [
 	{
 		"start":"gordon_e01",
 		"end":"gordon_c01",
-		"description":"Exit the residance hall and walk toward the small path."
+		"description":"Exit the residence hall and walk toward the small path."
 	},
-	////////new
 	{
 	    "start":"gordon_e02",
 	    "end":"gordon_c02",
@@ -156,7 +164,7 @@ paths_northrabb = [
 	{
 		"start":"scheffres_e01",
 		"end":"kutz_c04",
-		"description":"Exit the residance hall and walk down the slope."
+		"description":"Exit the residence hall and walk down the slope."
 	},
 	{
 		"start":"scheffres_e02",
@@ -178,7 +186,6 @@ paths_northrabb = [
 		"end":"scheffres_ie01",
 		"description": "Walk into the room with couches (Polaris Lounge) and exit through the doors on the other side."
 	},
-	/////new
 	{
 		"start":"scheffres_c01",
 		"end":"gordon_c02",
@@ -199,8 +206,6 @@ paths_northrabb = [
 		"end":"gordon_c02",
 		"description":"Walk up the slope until you are at a set of stairs."
 	},
-	/////new
-
 	{
 		"start":"kutz_c04",
 		"end":"kutz_c02",
@@ -214,11 +219,11 @@ paths_northrabb = [
 	{
 		"start":"kutz_c04",
 		"end":"kutzlot_e01",
-		"description":"Walk up the slope."
+		"description":"Walk up the slope. The parking lot is ahead."
 	},
 	{
-		"start":"kutz_c04",
-		"end":"kutzlot_e01",
+		"start":"kutzlot_e01",
+		"end":"kutz_c04",
 		"description":"Walk down the slope."
 	},
 	{
@@ -269,7 +274,17 @@ paths_northrabb = [
 	{
 		"start":"cable_e02",
 		"end":"cable_c02",
-		"description":"Exit the residance hall and walk toward the larger road."
+		"description":"Exit the residence hall and walk toward the larger road."
+	},
+	{
+		"start":"cable_e01",
+		"end":"kutz_e02",
+		"description":"Exit the residence hall, turn right, and go up the stairs. Enter Kutz Hall ahead."
+	},
+	{
+		"start":"kutz_e02",
+		"end":"cable_e01",
+		"description":"Exit Kutz and go down the stairs. Cable Residence Hall is on your left."
 	},
 	{
 		"start":"gordon_c01",
@@ -284,7 +299,7 @@ paths_northrabb = [
 	{
 		"start":"reitman_e02",
 		"end":"reitman_c01",
-		"description":"Exit the residance hall and walk down the stairs."
+		"description":"Exit the residence hall and walk down the stairs."
 	},
 	{
 		"start":"reitman_c01",
@@ -294,7 +309,7 @@ paths_northrabb = [
 	{
 		"start":"gordon_e01",
 		"end":"reitman_c01",
-		"description":"Exit the residance hall and walk down the stairs."
+		"description":"Exit the residence hall and walk down the stairs."
 	},
 	{
 		"start":"reitman_c01",
@@ -321,7 +336,7 @@ paths_northrabb = [
 	{
 		"start":"reitman_e01",
 		"end":"cable_c02",
-		"description":"Exit the residance hall and walk toward the larger road."
+		"description":"Exit the residence hall and walk toward the larger road."
 	},
 	{
 		"start":"cable_c01",
@@ -333,8 +348,6 @@ paths_northrabb = [
 		"end":"cable_c01",
 		"description":"Walk up the slope on the larger road."
 	},
-
-	////new
 	{
 		"start":"cable_c02",
 		"end":"northquadlot_e01",
@@ -355,7 +368,6 @@ paths_northrabb = [
 		"end":"northquadlot_e01",
 		"description":"Follow the large path."
 	},
-	///16
 	{
 		"start":"reitman_c01",
 		"end":"northquadlot_e01",
@@ -376,50 +388,46 @@ paths_northrabb = [
 		"end":"reitman_c01",
 		"description":"Follow the path to the middle of the parking lot."
 	},
-	////new
-
 	{
 	    "start":"rabb_c01",
 	    "end":"kutz_c03",
-	    "description": "Walk down the road to the first stairs you see on your left side",
+	    "description": "Walk straight. You should see a slope ahead.",
 	},
 	{
 	    "start":"kutz_c03",
 	    "end":"rabb_c01",
-	    "description": "Walk up to the first crossroads as well as the sideway",
+	    "description": "Walk straight. You should see the foot of a staircase ahead.",
 	},
 	{
 	    "start":"kutz_c03",
 	    "end":"kutz_c02",
-	    "description": "Walk up the stairs",
+	    "description": "Go up the slope.",
 	},
 	{
 	    "start":"kutz_c02",
 	    "end":"kutz_c01",
-	    "description": "Walk through the parking lot",
+	    "description": "Walk through the parking lot.",
 	},
 	{
 	    "start":"kutz_c01",
 	    "end":"kutz_e01",
-	    "description": "Walk straight to the building and here Kutz Hall is",
+	    "description": "Walk straight to the building, and here is Kutz Hall.",
 	},
 	{
 	    "start":"kutz_c02",
 	    "end":"kutz_c03",
-	    "description": "Walk down the stairs to the road",
+	    "description": "Go down the slope to the main road (Loop Road).",
 	},
 	{
 	    "start":"kutz_c01",
 	    "end":"kutz_c02",
-	    "description": "Walk through the parking lot to the stairs",
+	    "description": "Walk through the parking lot to the stairs.",
 	},
 	{
 	    "start":"kutz_e01",
 	    "end":"kutz_c01",
-	    "description": "Walk out of the building and go straight to the parking lot",
+	    "description": "Walk out of the building, and go straight to the parking lot.",
 	},
-
-	/////
 	{
 	    "start":"kutz_e01",
 	    "end":"kutz_c04",
@@ -430,8 +438,6 @@ paths_northrabb = [
 	    "end":"kutz_e01",
 	    "description": "Walk towards the smaller path by your right, which leads to the Kutz building.",
 	},
-	//////
-
 	{
 	    "start":"kutz_c05",
 	    "end":"cable_c01",

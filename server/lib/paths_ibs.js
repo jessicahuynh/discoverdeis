@@ -47,17 +47,17 @@ paths_ibs = [
 	{
 		"start":"museum_c02",
 		"end":"museum_c03",
-		"description":"Walk towards the right side of the statue of lights,turn left to the loop road."
+		"description":"Walk towards the right side of the statue of lights, turn left to the loop road."
 	},
 	{
 		"start":"museum_c02",
 		"end":"museum_e01",
-		"description":"Keep walking to the building with glass walls, that's Rose Art Museum."
+		"description":"Keep walking to the building with glass walls. Ahead is the Rose Art Museum."
 	},
 	{
 		"start":"museum_e01",
 		"end":"museum_c02",
-		"description":"Get off the stairs."
+		"description":"Go down the stairs."
 	},
 	{
 		"start":"museum_c03",
@@ -72,12 +72,12 @@ paths_ibs = [
 	{
 		"start":"scc_c10",
 		"end":"theater_c01",
-		"description":"Walk across the grasses."
+		"description":"Walk across the grass."
 	},
 	{
 		"start":"theater_c01",
 		"end":"scc_c10",
-		"description":"Walk across the grasses."
+		"description":"Walk across the grass."
 	},
 	{
 		"start":"theater_c01",
@@ -246,93 +246,93 @@ paths_ibs = [
 	{
 		"start":"theaterlot_e02",
 		"end":"theaterlot_e04",
-		"description":"Walk straight parking lot until you reach intersection dividing parking lot" 
+		"description":"Walk straight parking lot until you reach intersection dividing parking lot." 
 	},
 	{
 		"start":"theaterlot_e04",
 		"end":"theaterlot_e02",
-		"description":"Walk across parking lot until you reach sloped hill on left" 
+		"description":"Walk across parking lot until you reach sloped hill on left." 
 	},
 	{
 		"start":"theaterlot_e03",
 		"end":"theaterlot_e02",
-		"description":"Walk straight until you reach stop sign" 
+		"description":"Walk straight until you reach stop sign." 
 	},
 	{
 		"start":"theaterlot_e02",
 		"end":"theaterlot_e03",
-		"description":"Facing the big parking lot, take a left" 
+		"description":"Facing the big parking lot, take a left." 
 	},
 	{
 		"start":"theaterlot_e04",
 		"end":"theaterlot_c02",
-		"description":"Walk across parking lot until you see downward sloped path"
+		"description":"Walk across parking lot until you see downward sloped path."
 	},
 	{
 		"start":"theaterlot_c02",
 		"end":"theaterlot_e04",
-		"description":"Walk straight across parking lot until you see reach dividers to bigger parking lot"
+		"description":"Walk straight across parking lot until you see reach dividers to bigger parking lot."
 	},
 	{
 		"start":"theaterlot_c02",
 		"end":"southlot_e01",
-		"description":"Walk down hill until you reach another big parking lot"
+		"description":"Walk down hill until you reach another big parking lot."
 	},
 	{
 		"start":"southlot_e01",
 		"end":"theaterlot_c02",
-		"description":"Head up sloped hill until you read the top"
+		"description":"Head up sloped hill until you read the top."
 	},
 	{
 		"start":"southlot_e01",
 		"end":"southlot_c01",
-		"description":"Continue heading down the sloped hill until you reach a stop sign"
+		"description":"Continue heading down the sloped hill until you reach a stop sign."
 	},
 	{
 		"start":"southlot_c01",
 		"end":"southlot_e01",
-		"description":"Head up slopped path until you see parking lot on your right"
+		"description":"Head up slopped path until you see parking lot on your right."
 	},
 	{
 		"start":"southlot_e01",
 		"end":"southlot_e02",
-		"description":"Walk across parking lot towards buildings"
+		"description":"Walk across parking lot towards buildings."
 	},
 	{
 		"start":"southlot_e02",
 		"end":"southlot_e01",
-		"description":"Walk across parking lot until you reach the end and see sloped paths"
+		"description":"Walk across parking lot until you reach the end and see sloped paths."
 	},
 	{
 		"start":"southlot_e02",
 		"end":"ziv128_c01",
-		"description":"Walk straight ahead" 
+		"description":"Walk straight ahead." 
 	},
 	{
 		"start":"ziv128_c01",
 		"end":"southlot_e02",
-		"description":"Walk straight ahead" 
+		"description":"Walk straight ahead." 
 	},
 	{
 		"start":"southlot_c01",
 		"end":"epstein_c03",
-		"description":"Continue walking straight until you reach the end where you will be facing South street" 
+		"description":"Continue walking straight until you reach the end where you will be facing South Street." 
 	},
 	{
 		"start":"epstein_c03",
 		"end":"southlot_c01",
-		"description":"Head down road until you see a entrance to a slopped hill" 
+		"description":"Head down road until you see a entrance to a slopped hill." 
 	},
 	{
 		"start":"theaterlot_e04",
 		"end":"theaterlot_e01",
-		"description":"Walk to the other side of the parking lot until you reach entrance " 
+		"description":"Walk to the other side of the parking lot until you reach entrance." 
 	},
 
 	{
 		"start":"theaterlot_e01",
 		"end":"theaterlot_e04",
-		"description":"Walk across the parking lot until you reach interection dividing parking lot" 
+		"description":"Walk across the parking lot until you reach interection dividing parking lot." 
 	},
 
 
