@@ -17,7 +17,7 @@ paths_grad = [
 	{
 		"start":"turner_c02",
 		"end":"turner_c01",
-		"description":"Continue going down Turner street."
+		"description":"Continue going down Turner Street."
 	},
 	{
 		"start":"turner_c02",
@@ -128,7 +128,7 @@ paths_grad = [
 	{
 		"start":"epstein_c02",
 		"end":"epstein_c01",
-		"description":"Walk along South Street away from the train station and towards the crooswalk."
+		"description":"Walk along South Street away from the train station and towards the crosswalk."
 	},
 	{
 		"start":"epstein_c02",

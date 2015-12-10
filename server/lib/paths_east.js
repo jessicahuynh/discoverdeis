@@ -7,7 +7,7 @@ paths_east = [
 	{
 	    "start":"rubenstein_c01",
 	    "end":"rosenstiel_c01",
-	    "description": "Turn right and take loop road left alongside the parking lot",
+	    "description": "Turn right and take Loop Road left alongside the parking lot",
 	},
 	{
 	    "start":"rubenstein_c01",
@@ -17,7 +17,7 @@ paths_east = [
 	{
 	    "start":"rubenstein_c02",
 	    "end":"rubenstein_c01",
-	    "description": "Turn right and take loop road left alongside the parking lot",
+	    "description": "Turn right and take Loop Road left alongside the parking lot",
 	},
 	{
 	    "start":"rubenstein_c01",
@@ -27,7 +27,7 @@ paths_east = [
 	{
 	    "start":"rubenstein_c03",
 	    "end":"rubenstein_c01",
-	    "description": "Turn right and take loop road left alongside the parking lot",
+	    "description": "Turn right and take Loop Road left alongside the parking lot",
 	},
 	{
 	    "start":"rubenstein_c03",
@@ -72,7 +72,7 @@ paths_east = [
 	{
 	    "start":"rubenstein_c01",
 	    "end":"rubenstein_c08",
-	    "description": "Continue up loop road, castle should be immediately left.",
+	    "description": "Continue up Loop Road, castle should be immediately left.",
 	},
 	{
 	    "start":"rubenstein_c08",
@@ -82,82 +82,82 @@ paths_east = [
 	{
 	    "start":"rubenstein_c08",
 	    "end":"rubenstein_c07",
-	    "description": "Walk down the stairs to North Quad",
+	    "description": "Walk down the stairs to North Quad.",
 	},
 	{
 	    "start":"rubenstein_c07",
 	    "end":"rubenstein_c08",
-	    "description": "Walk up the stairs to the castle and you will be on loop road",
+	    "description": "Walk up the stairs to the castle and you will be on Loop Road.",
 	},
 	{
 	    "start":"rubenstein_c07",
 	    "end":"rubenstein_c09",
-	    "description": "Walk to the left of the buildings to the second set of stairs on your left",
+	    "description": "Walk to the left of the buildings to the second set of stairs on your left.",
 	},
 	{
 	    "start":"rubenstein_c09",
 	    "end":"rubenstein_c07",
-	    "description": "Walk to the right of the buildings to the next set of stairs on your right",
+	    "description": "Walk to the right of the buildings to the next set of stairs on your right.",
 	},
 	{
 	    "start":"rubenstein_c08",
 	    "end":"rubenstein_c10",
-	    "description": "Continue up loop road until there is another set of stairs on the right",
+	    "description": "Continue up Loop Road until there is another set of stairs on the right.",
 	},
 	{
 	    "start":"rubenstein_c10",
 	    "end":"rubenstein_c08",
-	    "description": "Continue down loop road until there is another set of stairs on the left",
+	    "description": "Continue down Loop Road until there is another set of stairs on the left.",
 	},
 	{
 	    "start":"rubenstein_c09",
 	    "end":"rubenstein_c10",
-	    "description": "Walk up the stairs to the castle and you will be on loop road",
+	    "description": "Walk up the stairs to the castle and you will be on Loop Road.",
 	},
 	{
 	    "start":"rubenstein_c10",
 	    "end":"rubenstein_c09",
-	    "description": "Walk down the stairs away from castle and into North Quad",
+	    "description": "Walk down the stairs away from castle and into North Quad.",
 	},
 	{
 	    "start":"rubenstein_c09",
 	    "end":"rubenstein_c11",
-	    "description": "Walk to the bottom of the ramp on the left, Hassenfeld will be on your right",
+	    "description": "Walk to the bottom of the ramp on the left, Hassenfeld will be on your right.",
 	},
 	{
 	    "start":"rubenstein_c15",
 	    "end":"rubenstein_c16",
-	    "description": "Walk up the ramp and you will be on loop road at an intersection",
+	    "description": "Walk up the ramp and you will be on Loop Road at an intersection.",
 	},
 	{
 	    "start":"rubenstein_c16",
 	    "end":"rubenstein_c15",
-	    "description": "Walk down the ramp and you will be on loop road at an intersection",
+	    "description": "Walk down the ramp and you will be on Loop Road at an intersection.",
 	},
 	{
 	    "start":"rubenstein_c14",
 	    "end":"rubenstein_c11",
-	    "description": "Walk down the steep slope",
+	    "description": "Walk down the steep slope.",
 	},
 	{
 	    "start":"rubenstein_c11",
 	    "end":"rubenstein_c14",
-	    "description": "Walk up the steep slope",
+	    "description": "Walk up the steep slope.",
 	},
 	{
 	    "start":"rubenstein_c15",
 	    "end":"rubenstein_c14",
-	    "description": "Walk toward the steep slope",
+	    "description": "Walk toward the steep slope.",
 	},
 	{
 	    "start":"rubenstein_c14",
 	    "end":"rubenstein_c15",
-	    "description": "Walk toward the Loop Road",
+	    "description": "Walk toward the Loop Road.",
 	},
 	{
 	    "start":"rubenstein_c10",
 	    "end":"rubenstein_c16",
-	    "description": "Continue up loop road until you reach the intersection",
+	    "description": "Continue up Loop Road until you reach the intersection.",
 	},
 	{
 	    "start":"rubenstein_c11",

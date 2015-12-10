@@ -363,17 +363,17 @@ paths_massellchapels = [
 	{
 		"start":"deroy_e02",
 		"end":"deroy_c03",
-		"description":"Walk outside of Deroy. Keep walking straight to the loop road."
+		"description":"Walk outside of Deroy. Keep walking straight to Loop Road."
 	},
 	{
 		"start":"deroy_c03",
 		"end":"deroy_e02",
-		"description":"Walk towards the relatively higher building on the side of the loop road."
+		"description":"Walk towards the relatively higher building on the side of Loop Road."
 	},
 	{
 		"start":"shapirodorm_c01",
 		"end":"shapirodorm_c03",
-		"description":"Walk across the small road between two buildings to the loop road."
+		"description":"Walk across the small road between two buildings to Loop Road."
 	},
 	{
 		"start":"shapirodorm_c03",
@@ -523,7 +523,7 @@ paths_massellchapels = [
 	{
 		"start":"harlan_c01",
 		"end":"harlan_e01",
-		"description":"The Halan Chapel is right beside you."
+		"description":"The Halan Chapel is straight ahead."
 	},
 	{
 		"start":"harlan_e01",
@@ -533,12 +533,12 @@ paths_massellchapels = [
 	{
 		"start":"berlin_e02",
 		"end":"harlan_e01",
-		"description":"Exit Berlin Chapel. Turn right. Walk along the road by the lake. The Harlan Chapel is in front of you."
+		"description":"Exit Berlin Chapel. Turn right. Walk along the path by the lake. The Harlan Chapel is in front of you."
 	},
 	{
 		"start":"harlan_e01",
 		"end":"berlin_e02",
-		"description":"Exit Harlan Chapel. Turn Left and walk back until you see a lake. Turn right and walk ahead. The Berlin Chapel is in front of you."
+		"description":"Exit Harlan Chapel. Turn left and walk back until you see a lake. Turn right and walk ahead. The Berlin Chapel is in front of you."
 	},
 	{
 		"start":"berlin_e02",
@@ -578,12 +578,12 @@ paths_massellchapels = [
 	{
 		"start":"shapirodorm_c04",
 		"end":"shapirodorm_e03",
-		"description":"Walk along the path between the two buildings. The dorm Shapiro is on your left."
+		"description":"Walk along the path between the two buildings. The Shapiro Residence Hall is on your left."
 	},
 	{
 		"start":"hlot_e02",
 		"end":"shapirodorm_c04",
-		"description":"Continue walking on Loop Road. Shapiro dorm and Sherman Function Hall are on your left."
+		"description":"Continue walking on Loop Road. Shapiro Residence Hall and Sherman Function Hall are on your left."
 	},
 	{
 		"start":"shapirodorm_c04",
@@ -598,7 +598,7 @@ paths_massellchapels = [
 	{
 		"start":"facultycenter_c02",
 		"end":"shapirodorm_c04",
-		"description":"Keep walking on the Loop Road. The Shapiro dorm and Sherman Function Hall are on your right."
+		"description":"Keep walking on the Loop Road. Shapiro Residence Hall and Sherman Function Hall are on your right."
 	},
 	{
 		"start":"facultycenter_c02",
@@ -608,7 +608,7 @@ paths_massellchapels = [
 	{
 		"start":"museum_c01",
 		"end":"facultycenter_c02",
-		"description":"Walk along the loop road. The faculty center is on your right."
+		"description":"Walk along the loop road. The Faculty Center is on your right."
 	},
 	//
 	{

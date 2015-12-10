@@ -261,7 +261,7 @@ paths_ibs = [
 	{
 		"start":"theaterlot_e02",
 		"end":"theaterlot_e03",
-		"description":"Facing the big parking lot, take a left." 
+		"description":"Facing the big parking lot, make a left." 
 	},
 	{
 		"start":"theaterlot_e04",
@@ -281,17 +281,17 @@ paths_ibs = [
 	{
 		"start":"southlot_e01",
 		"end":"theaterlot_c02",
-		"description":"Head up sloped hill until you read the top."
+		"description":"Head up the sloped hill until you read the top."
 	},
 	{
 		"start":"southlot_e01",
 		"end":"southlot_c01",
-		"description":"Continue heading down the sloped hill until you reach a stop sign."
+		"description":"Continue heading down the the sloped hill until you reach a stop sign."
 	},
 	{
 		"start":"southlot_c01",
 		"end":"southlot_e01",
-		"description":"Head up slopped path until you see parking lot on your right."
+		"description":"Head up the sloped path until you see parking lot on your right."
 	},
 	{
 		"start":"southlot_e01",
@@ -301,7 +301,7 @@ paths_ibs = [
 	{
 		"start":"southlot_e02",
 		"end":"southlot_e01",
-		"description":"Walk across parking lot until you reach the end and see sloped paths."
+		"description":"Walk across parking lot until you reach the end and see the sloped paths."
 	},
 	{
 		"start":"southlot_e02",
@@ -321,7 +321,7 @@ paths_ibs = [
 	{
 		"start":"epstein_c03",
 		"end":"southlot_c01",
-		"description":"Head down road until you see a entrance to a slopped hill." 
+		"description":"Head down road until you see a entrance to a sloped hill." 
 	},
 	{
 		"start":"theaterlot_e04",

@@ -2,84 +2,84 @@ paths_mandelquad = [
 	{
 	    "start":"heller_c02",
 	    "end":"mandel_e01",
-	    "description": "Turn right and walk along the lane to the entrance and here Mandel is",
+	    "description": "Turn right and walk along the lane to the entrance. Mandel is straight ahead.",
 	},
 	{
 	    "start":"heller_c02",
 	    "end":"heller_c01",
-	    "description": "Turn left to the parking lot",
+	    "description": "Turn left to the parking lot.",
 	},
     {
 	    "start":"heller_c02",
 	    "end":"heller_c03",
-	    "description": "walk along the road",
+	    "description": "walk along the road.",
 	},
     {
 	    "start":"heller_c03",
 	    "end":"heller_c02",
-	    "description": "walk along the road",
+	    "description": "walk along the road.",
 	},
 	{
 	    "start":"heller_c01",
 	    "end":"heller_e01",
-	    "description": "Walk towards the side of the building and enter the entrance. Here Heller is",
+	    "description": "Walk towards the side of the building and enter through the doors to Heller.",
 	},
     {
 	    "start":"heller_c03",
 	    "end":"heller_e02",
-	    "description": "Walk through the forest in front of you and enter the entrance. You got Heller",
+	    "description": "Walk through the forest in front of you and enter through the doors to Heller.",
 	},
     {
 	    "start":"heller_e02",
 	    "end":"heller_c03",
-	    "description": "Walk through the forest in front of you to the road and you can see the zebra crossing",
+	    "description": "Walk through the forest in front of you to the road where you can see the pedestrian cross.",
 	},
     {
 	    "start":"heller_c03",
 	    "end":"schneider_e01",
-	    "description": "turn right and Walk towards the side of the building and enter the entrance. Here Schneider is",
+	    "description": "Go down the steps and walk straight. The entrance to Schneider is on your left.",
 	},
 
 	//
 	{
 	    "start":"heller_c02",
 	    "end":"heller_c01",
-	    "description": "Turn left to the parking lot",
+	    "description": "Turn left to the parking lot.",
 	},
     {
 	    "start":"heller_c02",
 	    "end":"heller_c03",
-	    "description": "walk along the road",
+	    "description": "walk along the road.",
 	},
     {
 	    "start":"heller_c03",
 	    "end":"heller_c02",
-	    "description": "walk along the road",
+	    "description": "walk along the road.",
 	},
 	{
 	    "start":"heller_c01",
 	    "end":"heller_e01",
-	    "description": "Walk towards the side of the building and enter the entrance. Here Heller is",
+	    "description": "Walk towards the side of the building and enter through the doors Heller.",
 	},
     {
 	    "start":"heller_c04",
 	    "end":"heller_c05",
-	    "description": "Turn left and walk along the road, you are in a parking lot behind the Heller and you can see a little road on your left",
+	    "description": "Turn left and walk along the road, you are in a parking lot behind the Heller and you can see a smaller path on your left.",
 	},
     {
 	    "start":"heller_c05",
 	    "end":"heller_c04",
-	    "description": "Walk along the road to the cossing",
+	    "description": "Walk along the road to the crossing.",
 	},
     {
 	    "start":"heller_c05",
 	    "end":"heller_c06",
-	    "description": "Go straight and follow the road and you reach the deep part of the parking lot",
+	    "description": "Go straight and follow your current path.",
 	},
     {
 	    "start":"heller_c06",
 	    "end":"heller_c05",
-	    "description": "follow the road and you watch for the little road on your right",
+	    "description": "Follow your current path into the Heller Parking Lot.",
 	},
 	{
 	    "start":"heller_c05",
@@ -94,53 +94,38 @@ paths_mandelquad = [
     {
 	    "start":"heller_c03",
 	    "end":"heller_e02",
-	    "description": "Walk through the forest in front of you and enter the entrance. You got Heller",
+	    "description": "Walk through the forest in front of you and enter through the doors to Heller.",
 	},
     {
 	    "start":"heller_e02",
 	    "end":"heller_c03",
-	    "description": "Walk through the forest in front of you to the road and you can see the zebra crossing",
+	    "description": "Walk through the forest in front of you to the road and you can see the pedestrian cross.",
 	},
     {
 	    "start":"heller_c03",
 	    "end":"schneider_e01",
-	    "description": "turn right and Walk towards the side of the building and enter the entrance. Here Schneider is",
+	    "description": "Turn right and walk towards the building ahead. Enter through the double doors to Schneider.",
 	},
     {
 	    "start":"heller_c05",
 	    "end":"schneider_e02",
-	    "description": "turn left and walk towards the side of the building and enter the entrance. Here Schneider is",
+	    "description": "Turn left, walk towards the side of the building, and enter Schneider.",
 	},
     {
 	    "start":"schneider_e02",
 	    "end":"heller_c05",
-	    "description": "walk straight to the crossing",
+	    "description": "Walk straight towards the crossing",
 	},
     {
 	    "start":"schneider_e01",
 	    "end":"heller_c03",
-	    "description": "just walk ahead and there is a road with zebra crossing",
+	    "description": "Exit Schneider, walk straight, go up the steps on your right.",
 	},
-	//
-
-
-
-
-
-
-
-    {
-	    "start":"schneider_e01",
-	    "end":"heller_c03",
-	    "description": "just walk ahead and there is a road with zebra crossing",
-	},
-    
 	{
 	    "start":"library_c04",
 	    "end":"rabb_c01",
 	    "description": "Walk down to the first crossroads you see on your left side",
 	},
- 
 	{
 	    "start":"rabb_c01",
 	    "end":"rabb_c02",

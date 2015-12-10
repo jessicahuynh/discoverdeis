@@ -2,90 +2,90 @@ paths_library = [
 	{
 	    "start":"library_c01",
 	    "end":"goldfarb_e01",
-	    "description": "Walk along the red brick towards the entrance and here is Library",
+	    "description": "Walk along the red brick towards the entrance and ahead is Goldfarb Library.",
 	},    
     {
 	    "start":"farber_ie01",
 	    "end":"library_ie01",
-	    "description": "walk along the passage and you will be in the library",
+	    "description": "Walk through the passage and you will be in Goldfarb Library.",
 	},
     {
 	    "start":"library_ie01",
 	    "end":"farber_ie01",
-	    "description": "walk along the passage and you reach the Farber",
+	    "description": "walk through the passage and you will be in Farber Library.",
 	},
     
     {
 	    "start":"farber_ie01",
 	    "end":"farber_e01",
-	    "description": "turn left and you can find an exit",
+	    "description": "Turn left and you can find an exit.",
 	},
     
     {
 	    "start":"farber_e01",
 	    "end":"farber_ie01",
-	    "description": "turn right and you can find a passage",
+	    "description": "Turn right and you can find a passage.",
 	},
     {
 	    "start":"library_ie01",
 	    "end":"goldfarb_e01",
-	    "description": "On your right you can find an exit",
+	    "description": "On your right are the main doors to Goldfarb.",
 	},
     
     {
 	    "start":"goldfarb_e01",
 	    "end":"library_c03",
-	    "description": "turn left and you can find an entrance to the Goldfarb library",
+	    "description": "Turn left and ahead is the entrance to Goldfarb Library.",
 	},
 	{
 	    "start":"library_c01",
 	    "end":"library_c02",
-	    "description": "Turn right and walk towards the crossroads",
+	    "description": "Turn right and walk towards the crossroads.",
 	},
 	{
 	    "start":"library_c02",
 	    "end":"library_c03",
-	    "description": "Turn left to the longer road",
+	    "description": "Turn left to the longer road.",
 	},
 	{
 	    "start":"library_c03",
 	    "end":"library_c02",
-	    "description": "Walk along the road on your right side to the next crossroads",
+	    "description": "Walk along the road on your right side to the next crossroads.",
 	},
 	{
 	    "start":"library_c02",
 	    "end":"library_c01",
-	    "description": "Walk along the road on your right side",
+	    "description": "Walk along the road on your right side.",
 	},
 	{
 	    "start":"goldfarb_e01",
 	    "end":"library_c01",
-	    "description": "Exit Libray and walk along the red brick to the road",
+	    "description": "Exit Goldfarb Libray and walk along the red brick to the road.",
 	},
 	{
 	    "start":"rabb_c01",
 	    "end":"library_c04",
-	    "description": "Walk up to the first crossroads",
+	    "description": "Walk up to the first crossroads.",
 	},
 	{
 	    "start":"library_c05",
 	    "end":"library_c02",
-	    "description": "Continue straight.",
+	    "description": "Continue to walk straight.",
 	},
 	{
 	    "start":"library_c02",
 	    "end":"library_c05",
-	    "description": "Continue straight.",
+	    "description": "Continue to walk straight.",
 	},
 	{
 	    "start":"library_c03",
 	    "end":"library_c05",
-	    "description": "Turn slightly right at the small triangle graden.",
+	    "description": "Turn slightly right at the small triangle garden.",
 	},
 	{
 	    "start":"library_c05",
 	    "end":"library_c03",
-	    "description": "Turn slightly left at the small triangular graden.",
+	    "description": "Turn slightly left at the small triangular garden.",
 	},
 	{
 	    "start":"library_c05",
@@ -110,7 +110,7 @@ paths_library = [
 	{
 	    "start":"schwartz_c01",
 	    "end":"library_c02",
-	    "description": "Walk toward the little triangular graden.",
+	    "description": "Walk toward the little triangular garden.",
 	},
 	{
 	    "start":"library_c05",
@@ -120,7 +120,7 @@ paths_library = [
 	{
 	    "start":"schwartz_c01",
 	    "end":"library_c05",
-	    "description": "Walk toward the little triangular graden.",
+	    "description": "Walk toward the little triangular garden.",
 	},
 	{
 	    "start":"kutz_c05",
@@ -146,7 +146,7 @@ paths_library = [
 	{
 	    "start":"librarylot_e01",
 	    "end":"heller_c01",
-	    "description": "Continue walking. You are now at Library Parking Lot",
+	    "description": "Continue walking straight. You are now at Library Parking Lot",
 	},
 	{
 	    "start":"heller_c01",

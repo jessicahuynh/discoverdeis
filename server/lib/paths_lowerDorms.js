@@ -18,12 +18,12 @@ paths_lowerDorms = [
 {
     "start":"ridgewoodA_c01",
     "end":"ridgewoodA_c02",
-    "description":"Pass in front of Ridgewood A."
+    "description":"Go past Ridgewood A."
 },
 {
     "start":"ridgewoodA_c02",
     "end":"ridgewoodA_c01",
-    "description":"Pass in front of Ridgewood A."
+    "description":"Go past Ridgewood A."
 },
 {
     "start":"admissions_c06",
@@ -163,7 +163,7 @@ paths_lowerDorms = [
 {
     "start":"ridgewoodB_c03",
     "end":"ridgewoodB_c02",
-    "description":"Take the large path between Ridgewood B and Ridgewood C, in the direction of Admissions."
+    "description":"Take the large path between Ridgewood B and Ridgewood C, towards Admissions."
 },
 {
     "start":"ridgewoodB_c02",
@@ -183,7 +183,7 @@ paths_lowerDorms = [
 {
     "start":"ridgewoodC_c02",
     "end":"ridgewoodB_c03",
-    "description":"Continue along the large path leading to  the parking lot."
+    "description":"Continue along the large path leading to the parking lot."
 },
 {
     "start":"ridgewoodC_c02",
@@ -199,7 +199,7 @@ paths_lowerDorms = [
 {
     "start":"ridgewoodB_c03",
     "end":"ziv127_c01",
-    "description":"Take the smaller sidewalk down to Ziv 127."
+    "description":"Take the smaller path that goes downwards."
 },
 {
     "start":"ziv127_c01",
