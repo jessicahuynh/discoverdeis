@@ -234,7 +234,7 @@ Template.change.helpers({
 		return this;
 	},
 	currentDescription:function() {
-		currDescript=Session.get("listenTo")[count];
+		currDescript=Session.get("step")[count];
 		return currDescript;
 	},
 	naviMapOptions: function() {
@@ -280,7 +280,7 @@ Template.change.events({
 			alert("You are at the first step.");
 		}		
 		//change one step discription
-		currDescript=Session.get("listenTo")[count];
+		currDescript=Session.get("step")[count];
 		$("#descriptionText").html(currDescript);
 		//change route color
 		for(var i = 0; i<route.length - 1; i++){
@@ -297,7 +297,7 @@ Template.change.events({
 			alert("You reached your destination.");
 		}
 		//change one step discription
-		currDescript=Session.get("listenTo")[count];
+		currDescript=Session.get("step")[count];
 		$("#descriptionText").html(currDescript);
 		//change route color
 		for(var i = 0; i<route.length - 1; i++){
@@ -358,7 +358,7 @@ function setStops() {
 	Session.set("routeForStep",Session.get("route"));
 	Session.set("destination", document.getElementById("endpoint").value);
 	getRouteDescription(Session.get("route"));
-	Session.set("listenTo",Session.get("routeToTake"));
+	Session.set("step",Session.get("routeToTake"));
 	console.log(Session.get("routeToTake"));
 	$("#loadingPanel").css("display","none");		
 }
