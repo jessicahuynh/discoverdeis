@@ -11,7 +11,8 @@ locations_parking = [
 		]},
 		"category":["parking"],
 		"entrances":["athleticslot_e01","athleticslot_e02", "athleticslot_e03"],
-		"area":["athletics","athletic complex"]
+		"area":["athletics","athletic complex"],
+		"nearby":["gosman","squirebridge","marcusfield","gordonfield","gosmanparkinglot"]
 	},
 	{
 		"id":"gosmanparkinglot",
@@ -25,7 +26,8 @@ locations_parking = [
 		]},
 		"category":["parking"],
 		"entrances":["gosmanparkinglot_e01","gosmanparkinglot_e02"],
-		"area":["athletics","athletic complex"]
+		"area":["athletics","athletic complex"],
+		"nearby":["gosman","athleticslot","info"]
 	},
 	{
 		"id":"linseyparkinglot",
@@ -39,7 +41,8 @@ locations_parking = [
 		]},
 		"category":["parking"],
 		"entrances":["linseyparkinglot_e01"],
-		"area":["athletics","athletic complex"]
+		"area":["athletics","athletic complex"],
+		"nearby":["linsey","rieger","uppermods","lowermods","gosman"]
 	},
 	{
 		"id":"towerlot",
@@ -54,7 +57,8 @@ locations_parking = [
 		]},
 		"category":["parking"],
 		"entrances":["towerlot_e01", "towerlot_e02"],
-		"area":["upper campus","mandel"]
+		"area":["upper campus","mandel"],
+		"nearby":["mandel","heller","schneider","olin-sang","chapelsfieldwetland"]
 	},
 	{
 		"id":"librarylot",
@@ -68,7 +72,8 @@ locations_parking = [
 		]},
 		"category":["parking"],
 		"entrances":["librarylot_e01", "librarylot_e02"],
-		"area":["upper campus","libraries"]
+		"area":["upper campus","libraries"],
+		"nearby":["goldfarb","farber","chapelsfieldwetland"]
 	},
 	{
 		"id":"kutzlot",
@@ -82,7 +87,8 @@ locations_parking = [
 		]},
 		"category":["parking"],
 		"entrances":["kutzlot_e01"],
-		"area":["upper campus"]
+		"area":["upper campus"],
+		"nearby":["kutz","stop_rabb","usdan"]
 	},
 	{
 		"id":"northquadlot",
@@ -97,7 +103,8 @@ locations_parking = [
 		]},
 		"category":["parking"],
 		"entrances":["northquadlot_e01", "northquadlot_e02"],
-		"area":["upper campus","north"]
+		"area":["upper campus","north"],
+		"nearby":["gordon","reitman","cable","scheffres"]
 	},
 	{
 		"id":"sciencevisitorlot",
@@ -111,7 +118,8 @@ locations_parking = [
 		]},
 		"category":["parking"],
 		"entrances":["edison_c03"],
-		"area":["upper campus","science complex"]
+		"area":["upper campus","science complex"],
+		"nearby":["sciencespeciallot","edison","bassine","gzang","squirebridge","castle"]
 	},
 	{
 		"id":"sciencespeciallot",
@@ -125,7 +133,8 @@ locations_parking = [
 		]},
 		"category":["parking"],
 		"entrances":["bassine_c01"],
-		"area":["upper campus","science complex"]
+		"area":["upper campus","science complex"],
+		"nearby":["sciencevisitorlot","sciencelot","edison","bassine","gzang","squirebridge","castle"]
 	},
 	{
 		"id":"sciencelot",
@@ -139,7 +148,8 @@ locations_parking = [
 		]},
 		"category":["parking"],
 		"entrances":["sciencelot_e01","sciencelot_e02"],
-		"area":["upper campus","science complex"]
+		"area":["upper campus","science complex"],
+		"nearby":["sciencespeciallot","sciencevisitorlot","edison","bassine","gzang","squirebridge","castle"]
 	},
 	{
 		"id":"stonemanlot",
@@ -153,7 +163,8 @@ locations_parking = [
 		]},
 		"category":["parking"],
 		"entrances":["stonemanlot_e01"],
-		"area":["upper campus"]
+		"area":["upper campus"],
+		"nearby":["safety","healthcenter","superconducting","squirebridge"]
 	},
 	{
 		"id":"eastquadlot",
@@ -168,7 +179,8 @@ locations_parking = [
 		]},
 		"category":["parking"],
 		"entrances":["eastquadlot_e01","eastquadlot_e02"],
-		"area":["upper campus","east"]
+		"area":["upper campus","east"],
+		"nearby":["eastShapiro","eastRubenstein","eastHassenfeld","icc"]
 	},
 	{
 		"id":"charlesriverlot",
@@ -193,7 +205,8 @@ locations_parking = [
 		]},
 		"category":["parking"],
 		"entrances":["clot_e01","clot_e02","clot_e03"],
-		"area":["lower campus","charles river"]
+		"area":["lower campus","charles river"],
+		"nearby":["grad111","grad112","grad113","grad114","stop_c-lot"]
 	},
 	{
 		"id":"bernsteinparkinglot",
@@ -224,7 +237,7 @@ locations_parking = [
 		]},
 		"description":"Parking for vehicles bearing red permit . Violators towed at owener's expense.",
 		"category":["parking"],
-		"nearby":["shapirodorm"],
+		"nearby":["shapirodorm","shermanfunctionhall"],
 		"entrances":["hlot_e01","hlot_e02"],
 		"area":["lower campus"]
 	},
@@ -258,7 +271,7 @@ locations_parking = [
 			[42.363594, -71.263761]]
 		]},
 		"category":["parking"],
-		"nearby":["spingold,ridgewoodB,zivB,zivA,lemberg,goldman"],
+		"nearby":["spingold","ridgewoodB","zivB","zivA","lemberg","goldman"],
 		"entrances":["theaterlot_e01","theaterlot_e02","theaterlot_e03","theaterlot_e04"],
 		"area":["lower campus"]
 	},
@@ -273,7 +286,7 @@ locations_parking = [
 			[42.369221, -71.260525]]
 		]},
 		"category":["parking"],
-		"nearby":["schneider","harlan"],
+		"nearby":["heller","schneider","chapelsfieldwetland","harlan"],
 		"entrances":["hellerparkinglot_e01", "hellerparkinglot_e02", "hellerparkinglot_e03"],
 		"area":["upper campus"]
 	},

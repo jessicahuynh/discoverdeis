@@ -85,22 +85,6 @@ locations_massellChapels = [
 			[42.368522, -71.259772]]
 		]}
 	},
-	info = {
-		"id":"info",
-		"name":"Main Entrance Information Booth",
-		"nickname":"Info Booth",
-		"coordinates": {"type":"Polygon","coordinates":[
-			[	[42.365015,-71.258721], 
-			[42.365046,-71.258676], 
-			[42.365007,-71.258634],
-			[42.364978,-71.258681]]
-		]},
-		"category":["offices"],
-		"entrances":["info_e01"],
-		"area":["lower campus"],
-		"function":"The Main Entrance Information Booth is the first stop at the entrance to Brandeis University before drivers access the peripheral road circling the upper campus. The booth can issue parking passes. The elusive BranVan can also be seen here.",
-		"nearby":["squirebridge","irving","gryzmish","bernstein-marcus","slosberg"]
-		},
 	facultycenter = {
 		"id":"facultycenter",
 		"name":"Wien Faculty Center",

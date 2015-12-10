@@ -12,23 +12,9 @@ locations_presidential = [
 		"category":["administrative"],
 		"entrances":["bernstein_e01"],
 		"area":["lower campus"],
-		"function":"The Bernstein-Marcus Administration Center houses several of Brandeis’ administration and development offices."
-		},
-	epstein = {
-		"id":"epstein",
-		"name":"Rubin and Ethel Epstein Center for Campus Services",
-		"nickname":"Epstein",
-		"function":"The Epstein Building is home to the Women's Studies Research Center, Hadassah-Brandeis Institute, the Kniznick Gallery, advancement services, and the university's facilities services.",
-		"coordinates": {"type":"Polygon","coordinates":[
-			[[42.362457,-71.261636], 
-			[42.362374,-71.260823], 
-			[42.362134,-71.260864], 
-			[42.362204,-71.261671]]
-		]},
-		"category":["academics","offices"],
-		"entrances":["epstein_e01","epstein_e02"],
-		"area":["lower campus"]
-		},
+		"function":"The Bernstein-Marcus Administration Center houses several of Brandeis’ administration and development offices.",
+		'nearby':["gryzmish","irving","scc","info"]
+		},,
 	gryzmish = {
 		"id":"gryzmish",
 		"name":"Ethel and Reuben Gryzmish Academic Center",
@@ -42,7 +28,8 @@ locations_presidential = [
 		]},
 		"category":["administrative"],
 		"entrances":["gryzmish_e01"],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"nearby":["irving","bernstein-marcus","info","scc"]
 		},
 
 	irving = {
@@ -58,6 +45,39 @@ locations_presidential = [
 		"category":["administrative"],
 		"entrances":["irving_e01","irving_e02"],
 		"area":["lower campus"],
-		"function":"The Irving Presidential Enclave houses administrative offices, including those for the university president, the provost, and the dean of arts and sciences, among others."
+		"function":"The Irving Presidential Enclave houses administrative offices, including those for the university president, the provost, and the dean of arts and sciences, among others.",
+		"nearby":["gryzmish","bernstein-marcus","info","scc","squirebridge"]
 		},
+	info = {
+		"id":"info",
+		"name":"Main Entrance Information Booth",
+		"nickname":"Info Booth",
+		"coordinates": {"type":"Polygon","coordinates":[
+			[	[42.365015,-71.258721], 
+			[42.365046,-71.258676], 
+			[42.365007,-71.258634],
+			[42.364978,-71.258681]]
+		]},
+		"category":["offices"],
+		"entrances":["info_e01"],
+		"area":["lower campus"],
+		"function":"The Main Entrance Information Booth is the first stop at the entrance to Brandeis University before drivers access the peripheral road circling the upper campus. The booth can issue parking passes. The elusive BranVan can also be seen here.",
+		"nearby":["squirebridge","irving","gryzmish","bernstein-marcus","slosberg"]
+		},
+	epstein = {
+		"id":"epstein",
+		"name":"Rubin and Ethel Epstein Center for Campus Services",
+		"nickname":"Epstein",
+		"function":"The Epstein Building is home to the Women's Studies Research Center, Hadassah-Brandeis Institute, the Kniznick Gallery, advancement services, and the university's facilities services.",
+		"coordinates": {"type":"Polygon","coordinates":[
+			[[42.362457,-71.261636], 
+			[42.362374,-71.260823], 
+			[42.362134,-71.260864], 
+			[42.362204,-71.261671]]
+		]},
+		"category":["academics","offices"],
+		"entrances":["epstein_e01","epstein_e02"],
+		"area":["lower campus"],
+		"nearby":["inspiration","ss567","commuterrail","stop_trainstation","turner"]
+		}
 ]

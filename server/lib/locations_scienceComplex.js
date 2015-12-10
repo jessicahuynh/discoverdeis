@@ -10,8 +10,7 @@ locations_scienceComplex = [
 			[42.366783,-71.258614]]
 		]},
 		"function": "Primarily a research facility, the Volen National Center for Complex Systems is home to an interdisciplinary group of neuroscientists and the Computer Science and Linguistics departments. The center includes offices, classrooms and lab space.",
-		"description": "The Volen Center, or National Center for Complex Systems, in which faculty \
-						and students study the brain and intelligence. This center’s staff specialize \
+		"description": "This center’s staff specialize \
 						in artificial intelligence, cognitive science, and various neuroscience topics \
 						(examples include experimental psychology, computational neuroscience, and cellular \
 						and molecular neurobiology).",
@@ -36,8 +35,8 @@ locations_scienceComplex = [
 		"description":"It is home to biology at Brandeis.",
 		"category":["academics","offices"],
 		"entrances":["bassine_e01","bassine_e02","bassine_e03", "bassine_ie01"],
-		"area":["upper campus","science complex"]
-
+		"area":["upper campus","science complex"],
+		"nearby":["goldsmith","sciencespeciallot","gzang"]
 	},
 
 	feldberg = {
@@ -53,7 +52,8 @@ locations_scienceComplex = [
 		"function":"The Feldberg Communications Center houses the main university's server room and offices for some members of Library and Technology Services (LTS).",
 		"category":["academics","offices"],
 		"entrances":["feldberg_e01","feldberg_ie01"],
-		"area":["upper campus","science complex"]
+		"area":["upper campus","science complex"],
+		"nearby":["volen","gzang","fellowsgarden","scc"]
 	},
 	{
 		"id":"rosensweig",
@@ -71,7 +71,8 @@ locations_scienceComplex = [
 		]},
 		"category":["academics"],
 		"entrances":["rosensweig_e01","rosensweig_e02","rosensweig_e03"],
-		"area":["upper campus","science complex"]
+		"area":["upper campus","science complex"],
+		'nearby':["foster","sciencespeciallot","bassine","ssc","edison"]
 	},
 	gerstenzang = {
 		"id":"gzang",
@@ -86,7 +87,8 @@ locations_scienceComplex = [
 		]},
 		"category":["library","academics"],
 		"entrances":["gzang_e01","gzang_e02","volen_ie03"],
-		"area":["upper campus","science complex"]
+		"area":["upper campus","science complex"],
+		"nearby":["volen","bassine","goldsmith","abelson","edison","sciencespeciallot","sciencevisitorlot"]
 	},
 	pearlman = {
 		"id":"pearlman",
@@ -101,7 +103,8 @@ locations_scienceComplex = [
 		]},
 		"category":["academics"],
 		"entrances":["pearlman_e01","pearlman_e02","pearlman_e03"],
-		"area":["upper campus"]
+		"area":["upper campus"],
+		"nearby":["farber","goldfarb","goldsmith","mandelpeacegarden"]
 	},
 	goldsmith = {
 		"id":"goldsmith",
@@ -116,7 +119,8 @@ locations_scienceComplex = [
 		"function":"The Goldsmith Building houses classrooms and office space for both the undergraduate and graduate math departments.",
 		"category":["academics"],
 		"entrances":["goldsmith_e01","goldsmith_ie02"],
-		"area":["upper campus","science complex"]
+		"area":["upper campus","science complex"],
+		"nearby":["bassine","volen","gzang","pearlman","farber"]
 		},
 	{
 		"id":"edison",  //Rose and Herman Lecks Chemical building
@@ -131,7 +135,8 @@ locations_scienceComplex = [
 		"function":"Edison-Lecks is home to chemistry.",
 		"category":["academics"],
 		"entrances":["edison_e01", "edison_e02", "edison_ie01", "edison_ie02"],
-		"area":["upper campus","science complex"]
+		"area":["upper campus","science complex"],
+		"nearby":["gzang","abelson","volen","bassine"]
 	},
 	abelson = {
 		"id":"abelson",
@@ -147,7 +152,8 @@ locations_scienceComplex = [
 		"entrances":["abelson_e01","abelson_e02","abelson_c01","abelson_e03"],
 		"area":["upper campus","science complex"],
 		"function":"The Abelson-Bass-Yalem Building houses the Martin Fisher School of Physics for both undergraduate and graduate students. The building includes office space, classrooms and research laboratories.",
-		"description":""
+		"description":"",
+		"nearby":["edison","gzang","volen","rosensweig","roseMedical","ssc"]
 		},
 	scienceCenter = {
 		"id":"ssc",
@@ -167,7 +173,8 @@ locations_scienceComplex = [
 		"description":"The Carl J. Shapiro Science Center is home to many of our undergraduate science programs. The center is comprised of three main centers, the Gerstenzang Science Library (commonly referred to as G-Zang by students], and other research facilities. The first center is the Brandeis University National Center for Behavioral Genomics which focuses on brain function and behavior in addition to finding therapeutic strategies for brain disease and dysfunction. The second is The Volen Center, or National Center for Complex Systems, in which faculty and students study the brain and intelligence. This center’s staff specialize in artificial intelligence, cognitive science, and various neuroscience topics (examples include experimental psychology, computational neuroscience, and cellular and molecular neurobiology). The final center is The Brandeis Materials Research Science and Engineering Center which focuses on developing the relationship between biology and materials science via a top-down and bottom-up method. Each center was founded with interdisciplinary study in mind. In fact, a few classes are taught by faculty of varying disciplines – one class is even taught by three professors – a biologist, a chemist, and a physicist. This interdisciplinary approach is different from the instruction methods at most universities. Beyond the centers, faculty and students from many departments collaborate in research, in the classrooms and in the labs. The Leo Gerstenzang Complex has traditional lab areas as well as special classrooms for teaching math and science. Brandeis Students have many opportunities to engage in research during their undergraduate years. In fact, since 2003, undergraduate students have co-authored over one hundred and thirty published articles. ",
 		"category":["academics","student life"],
 		"entrances":["ssc_e01","ssc_e02","ssc_e03","ssc_e04","ssc_ie01"],
-		"area":["upper campus","science complex"]
+		"area":["upper campus","science complex"],
+		"nearby":["rosensweig","edison","gzang","sciencespeciallot","sciencevisitorlot","fellowsgarden","scc"]
 		},
 	{
 		"id":"foster",
@@ -185,7 +192,8 @@ locations_scienceComplex = [
 		"category":["academics"],
 		"entrances":["foster_e01"],
 		"area":["upper campus","science complex"],
-		"function":"The Foster Bio-Medical Research Center is located in the Kosow-Wolfson-Rosensweig Building."
+		"function":"The Foster Bio-Medical Research Center is located in the Kosow-Wolfson-Rosensweig Building.",
+		"nearby":["rosensweig"]
 	},
 	roseMedical = {
 		"id":"roseMedical",
@@ -200,6 +208,7 @@ locations_scienceComplex = [
 		"category":["academics"],
 		"entrances":["rosenstiel_e01","rosenstiel_e02"],
 		"area":["upper campus","science complex"],
-		"function":"The Rosenstiel Basic Medical Sciences Research Center conducts interdisciplinary research on the molecular mechanisms of human disease."
+		"function":"The Rosenstiel Basic Medical Sciences Research Center conducts interdisciplinary research on the molecular mechanisms of human disease.",
+		"nearby":["rosensweig","foster","ssc","sciencevisitorlot","sciencespeciallot"]
 	}
 ]
