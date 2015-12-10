@@ -8,8 +8,11 @@ Template.debugger.helpers({
 			};
 		}
 	},
-	loc: function() {
+	locNoEntrance: function() {
 		return Locations.find({"entrances":undefined}).fetch();
+	},
+	locNoNearby: function() {
+		return Locations.find({"nearby":undefined}).fetch();
 	},
 	numPoints: function() {
 		return Intersections.find().count();

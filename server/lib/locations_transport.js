@@ -18,7 +18,8 @@ locations_transport = [
 		"function":"The C-Lot stop services the campus BranVan.",
 		"category":["transportation"],
 		"area":["lower campus","charles river"],
-		"entrances":["stop_c-lot_e01"]
+		"entrances":["stop_c-lot_e01"],
+		"nearby":["charlesriverlot"]
 	},
 	{
 		"id":"stop_567",
@@ -28,7 +29,8 @@ locations_transport = [
 		"function":"The 567 shuttle stop serves the campus BranVan.",
 		"category":["transportation"],
 		"area":["lower campus"],
-		"entrances":["stop_567_e01"]
+		"entrances":["stop_567_e01"],
+		"nearby":["ss567"]
 	},
 	{
 		"id":"stop_trainstation",
@@ -38,7 +40,8 @@ locations_transport = [
 		"function":"The shuttle stop across from the train station serves the campus BranVan.",
 		"category":["transportation"],
 		"area":["lower campus"],
-		"entrances":["stop_trainstation_e01"]
+		"entrances":["stop_trainstation_e01"],
+		"nearby":["commuterrail","epstein"]
 	},
 	{
 		"id":"commuterrail",
@@ -56,7 +59,7 @@ locations_transport = [
 		"description":"The inbound platform towards Boston is on the side furthest from campus. Outbound is on the side closest to campus.",
 		"category":["transportation"],
 		"entrances":["commuterrail_e01","commuterrail_e02"],
-		"nearby":["epstein","ss567","grad111","grad112","grad113","grad114"],
+		"nearby":["stop_trainstation","epstein","ss567","grad111","grad112","grad113","grad114"],
 		"area":["lower campus"]
 	},
 	{
@@ -89,7 +92,7 @@ locations_transport = [
 		"coordinates":{"type":"Point","coordinates":[42.368683, -71.257204]},
 		"function":"The Rabb bus stop serves the campus and Waltham BranVans, along with the Cambridge/Boston shuttles.",
 		"category":["transportation"],
-		"nearby":["rabb","usdan"],
+		"nearby":["rabb","usdan","goldfarb"],
 		"area":["upper campus"],
 		"entrances":["stop_rabb_e01"]
 	}

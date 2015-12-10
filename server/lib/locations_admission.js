@@ -2,10 +2,10 @@
 locations_admission = [
 	{
 		"id":"shermanfunctionhall",
-		"name":"Sherman Function Hall",
+		"name":"Sherman - Hassenfeld Function Hall",
 		"nickname":"Sherman",
-		"function":"Sherman Function Hall holds conferences and has a dining hall downstairs",
-		"description":"",
+		"function":"Sherman contains student dining, including Brandeis' kosher dining hall, on the ground floor and conference areas on the upper level, along with The Stein.",
+		"description":"The Rita Dee and Harold Hassenfeld University Conference Center contains a banquet/lecture hall and six rooms for meetings and conferences. Below, the ground-floor dining hall of the George and Beatrice Sherman Student Center serves over 1,000 students daily and includes the university's kosher food preparation and dining facilities. The upper level includes The Stein, the campus pub/restaurant and the Feldberg Lounge.",
 		"category":["dining","student life"],
 		"area":["lower campus"],
 		"nearby":["facultycenter","scc","rosiesouth","shapirodorm","usen"],
@@ -37,6 +37,7 @@ locations_admission = [
 			[42.364386, -71.260705]]
 		]},
 		"function":"Admissions hosts tours and provides information about Brandeis to any interested parties.",
+		"description":"The Carl and Ruth Shapiro Admissions Center features 20,000 square feet of space to accommodate a 100-seat presentation room, a welcome center, and a financial services satellite office. The center serves as the starting point for campus visits, information sessions and student-led tours, and it’s open most weekdays and a few Saturdays during the year.",
 		"category":["offices"],
 		"entrances":["admissions_e01","admissions_e02"],
 		"nearby":["spingold","slosberg","greatlawn","bernstein-marcus","ridgewoodA","ridgewoodB","ridgewoodC","village"],
@@ -56,11 +57,12 @@ locations_admission = [
 			[42.365793, -71.259663],
 			[42.365548, -71.259941]],
 		]},
-		"function": "The SCC is home to many of Brandeis' media clubs, the bookstore, and the Student Union. Students can access the SCC 24/7 and many can be found studying here.",
-		"description":"The Shapiro Campus Center opened in 2002 and is the hub of student life on campus. The SCC is open to students 24 hours a day, seven days a week. Many student organizations, including Student Union, Waltham Group, Student Events, WBRS (a radio station],the newspaper offices, BTV offices, and many others can be found within the campus center. It continues to be the most student-centered, “out of the classroom building on campus. Although it is also home to the offices of the Dean of Student Life, Student Activities, and Department of Student Rights and Community Standards, students primarily utilize this building for social and extra curricular activities. It also contains Einstein Bros. Cafe, the campus Brandeis Bookstore, student art exhibition space, rehearsal spaces, meeting rooms, a computer library and the 250 seat Carl J. Shapiro Theater. This theater is home to the Undergraduate Theatre Collective, our student run theatre organization. They produce, act in and build sets for over ten shows a year, ranging from straight plays to musical theater to sketch comedy!",
+		"function": "The SCC is home to many of Brandeis' media clubs, the bookstore, Women's Resource Center, WBRS, the Dharmic Prayer Space, and the Student Union. Students can access the SCC 24/7 and many can be found studying here.",
+		"description":"The Shapiro Campus Center opened in 2002 and is the hub of student life on campus. The SCC is open to students 24 hours a day, seven days a week. Many student organizations, including Student Union, Waltham Group, Student Events, WBRS (the campus radio station), the newspaper offices, BTV offices, and many others can be found within the campus center. It continues to be the most student-centered, “out of the classroom building on campus. Although it is also home to the offices of the Dean of Student Life, Student Activities, and Department of Student Rights and Community Standards, students primarily utilize this building for social and extra curricular activities. It also contains Einstein Bros. Cafe, the campus Brandeis Bookstore, student art exhibition space, rehearsal spaces, meeting rooms, a computer library and the 250 seat Carl J. Shapiro Theater. This theater is home to the Undergraduate Theatre Collective, our student run theatre organization. They produce, act in and build sets for over ten shows a year, ranging from straight plays to musical theater to sketch comedy!",
 		"category":["student life"],
 		"entrances":["scc_e01","scc_e02","scc_e03","scc_e04"],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"nearby":["greatlawn","fellowsgarden","facultycenter","bernstein-marcus","gryzmish","irving"]
 	},
 	{
 		"id":"fellowsgarden",
@@ -76,7 +78,8 @@ locations_admission = [
 		"description":"Fellows Garden was dedicated on the occasion of Brandeis University's twenty-fifth commencement.",
 		"category":["landscape"],
 		"entrances":['fellowsgarden_c01','fellowsgarden_c02','fellowsgarden_c03'],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"nearby":["scc","facultycenter","volen","rosiesouth","rosieeast","rosienorth"]
 	},
 	{
 		"id":"greatlawn",
@@ -88,10 +91,11 @@ locations_admission = [
 			[42.365101, -71.261341],
 			[42.365428, -71.260770]]
 		]},
-		"function": "Great Lawn is a nice place to hangout with friends in nice weather",
+		"function": "The Great Lawn is a nice place to hangout with friends during great weather!",
 		"description":"The Great Lawn is one of students’ favorite expanses of green on campus. Here you will typically see students doing their homework, playing frisbee, or just catching some afternoon sunshine between classes. It is also the setting for our activities fair, which takes place at the beginning of each semester, when over 260 clubs recruit first-years and continuing undergrads to their groups.",
 		"category":["landscape"],
 		"entrances":['scc_c07','scc_c08','scc_c09','scc_c10'],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"nearby":["scc","admissions","facultycenter"]
 	},
 ]

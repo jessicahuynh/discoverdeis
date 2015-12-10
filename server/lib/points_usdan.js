@@ -158,6 +158,11 @@ points_usdan = [
 		"type":"entrance"
 	},
 	{
+		"id":"msa_e01",
+		"coordinate":{"type":"Point","coordinates":[42.368146, -71.256605]},
+		"type":"ientrance"
+	},
+	{
 	    "id": "mandelpeacegarden_e01",
 	    "coordinate":{"type":"Point","coordinates":[42.367781, -71.257699]},
 	    "type": "entrance",

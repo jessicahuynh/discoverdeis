@@ -10,8 +10,10 @@ locations_arts = [
 			[42.365158,-71.262541]]
 		]},
 		"category":["academics","art"],
+		"nearby":["spingold","roseart","goldman"],
 		"entrances":['pollack_e01'],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"function":"The Pollack Fine Arts Teaching Center provides a lecture hall as one of three teaching venues for the university’s fine arts department."
 		},	
 	slosberg = {
 		"id":"slosberg",
@@ -46,9 +48,11 @@ locations_arts = [
 			[42.364550, -71.262137],
 			[42.364589, -71.261813]]
 		]},
-		"description":"Spingold Theater, is home to the theatre department. The cutting-edge Brandeis Theatre Company produces five productions each season. Debra Messing (Grace Adler) of Will & Grace , Steven Culp (Rex VanDe Camp) of Desperate Housewives, and Loretta Devine of the original Broadway cast of Dreamgirls, among many others, are graduates of our programs. Undergraduate students are encouraged to get involved with campus productions, whether that means assistant stage managing, costume designing, or acting in them!",
+		"function":"Spingold Theater Center serves as the performance home for the Brandeis Theater Company, which produces and performs several theatrical works a year. Built in 1965, the facility includes three different performance venues: a 750-seat main theater, the 175-seat thrust Laurie Theater and the 100-seat Merrick Theater.",
+		"description":"Spingold Theater, is home to the theatre department. The cutting-edge Brandeis Theatre Company produces five productions each season. Debra Messing (Grace Adler) of Will & Grace, Steven Culp (Rex VanDe Camp) of Desperate Housewives, and Loretta Devine of the original Broadway cast of Dreamgirls, among many others, are graduates of the programs. Undergraduate students are encouraged to get involved with campus productions, whether that means assistant stage managing, costume designing, or acting in them!",
 		"category":["academics","art"],
 		"entrances":['spingold_e01','spingold_e02'],
+		"nearby":["theaterparking","goldman","ridgewoodB"],
 		"area":["lower campus"]
 		},
 	{
@@ -67,17 +71,18 @@ locations_arts = [
 			[42.365797, -71.262774],
 			[42.365739, -71.262582]]
 		]},
-		"function": "The Rose Art Museum displays contemporary art with rotating exhibits.",
+		"function": "The Rose Art Museum showcases the university’s deep collection of modern and contemporary art. Founded in 1961, it has a permanent collection of 8,000 art pieces, with particular emphasis on 1960’s and 1970’s American Art.",
 		"description":"The Rose Art Museum houses the largest collection of modern art in New England. Admission is free to students and many intern there during the year. For a fee of $10 per semester, Brandeis students can rent a piece from the Student Loan Collection to hang in their room. The Rose Art Museum houses works by artists such as Marc Chagall, Andy Warhol, and Wassily Kandinsky. Recent acquisitions in 2012 have included works by Bruce Conner and Mark Bradford. As one of the most daring and innovative contemporary art museums the Rose regularly showcases new and innovative exhibitions. It also hosts regular artist talks and its permanent collection is frequently used as a teaching tool both in and outside of the classroom.",
 		"category":["art"],
 		"entrances":['museum_e01'],
-		"nearby":["lightofreason"],
+		"nearby":["lightofreason","goldman","pollack"],
 		"area":["lower campus"]
 	},
 	goldman = {
 		"id":"goldman",
 		"name":"Goldman-Schwartz Fine Arts",
 		"nickname":"Goldman-Schwartz",
+		"function":"The Goldman-Schwartz Art Studios offers classroom and office space for the university's studio art program.",
 		"description":"Goldman-Schwartz Fine Arts is home to the Department of Fine Arts. It welcomes students to experience art through scholarship and as a process of creation. By uniting intellectual inquiry with artist excellence, it affirms the importance of a broad education and prepare the students for creative participation in a changing society.",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.365001,-71.263157], 
@@ -87,6 +92,7 @@ locations_arts = [
 		]},
 		"category":["academics","art"],
 		"entrances":['goldman_e01','goldman_e02'],
+		"nearby":["pollack","ibs","sachar","samuellemberg"],
 		"area":["lower campus"]
 		},		
 ]

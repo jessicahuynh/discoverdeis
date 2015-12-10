@@ -1,9 +1,48 @@
 locations_ibs = [
 	{
+		"id":"ibs",
+		"nickname":"IBS",
+		"name":"International Business School",
+		"function":"IBS offers four graduate degrees: the Master of Arts in International Economics and Finance (MA), the Master of Business Administration (MBA), a Master of Science in Finance (MSF), and the PhD in International Economics and Finance. It is, at the undergraduate level, also home to the undergraduate Business Major & Minoras well as BA/MA and BA/MBA programs.",
+		"description":"The school was established in 1994 as the Graduate School of International Economics and Finance with 50 students and two degrees: a PhD and the Master of Arts in International Economics and Finance - Lemberg Program (MA). In 1998, the school launched the MBA and Master of Science in Finance (MSF) programs, and in 2003 changed its name to Brandeis IBS.",
+		"coordinates":{"type":"Polygon","coordinates":[
+			[[42.364705, -71.264387],
+			[42.364670, -71.264192],
+			[42.364538, -71.264051],
+			[42.364373, -71.264029],
+			[42.364363, -71.264184],
+			[42.364425, -71.264190],
+			[42.364495, -71.264491],
+			[42.364940, -71.265213], 
+			[42.364988, -71.265133], 
+			[42.365075, -71.265113], 
+			[42.365050, -71.264948], 
+			[42.365147, -71.264620], 
+			[42.365073, -71.264599], 
+			[42.364803, -71.264665], 
+			[42.364779, -71.264563], 
+			[42.364743, -71.264578], 
+			[42.364693, -71.264507], 
+			[42.364559, -71.264563], 
+			[42.364617, -71.264655], 
+			[42.364649, -71.264635], 
+			[42.364673, -71.264697], 
+			[42.364633, -71.264735], 
+			[42.364695, -71.264800], 
+			[42.364764, -71.264757], 
+			[42.364810, -71.264904], 
+			[42.364738, -71.265078]]
+		]},
+		"category":["academics"],
+		"nearby":["sachar","samuellemberg","goldman"],
+		"entrances":['samuellemberg_e01','samuellemberg_e02','sachar_e01'],
+		"area":["lower campus"]
+	},
+	{
 		"id":"samuellemberg",
 		"nickname":"Lemberg",
 		"name":"Samuel Lemberg Academic Center",
-		"function":"",
+		"function":"The Samuel Lemberg Academic Center holds classrooms, conference space and offices for the International Business School (IBS), Brandeis University’s professional school for global finance, management and economic policy. The center also includes a café called The World Court.",
 		"description":"The focal point of Brandeis University’s growing International Business School, the Lemberg Center is home to a new 30-seat tiered lecture hall, a small library, conference areas, and offices. A popular, double-height cyber café, known as The World Court, is a dramatic space at the heart of the building, lit from floor-to-ceiling by windows overlooking wetlands and a wooded hillside. Built as an expansion to an existing circa 1972 building, the new academic complex nearly doubles the size of the school’s facilities. The program creates multiple overlapping points of activity throughout the building to stimulate interaction between students both academically and socially. Built as an expansion to an existing circa 1972 building, the new academic complex nearly doubles the size of the school’s facilities. The program creates multiple overlapping points of activity throughout the building to stimulate interaction between students both academically and socially. The Lemberg Center addition not only extends the educational program but also extends the aesthetic expression of the existing facility, blending seamlessly with the existing building to project a unified, distinct facility.",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.364705, -71.264387],
@@ -46,7 +85,9 @@ locations_ibs = [
 		]},
 		"category":["academics"],
 		"entrances":['sachar_e01'],
-		"area":["lower campus"]
-		},
+		"nearby":["samuelllemberg","goldman"],
+		"area":["lower campus"],
+		"function":"The International Business School (IBS) contains classroom, office and study space for economics and business-related learning in the Sachar International Center. The center is connected to IBS’s Lemberg Academic Center."
+	},
 
 ]

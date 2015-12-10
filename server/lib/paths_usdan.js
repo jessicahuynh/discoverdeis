@@ -175,7 +175,7 @@ paths_usdan = [
 	{
 	    "start":"schwartz_e01",
 	    "end":"usdan_c03",
-	    "description": "Exit the building and trun left.",
+	    "description": "Exit the building and turn left.",
 	},
 	{
 	    "start":"usdan_c03",
@@ -272,7 +272,7 @@ paths_usdan = [
 	{
 	    "start":"levin_e01",
 	    "end":"usdan_c08",
-	    "description": "Exit the building and trun left.",
+	    "description": "Exit the building and turn left.",
 	},
 	{
 	    "start":"usdan_c08",
@@ -282,7 +282,7 @@ paths_usdan = [
 	{
 	    "start":"usdan_e01",
 	    "end":"usdan_c08",
-	    "description": "Exit the building and trun right.",
+	    "description": "Exit the building and turn right.",
 	},
 	{
 	    "start":"usdan_c10",

@@ -7,7 +7,14 @@
 
 <h2>Locations without entrances assigned</h2>
 <ul>
-	{{#each loc}}
+	{{#each locNoEntrance}}
+	<li>{{name}}</li>
+	{{/each}}
+</ul>
+
+<h2>Locations without nearby locations</h2>
+<ul>
+	{{#each locNoNearby}}
 	<li>{{name}}</li>
 	{{/each}}
 </ul>

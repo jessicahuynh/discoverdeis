@@ -5,13 +5,19 @@ Template.selfguide.helpers({
 	},
 });
 
+Template.selfguide.events({
+	'click #viewmore':function(event) {
+		Session.set("prev","/selfguide");
+		Session.set("thisLoc",Locations.findOne({"name":Session.get("inLocation")[0].name}));
+	}
+});
+
 Template.selfguide.rendered = function() {
 	Session.set("pageTitle","Self-Guided Tour");
 };
 
 Tracker.autorun(function() {
 	setAudio(Session.get("inLocation")[0]);	
-	console.log("system print ")
 });
 
 function setAudio(loc) {

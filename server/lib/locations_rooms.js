@@ -2,7 +2,7 @@ locations_rooms = [
 	{
 		"id":"domenics",
 		"name":"Domenic's",
-		"nickname":"domenics",
+		"nickname":"Domenic's",
 		"coordinates": {"type":"Polygon","coordinates":[ 
 			[[42.364534, -71.264081],
 			[42.364606, -71.264116],
@@ -17,7 +17,7 @@ locations_rooms = [
 	{
 		"id":"dd",
 		"name":"Dunkin' Donuts",
-		"nickname":"DD",
+		"nickname":"Dunkin",
 		"coordinates": {"type":"Polygon","coordinates":[ 
 			[[42.363174, -71.260435], 
 			[42.363149, -71.260429], 
@@ -217,10 +217,10 @@ locations_rooms = [
 		"name":"Mailroom",
 		"nickname":"Mailroom",
 		"coordinates": {"type":"Polygon","coordinates":[ 
-			[[42.368302, -71.256598], 
+			[[42.368275, -71.256541], 
 			[42.368246, -71.256290], 
 			[42.368074, -71.256254], 
-			[42.368152, -71.256656]]
+			[42.368185, -71.256541]]
 		]},
 		"function":"",
 		"description":"",
@@ -262,7 +262,7 @@ locations_rooms = [
 	},
 	{
 		"id":"fieldhouse",
-		"name":"Auerbach Arena",
+		"name":"Red Auerbach Arena",
 		"nickname":"The Fieldhouse",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.364903, -71.255339],
@@ -292,4 +292,39 @@ locations_rooms = [
 		"entrances":["gameRoom_ie01"],
 		"area":["upper campus"]
 	},
+	
+	{
+		"id":"msa",
+		"nickname":"MSA Suite",
+		"name":"Muslim Worship Center",
+		"function":"The Muslim Worship Center provides a communal area for the Muslim students on campus, although all are welcome, including a kitchen, common room, and small masjid for prayer. The Muslim chaplain also has her office here.",
+		"description":"",
+		"category":["religious"],
+		"entrances":["msa_e01"],
+		"area":["upper campus"],
+		"nearby":["mail","usdanCafe"],
+		"coordinates":{"type":"Polygon","coordinates":[
+			[[42.368203, -71.256678],
+			[42.368199, -71.256572],
+			[42.368134, -71.256570],
+			[42.368159, -71.256687]]
+		]}
+	},
+	{
+		"id":"dharmic",
+		"name":"Dharmic Prayer Center",
+		"nickname":"Dharmic Prayer Space",
+		"function":"The newly inaugurated Dharmic Prayer Center is home to Brandeis' Namaskar and Sangha clubs, which together encompass Hindus, Buddhists, Jains, and Sikhs on campus, although all are welcome to come.",
+		"description":"",
+		"category":["religious"],
+		"entrances":["dharmic_e01"],
+		"area":["lower campus"],
+		"nearby":["greatlawn"],
+		"coordinates":{"type":"Polygon","coordinates":[
+			[[42.365609, -71.260204],
+			[42.365638, -71.260210],
+			[42.365609, -71.260303],
+			[42.365585, -71.260303]]
+		]}
+	}
 ]

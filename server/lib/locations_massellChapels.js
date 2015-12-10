@@ -13,7 +13,8 @@ locations_massellChapels = [
 		]},
 		"category":["religious"],
 		"entrances":["berlin_e01"],
-		"area":["upper campus","chapels"]
+		"area":["upper campus","chapels"],
+		"nearby":["bethlehem","harlan","praying_human","chapelsfieldwetland","chapelsfield","renfield","magnalias","ruach_yisrael","holocaust_rememberance"]
 		},
 	bethlehem = {
 		"id":"bethlehem",
@@ -29,7 +30,8 @@ locations_massellChapels = [
 		]},
 		"category":["religious"],
 		"entrances":["bethlehem_e01"],
-		"area":["upper campus","chapels"]
+		"area":["upper campus","chapels"],
+		"nearby":["berlin","harlan","praying_human","chapelsfield","chapelsfieldwetland"]
 		},
 	harlan = {
 		"id":"harlan",
@@ -45,10 +47,11 @@ locations_massellChapels = [
 		]},
 		"category":["religious"],
 		"entrances":["harlan_e01"],
-		"area":["upper campus","chapels"]
+		"area":["upper campus","chapels"],
+		"nearby":["berlin","bethlehem","praying_human","chapelsfield","chapelsfieldwetland"]
 		},
 	chapelsField = {
-		"id":"chapelsField",
+		"id":"chapelsfield",
 		"name":"Chapels Field",
 		"nickname":"Chapels Field",
 		"coordinates": {"type":"Polygon","coordinates":[
@@ -60,7 +63,8 @@ locations_massellChapels = [
 		"description":"Chapels Field is usually bustling with student activities ranging from sports events, such as Quidditch practice, to concerts, such as Springfest. The three chapels on Chapel’s Field represent three different faiths and surround a heart shaped pond. They are built in such a way that no chapel casts its shadow over another chapel, symbolizing our respect for pluralism and diversity. The university has added a Muslim Prayer Room to campus and has connections with various other religious groups off-campus to address the spiritual needs of all. In total, the Brandeis community represents seventeen recognized world religions.",
 		"category":["landscape"],
 		"entrances":["chapelsfield_c04", "chapelsfield_c03","chapelsfield_c02","chapelsfield_c01"],
-		"area":["upper campus","chapels"]
+		"area":["upper campus","chapels"],
+		"nearby":["chapelsfieldwetland","berlin","bethlehem","harlan","renfield","rosienorth","volen"]
 		},
 	{
 		"id":"chapelsfieldwetland",
@@ -71,7 +75,7 @@ locations_massellChapels = [
 		"category":["landscape"],
 		"entrances":["bethlehem_c01"],
 		"area":["upper campus","chapels"],
-		"nearby":["chapelsfield","berlin","bethlehem","harlan","farber"],
+		"nearby":["chapelsfield","berlin","bethlehem","harlan","farber","heller","schneider"],
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.368033, -71.259924],
 			[42.367690, -71.259097],
@@ -79,26 +83,12 @@ locations_massellChapels = [
 			[42.369017, -71.260276],
 			[42.368729, -71.260412],
 			[42.368522, -71.259772]]
-		]},
+		]}
 	},
-	info = {
-		"id":"info",
-		"name":"Information Booth",
-		"nickname":"Info Booth",
-		"coordinates": {"type":"Polygon","coordinates":[
-			[	[42.365015,-71.258721], 
-			[42.365046,-71.258676], 
-			[42.365007,-71.258634],
-			[42.364978,-71.258681]]
-		]},
-		"category":["offices"],
-		"entrances":["info_e01"],
-		"area":["lower campus"]
-		},
 	facultycenter = {
 		"id":"facultycenter",
-		"name":"Faculty Center",
-		"nickname":"Faculty Club",
+		"name":"Wien Faculty Center",
+		"nickname":"Faculty Center",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.36569,-71.261466],
 			[42.365817, -71.261193],
@@ -113,7 +103,7 @@ locations_massellChapels = [
 			[42.365651,-71.260898], 
 			[42.36548,-71.2613]]
 		]},
-		"function":"The Faculty Club provides sit-in lunch.",
+		"function":"The Wien Faculty Center houses the Faculty Club, which includes the main dining room, the president's dining room and the lounge. The Faculty Lodge is adjacent to the Wien Faculty Center and offers a limited number of rooms for overnight accommodations.",
 		"description":"The Faculty Club is a restaurant that is open to faculty and students alike and is on the student meal plan. The Student Union hosts a program called “Take Your Professor to Lunch”, which encourages students to get to know faculty members outside the classroom. The Student Union distributes vouchers to the students in order to cover the cost of the meal. This opportunity aides in fostering Brandeis’ legacy of strong professor-student relationships. Mitch Albom, a Brandeis alum, wrote the famous book Tuesdays with Morrie, which chronicles his time with Morrie Schwartz, his life-long mentor and Brandeis professor.",
 		"category":["dining"],
 		"entrances":["facultycenter_e01","facultycenter_e02"],

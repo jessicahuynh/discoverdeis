@@ -255,7 +255,7 @@ Template.change.helpers({
 		}
 		else {
 				if (Session.get("routeDist") == "" || Session.get("routeDist")== null || Session.get("routeDist") == undefined || Session.get("routeDist") == NaN) {
-				return "";
+				return "enter a start and end location to get started";
 			}
 			else {	
 				return "about "+Math.ceil(Session.get("routeDist")*0.02)+ " minutes of walking";								
@@ -359,6 +359,7 @@ function setStops() {
 	Session.set("destination", document.getElementById("endpoint").value);
 	getRouteDescription(Session.get("route"));
 	Session.set("listenTo",Session.get("routeToTake"));
+	console.log(Session.get("routeToTake"));
 	$("#loadingPanel").css("display","none");		
 }
 function displayRouteStartStop() {
@@ -412,7 +413,7 @@ function getRoute(starts, ends) {
 			// if you're in a building, return that building and go on as before
 			if (Session.get("inLocation")[1] == "in") {
 				starts = Locations.findOne({"name":Session.get("inLocation")[0].name}).name;
-				//console.log(starts);				
+				console.log(starts);				
 				if (Session.get("inLocation")[0].name == ends) {
 					route = ["You're already here!"];
 				}
@@ -469,20 +470,22 @@ function getShortestRoute(icrossings,startEntrances,endEntrances) {
 						for (var i = 0; i < currentRoute.length - 2; i++) {
 							currentRouteDist += Paths.findOne({ "start": currentRoute[i], "end": currentRoute[i + 1] }).distance;
 						}
-						// console.log(currentRoute + " " + currentRouteDist);		
+						//console.log(currentRoute + " " + currentRouteDist);		
 						if (currentRouteDist < theShortestDist) {
 							theShortestDist = currentRouteDist;
 							shortestRoute = currentRoute;							
 							// for the shortest path
 							Session.set("routeDist",theShortestDist);
 						}
+						Session.set("routeDist",theShortestDist);
 					}
 					currentRouteDist = 0;
 				});
 			});
+			
 		}
 	}	
-	//console.log(shortestRoute);
+	
 	return shortestRoute;
 }
 function findId(idToLookFor) {
@@ -565,6 +568,8 @@ function getStepDescription(route) {
 		r.push("We don't seem to be able to find the routing data!");
 	}	
 	Session.set("step",r);
+	Console.log("getStepDescription");
+	Console.log(r);
 	Session.set("listenTo",r);
 }
 function Point(x,y) {

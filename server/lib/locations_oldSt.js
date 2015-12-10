@@ -14,7 +14,8 @@ locations_oldSt = [
 		]},
 		"category":["administrative","academics"],
 		"entrances":["turner_e01"],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"nearby":["ss567","commuterrail","stop_567","stop_trainstation"]
 	},
 
 	rabbSchool = {

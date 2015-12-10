@@ -1,6 +1,8 @@
 Template.class.helpers({
 	course:function(){
-		return Classes.find({"times.building": this.building}, {sort: { "code": 1}}).fetch(); //_id: "bzicPp9cuf5noRvQa"
+		console.log(this)
+		console.log(this.name)
+		return Classes.find({"times.building": this.name}, {sort: { "code": 1}}).fetch(); 
 	},
 
 	instructor:function() {
@@ -16,6 +18,10 @@ Template.class.helpers({
 		var getTimes = sortTime(times);
 		console.log(getTimes);
 		return getDays  + getTimes;
+	},
+
+	noClasses:function() {
+		return Classes.find({"times.building": this.name}).count() == 0
 	},
 })
 
