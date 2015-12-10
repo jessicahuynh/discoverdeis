@@ -61,7 +61,8 @@ locations_admission = [
 		"description":"The Shapiro Campus Center opened in 2002 and is the hub of student life on campus. The SCC is open to students 24 hours a day, seven days a week. Many student organizations, including Student Union, Waltham Group, Student Events, WBRS (the campus radio station), the newspaper offices, BTV offices, and many others can be found within the campus center. It continues to be the most student-centered, “out of the classroom building on campus. Although it is also home to the offices of the Dean of Student Life, Student Activities, and Department of Student Rights and Community Standards, students primarily utilize this building for social and extra curricular activities. It also contains Einstein Bros. Cafe, the campus Brandeis Bookstore, student art exhibition space, rehearsal spaces, meeting rooms, a computer library and the 250 seat Carl J. Shapiro Theater. This theater is home to the Undergraduate Theatre Collective, our student run theatre organization. They produce, act in and build sets for over ten shows a year, ranging from straight plays to musical theater to sketch comedy!",
 		"category":["student life"],
 		"entrances":["scc_e01","scc_e02","scc_e03","scc_e04"],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"nearby":["greatlawn","fellowsgarden","facultycenter","bernstein-marcus","gryzmish","irving"]
 	},
 	{
 		"id":"fellowsgarden",
@@ -77,7 +78,8 @@ locations_admission = [
 		"description":"Fellows Garden was dedicated on the occasion of Brandeis University's twenty-fifth commencement.",
 		"category":["landscape"],
 		"entrances":['fellowsgarden_c01','fellowsgarden_c02','fellowsgarden_c03'],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"nearby":["scc","facultycenter","volen","rosiesouth","rosieeast","rosienorth"]
 	},
 	{
 		"id":"greatlawn",
@@ -89,10 +91,11 @@ locations_admission = [
 			[42.365101, -71.261341],
 			[42.365428, -71.260770]]
 		]},
-		"function": "Great Lawn is a nice place to hangout with friends in nice weather",
+		"function": "The Great Lawn is a nice place to hangout with friends during great weather!",
 		"description":"The Great Lawn is one of students’ favorite expanses of green on campus. Here you will typically see students doing their homework, playing frisbee, or just catching some afternoon sunshine between classes. It is also the setting for our activities fair, which takes place at the beginning of each semester, when over 260 clubs recruit first-years and continuing undergrads to their groups.",
 		"category":["landscape"],
 		"entrances":['scc_c07','scc_c08','scc_c09','scc_c10'],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"nearby":["scc","admissions","facultycenter"]
 	},
 ]

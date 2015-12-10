@@ -44,7 +44,8 @@ locations_artinstallations = [
 		},
 		"category":["landscape"],
 		"area":["upper campus","chapels"],
-		"entrances":["magnolias_e01"]
+		"entrances":["magnolias_e01"],
+		"nearby":["berlin","chapelsfield","ruach_yisrael"]
 	},
 	{
 		"id":"ruach_yisrael",
@@ -53,7 +54,8 @@ locations_artinstallations = [
 		"coordinates": {"type":"Point","coordinates":[42.368080, -71.260727]},
 		"category":["art"],
 		"area":["upper campus","chapels"],
-		"entrances":["ruach_yisrael_e01"]
+		"entrances":["ruach_yisrael_e01"],
+		"nearby":["berlin","chapelsfield","magnolias","holocaust_rememberance"]
 	},
 	{
 		"id":"holocaust_rememberance",
@@ -63,7 +65,8 @@ locations_artinstallations = [
 		"coordinates": {"type":"Point","coordinates":[42.368295, -71.260781]},
 		"category":["art"],
 		"area":["upper campus","chapels"],
-		"entrances":["holocaust_rememberance_e01"]
+		"entrances":["holocaust_rememberance_e01"],
+		"nearby":["berlin","magnolias","praying_human"]
 	},
 	{
 		"id":"praying_human",
@@ -72,7 +75,8 @@ locations_artinstallations = [
 		"coordinates": {"type":"Point","coordinates":[42.368463, -71.260944]},
 		"category":["art"],
 		"area":["upper campus","chapels"],
-		"entrances":["praying_human_e01"]
+		"entrances":["praying_human_e01"],
+		"nearby":["berlin","bethlehem","harlan"]
 	},
 	{
 		"id":"inspiration",
@@ -83,7 +87,8 @@ locations_artinstallations = [
 		"coordinates": {"type":"Point","coordinates":[42.362478, -71.260400]},
 		"category":["art"],
 		"area":["lower campus"],
-		"entrances":["inspiration_e01"]
+		"entrances":["inspiration_e01"],
+		"nearby":["epstein","commuterrail"]
 	},
 	{
 		"id":"chopelas",
@@ -94,7 +99,8 @@ locations_artinstallations = [
 		"description":"The inscription on the plaque reads \"The Student Union of Brandeis University has planted this tree in memory of Mark S. \"Choppa\" Chopelas (April 3, 1963 - March 1, 2003). A devoted friend, mentor, and coach to all who knew him.\" A quote at the bottom of the plaque reads \"What we remember from childhood we remember forever...\" - Cynthia O'Nick\n\nThere is a fund in his name, the Mark Chopelas Youth Benefit Fund, that aids the children of Malden.",
 		"category":["landscape"],
 		"area":["lower campus"],
-		"entrances":["chopelas_e01"]
+		"entrances":["chopelas_e01"],
+		"nearby":["epstein","village"]
 	},
 	{
 		"id":"familyatplay",
@@ -104,7 +110,8 @@ locations_artinstallations = [
 		"function":"This bronze sculpture by Chaim Gross was the gift of Antje and Leonard L. Farber.",
 		"category":["art"],
 		"area":["lower campus"],
-		"entrances":["familyatplay_e01"]
+		"entrances":["familyatplay_e01"],
+		"nearby":["irving","gryzmish","bernstein-marcus"]
 	},
 	{
 		"id":"jcm",
@@ -113,8 +120,9 @@ locations_artinstallations = [
 		"coordinates": {"type":"Point","coordinates":[42.369448, -71.257032]},
 		"function":"The sculpture was created and donated to Brandeis University by Joseph C. Mandel on October 26, 2010.",
 		"category":["art"],
-		"area":["mandel", "upper campus"],
-		"entrances":["jcm_e01"]
+		"area":["upper campus"],
+		"entrances":["jcm_e01"],
+		"nearby":["shiffman","golding","rabb"]
 	},
 	{
 		"id":"tree",
@@ -123,8 +131,9 @@ locations_artinstallations = [
 		"coordinates":{"type":"Point","coordinates":[42.367485, -71.257702]},
 		"function":"The stainless-steel sculpture created by Ernest Trova was the gift of Sandra and David Bakalar.",
 		"category":["art"],
-		"area":["upper campus", "brown"],
-		"entrances":["tree_e01"]
+		"area":["upper campus"],
+		"entrances":["tree_e01"],
+		"nearby":["pearlman","brown"]
 	}
 
 	

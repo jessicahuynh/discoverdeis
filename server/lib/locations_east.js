@@ -24,7 +24,8 @@ locations_east = [
 		"function":"Stoneman is home to Brandeis Police and the Health Center.",
 		"description":"The Stoneman building is the hub of Brandeis public health and safety. It houses the Golding Health Center for primary care, health education and wellness promotion, as well as the university’s Department of Public Safety, which oversees parking violations, crime prevention and emergency preparedness.",
 		"entrances":["police_e01"],
-		"area":["upper campus"]
+		"area":["upper campus"],
+		"nearby":["stoneman","healthcenter","squirebridge"]
 	},
 	{
 		"id":"healthcenter",
@@ -44,7 +45,8 @@ locations_east = [
 		"function":"The Health Center offers confidential health services to Brandeis.",
 		"description":"In the case of an emergency, there is a nurse or doctor on call at all times. The Brandeis Emergency Medical Corps (BEMCO) is a student-operated, certified EMT service, trained to respond to student’s calls 24/7.",
 		"entrances":["healthcenter_e01"],
-		"area":["upper campus"]
+		"area":["upper campus"],
+		"nearby":["safety","mailman","squirebridge"]
 	},
 	icc = {
 		"id":"icc",
@@ -60,7 +62,8 @@ locations_east = [
 		]},
 		"category":["student life"],
 		"entrances":["icc_e01", "icc_e02"],
-		"area":["upper campus","east"]
+		"area":["upper campus","east"],
+		"nearby":["eastShapiro","eastRubenstein","eastHassenfeld","castle"]
 	},
 	mailman = {
 		"id":"mailman",
@@ -75,7 +78,8 @@ locations_east = [
 		"category":["health"],
 		"entrances":["mailman_e01"],
 		"area":["upper campus"],
-		"function":"The Mailman House, located at the edge of campus, is the site of the university’s Psychological Counseling Center, where students may speak confidentially with experienced counselors on matters including stress, depression, substance abuse and eating disorders."
+		"function":"The Mailman House, located at the edge of campus, is the site of the university’s Psychological Counseling Center, where students may speak confidentially with experienced counselors on matters including stress, depression, substance abuse and eating disorders.",
+		"nearby":["squirebridge","safety","healthcenter","superconducting"]
 	},
 	{
 		"id":"superconducting",
@@ -90,6 +94,7 @@ locations_east = [
 		]},
 		"category":["academics","offices"],
 		"entrances":["superconducting_e01"],
-		"area":["upper campus"]
+		"area":["upper campus"],
+		"nearby":["linsey","safety","healthcenter","uppermods"]
 	},
 ]

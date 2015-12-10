@@ -17,7 +17,8 @@ locations_mandelHellerLibrary=[
 		"category":["offices","academics"],
 		"entrances":["schneider_e01", "schneider_e02", "schneider_e03"],
 		"area":["upper campus"],
-		"function":"Home to the Heller School for Social Policy and Management, the Irving Schneider and Family Building contains classroom and lecture space, study areas, student lounges and the public atrium known as the Zinner Forum. The building also houses the Schneider Institute for Health Policy."
+		"function":"Home to the Heller School for Social Policy and Management, the Irving Schneider and Family Building contains classroom and lecture space, study areas, student lounges and the public atrium known as the Zinner Forum. The building also houses the Schneider Institute for Health Policy.",
+		"nearby":["heller","chapelsfieldwetland","abraham","olin-sang","mandel","mandelJewish"]
 	},
 	heller = {
 		"id":"heller",
@@ -33,7 +34,8 @@ locations_mandelHellerLibrary=[
 		"description":"Heller-Brown is home to the Heller School for Social Policy and Management, one of the top ten schools of social policy in the United States and one of the eight approved U.S. training institutions for World Bank Scholars.",
 		"category":["academics"],
 		"entrances":["heller_e01", "heller_e02", "starbucksHeller_ie01"],
-		"area":["upper campus"]
+		"area":["upper campus"],
+		"nearby":["schneider","abraham","chapelsfieldwetland","mandel","mandelJewish","olin-sang"]
 		},
 	{
 		"id":"lown",
@@ -48,7 +50,8 @@ locations_mandelHellerLibrary=[
 		]},
 		"category":["academics","offices"],
 		"entrances":["lown_e01", "lown_e02"],
-		"area":["upper campus","mandel"]
+		"area":["upper campus","mandel"],
+		"nearby":["golding","shiffman","olin-sang","mandel","rabb","gordon","stop_rabb"]
 	},
 	{
 		"id":"abraham",
@@ -65,7 +68,8 @@ locations_mandelHellerLibrary=[
 		"category":["offices","academics"],
 		"entrances":["abraham_e01"],
 		"area":["upper campus"],
-		"function":"The Abraham Shapiro Academic Complex houses the International Center for Ethics, Justice and Public Life and the Education Program. The building includes classrooms, offices, seminar and conference room space, as well as a graduate-student study area."
+		"function":"The Abraham Shapiro Academic Complex houses the International Center for Ethics, Justice and Public Life and the Education Program. The building includes classrooms, offices, seminar and conference room space, as well as a graduate-student study area.",
+		"nearby":["mandelJewish","mandel","heller","schneider","chapelsfieldwetland"]
 	},
 	{
 		"id":"mandelJewish",
@@ -83,7 +87,8 @@ locations_mandelHellerLibrary=[
 		"category":["offices","academics"],
 		"entrances":["mandelJewish_e01"],
 		"area":["upper campus"],
-		"function":"The Mandel Center for Studies in Jewish Education is located on the Brandeis University campus in the Abraham Shapiro Academic Complex. It pursues Jewish educational scholarship in service to the Jewish community in order to promote deeper understanding of the purposes and practices of Jewish education."
+		"function":"The Mandel Center for Studies in Jewish Education is located on the Brandeis University campus in the Abraham Shapiro Academic Complex. It pursues Jewish educational scholarship in service to the Jewish community in order to promote deeper understanding of the purposes and practices of Jewish education.",
+		'nearby':["abraham","mandel","heller","schneider","chapelsfieldwetland","stop_rabb","olin-sang"]
 	},
 	olinsang = {
 		"id":"olin-sang",
@@ -98,7 +103,8 @@ locations_mandelHellerLibrary=[
 		"category":["academics"],
 		"entrances":["olin-sang_e01", "olin-sang_ie01", "olin-sang_e02", "olin-sang_e03"],
 		"area":["upper campus","mandel"],
-		"function":"The Olin-Sang American Civilization Center holds classrooms and offices for various university departments including History, Latin American and Latino Studies, and the Film, Television and Interactive Media program, along with many lecture halls."
+		"function":"The Olin-Sang American Civilization Center holds classrooms and offices for various university departments including History, Latin American and Latino Studies, and the Film, Television and Interactive Media program, along with many lecture halls.",
+		"nearby":["mandel","rabb","golding","lown","shiffman","tree","stop_rabb","heller","mandelJewish","schneider"]
 	},
 	goldfarb = {
 		"id":"goldfarb",
@@ -121,7 +127,8 @@ locations_mandelHellerLibrary=[
 		"function":"The Goldfarb Library is the main library on campus where students may access 30,000 electronic journals and 250 scholarly databases, group study rooms and computer tech support from Library Technology Services. It also houses university archives, special collections of rare books and manuscripts and its Judaica Collection of Jewish history, religious and cultural documents.",
 		"description": "Goldfarb/Farber Libraries house ever growing collections and reference resources in creative arts, humanities, government documents, Judaica, and social sciences. Research materials are extremely accessible to students due to the online availability of resources, and additional resources are made available through the Boston Library Consortium and the Interlibrary Loan system. The library offers services for students including a listening center, computer labs, study rooms, a media lab that helps students edit their films and soundtracks, as well as the Writing Center. The Writing Center assists students in all aspects of writing their papers, from brainstorming to editing. Recently, a new café was added to the Green Room section of the library.",
 		"entrances":["goldfarb_e01","goldfarb_e02", "library_ie01"],
-		"area":["upper campus","libraries"]
+		"area":["upper campus","libraries"],
+		"nearby":["farber","usdan","chapelsfieldwetland","heller","schneider"]
 	},
 	farber = {
 		"id":"farber",
@@ -136,7 +143,8 @@ locations_mandelHellerLibrary=[
 		"category":["library"],
 		"entrances":["farber_e01", "farber_ie01"],
 		"area":["upper campus","libraries"],
-		"function":"One of three libraries on campus, the Leonard L. Farber Library houses resources and services supporting the humanities, the social sciences, Judaica and creative arts. The university’s Getz Multimedia Lab is also located here."
+		"function":"One of three libraries on campus, the Leonard L. Farber Library houses resources and services supporting the humanities, the social sciences, Judaica and creative arts. The university’s Getz Multimedia Lab is also located here.",
+		"nearby":["goldfarb","usdan","chapelsfield","chapelsfieldwetland"]
 		},
 	rabb = {
 		"id":"rabb",
@@ -151,7 +159,8 @@ locations_mandelHellerLibrary=[
 		"category":["academics"],
 		"entrances":["rabb_e01"],
 		"area":["upper campus","mandel"],
-		"function":"Rabb Graduate Center houses seminar rooms, faculty and administrative offices, and small offices for graduate students in study areas such as English, Romance Studies, Philosophy, and Environmental Studies."
+		"function":"Rabb Graduate Center houses seminar rooms, faculty and administrative offices, and small offices for graduate students in study areas such as English, Romance Studies, Philosophy, and Environmental Studies.",
+		"nearby":["olin-sang","shiffman","golding","mandel","stop_rabb","usdan"]
 		},
 	mandel = {
 		"id":"mandel",
@@ -224,7 +233,8 @@ locations_mandelHellerLibrary=[
 		"category":["academics"],
 		"entrances":["shiffman_e01", "shiffman_e02", "shiffman_e03"],
 		"area":["upper campus","mandel"],
-		"function":"On the north side of campus, Shiffman Humanities Center houses offices and classrooms for the departments of Romance Studies, German Studies, Russian Studies, European Cultural Studies, and the Comparative Literature Program."
+		"function":"On the north side of campus, Shiffman Humanities Center houses offices and classrooms for the departments of Romance Studies, German Studies, Russian Studies, European Cultural Studies, and the Comparative Literature Program.",
+		"nearby":["tree","golding","rabb","lown","olin-sang","gordon","kutz"]
 	},
 	kutz = {
 		"id":"kutz",
@@ -247,7 +257,8 @@ locations_mandelHellerLibrary=[
 		"category":["administrative","offices","student life"],
 		"entrances":["kutz_e01","kutz_e02"],
 		"area":["upper campus"],
-		"function":"Kutz Hall houses offices for the Graduate School of Arts and Sciences, the registrar, and Conference and Events Services, as well as the International Students & Scholars Office and the Campus Card Office. The Graduate Student Center on the first floor gives students use of a day locker and a lounge/study site."
+		"function":"Kutz Hall houses offices for the Graduate School of Arts and Sciences, the registrar, and Conference and Events Services, as well as the International Students & Scholars Office and the Campus Card Office. The Graduate Student Center on the first floor gives students use of a day locker and a lounge/study site.",
+		"nearby":["gordon","usen","reitman","cable","usdan","shiffman","stop_rabb"]
 	},
 
 ]

@@ -13,7 +13,8 @@ locations_massellChapels = [
 		]},
 		"category":["religious"],
 		"entrances":["berlin_e01"],
-		"area":["upper campus","chapels"]
+		"area":["upper campus","chapels"],
+		"nearby":["bethlehem","harlan","praying_human","chapelsfieldwetland","chapelsfield","renfield","magnalias","ruach_yisrael","holocaust_rememberance"]
 		},
 	bethlehem = {
 		"id":"bethlehem",
@@ -29,7 +30,8 @@ locations_massellChapels = [
 		]},
 		"category":["religious"],
 		"entrances":["bethlehem_e01"],
-		"area":["upper campus","chapels"]
+		"area":["upper campus","chapels"],
+		"nearby":["berlin","harlan","praying_human","chapelsfield","chapelsfieldwetland"]
 		},
 	harlan = {
 		"id":"harlan",
@@ -45,7 +47,8 @@ locations_massellChapels = [
 		]},
 		"category":["religious"],
 		"entrances":["harlan_e01"],
-		"area":["upper campus","chapels"]
+		"area":["upper campus","chapels"],
+		"nearby":["berlin","bethlehem","praying_human","chapelsfield","chapelsfieldwetland"]
 		},
 	chapelsField = {
 		"id":"chapelsfield",
@@ -60,7 +63,8 @@ locations_massellChapels = [
 		"description":"Chapels Field is usually bustling with student activities ranging from sports events, such as Quidditch practice, to concerts, such as Springfest. The three chapels on Chapel’s Field represent three different faiths and surround a heart shaped pond. They are built in such a way that no chapel casts its shadow over another chapel, symbolizing our respect for pluralism and diversity. The university has added a Muslim Prayer Room to campus and has connections with various other religious groups off-campus to address the spiritual needs of all. In total, the Brandeis community represents seventeen recognized world religions.",
 		"category":["landscape"],
 		"entrances":["chapelsfield_c04", "chapelsfield_c03","chapelsfield_c02","chapelsfield_c01"],
-		"area":["upper campus","chapels"]
+		"area":["upper campus","chapels"],
+		"nearby":["chapelsfieldwetland","berlin","bethlehem","harlan","renfield","rosienorth","volen"]
 		},
 	{
 		"id":"chapelsfieldwetland",
@@ -71,7 +75,7 @@ locations_massellChapels = [
 		"category":["landscape"],
 		"entrances":["bethlehem_c01"],
 		"area":["upper campus","chapels"],
-		"nearby":["chapelsfield","berlin","bethlehem","harlan","farber"],
+		"nearby":["chapelsfield","berlin","bethlehem","harlan","farber","heller","schneider"],
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.368033, -71.259924],
 			[42.367690, -71.259097],
@@ -79,7 +83,7 @@ locations_massellChapels = [
 			[42.369017, -71.260276],
 			[42.368729, -71.260412],
 			[42.368522, -71.259772]]
-		]},
+		]}
 	},
 	info = {
 		"id":"info",
@@ -94,7 +98,8 @@ locations_massellChapels = [
 		"category":["offices"],
 		"entrances":["info_e01"],
 		"area":["lower campus"],
-		"function":"The Main Entrance Information Booth is the first stop at the entrance to Brandeis University before drivers access the peripheral road circling the upper campus. The booth can issue parking passes. The elusive BranVan can also be seen here."
+		"function":"The Main Entrance Information Booth is the first stop at the entrance to Brandeis University before drivers access the peripheral road circling the upper campus. The booth can issue parking passes. The elusive BranVan can also be seen here.",
+		"nearby":["squirebridge","irving","gryzmish","bernstein-marcus","slosberg"]
 		},
 	facultycenter = {
 		"id":"facultycenter",

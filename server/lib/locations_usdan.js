@@ -81,23 +81,6 @@ locations_usdan = [
 		"area":["upper campus"],
 		"function":"The Brown Social Sciences Center is home to the school’s Aging, Culture and Cognition Laboratory. It also includes offices and classrooms for the psychology and anthropology departments, as well as the American studies and journalism programs."
 		},
-	castle = {
-		"id":"castle",
-		"name":"Usen Castle",
-		"nickname":"Castle",
-		"coordinates": {"type":"Polygon","coordinates":[
-			[[42.367726, -71.255875], 
-			[42.367516, -71.256036], 
-			[42.366953, -71.255936], 
-			[42.366929, -71.255488],
-			[42.367387, -71.255545]]
-		]},
-		"category":["dorm","landscape","art"],
-		"function":"Listed on the National Register of Historic Places, the castle offers housing in single, double, triple and suite options for sophomore students.",
-		"description":"Usen Castle may seem out of place on our campus, and, in fact, it predates the university. The castle was built to look like many of the castles that one might find in Scotland; however, this castle was built based on rough exterior sketches drawn from the outside of an already-existing castle. As a result, the castle is filled with architectural mishaps including rogue staircases, trapdoors, and oddly shaped rooms. While it is now a national historic landmark, the castle is also a residence hall with singles, doubles, and suites available for students in their sophomore year. With its quirky character and spectacular view of Boston, the castle makes for a unique living experience.",
-		"entrances":["castle_e01","castle_e02"],
-		"area":["upper campus"]
-	},
 	crown = {
 		"id":"crown",
 		"name":"Lemberg Hall - Crown Center for Middle East Studies",
