@@ -21,7 +21,8 @@ locations_east = [
 			[42.366228, -71.255598]]
 		]},
 		"category":["health"],
-		"description":"Stoneman Public Safety, Stoneman is home to Brandeis Police.",
+		"function":"Stoneman is home to Brandeis Police and the Health Center.",
+		"description":"The Stoneman building is the hub of Brandeis public health and safety. It houses the Golding Health Center for primary care, health education and wellness promotion, as well as the university’s Department of Public Safety, which oversees parking violations, crime prevention and emergency preparedness.",
 		"entrances":["police_e01"],
 		"area":["upper campus"]
 	},
@@ -40,7 +41,8 @@ locations_east = [
 			[42.366054, -71.255118]]
 		]},
 		"category":["health"],
-		"description":"The Health Center offers confidential health services. In the case of an emergency, there is a nurse or doctor on call at all times. The Brandeis Emergency Medical Corps (BEMCO) is a student-operated, certified EMT service, trained to respond to student’s calls 24/7.",
+		"function":"The Health Center offers confidential health services to Brandeis.",
+		"description":"In the case of an emergency, there is a nurse or doctor on call at all times. The Brandeis Emergency Medical Corps (BEMCO) is a student-operated, certified EMT service, trained to respond to student’s calls 24/7.",
 		"entrances":["healthcenter_e01"],
 		"area":["upper campus"]
 	},
@@ -72,13 +74,14 @@ locations_east = [
 		]},
 		"category":["health"],
 		"entrances":["mailman_e01"],
-		"area":["upper campus"]
+		"area":["upper campus"],
+		"function":"The Mailman House, located at the edge of campus, is the site of the university’s Psychological Counseling Center, where students may speak confidentially with experienced counselors on matters including stress, depression, substance abuse and eating disorders."
 	},
 	{
 		"id":"superconducting",
 		"nickname":"Landsman",
 		"name":"Landsman Research Facility",
-		"description":"Landsman Research Facility, is the campus home to a 15,000-pound superconducting magnet used by scientists to search for clues to solving the riddles of neurodegenerative diseases and cancer.",
+		"description":"The Landsman Research Facility is home to a 15,000-pound superconducting magnet used for research on neurodegenerative diseases and cancer. The facility also holds a small wet-lab area.",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.366049, -71.255343], 
 			[42.366031, -71.255433], 
@@ -90,8 +93,3 @@ locations_east = [
 		"area":["upper campus"]
 	},
 ]
-
-function Point(x,y) {
-	this.x = x;
-	this.y = y;
-}

@@ -262,7 +262,7 @@ locations_rooms = [
 	},
 	{
 		"id":"fieldhouse",
-		"name":"Auerbach Arena",
+		"name":"Red Auerbach Arena",
 		"nickname":"The Fieldhouse",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.364903, -71.255339],

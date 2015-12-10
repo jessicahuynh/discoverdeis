@@ -11,13 +11,14 @@ locations_presidential = [
 		]},
 		"category":["administrative"],
 		"entrances":["bernstein_e01"],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"function":"The Bernstein-Marcus Administration Center houses several of Brandeis’ administration and development offices."
 		},
 	epstein = {
 		"id":"epstein",
 		"name":"Rubin and Ethel Epstein Center for Campus Services",
 		"nickname":"Epstein",
-		"function":"Epstein is home to facilities, the Women's Studies Research Center, and the Kniznick Gallery.",
+		"function":"The Epstein Building is home to the Women's Studies Research Center, Hadassah-Brandeis Institute, the Kniznick Gallery, advancement services, and the university's facilities services.",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.362457,-71.261636], 
 			[42.362374,-71.260823], 
@@ -56,6 +57,7 @@ locations_presidential = [
 		]},
 		"category":["administrative"],
 		"entrances":["irving_e01","irving_e02"],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"function":"The Irving Presidential Enclave houses administrative offices, including those for the university president, the provost, and the dean of arts and sciences, among others."
 		},
 ]

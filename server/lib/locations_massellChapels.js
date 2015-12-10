@@ -83,7 +83,7 @@ locations_massellChapels = [
 	},
 	info = {
 		"id":"info",
-		"name":"Information Booth",
+		"name":"Main Entrance Information Booth",
 		"nickname":"Info Booth",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[	[42.365015,-71.258721], 
@@ -93,12 +93,13 @@ locations_massellChapels = [
 		]},
 		"category":["offices"],
 		"entrances":["info_e01"],
-		"area":["lower campus"]
+		"area":["lower campus"],
+		"function":"The Main Entrance Information Booth is the first stop at the entrance to Brandeis University before drivers access the peripheral road circling the upper campus. The booth can issue parking passes. The elusive BranVan can also be seen here."
 		},
 	facultycenter = {
 		"id":"facultycenter",
-		"name":"Faculty Center",
-		"nickname":"Faculty Club",
+		"name":"Wien Faculty Center",
+		"nickname":"Faculty Center",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.36569,-71.261466],
 			[42.365817, -71.261193],
@@ -113,7 +114,7 @@ locations_massellChapels = [
 			[42.365651,-71.260898], 
 			[42.36548,-71.2613]]
 		]},
-		"function":"The Faculty Club provides sit-in lunch.",
+		"function":"The Wien Faculty Center houses the Faculty Club, which includes the main dining room, the president's dining room and the lounge. The Faculty Lodge is adjacent to the Wien Faculty Center and offers a limited number of rooms for overnight accommodations.",
 		"description":"The Faculty Club is a restaurant that is open to faculty and students alike and is on the student meal plan. The Student Union hosts a program called “Take Your Professor to Lunch”, which encourages students to get to know faculty members outside the classroom. The Student Union distributes vouchers to the students in order to cover the cost of the meal. This opportunity aides in fostering Brandeis’ legacy of strong professor-student relationships. Mitch Albom, a Brandeis alum, wrote the famous book Tuesdays with Morrie, which chronicles his time with Morrie Schwartz, his life-long mentor and Brandeis professor.",
 		"category":["dining"],
 		"entrances":["facultycenter_e01","facultycenter_e02"],

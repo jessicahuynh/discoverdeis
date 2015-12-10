@@ -1,8 +1,8 @@
 locations_mandelHellerLibrary=[
 	{
 		"id":"schneider",
-		"name":"The Heller School for Social Policy and Management, Schneider Building",
-		"nickname":"Schneider Building",
+		"name":"Irving Schneider and Family Building (Heller School)",
+		"nickname":"Heller (Schneider)",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.369303, -71.259773], 
 			[42.369452, -71.259208], 
@@ -16,13 +16,30 @@ locations_mandelHellerLibrary=[
 		]},
 		"category":["offices","academics"],
 		"entrances":["schneider_e01", "schneider_e02", "schneider_e03"],
-		"area":["upper campus"]
+		"area":["upper campus"],
+		"function":"Home to the Heller School for Social Policy and Management, the Irving Schneider and Family Building contains classroom and lecture space, study areas, student lounges and the public atrium known as the Zinner Forum. The building also houses the Schneider Institute for Health Policy."
 	},
+	heller = {
+		"id":"heller",
+		"name":"Heller-Brown Building",
+		"nickname":"Heller (Brown)",
+		"coordinates": {"type":"Polygon","coordinates":[
+			[[42.369326,-71.259107], 
+			[42.369187,-71.258417], 
+			[42.369025,-71.258474], 
+			[42.369158,-71.259171]]
+		]},
+		"function":"The Heller-Brown Building is one of two buildings making up the Heller School for Social Policy and Management. The building holds classrooms, conference rooms, offices, a library and Geographic Information Systems lab.",
+		"description":"Heller-Brown is home to the Heller School for Social Policy and Management, one of the top ten schools of social policy in the United States and one of the eight approved U.S. training institutions for World Bank Scholars.",
+		"category":["academics"],
+		"entrances":["heller_e01", "heller_e02", "starbucksHeller_ie01"],
+		"area":["upper campus"]
+		},
 	{
 		"id":"lown",
 		"name":"Lown School of Near Eastern and Judaic Studies",
 		"nickname":"Lown",
-		"function":"Lown is home to the National Center for Jewish Film and many courses in Near Eastern and Judaic Studies (NEJS) and Islamic and Middle Eastern Studies (IMES).",
+		"function":"The Lown Center for Judaica Studies is home to the Maurice & Marilyn Center for Modern Jewish Studies, the Near Eastern & Judaic Studies program, the Hornstein Jewish Professional Leadership Program and the university’s National Center for Jewish Film. It also contains many courses in Near Eastern and Judaic Studies (NEJS) and Islamic and Middle Eastern Studies (IMES).",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.370321, -71.257312], 
 			[42.370185, -71.257497], 
@@ -47,11 +64,12 @@ locations_mandelHellerLibrary=[
 		]},
 		"category":["offices","academics"],
 		"entrances":["abraham_e01"],
-		"area":["upper campus"]
+		"area":["upper campus"],
+		"function":"The Abraham Shapiro Academic Complex houses the International Center for Ethics, Justice and Public Life and the Education Program. The building includes classrooms, offices, seminar and conference room space, as well as a graduate-student study area."
 	},
 	{
 		"id":"mandelJewish",
-		"name":"Mandel Center for Studies in Jewish Education",
+		"name":"Jack, Joseph, and Morton Mandel Center for Studies in Jewish Education",
 		"nickname":"Mandel Center",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.369615, -71.259750], 
@@ -64,7 +82,8 @@ locations_mandelHellerLibrary=[
 		]},
 		"category":["offices","academics"],
 		"entrances":["mandelJewish_e01"],
-		"area":["upper campus"]
+		"area":["upper campus"],
+		"function":"The Mandel Center for Studies in Jewish Education is located on the Brandeis University campus in the Abraham Shapiro Academic Complex. It pursues Jewish educational scholarship in service to the Jewish community in order to promote deeper understanding of the purposes and practices of Jewish education."
 	},
 	olinsang = {
 		"id":"olin-sang",
@@ -78,7 +97,8 @@ locations_mandelHellerLibrary=[
 		]},
 		"category":["academics"],
 		"entrances":["olin-sang_e01", "olin-sang_ie01", "olin-sang_e02", "olin-sang_e03"],
-		"area":["upper campus","mandel"]
+		"area":["upper campus","mandel"],
+		"function":"The Olin-Sang American Civilization Center holds classrooms and offices for various university departments including History, Latin American and Latino Studies, and the Film, Television and Interactive Media program, along with many lecture halls."
 	},
 	goldfarb = {
 		"id":"goldfarb",
@@ -98,13 +118,14 @@ locations_mandelHellerLibrary=[
 			[42.368674, -71.257622]]
 		]},
 		"category":["academics"],
+		"function":"The Goldfarb Library is the main library on campus where students may access 30,000 electronic journals and 250 scholarly databases, group study rooms and computer tech support from Library Technology Services. It also houses university archives, special collections of rare books and manuscripts and its Judaica Collection of Jewish history, religious and cultural documents.",
 		"description": "Goldfarb/Farber Libraries house ever growing collections and reference resources in creative arts, humanities, government documents, Judaica, and social sciences. Research materials are extremely accessible to students due to the online availability of resources, and additional resources are made available through the Boston Library Consortium and the Interlibrary Loan system. The library offers services for students including a listening center, computer labs, study rooms, a media lab that helps students edit their films and soundtracks, as well as the Writing Center. The Writing Center assists students in all aspects of writing their papers, from brainstorming to editing. Recently, a new café was added to the Green Room section of the library.",
 		"entrances":["goldfarb_e01","goldfarb_e02", "library_ie01"],
 		"area":["upper campus","libraries"]
 	},
 	farber = {
 		"id":"farber",
-		"name":"Farber Library",
+		"name":"Leonard L. Farber Library",
 		"nickname":"Farber",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.367907,-71.258866], 
@@ -114,23 +135,8 @@ locations_mandelHellerLibrary=[
 		]},
 		"category":["library"],
 		"entrances":["farber_e01", "farber_ie01"],
-		"area":["upper campus","libraries"]
-		},
-
-	heller = {
-		"id":"heller",
-		"name":"Heller-Brown Building",
-		"nickname":"Heller",
-		"coordinates": {"type":"Polygon","coordinates":[
-			[[42.369326,-71.259107], 
-			[42.369187,-71.258417], 
-			[42.369025,-71.258474], 
-			[42.369158,-71.259171]]
-		]},
-		"function":"Heller-Brown is home to the Heller School for Social Policy and Management, one of the top ten schools of social policy in the United States and one of the eight approved U.S. training institutions for World Bank Scholars.",
-		"category":["academics"],
-		"entrances":["heller_e01", "heller_e02", "starbucksHeller_ie01"],
-		"area":["upper campus"]
+		"area":["upper campus","libraries"],
+		"function":"One of three libraries on campus, the Leonard L. Farber Library houses resources and services supporting the humanities, the social sciences, Judaica and creative arts. The university’s Getz Multimedia Lab is also located here."
 		},
 	rabb = {
 		"id":"rabb",
@@ -144,11 +150,12 @@ locations_mandelHellerLibrary=[
 		]},
 		"category":["academics"],
 		"entrances":["rabb_e01"],
-		"area":["upper campus","mandel"]
+		"area":["upper campus","mandel"],
+		"function":"Rabb Graduate Center houses seminar rooms, faculty and administrative offices, and small offices for graduate students in study areas such as English, Romance Studies, Philosophy, and Environmental Studies."
 		},
 	mandel = {
 		"id":"mandel",
-		"name":"Mandel Center for the Humanities",
+		"name":"Jack, Joseph, and Morton Mandel Center for the Humanities",
 		"nickname":"Mandel",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.369854, -71.258567], 
@@ -174,7 +181,7 @@ locations_mandelHellerLibrary=[
 			[42.369629, -71.257896],
 			[42.369663, -71.257879]]
 		]},
-		"function": "Mandel is home to Brandeis' humanities and languages departments.",
+		"function": "Mandel is the main facility for liberal arts education, including humanities, social sciences, literature, language and philosophy. The four-story center, made up of multiple buildings linked with an outdoor quadrangle, has a 90-seat theater/lecture hall, classrooms, seminar rooms, offices and open workstations.",
 		"description": "The Mandel Center for the Humanities was created as an interdisciplinary building \
 						that specifically combines subjects in order for students to have a better understanding \
 						of the major themes of the human experience. The Center’s courses include languages, \
@@ -201,7 +208,8 @@ locations_mandelHellerLibrary=[
 		"category":["academics"],
 		"entrances":["golding_e01", "golding_e02"],
 		"nearby":["olin-sang","mandel","lown","shiffman"],
-		"area":["upper campus","mandel"]
+		"area":["upper campus","mandel"],
+		"function":"The Golding Judaica Center holds classrooms for subject areas including East Asian Studies, Near Eastern and Judaic Studies (NEJS), and African and Afro-American Studies (AAAS)."
 	},
 	shiffman = {
 		"id":"shiffman",
@@ -215,7 +223,8 @@ locations_mandelHellerLibrary=[
 		]},
 		"category":["academics"],
 		"entrances":["shiffman_e01", "shiffman_e02", "shiffman_e03"],
-		"area":["upper campus","mandel"]
+		"area":["upper campus","mandel"],
+		"function":"On the north side of campus, Shiffman Humanities Center houses offices and classrooms for the departments of Romance Studies, German Studies, Russian Studies, European Cultural Studies, and the Comparative Literature Program."
 	},
 	kutz = {
 		"id":"kutz",
@@ -237,7 +246,8 @@ locations_mandelHellerLibrary=[
 		]},
 		"category":["administrative","offices","student life"],
 		"entrances":["kutz_e01","kutz_e02"],
-		"area":["upper campus"]
+		"area":["upper campus"],
+		"function":"Kutz Hall houses offices for the Graduate School of Arts and Sciences, the registrar, and Conference and Events Services, as well as the International Students & Scholars Office and the Campus Card Office. The Graduate Student Center on the first floor gives students use of a day locker and a lounge/study site."
 	},
 
 ]

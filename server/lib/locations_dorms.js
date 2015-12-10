@@ -21,6 +21,7 @@ locations_dorms = [
 		"name":"Ollie and Eleanore Cohen Building",
 		"nickname":"Grad 111",
 		"function":"Located at 110 Angleside Rd., Grad 111 provides suite-style living for upperclassmen.",
+		"description":"The Cohen building is part of the Charles River Apartments that house upperclass students students. Each apartment is equipped with a full kitchen, common areas, bath and a varying number of single bedrooms.",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.359859,-71.257805], 
 			[42.359894,-71.257695], 
@@ -54,6 +55,7 @@ locations_dorms = [
 		"name":"Max and Ann Coffman Building",
 		"nickname":"Grad 112",
 		"function":"Located at 150 Charles River Rd., Grad 112 provides suite-style living for upperclassmen.",
+		"description":"The Coffman building is part of the Charles River Apartments that house upperclass students students. Each apartment is equipped with a full kitchen, common areas, bath and a varying number of single bedrooms.",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.359506, -71.257059], 
 			[42.359965, -71.257495], 
@@ -70,6 +72,7 @@ locations_dorms = [
 		"name":"The George L. and Minnie Lewis Building",
 		"nickname":"Grad 113",
 		"function":"Located at 164 Charles River Rd., Grad 113 provides suite-style living for upperclassmen.",
+		"description":"The Lewis building is part of the Charles River Apartments that house upperclass students students. Each apartment is equipped with a full kitchen, common areas, bath and a varying number of single bedrooms.",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.360203,-71.257102], 
 			[42.359815,-71.256402], 
@@ -86,6 +89,7 @@ locations_dorms = [
 		"name":"Morton May Building",
 		"nickname":"Grad 114",
 		"function":"Located at 178 Charles River Rd., Grad 114 provides suite-style living for upperclassmen.",
+		"description":"The May building is part of the Charles River Apartments that house upperclass students students. Each apartment is equipped with a full kitchen, common areas, bath and a varying number of single bedrooms.",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.360515,-71.25694], 
 			[42.360223,-71.256167], 
@@ -102,6 +106,7 @@ locations_dorms = [
 		"name":"Jehuda Reinharz Residence Hall",
 		"nickname":"Ridgewood A",
 		"function":"Ridgewood A provides suite-style living for upperclassmen.",
+		"description":"Jehuda Reinharz Hall is part of the Ridgewood Apartments, which features primarily 4-person apartments, along with a handful of 6-person apartments, for juniors and seniors. The 184 beds are all single bedrooms in apartments that also include kitchens and living rooms. Ridgewood also has a 3,200-square-foot multipurpose space (Ridgewood Commons) and kitchen for larger-group meals.",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.364163,-71.260638], 
 			[42.364036,-71.260324], 
@@ -118,6 +123,7 @@ locations_dorms = [
 		"name":"Ridgewood Residence Hall B",
 		"nickname":"Ridgewood B",
 		"function":"Ridgewood B provides suite-style living for upperclassmen.",
+		"description":"Jehuda Reinharz Hall is part of the Ridgewood Apartments, which features primarily 4-person apartments, along with a handful of 6-person apartments, for juniors and seniors. The 184 beds are all single bedrooms in apartments that also include kitchens and living rooms. Ridgewood also has a 3,200-square-foot multipurpose space (Ridgewood Commons) and kitchen for larger-group meals.",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.363939,-71.261456], 
 			[42.363978,-71.260872], 
@@ -134,6 +140,7 @@ locations_dorms = [
 		"name":"Ridgewood Residence Hall C",
 		"nickname":"Ridgewood C",
 		"function":"Ridgewood C provides suite-style living for upperclassmen.",
+		"description":"Jehuda Reinharz Hall is part of the Ridgewood Apartments, which features primarily 4-person apartments, along with a handful of 6-person apartments, for juniors and seniors. The 184 beds are all single bedrooms in apartments that also include kitchens and living rooms. Ridgewood also has a 3,200-square-foot multipurpose space (Ridgewood Commons) and kitchen for larger-group meals.",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.363691,-71.260904], 
 			[42.363562,-71.260466], 
@@ -147,9 +154,10 @@ locations_dorms = [
 		},
 	rosieEast = {
 		"id":"rosieeast",
-		"name":"Rosenthal Residence Hall East",
+		"name":"Anne and David Rosenthal Residence Hall East",
 		"nickname":"Rosie East",
 		"function":"Rosie East provides suite-style living for sophomores.",
+		"description":"Rosenthal East is part of the Anne and David Rosenthal Student Residence Halls, located in the heart of campus, accommodating 181 sophomore students in eight-person suites with living rooms and private bathrooms.",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.367225,-71.260011], 
 			[42.367225,-71.259817], 
@@ -163,9 +171,10 @@ locations_dorms = [
 		},
 	rosieNorth = {
 		"id":"rosienorth",
-		"name":"Rosenthal Residence Hall North",
+		"name":"Anne and David Rosenthal Residence Hall North",
 		"nickname":"Rosie North",
 		"function":"Rosie North provides suite-style living for sophomores.",
+		"description":"Rosenthal North is part of the Anne and David Rosenthal Student Residence Halls, located in the heart of campus, accommodating 181 sophomore students in eight-person suites with living rooms and private bathrooms.",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.367388,-71.26032], 
 			[42.367364,-71.259949], 
@@ -179,9 +188,10 @@ locations_dorms = [
 		},
 	rosieSouth = {
 		"id":"rosiesouth",
-		"name":"Rosenthal Residence Hall South",
+		"name":"Anne and David Rosenthal Residence Hall South",
 		"nickname":"Rosie South",
 		"function":"Rosie South provides suite-style living for sophomores.",
+		"description":"Rosenthal South is part of the Anne and David Rosenthal Student Residence Halls, located in the heart of campus, accommodating 181 sophomore students in eight-person suites with living rooms and private bathrooms.",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.366942,-71.260352], 
 			[42.366919,-71.25997], 

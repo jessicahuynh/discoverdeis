@@ -88,7 +88,7 @@ locations_athletics = [
 		]},
 		"category":["athletics"],
 		"description":"Gosman is one of the largest, best-equipped sports and recreation facilities in New England. Gosman was, until recently, the practice facility for the Boston Celtics. The complex is a state-of- the-art facility for all students, not just varsity athletes. The 70,000 square-foot field house contains basketball, volleyball, tennis, and squash courts, a six-lane indoor track, batting cages, workout rooms complete with personal trainers, and a fencing room. Each year, Gosman hosts athletic competitions (including NCAA Division III national contests], big-name concerts, and the graduation ceremony. Since it has opened, performers have included Adam Sandler, Jerry Seinfeld, Live, Blues Traveler, Counting Crows, Ben Harper, Indigo Girls, John Mayer, and The Steve Miller Band. The Dalai Lama and former presidents Jimmy Carter and Bill Clinton visited as speakers.",
-		"function":"Gosman contains many practice facilities, a dance studio, a gym, and the Fieldhouse.",
+		"function":"The Gosman Sports and Convocation Center is one of the largest multipurpose, indoor athletic facilities in New England. The 70,000-square-foot Gosman Center houses the Red Auerbach Arena, seating approximately 2,500 for basketball and volleyball, as well as a 200-meter six-lane running track, seven squash courts, three multipurpose rooms (MPRs), two weight rooms, a trophy room, concession area and department offices.",
 		"entrances":["gosman_e01"],
 		"area":["athletics","athletic complex"]
 		},
@@ -97,6 +97,7 @@ locations_athletics = [
 		"name":"Joseph M. Linsey Sports Center",
 		"nickname":"Linsey",
 		"function":"Linsey contains Linsey Pool and is home to the Brandeis swim team.",
+		"description":"The Joseph M. Linsey Center, part of the Joseph F. and Clara Ford Athletic and Recreation Complex, includes a six-lane, 25-yard pool that recently underwent extensive upgrades. It also includes four newly renovated multi-purpose rooms.",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.366071, -71.254290], 
 			[42.365863, -71.254620], 

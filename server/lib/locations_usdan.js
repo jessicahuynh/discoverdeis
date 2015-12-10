@@ -1,7 +1,7 @@
 locations_usdan = [
 	usdan = {
 		"id":"usdan",
-		"name":"Usdan Student Center",
+		"name":"Nathaniel H. and Suzanne Usdan Student Center",
 		"nickname":"Usdan",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.368296,-71.256585], 
@@ -9,6 +9,7 @@ locations_usdan = [
 			[42.367777,-71.256451], 
 			[42.368243,-71.256259]]
 		]},
+		"function":"Usdan incorporates student social, cultural and recreational facilities, as well as student and some administrative services. It houses an assembly and banquet hall seating 1,000 people, mailroom, a convenience store, campus cafeteria, lounges, game room and conference rooms.",
 		"description":"Usdan Student Center contains an a la carte style dining hall, a post office, an ATM, the Student Service Bureau (where you can lease microwaves or refrigerators, sign up for newspaper delivery, and rent movies, among other things], offices offices, and a variety of meeting spaces. It is a busy meeting place for students and faculty – especially between classes or at meals. The convenience store, also located inside Usdan, is open until 2am seven days a week and has everything from laundry detergent to midnight snacks available. Usdan also houses the Hiatt Career Center, Academic Services, Department of Community Living, and Student Financial Services. Services at the Hiatt Career Center are free to students and alumni. Services include one-on-one career counseling sessions, a network of over 25,000 internships, assistance in writing resumes and cover letters, and interview prep. Usdan is also home to the study abroad offices – over a third of the Junior class goes abroad every year! If you’d like to explore Usdan, you’ll find the dining hall, post office, and some offices on the lower level.",
 		"entrances":["usdan_e01","usdan_e02","usdan_e03"],
 		"category":["student life"],
@@ -31,7 +32,8 @@ locations_usdan = [
 		]},
 		"category":["student life"],
 		"entrances":["levin_e01","levin_e02"],
-		"area":["upper campus"]
+		"area":["upper campus"],
+		"function":"Levin Ballroom hosts many large student events and conferences, including APAHM, MELA, and the study abroad fair."
 	},
 	{
 		"id":"mandelpeacegarden",
@@ -52,7 +54,7 @@ locations_usdan = [
 		"id":"schwartz",
 		"name":"Schwartz Hall",
 		"nickname":"Schwartz",
-		"function":"Schwartz contains many lecture halls.",
+		"function":"Schwartz Hall includes classrooms supporting the Crown Center for Middle East Studies and the psychology, sociology and biology departments. It also houses two psychology research laboratories.",
 		"description":"",
 		"coordinates": {"type":"Polygon","coordinates":[
 			[[42.367642,-71.257438], 
@@ -76,7 +78,8 @@ locations_usdan = [
 			[42.367266,-71.257265]]]},
 		"category":["academics"],
 		"entrances":["brown_e01","brown_e02", "brown_ie01", "brown_e03"],
-		"area":["upper campus"]
+		"area":["upper campus"],
+		"function":"The Brown Social Sciences Center is home to the school’s Aging, Culture and Cognition Laboratory. It also includes offices and classrooms for the psychology and anthropology departments, as well as the American studies and journalism programs."
 		},
 	castle = {
 		"id":"castle",
@@ -90,13 +93,14 @@ locations_usdan = [
 			[42.367387, -71.255545]]
 		]},
 		"category":["dorm","landscape","art"],
+		"function":"Listed on the National Register of Historic Places, the castle offers housing in single, double, triple and suite options for sophomore students.",
 		"description":"Usen Castle may seem out of place on our campus, and, in fact, it predates the university. The castle was built to look like many of the castles that one might find in Scotland; however, this castle was built based on rough exterior sketches drawn from the outside of an already-existing castle. As a result, the castle is filled with architectural mishaps including rogue staircases, trapdoors, and oddly shaped rooms. While it is now a national historic landmark, the castle is also a residence hall with singles, doubles, and suites available for students in their sophomore year. With its quirky character and spectacular view of Boston, the castle makes for a unique living experience.",
 		"entrances":["castle_e01","castle_e02"],
 		"area":["upper campus"]
 	},
 	crown = {
 		"id":"crown",
-		"name":"Lemberg Hall Crown Center for Middle East Studies",
+		"name":"Lemberg Hall - Crown Center for Middle East Studies",
 		"nickname":"Crown",
 		"coordinates":{"type":"Polygon","coordinates":[
 			[[42.367353, -71.256519],
@@ -106,7 +110,8 @@ locations_usdan = [
 		]},
 		"category":["academics"],
 		"entrances":["crown_e01"],
-		"area":["upper campus"]
+		"area":["upper campus"],
+		"function":"Lemberg Hall houses the Crown Center for Middle East Studies and other faculty offices."
 	},
 
 ]
