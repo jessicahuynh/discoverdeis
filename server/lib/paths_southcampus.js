@@ -113,7 +113,7 @@ paths_southcampus = [
 {
     "start":"scc_e02",
     "end":"scc_e04",
-    "desccription":"Cut directly across the SCC to the set of glass double doors on the other side."
+    "description":"Cut directly across the SCC to the set of glass double doors on the other side."
 },
 {
     "start":"facultycenter_e01",
