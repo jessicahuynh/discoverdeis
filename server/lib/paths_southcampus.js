@@ -96,6 +96,26 @@ paths_southcampus = [
     "description": "Walk across the road."
 },
 {
+    "start":'facultycenter_c01',
+    "end":"scc_e04",
+    "description":"Enter the SCC, directly in front of the stairs."
+},
+{
+    "start":"scc_e04",
+    "end":"facultycenter_c01",
+    "description":"Head out the doors of the SCC and face the stairs going up."
+},
+{
+    "start":"scc_e04",
+    "end":"scc_e02",
+    "description":"Cut directly across the SCC to the set of glass double doors on the other side."
+},
+{
+    "start":"scc_e02",
+    "end":"scc_e04",
+    "desccription":"Cut directly across the SCC to the set of glass double doors on the other side."
+},
+{
     "start":"facultycenter_e01",
     "end":"facultycenter_c01",
     "description": "Exit the Faculty Club and go downstairs, then walk along to the first crossing."

@@ -69,12 +69,12 @@ paths_bernstein = [
 	{
 		"start":"bernstein_c01",
 		"end":"irving_e01",
-		"description":"Entrance to Berstein is right ahead."
+		"description":"Entrance to Bernstein is right ahead."
 	},
 	{
 		"start":"irving_e01",
 		"end":"bernstein_c01",
-		"description":"Exit Berstein into the court."
+		"description":"Exit Bernstein into the courtyard."
 	},
 
 	{
@@ -91,7 +91,7 @@ paths_bernstein = [
 	{
 		"start":"scc_c05",
 		"end":"irving_e01",
-		"description":"Walk across the court and you'll arrive at Berstein."
+		"description":"Walk across the court and you'll arrive at Bernstein."
 	},
 	{
 		"start":"irving_e01",
