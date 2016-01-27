@@ -9,7 +9,7 @@ locations_rooms = [
 			[42.364636, -71.264204],
 			[42.364544, -71.264203]]
 		]},
-		"function":"",
+		"function":"Domenic's is located in the International Business School (IBS) and serves sandwiches and deli foods.",
 		"description":"",
 		"category":["dining"],
 		"entrances":["domenics_ie01"],
@@ -24,7 +24,7 @@ locations_rooms = [
 			[42.363118, -71.260645], 
 			[42.363148, -71.260623]]
 		]},
-		"function":"Dunkin' sells donuts.",
+		"function":"Dunkin' sells donuts, coffee, and sandwiches.",
 		"description": "",
 		"category":["dining"],
 		"entrances":["dd_e01"],
@@ -40,7 +40,7 @@ locations_rooms = [
 			[42.365669, -71.260454], 
 			[42.365729, -71.260444]]
 		]},
-		"function":"",
+		"function":"Einstein's is most known for its bagels, but also has coffee, pastries, and items that can be put on meal plans.",
 		"description":"",
 		"category":["dining"],
 		"entrances":["einstein_ie01"],
@@ -66,7 +66,7 @@ locations_rooms = [
 	},
 		{
 		"id":"starbucksHeller",
-		"name":"Heller Starbucks",
+		"name":"Heller Starbucks Cafe",
 		"nickname":"Heller Starbucks",
 		"coordinates": {"type":"Polygon","coordinates":[ 
 			[[42.369312, -71.259157], 
@@ -74,7 +74,7 @@ locations_rooms = [
 			[42.369278, -71.259102], 
 			[42.369288, -71.259169]]
 		]},
-		"function":"",
+		"function":"Starbucks at Heller serves coffee and pastries and also has a refrigerator, microwave ovens, toaster, and kettle for student use.",
 		"description":"",
 		"category":["dining"],
 		"entrances":["starbucksHeller_ie01"],
@@ -90,7 +90,7 @@ locations_rooms = [
 			[42.367822, -71.258622], 
 			[42.367852, -71.258542]]
 		]},
-		"function":"",
+		"function":"The library's Starbucks has coffee and pastries so you can eat while you work.",
 		"description":"",
 		"category":["dining"],
 		"entrances":["starbucksLib_ie01"],
@@ -106,7 +106,7 @@ locations_rooms = [
 			[42.366002, -71.258139], 
 			[42.366077, -71.258103]]
 		]},
-		"function":"",
+		"function":"Peet's has coffee, pastries, drinks, and small meals.",
 		"description":"",
 		"category":["dining"],
 		"entrances":["peets_ie01","peets_ie02"],
@@ -122,7 +122,7 @@ locations_rooms = [
 			[42.366551, -71.260574], 
 			[42.366435, -71.260811]]
 		]},
-		"function":"",
+		"function":"The Stein has casual sit-down dining, with appetizers and entrees, a late-night breakfast buffet, and drinks for those over 21.",
 		"description":"",
 		"category":["dining"],
 		"entrances":["stein_ie01"],
@@ -142,7 +142,7 @@ locations_rooms = [
 			[42.368274, -71.257334], 
 			[42.368259, -71.257233]]
 		]},
-		"function":"",
+		"function":"Upper Usdan has Louis' Deli, sushi, pho, and burritos.",
 		"description":"",
 		"category":["dining"],
 		"entrances":["usdanBoulevard_ie01","usdan_e02","usdan_e03"],
@@ -158,7 +158,7 @@ locations_rooms = [
 			[42.367982, -71.257010], 
 			[42.367932, -71.256737]]
 		]},
-		"function":"",
+		"function":"Lower Usdan has all-you-can-eat dining.",
 		"description":"",
 		"category":["dining"],
 		"entrances":["usdanCafe_ie01"],
@@ -174,7 +174,7 @@ locations_rooms = [
 			[42.368266, -71.256762], 
 			[42.368231, -71.256778]]
 		]},
-		"function":"",
+		"function":"The C-Store lets you buy individual food items, groceries, and supplies, along with meals.",
 		"description":"",
 		"category":["dining"],
 		"entrances":["cStore_ie01"],
@@ -190,7 +190,7 @@ locations_rooms = [
 			[42.367905, -71.257197], 
 			[42.367971, -71.257184]]
 		]},
-		"function":"",
+		"function":"Louis' Deli makes made-to-order kosher sandwiches, salads, and soups.",
 		"description":"",
 		"category":["dining"],
 		"entrances":["usdanLouisDeli_ie01"],
