@@ -6,20 +6,18 @@ offCampus = {
 
 Template.welcome.helpers({
 	inLocation: function () {
-		var inLoc = Session.get("inLocation");
-		//console.log(inLoc);
-		
+		var inLoc = Session.get("inLocation");		
 		if (typeof inLoc != "undefined" && inLoc != null && inLoc[0] != null) {
-			var name = Locations.findOne({ "name": inLoc[0].name }).name;
+			var closestLocation = Locations.findOne({ "name": inLoc[0].name });
 			if (inLoc[1] == "in") {
-				return name;
+				return closestLocation.name;
 			}	
 			else {
 				if (Session.get("unit") == "m") {
-					return Math.round(inLoc[2]) + "m from " + name;
+					return Math.round(inLoc[2]) + "m from " + closestLocation.name;
 				}
 				else {
-					return Math.floor(Math.round(inLoc[2]*3.28)) + "ft from " + name;
+					return Math.floor(Math.round(inLoc[2]*3.28)) + "ft from " + closestLocation.name;
 				}
 				
 			}

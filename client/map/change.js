@@ -234,9 +234,13 @@ Template.change.helpers({
 		return this;
 	},
 	currentDescription:function() {
-		currDescript=Session.get("step")[count];
-		Session.set("listenTo",currDescript);
-		return currDescript;
+		var step = Session.get("step")
+		
+		if(step != null) {
+			currDescript=step[count];
+			Session.set("listenTo",currDescript);
+			return currDescript;
+		}
 	},
 	naviMapOptions: function() {
 		if (GoogleMaps.loaded()) {
@@ -251,7 +255,8 @@ Template.change.helpers({
 		return Session.get("routeStartStop");
 	},
 	routeEstimate:function() {
-		if (Session.get("routeToTake")[0][0] == "Y") {
+		var routeToTake = Session.get("routeToTake");
+		if (routeToTake != null && routeToTake[0][0] == "Y") {
 				return "no walking needed"
 		}
 		else {
