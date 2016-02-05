@@ -14,7 +14,7 @@
 // });
 
 App.accessRule('http://leiner.cs-i.brandeis.edu:4200/*');
-App.accessRule('localhost:3000/*');
+App.accessRule('http://localhost:3000/*');
 App.accessRule('*.google.com');
 App.accessRule('*.googleapis.com/*');
 App.accessRule('*.gstatic.com/*');
