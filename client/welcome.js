@@ -7,20 +7,21 @@ offCampus = {
 Template.welcome.helpers({
 	inLocation: function () {
 		var inLoc = Session.get("inLocation");		
-		if (typeof inLoc != "undefined" && inLoc != null && inLoc[0] != null) {
+		if (typeof inLoc != undefined && inLoc != null && inLoc[0] != null) {
 			var closestLocation = Locations.findOne({ "name": inLoc[0].name });
-			if (inLoc[1] == "in") {
-				return closestLocation.name;
-			}	
-			else {
-				if (Session.get("unit") == "m") {
-					return Math.round(inLoc[2]) + "m from " + closestLocation.name;
+			if (closestLocation != undefined) { 
+				if(inLoc[1] == "in") {
+					return closestLocation.name;
 				}
 				else {
-					return Math.floor(Math.round(inLoc[2]*3.28)) + "ft from " + closestLocation.name;
+					if (Session.get("unit") == "m") {
+						return Math.round(inLoc[2]) + "m from " + closestLocation.name;
+					}
+					else {
+						return Math.floor(Math.round(inLoc[2]*3.28)) + "ft from " + closestLocation.name;
+					}
 				}
-				
-			}
+			}	
 		}
 		else {
 			return "You're off campus! There's lots to do off campus, but unfortunately I can't tell you about it.";

@@ -1,6 +1,14 @@
 Meteor.startup(function() {
 	IntersectionsYX._ensureIndex({"coordinate":"2dsphere"});
 	CornerPoints._ensureIndex({"coordinate":"2dsphere"});
+	console.log(__meteor_runtime_config__.ROOT_URL); 
+	console.log(__meteor_runtime_config__); 
+	// Meteor.absoluteUrl.defaultOptions.rootUrl
+	// process.env.ROOT_URL
+	// process.env.MOBILE_ROOT_URL 
+	// process.env.MOBILE_DDP_URL
+
+
 	
 	if (Locations.find().count() == 0) {
 		// list of all of the files containing location data
