@@ -15,15 +15,11 @@ pointIncluded = function(vertices, current) {
 
 	for (var i = 0, j = numVert - 1; i < numVert; j = i++) {
 		if ((yArray[i] >= current.y) != (yArray[j] >= current.y) &&
-			(current.x <= (xArray[j] - xArray[i]) * 
-				(current.y - yArray[i]) / (yArray[j] - yArray[i]) +
-				xArray[i])
-			) {
+			(current.x <= (xArray[j] - xArray[i]) * (current.y - yArray[i]) / (yArray[j] - yArray[i]) +xArray[i])) {
 			included = !included;
 
 		}
 	}
-
 	return included;
 };
 
@@ -56,13 +52,16 @@ distance = function(start, end) {
 
 searchLocations = function(current) {
 	var location = null;
-	var locatedHere = null;
+	var locatedHere = null;	
+	var allLocations = Locations.find().fetch();
     console.log("SL:"+ JSON.stringify(current));
 
 	for (var i = 0; i < Locations.find().count(); i++) {
+
 		// if the given Point is in the location, return the location
-		if (pointIncluded(Locations.find().fetch()[i].coordinates.coordinates[0],current))
-		{ return [Locations.find().fetch()[i], "in"]; }
+		if (pointIncluded(allLocations[i].coordinates.coordinates[0], current)) { 
+			return [allLocations[i], "in"]; 
+		}
 	}
 			
 	if (!locatedHere) {
@@ -75,13 +74,10 @@ searchLocations = function(current) {
 					}
 				}
 			}
-		});		
-		//console.log(nearestPoint.fetch());
+		});
 		var theNearest = nearestPoint.fetch()[0];
-		
 		var n = distance(current,{"x":theNearest.coordinate.coordinates[1],"y":theNearest.coordinate.coordinates[0]});
 		return [Locations.findOne({"name":theNearest.name}),"near",n];
-		
 	}
 }
 
