@@ -2,8 +2,8 @@ Meteor.startup(function() {
 	IntersectionsYX._ensureIndex({"coordinate":"2dsphere"});
 	CornerPoints._ensureIndex({"coordinate":"2dsphere"});
 	// __meteor_runtime_config__.ROOT_URL = "http://localhost:5000/";
-	console.log(__meteor_runtime_config__.ROOT_URL); 
-	console.log(__meteor_runtime_config__); 
+	// console.log(__meteor_runtime_config__.ROOT_URL); 
+	// console.log(__meteor_runtime_config__); 
 
 
 	// process.env.PORT = 5000;

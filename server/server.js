@@ -1,18 +1,15 @@
 pointIncluded = function(vertices, current) {
 	included = false;
 	numVert = vertices.length;
-
 	// create arrays of the x and y coordinates of the polygon
 	var xArray = [];
+	var yArray = [];
+
 	for (var i = 0; i < numVert; i++) {
 		xArray.push(vertices[i][0]);
-	}
-	
-	var yArray = [];
-	for (var i = 0; i < numVert; i++) {
 		yArray.push(vertices[i][1]);
 	}
-
+	
 	for (var i = 0, j = numVert - 1; i < numVert; j = i++) {
 		if ((yArray[i] >= current.y) != (yArray[j] >= current.y) &&
 			(current.x <= (xArray[j] - xArray[i]) * (current.y - yArray[i]) / (yArray[j] - yArray[i]) +xArray[i])) {
@@ -44,7 +41,6 @@ distance = function(start, end) {
 	var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 
 	var d = R * c;
-	//console.log(d);
 
 	return d;
 }
@@ -65,7 +61,7 @@ searchLocations = function(current) {
 	}
 			
 	if (!locatedHere) {
-		var nearestPoint = CornerPoints.find({
+		var theNearest = CornerPoints.findOne({
 			"coordinate":{
 				$near: {
 					$geometry: {
@@ -75,7 +71,7 @@ searchLocations = function(current) {
 				}
 			}
 		});
-		var theNearest = nearestPoint.fetch()[0];
+		// console.log(theNearest);
 		var n = distance(current,{"x":theNearest.coordinate.coordinates[1],"y":theNearest.coordinate.coordinates[0]});
 		return [Locations.findOne({"name":theNearest.name}),"near",n];
 	}
