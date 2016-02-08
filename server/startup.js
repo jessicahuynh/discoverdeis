@@ -5,7 +5,6 @@ Meteor.startup(function() {
 	console.log(__meteor_runtime_config__.ROOT_URL); 
 	console.log(__meteor_runtime_config__); 
 
-	MONGO_OPLOG_URL= "mongodb://dewar:dewartest@ds059135.mongolab.com:59135/heroku_416gbd2w"
 
 	// process.env.PORT = 5000;
 	// console.log(process.env.PORT)
@@ -13,7 +12,6 @@ Meteor.startup(function() {
 	// process.env.ROOT_URL
 	// process.env.MOBILE_ROOT_URL 
 	// process.env.MOBILE_DDP_URL
-	console.log("test");
 
 	
 	if (Locations.find().count() == 0) {
