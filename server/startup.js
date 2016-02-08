@@ -10,7 +10,7 @@ Meteor.startup(function() {
 	// process.env.ROOT_URL
 	// process.env.MOBILE_ROOT_URL 
 	// process.env.MOBILE_DDP_URL
-
+	console.log("test");
 
 	
 	if (Locations.find().count() == 0) {
