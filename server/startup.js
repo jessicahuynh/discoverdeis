@@ -160,32 +160,32 @@ Meteor.startup(function() {
 		});
 	}
 
-	if (Classes.find().count()==0){
-		course.forEach(function( course) {
-			Classes.insert(course);
-	})
+	// if (Classes.find().count()==0){
+	// 	course.forEach(function( course) {
+	// 		Classes.insert(course);
+	// })
 
-		instructor.forEach(function(instructor) {
-			Instructors.insert(instructor)
-		});
+	// 	instructor.forEach(function(instructor) {
+	// 		Instructors.insert(instructor)
+	// 	});
 
-		section.forEach(function(section) {
-			theCourse = Classes.findOne({ id: section.course});
-			if(theCourse != undefined) {
-				if( section.times[0] != undefined) {
-					//console.log(section.times[0]);
-					Classes.update({ id: section.course},
-						{ $set: {   "times": section.times[0],
-									"instructor": Instructors.findOne({id: section.instructors[0]}),
-						 		} 
-					});					
-				}
-			}
-		})
+	// 	section.forEach(function(section) {
+	// 		theCourse = Classes.findOne({ id: section.course});
+	// 		if(theCourse != undefined) {
+	// 			if( section.times[0] != undefined) {
+	// 				//console.log(section.times[0]);
+	// 				Classes.update({ id: section.course},
+	// 					{ $set: {   "times": section.times[0],
+	// 								"instructor": Instructors.findOne({id: section.instructors[0]}),
+	// 					 		} 
+	// 				});					
+	// 			}
+	// 		}
+	// 	})
 
-		//Remove all the classes without building fields
-		Classes.remove({"times.building": undefined})
-	}
+	// 	//Remove all the classes without building fields
+	// 	Classes.remove({"times.building": undefined})
+	// }
 
 
 	
