@@ -86,8 +86,8 @@ function applyIntent(intent,entities,mic) {
             $("#result").append(r);
             
             var loc = Locations.findOne({"name":Session.get("inLocation")[0].name});
-            Session.set("viewLocation",loc._id);
-            Router.go('/viewLocation/'+loc._id);
+            Session.set("viewLocation",loc.id);
+            Router.go('/viewLocation/'+loc.id);
         }
         else if (intent == "get_info_about_loc") {
             var loc = null;
@@ -107,8 +107,8 @@ function applyIntent(intent,entities,mic) {
                 speak();
                 $("#result").append(r);
                 
-                Session.set("viewLocation",loc._id);
-                Router.go('/viewLocation/'+loc._id);
+                Session.set("viewLocation",loc.id);
+                Router.go('/viewLocation/'+loc.id);
             }
             else {
                 clarifyLoc();
