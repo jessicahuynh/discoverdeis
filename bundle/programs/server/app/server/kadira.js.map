@@ -1,1 +1,0 @@
-{"version":3,"sources":["meteor://💻app/server/kadira.js"],"names":[],"mappings":"yBAAA,+D","file":"/server/kadira.js","sourcesContent":["Kadira.connect('fsJoaFXeffWFRx4JQ', '985f856b-d97c-4561-8993-e9daa34b9393');"]}
