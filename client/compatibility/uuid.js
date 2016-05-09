@@ -2,7 +2,8 @@ if (Session.get("uuid") == undefined || Session.get("uuid") == null || Session.g
 	var theID = uuid.v4();
 	theID = theID.split('-').join('_');
 	Session.setPersistent("uuid",theID);
+	console.log("Set persistent " + theID);
 }
 else {
-	//console.log(Session.get("uuid"));
+	console.log(Session.get("uuid"));
 }

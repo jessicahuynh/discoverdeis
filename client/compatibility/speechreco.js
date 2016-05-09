@@ -200,17 +200,19 @@ function startAudio() {
             
             applyIntent(intent,entities,mic);
         };
+        
         mic.onerror = function (err) {
             error("Error: " + err);
         };
+        
         mic.onconnecting = function () {
             info("Microphone is connecting");
         };
+        
         mic.ondisconnected = function () {
             info("Microphone is not connected");
         };
-    
-       
+    	
         // mic.start();
         //mic.stop();
     }
@@ -296,8 +298,6 @@ function navigateCommand(entities) {
            else {
                clarifyLoc();
            }            
-           
-           
        }
     }
     else {

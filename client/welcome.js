@@ -99,6 +99,26 @@ Template.welcome.events({
 		Session.set("navigateTo",document.getElementById("endpoint").value);
 		Router.go('/navigate');
 	},
+	'submit #doform':function(event) {
+		event.preventDefault();
+		
+		var inputText = document.getElementById("commandTxt").value;
+		
+		console.log("inputText", inputText);
+		
+		$.ajax({
+		  url: 'https://api.wit.ai/message',
+		  data: {
+		    'q': inputText,
+		    'access_token' : 'ANATOUXNLPGVGPTGWPN7RXQHFYYSPGPP'
+		  },
+		  dataType: 'jsonp',
+		  method: 'GET',
+		  success: function(response) {
+		      console.log("success!", response);
+		  }
+		});
+	},
 	'click #editCurrent':function(event) {
 		Session.set("navigateTo",document.getElementById("endpoint").value);
 	}
