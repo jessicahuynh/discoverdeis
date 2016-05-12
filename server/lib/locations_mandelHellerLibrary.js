@@ -123,12 +123,16 @@ locations_mandelHellerLibrary=[
 			[42.368118, -71.257811],
 			[42.368674, -71.257622]]
 		]},
-		"category":["academics"],
+		"category":["academics", "library"],
 		"function":"The Goldfarb Library is the main library on campus where students may access 30,000 electronic journals and 250 scholarly databases, group study rooms and computer tech support from Library Technology Services. It also houses university archives, special collections of rare books and manuscripts and its Judaica Collection of Jewish history, religious and cultural documents.",
 		"description": "Goldfarb/Farber Libraries house ever growing collections and reference resources in creative arts, humanities, government documents, Judaica, and social sciences. Research materials are extremely accessible to students due to the online availability of resources, and additional resources are made available through the Boston Library Consortium and the Interlibrary Loan system. The library offers services for students including a listening center, computer labs, study rooms, a media lab that helps students edit their films and soundtracks, as well as the Writing Center. The Writing Center assists students in all aspects of writing their papers, from brainstorming to editing. Recently, a new café was added to the Green Room section of the library.",
 		"entrances":["goldfarb_e01","goldfarb_e02", "library_ie01"],
 		"area":["upper campus","libraries"],
-		"nearby":["farber","usdan","chapelsfieldwetland","heller","schneider"]
+		"nearby":["farber","usdan","chapelsfieldwetland","heller","schneider"],
+		"telic" : ["to print", "to scan", "to study", "to borrow charger", "to fix laptop"],
+		"constitutive": ["writing center", "lts help desk", "technology services"],
+		"color" : ["red"],
+		"material" : ["brick"],
 	},
 	farber = {
 		"id":"farber",
@@ -258,7 +262,9 @@ locations_mandelHellerLibrary=[
 		"entrances":["kutz_e01","kutz_e02"],
 		"area":["upper campus"],
 		"function":"Kutz Hall houses offices for the Graduate School of Arts and Sciences, the registrar, and Conference and Events Services, as well as the International Students & Scholars Office and the Campus Card Office. The Graduate Student Center on the first floor gives students use of a day locker and a lounge/study site.",
-		"nearby":["gordon","usen","reitman","cable","usdan","shiffman","stop_rabb"]
+		"nearby":["gordon","usen","reitman","cable","usdan","shiffman","stop_rabb"],
+		"telic" : ["to get id card", "to drop class", "to add class", "transcript"],
+		"constitutive" : ["ISSO", "GSAS", "Graduate student center"]
 	},
 
 ]

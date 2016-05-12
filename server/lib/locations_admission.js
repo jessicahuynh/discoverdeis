@@ -22,7 +22,7 @@ locations_admission = [
 			[42.366627, -71.260942],
 			[42.366688, -71.260810]]
 		]},
-		"entrances":["shermanfunctionhall_e01","shermanfunctionhall_e02"]
+		"entrances":["shermanfunctionhall_e01","shermanfunctionhall_e02"],
 	},
 	admissions = {
 		"id":"admissions",
@@ -62,7 +62,12 @@ locations_admission = [
 		"category":["student life"],
 		"entrances":["scc_e01","scc_e02","scc_e03","scc_e04"],
 		"area":["lower campus"],
-		"nearby":["greatlawn","fellowsgarden","facultycenter","bernstein-marcus","gryzmish","irving"]
+		"nearby":["greatlawn","fellowsgarden","facultycenter","bernstein-marcus","gryzmish","irving"],
+		"telic" : ["to eat bagel", "to drink coffee"],
+		"constitutive" : ["bookstore", "computer cluster", "einstein bros coffee", "coffee shop",
+						"newspaper offices", "Student Union", "tickets", "theater"],
+		"color" : [ "green", "greenish", "copper"],
+		"shape": [ "angular" ],
 	},
 	{
 		"id":"fellowsgarden",

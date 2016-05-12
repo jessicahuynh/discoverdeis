@@ -18,7 +18,11 @@ locations_scienceComplex = [
 		"entrances":["volen_e01","volen_ie02","volen_ie03","feldberg_ie01", "volen_e02"],
 		"icrossings":["volen_ic01","volen_ic02", "volen_ic03"],
 		"nearby":["feldberg","gzang","goldsmith","chapelsfield"],
-		"area":["upper campus","science complex"]
+		"area":["upper campus","science complex"],
+		"telic" : ["to scan", "to print"],
+		"constitutive" : ["Computer science department", "linguistics program", "neuroscience department"],
+		"material" : ["brick"],
+		"structure" : ["four floors"],
 	},
 
 	bassine = {
