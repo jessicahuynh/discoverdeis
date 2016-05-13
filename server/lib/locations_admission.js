@@ -98,7 +98,7 @@ locations_admission = [
 		]},
 		"function": "The Great Lawn is a nice place to hangout with friends during great weather!",
 		"description":"The Great Lawn is one of students’ favorite expanses of green on campus. Here you will typically see students doing their homework, playing frisbee, or just catching some afternoon sunshine between classes. It is also the setting for our activities fair, which takes place at the beginning of each semester, when over 260 clubs recruit first-years and continuing undergrads to their groups.",
-		"category":["landscape"],
+		"category":["landscape", "lawn"],
 		"entrances":['scc_c07','scc_c08','scc_c09','scc_c10'],
 		"area":["lower campus"],
 		"nearby":["scc","admissions","facultycenter"]

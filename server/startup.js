@@ -13,7 +13,6 @@ Meteor.startup(function() {
 	// process.env.MOBILE_ROOT_URL 
 	// process.env.MOBILE_DDP_URL
 
-	
 	if (Locations.find().count() == 0) {
 		// list of all of the files containing location data
 		var locFiles = [

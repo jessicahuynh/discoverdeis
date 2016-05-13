@@ -19,6 +19,9 @@ function applyIntent(intent,entities,mic) {
     else {
        numAttempts = 0;
        switch ( intent ) {
+            case "set_current_loc" :
+                set_current_loc(r, entities);
+                break;
             case "search_for_loc":
                 search_for_loc(r, entities);
                 break;
@@ -64,6 +67,18 @@ function applyIntent(intent,entities,mic) {
     }
 }
 
+function set_current_loc(r, entities) {
+    console.log("entities", entities);
+    console.log("deis_loc", entities["deis_loc"]);
+    if (entities["deis_loc"] != undefined) {
+        var loc = Locations.findOne({"name":entities["deis_loc"].value});
+
+        if (loc != undefined) {
+            set_loc(loc, undefined);
+        }
+    }
+}
+
 function search_for_loc(r, entities) {
     var searchTerm;
     if (entities["deis_loc"] != undefined) {
@@ -101,44 +116,38 @@ function navigate_(r, entities) {
     r = "Navigating to ";
     var rSay = "Navigating to ";
     var disDestination = "";
-    console.log("entities end", entities["end"]);
-    console.log("name", entities["end"].value);
     if (entities["end"] != undefined) {
+        console.log("entities[end]", entities["end"]);
+        console.log("entities[end].value", entities["end"].value);
        disDestination = disambiguate(entities["end"].value);
+
        if (!disDestination) {
            // if the location is actually a location
            var loc = Locations.findOne({"name":entities["end"].value});
            if ( loc != undefined) {
-                if ( loc.telic != undefined ) {
-
-                    if (Session.get("inferred") == undefined) {
-                        Session.set("inferred", []);
-                    }
-
-                    var inferred_intents = Session.get("inferred");
-                    inferred_intents.push(loc.telic);
-                    Session.set("inferred", inferred_intents); 
-                } 
-               r += "<span class='said'>"+entities["end"].value+"</span>";
-               Session.set("navigateTo",entities["end"].value);
-               rSay += entities["end"].value;
-               numClarify = 0;
+                add_inferred_intent(loc);
+                r += "<span class='said'>"+entities["end"].value+"</span>";
+                Session.set("navigateTo",entities["end"].value);
+                rSay += entities["end"].value;
+                numClarify = 0;
            }
            else {
-               clarifyLoc();
+                clarifyLoc();
            }            
        }
     }
     else {
-       if (entities["deis_loc"] != undefined) {
-           //console.log(entities["deis_loc"]);
-           disDestination = disambiguate(entities["deis_loc"].value);
-           if (!disDestination) {
-               if (Locations.findOne({"name":entities["deis_loc"].value}) != undefined) {
-                   r += "<span class='said'>"+entities["deis_loc"].value+"</span>";
-                   Session.set("navigateTo",entities["deis_loc"].value);
-                   rSay += entities["end"].value;
-                   numClarify = 0;
+        if (entities["deis_loc"] != undefined) {
+            //console.log(entities["deis_loc"]);
+            disDestination = disambiguate(entities["deis_loc"].value);
+            if (!disDestination) {
+                var loc = Locations.findOne({"name":entities["deis_loc"].value});
+                if (loc != undefined) {
+                    add_inferred_intent(loc);
+                    r += "<span class='said'>"+entities["deis_loc"].value+"</span>";
+                    Session.set("navigateTo",entities["deis_loc"].value);
+                    rSay += entities["deis_loc"].value;
+                    numClarify = 0;
                }
                else {
                    clarifyLoc();
@@ -194,6 +203,21 @@ function navigate_(r, entities) {
              Router.go('/navigate');
         }  
     }
+}
+
+// loc is a Location entity
+function add_inferred_intent( loc ) {
+    if ( loc.telic != undefined ) {
+        if (Session.get("inferred") == undefined) {
+            Session.set("inferred", []);
+        }
+
+        var inferred_intents = Session.get("inferred");
+        inferred_intents.push(loc.telic);
+        Session.set("inferred", inferred_intents); 
+
+        console.log("inferred", inferred_intents);
+    } 
 }
 
 function navigate_back(r, entities ) {
@@ -311,6 +335,8 @@ function repeat_prev(r, entities) {
 }
 
 function park (r, entities) {
+    var history = Session.get("history");
+
     for (i = history.length - 1; i >= 0 ; i -- ) {
         var history_point = history[i];
 
@@ -318,8 +344,9 @@ function park (r, entities) {
             var location = history_point['loc'];
 
             if ( location.category.indexOf("parking") > -1 ) {
-                parking_entities = {"end": [{"type": "value", "value" : location.name}]};
-                navigate_(parking_entities);
+                console.log("location.name", location.name);
+                parking_entities = {"end": {"type": "value", "value" : location.name}};
+                navigate_(r, parking_entities);
                 break;
             }
         }
@@ -328,7 +355,7 @@ function park (r, entities) {
 
 function confirm_(r, entities) {
     if ( entities["on_off"] != undefined ) {
-        if (entities["on_off"].value == "yes") {
+        if (entities["on_off"].value == "on") {
             r = "You can do that here";
                             
             Session.set("micResponse", r);
@@ -336,7 +363,7 @@ function confirm_(r, entities) {
             speak();
         }
 
-        if (entities["on_off"].value == "no") {
+        if (entities["on_off"].value == "off") {
             r = "OK";
                             
             Session.set("micResponse", r);
@@ -347,31 +374,45 @@ function confirm_(r, entities) {
 }
 
 function feature_confirm(r, entities) {
+    var history = Session.get("history");
+
     for (i = history.length - 1; i >= 0 ; i -- ) {
-    var history_point = history[i];
+        var history_point = history[i];
 
-    var des = undefined;
+        var des = undefined;
 
-    if ( history_point["type"] == "mic" || history_point["type"] == "text") {
-        var past_intent = history_point['intent'];
-        var past_entities = history_point['entities'];
+        if ( history_point["type"] == "mic" || history_point["type"] == "text") {
+            var past_intent = history_point['intent'];
+            var past_entities = history_point['entities'];
 
-        if ( past_intent == 'navigate' || past_intent == 'navigate_back') {
-            des = past_entities["end"].value;
-            break;
+            if ( past_intent == 'navigate' || past_intent == 'navigate_back') {
+                if (past_entities["end"] != undefined) {
+                    des = past_entities["end"].value;
+                    break;
+                }
+                
+                if (past_entities["deis_loc"] != undefined) {
+                    des = past_entities["deis_loc"].value;
+                    break;
+                }
+            }
         }
     }
 
+    console.log("des", des);
     if ( des != undefined ) {
         var loc = Locations.findOne({"name":des});
 
         if ( entities["feature"] != undefined ) {
+            console.log("loc", loc);
             if ( loc != undefined ) {
                 var semantic_props = [loc.color, loc.shape, loc.material];
-                for (semantic_prop in semantic_props) {
-                    if ( loc.color != undefined ) {
-                        if ( loc.color.indexOf(entities["feature"].value) > -1 ) {
-                            feature_confirm_produce(r);
+                console.log("loc", semantic_props);
+                for ( i = 0 ; i < semantic_props.length ; i ++ ){
+                    semantic_prop = semantic_props[i];
+                    if ( semantic_prop != undefined ) {
+                        if ( semantic_prop.indexOf(entities["feature"].value) > -1 ) {
+                            feature_confirm_produce(r, true);
                             return;
                         } 
                     }
@@ -389,11 +430,13 @@ function feature_confirm(r, entities) {
                     }
 
                     if (loc.nearby != undefined) {
-                        for ( nearbyloc_name in loc.nearby) {
-                            var nearbyloc = Locations.findOne({"name":nearbyloc_name});
+                        for ( i = 0 ; i < loc.nearby.length ; i ++ ){
+                            var nearbyloc_name = loc.nearby[i];
+                            var nearbyloc = Locations.findOne({"id":nearbyloc_name});
 
-                            if (nearbyloc.category != undefined && nearbyloc.category.indexOf(general_location)) {
-                                feature_confirm_produce(r);
+
+                            if (nearbyloc!= undefined && nearbyloc.category != undefined && nearbyloc.category.indexOf(general_location) > -1) {
+                                feature_confirm_produce(r, true);
                                 return;
                             }
                         }
@@ -401,11 +444,17 @@ function feature_confirm(r, entities) {
                 }
             }
         }
+        feature_confirm_produce(r, false);
     }
 }
 
-function feature_confirm_produce(r) {
-    r = "That's the right one.";
+function feature_confirm_produce(r, confirm) {
+    if (confirm) {
+        r = "That's the right one.";    
+    } else {
+        r = "That is not the right one. Please follow the direction.";
+    }
+    
     Session.set("micResponse", r);
     speak();
 
@@ -481,7 +530,6 @@ function disambiguate_back (entity_str) {
 
                 if ( intent == 'navigate' ) {
                     for ( key in entities ) {
-
                         if (choices.indexOf(entities[key].value) > -1) {
                             return entities[key].value;
                         } 

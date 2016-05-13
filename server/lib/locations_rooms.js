@@ -25,6 +25,7 @@ locations_rooms = [
 			[42.363148, -71.260623]]
 		]},
 		"function":"Dunkin' sells donuts, coffee, and sandwiches.",
+		"telic" : "to drink coffee",
 		"description": "",
 		"category":["dining"],
 		"entrances":["dd_e01"],

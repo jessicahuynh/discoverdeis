@@ -1,5 +1,9 @@
 navigator.geolocation.watchPosition(function (position) {
-	var current = new Point(position.coords.latitude, position.coords.longitude);
+	var currentPosition = new Point(position.coords.latitude, position.coords.longitude);
+	changePosition(currentPosition);
+});
+
+function changePosition ( current ) {
 	Session.setPersistent("currentLocation", current);
 	
 	Meteor.call("searchLocations",
@@ -11,46 +15,9 @@ navigator.geolocation.watchPosition(function (position) {
 			else {
 				Session.setPersistent("inLocation",data);
 
+				var loc = data[0];
 
-				// History handling
-				history_point["loc"] = data[0];
-		      	history_point["coords"] = current;
-		      	history_point["type"] = "loc";
-
-		      	var history = Session.get("history");
-		      	history.push(history_point);
-		      	Session.set("history", history);
-
-		      	// Inferred intents handling
-		      	if (Session.get("inferred") == undefined) {
-                    Session.set("inferred", []);
-                }
-
-                var inferredIntents = Session.get("inferred");
-
-                var inferredIntentIndex = -1;
-                
-                for (i = inferredIntents.length - 1; i >= 0 ; i -- ) {
-		            var inferredIntent = inferredIntents[i];
-
-		            if ( data[0].telic != undefined ) {
-		            	if ( data[0].telic == inferredIntent ) {
-		            		var r = "Do you want " + data[0].telic;
-		            		
-		            		Session.set("micResponse", r);
-    						speak();
-    
-    						$("#result").append("<p>"+r+"</p>");
-
-    						inferredIntentIndex = i;
-    						break;
-		            	}
-		            }
-		        }
-
-		        if (inferredIntentIndex != -1) {
-		        	inferredIntents.splice(inferredIntentIndex, 1);
-		        }
+				set_loc(loc, current);
 			}
 		}	
 	);
@@ -63,8 +30,57 @@ navigator.geolocation.watchPosition(function (position) {
 	    //console.log("hide");
 		$("#permissionsAlert").hide();
 	}
-	
-});
+}
+
+function set_loc ( loc, current ) {
+	history_point = {};
+	// History handling
+	history_point["loc"] = loc;
+  	history_point["coords"] = current;
+  	history_point["type"] = "loc";
+
+  	if (Session.get("history") == undefined) {
+    	Session.set("history", []);
+    }
+
+  	var history = Session.get("history");
+  	history.push(history_point);
+  	Session.set("history", history);
+
+  	// Inferred intents handling
+  	if (Session.get("inferred") == undefined) {
+        Session.set("inferred", []);
+    }
+
+    var inferredIntents = Session.get("inferred");
+
+    var inferredIntentIndex = -1;
+
+    console.log("loc", loc);
+    console.log("loc.telic", loc.telic);
+
+    for (i = inferredIntents.length - 1; i >= 0 ; i -- ) {
+        var inferredIntent = inferredIntents[i];
+
+        if ( loc.telic != undefined ) {
+        	if ( loc.telic.indexOf(inferredIntent) > -1 ) {
+        		var r = "Do you want " + inferredIntent;
+        		
+        		Session.set("micResponse", r);
+				speak();
+
+				$("#result").append("<p>"+r+"</p>");
+
+				inferredIntentIndex = i;
+				break;
+        	}
+        }
+    }
+
+    if (inferredIntentIndex != -1) {
+    	inferredIntents.splice(inferredIntentIndex, 1);
+    }
+}
 
 function Point(x,y) {
 	this.x = x;

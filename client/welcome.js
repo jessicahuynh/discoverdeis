@@ -118,38 +118,37 @@ Template.welcome.events({
 		var history_point = {"input": inputText, "intent": "", "entities": "", "type": "text"};
 
 		$.ajax({
-		  url: 'https://api.wit.ai/message',
-		  data: {
-		    'q': inputText,
-		    'access_token' : 'ANATOUXNLPGVGPTGWPN7RXQHFYYSPGPP'
-		  },
-		  dataType: 'jsonp',
-		  method: 'GET',
-		  success: function(response) {
-		      console.log("success!", response);
+			url: 'https://api.wit.ai/message',
+			data: {
+				'q': inputText,
+				'access_token' : 'ANATOUXNLPGVGPTGWPN7RXQHFYYSPGPP'
+			},
+			dataType: 'jsonp',
+			method: 'GET',
+			success: function(response) {
+				console.log("success!", response);
 
-		      var intent = response.outcomes[0].intent;
-		      var entities = response.outcomes[0].entities;
-		      var new_entities = {}
-		      for (key in entities)
-		      {
-		      	new_entities[key] = entities[key][0];
-		      }	
+				var intent = response.outcomes[0].intent;
+				var entities = response.outcomes[0].entities;
+				var new_entities = {}
+				for (key in entities)
+				{
+					new_entities[key] = entities[key][0];
+				}	
 
+				history_point["intent"] = intent;
+				history_point["entities"] = new_entities;
+				history_point["type"] = "text";
 
-		      history_point["intent"] = intent;
-		      history_point["entities"] = new_entities;
-		      history_point["type"] = "text";
+				// Insert into meteor Session a new history checkpoint
+				var history = Session.get("history");
+				history.push(history_point);
+				Session.set("history", history);
 
-		      // Insert into meteor Session a new history checkpoint
-		      var history = Session.get("history");
-		      history.push(history_point);
-		      Session.set("history", history);
+				console.log("history", Session.get("history"))
 
-		      console.log("history", Session.get("history"))
-
-		      applyIntent(intent, new_entities, undefined);
-		  },
+				applyIntent(intent, new_entities, undefined);
+			},
 
 		  error: function(response) {
 		  	  console.log("error!");

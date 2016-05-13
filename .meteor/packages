@@ -17,7 +17,6 @@ mizzao:autocomplete
 jaywon:meteor-node-uuid
 sacha:spin
 maxharris9:meteor-bootstrap-slider
-standard-minifiers
 meteor-base
 mobile-experience
 mongo
@@ -35,3 +34,5 @@ mdg:geolocation
 meteorhacks:kadira
 ground:db
 fastclick
+standard-minifier-css
+standard-minifier-js
