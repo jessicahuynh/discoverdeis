@@ -59,21 +59,11 @@ Template.footer.events({
           console.log('Finished in ' + event.elapsedTime + ' seconds.');
         };
         window.speechSynthesis.speak(msg);
+    },
+    'click #type': function(event) {
+        event.preventDefault();
         
-        // var urlParams = "appId="+"NMDPTRIAL_jhuynh37_brandeis_edu20150715174130"+
-        //     "&appKey="+"0577e997323eb999dfebfc826efbe3a796469a473745048dc95945bdf2b721f72e0b8e614947fa2832f6aba1f28e4888d4e2d00c27d499f12ddeae1f95cf16c4"+
-        //     "&id="+Session.get("uuid")+
-        //     "&ttsLang="+"en-US";
-
-        // $.ajax({
-        //    type:"POST",         
-        //    url:"http://sandbox.nmdp.nuancemobility.net:443/NMDPTTSCmdServlet/tts?"+urlParams,
-        //    data:"Hello! Volen is great!",
-        //    headers:{
-        //        "Content-Type":"text/plain",
-        //        "Accept":"audio-xwav"
-        //    }
-        // });
+        $('#typeText').toggle('slow');    
     },
     'click .wit-microphone':function(event){
         event.preventDefault();
@@ -104,54 +94,71 @@ Template.footer.events({
     },
     'click #close-popover':function(event) {
         event.preventDefault();
-        $("#speechText").toggle("slow");
+        $("#speechText").toggle("medium");
+    },
+    'click #close-text-popover':function(event) {
+        event.preventDefault();
+        $("#typeText").toggle("medium");
+    },
+    'submit #typedInputForm':function(event) {
+        event.preventDefault();
+		
+		var inputText = document.getElementById("typedInput").value;
+		
+		console.log("inputText", inputText);
+
+		if (Session.get("history") == undefined) {
+        	Session.set("history", []);
+        }
+
+		// Create history for session if not yet defined
+		console.log("history", Session.get("history"));
+
+		
+		var history_point = {"input": inputText, "intent": "", "entities": "", "type": "text"};
+
+		$.ajax({
+			url: 'https://api.wit.ai/message',
+			data: {
+				'q': inputText,
+				'access_token' : 'ANATOUXNLPGVGPTGWPN7RXQHFYYSPGPP'
+			},
+			dataType: 'jsonp',
+			method: 'GET',
+			success: function(response) {
+				console.log("success!", response);
+
+				var intent = response.outcomes[0].intent;
+				var entities = response.outcomes[0].entities;
+				var new_entities = {}
+				for (key in entities)
+				{
+					new_entities[key] = entities[key][0];
+				}	
+
+				history_point["intent"] = intent;
+				history_point["entities"] = new_entities;
+				history_point["type"] = "text";
+
+				// Insert into meteor Session a new history checkpoint
+				var history = Session.get("history");
+				history.push(history_point);
+				Session.set("history", history);
+
+				console.log("history", Session.get("history"))
+
+				applyIntent(intent, new_entities, undefined);
+            },
+  		    error: function(response) {
+		  	  console.log("error!");
+
+		  	  // Insert into meteor Session a new history checkpoint
+		      var history = Session.get("history");
+		      history.push(history_point);
+		      Session.set("history", history);
+		    }
+        });
     }
-    // 'click #voiceInputButton':function(event) {
-    //     navigator.getUserMedia = (navigator.getUserMedia || 
-    //                       navigator.webkitGetUserMedia || 
-    //                       navigator.mozGetUserMedia || 
-    //                       navigator.msGetUserMedia);
-    //     if (navigator.getUserMedia) {
-    //         navigator.getUserMedia(
-    //             {
-    //                video:false,
-    //                audio:true
-    //             },        
-    //             function(stream) {
-    //                 audioStream = stream;
-    //                 if (Session.get("runningMic")) {
-    //                     audioStream.stop();
-    //                     Session.set("runningMic",false);
-    //                 }
-    //                 else {
-    //                     Session.set("runningMic",true);
-                        
-    //                     $.ajax({
-    //                       url: 'https://api.wit.ai/message?v=20150706',
-    //                       beforeSend:function(xhr) {
-    //                         xhr.sendRequestHeader("Authorization","Bearer H45QGNEGXISKGZ33CRCW3Q6XFBOMM4JC");
-    //                         xhr.sendRequestHeader("Content-Type","audio/mpeg3");
-    //                       },
-    //                       data:stream,
-    //                       dataType: 'binary',
-    //                       method: 'XPOST',
-    //                       success: function(response) {
-    //                           console.log("success!", response.outcomes[0]);
-    //                           Session.set("voiceInputText",response.outcomes[0]._text);
-    //                       }
-    //                     });
-    //                 }
-    //             },
-    //             function(error) { 
-    //                 console.log("something went wrong!");
-    //             }
-    //          );
-    //       }
-    //       else {
-    //          alert('Sorry, the browser you are using doesn\'t support getUserMedia');
-    //          return;
-    //       }
-    // }
 });
 
 Template.footer.rendered = function() {

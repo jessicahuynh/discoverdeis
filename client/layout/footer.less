@@ -28,7 +28,7 @@ footer {
     margin-bottom:0;
   }
   
-  #listenBox {
+  #listenBox, #typeBox {
     display:inline-block;
     
     a {
@@ -46,7 +46,7 @@ footer {
   }
   
   @media (max-width:768px) {
-    #listenBox {
+    #listenBox, #typeBox {
       bottom:0;
       a {
         color:@off-white;
@@ -94,7 +94,7 @@ footer {
   }
 }
 
-#speechText {
+#speechText, #typeText {
     display:none;
     position:fixed;
     right:20px;
@@ -117,7 +117,7 @@ footer {
       color:#FF8906;
     }
     
-    #close-popover {
+    #close-popover, #close-text-popover {
       color:@off-white;
       font-size:150%;
       border:0;
@@ -130,7 +130,7 @@ footer {
 }
 
 @media (max-width:768px) {
-    #speechText {
+    #speechText, #typeText {
       right:0;
       bottom:50px;
       width:100%;
