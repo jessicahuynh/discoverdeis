@@ -100,6 +100,22 @@ Template.footer.events({
         event.preventDefault();
         $("#typeText").toggle("medium");
     },
+    'click .v-roleButton':function(event) {
+        event.preventDefault();
+        Session.set("userRole","visitor");
+        console.log('visitor');
+    },
+    'click .s-roleButton':function(event) {
+        event.preventDefault();
+        Session.set("userRole","student");
+        console.log('student');
+    },
+    'click .roleButton':function(event) {
+        event.preventDefault();
+                
+        $("#firstVisit").hide();
+        $("#textDialog").append("Great! Try typing something!");
+    },
     'submit #typedInputForm':function(event) {
         event.preventDefault();
 		
@@ -163,6 +179,10 @@ Template.footer.events({
 
 Template.footer.rendered = function() {
     startAudio();
+    
+    if (Session.get("userRole") != undefined) {
+        $("#firstVisit").css("display","none");
+    }
     
     if (window.SpeechSynthesisUtterance === undefined) {
         $("#listenBox").css("display","none");
