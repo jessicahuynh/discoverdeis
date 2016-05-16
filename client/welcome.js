@@ -100,6 +100,7 @@ Template.welcome.events({
 		Session.set("navigateTo",document.getElementById("endpoint").value);
 		Router.go('/navigate');
 	},
+
 	'submit #doform':function(event) {
 		event.preventDefault();
 		

@@ -98,9 +98,11 @@ function kv(k, v) {
 }
 
 function speak() {
-    var msg = new SpeechSynthesisUtterance(Session.get("micResponse"));
-    msg.rate = parseFloat(Session.get("rate"));
-    msg.lang = 'en-US';
-    window.speechSynthesis.speak(msg);
+    if (window.SpeechSynthesisUtterance != null) {
+        var msg = new SpeechSynthesisUtterance(Session.get("micResponse"));
+        msg.rate = parseFloat(Session.get("rate"));
+        msg.lang = 'en-US';
+        window.speechSynthesis.speak(msg);
+    }
 }
 

@@ -9,6 +9,9 @@
 			<div id="listenBox">
 				<a href="#" class="btn btn-default btn-lg" id="listen"><span class="glyphicon glyphicon-volume-up"></span></a>
 			</div>
+			<div id="typeBox">
+				<a href="#" class="btn btn-default btn-lg" id="type"><span class="glyphicon glyphicon-text-size"></span></a>
+			</div>
 			<div id="micBox">
 				<div id="microphone"></div>
 			</div>
@@ -26,5 +29,22 @@
 	</div>
 	<!--<span>{{voiceInput}}</span>
 	<button id="voiceInputButton">Speak</button>-->
+</div>
+<div id="typeText">
+	<div class="popover-content">
+		<button id="close-text-popover" aria-label="Close" class="pull-right">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+		<form id="firstVisit">
+			Welcome! Who are you?<br>
+			<input type="button" class="btn btn-primary v-roleButton roleButton" value="Visitor">
+			<input type="button" class="btn btn-primary s-roleButton roleButton" value="Student">
+		</form>
+		<div id="textDialog">
+		</div>
+		<form id="typedInputForm">
+			<input id="typedInput" class="form-control input" placeholder="what do you do?">
+		</form>
+	</div>
 </div>
 </template>
