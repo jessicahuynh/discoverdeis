@@ -131,6 +131,9 @@ Template.welcome.events({
 				var intent = response.outcomes[0].intent;
 				var entities = response.outcomes[0].entities;
 				var new_entities = {}
+
+				// Only select one entity if two entities of the same role return
+				// Select the first entity only
 				for (key in entities)
 				{
 					new_entities[key] = entities[key][0];
