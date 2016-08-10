@@ -1,3 +1,7 @@
 {
-    "initURL" : "http://brandeis.discovercampus.org/"
+  "galaxy.meteor.com": { 
+     "env": { 
+       "MONGO_URL": "mongodb://dev:applejacks@ds153845.mlab.com:53845/discoverdeis" 
+     } 
+   }
 }
