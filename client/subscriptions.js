@@ -15,3 +15,5 @@ Meteor.subscribe("theHours");
 Meteor.subscribe("theClasses");
 
 Meteor.subscribe("theInstructors");
+
+Meteor.subscribe("theShuttles");

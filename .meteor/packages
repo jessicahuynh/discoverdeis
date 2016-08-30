@@ -36,3 +36,6 @@ ground:db
 fastclick@1.0.12
 standard-minifier-css
 standard-minifier-js
+http
+autopublish
+insecure

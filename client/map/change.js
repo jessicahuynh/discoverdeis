@@ -14,6 +14,10 @@
 //listenTo
 //inLocation
 
+
+
+
+
 count = 0;
 Session.set("countPrev",count);
 Session.set("countNext",count);
@@ -126,8 +130,27 @@ Template.change.onCreated(function () {
 	routesForStep = [];
 	startstop = null;
 	laststop = null;
-	GoogleMaps.load();
+
+	GoogleMaps.load({ v: '3', key: '', libraries: 'geometry,places' });
 	GoogleMaps.ready('naviMap',function(map) {
+	
+
+	var arr = google.maps.geometry.encoding.decodePath("gkqaGft|qLGM");
+	var two = google.maps.geometry.encoding.decodePath("gkqaGft|qLYX");
+	
+
+	var poly = new google.maps.Polyline({
+	path: two,
+    strokeColor: '#FF0000',
+    strokeOpacity: 1.0,
+    strokeWeight: 2,
+	map: map.instance
+  });
+
+	
+
+		poly.setMap(map.instance)
+		
 		var markerStart = new google.maps.Marker({
 			position: new google.maps.LatLng(Session.get("currentLocation").x, Session.get("currentLocation").y),
 			icon: '/GoogleMapsMarkers/green_MarkerA.png',
@@ -580,6 +603,8 @@ function getStepDescription(route) {
 	Console.log(r);
 	Session.set("listenTo",r);
 }
+
+
 function Point(x,y) {
 	this.x = x;
 	this.y = y;

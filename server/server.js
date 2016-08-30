@@ -78,6 +78,77 @@ searchLocations = function(current) {
 }
 
 
+const transLocRange = "42.377974, -71.230773|42.358200,-71.265297";
+const transLocAgencyId = "483";
+const apiKey = "hXZwntEpaZmshEJQIfoOujsCsDNBp1Qp8ypjsn3fdKn2fIPouS";
+const url = "https://transloc-api-1-2.p.mashape.com/routes.json";
+const urlSegment = "https://transloc-api-1-2.p.mashape.com/segments.json";
+
+transLocAPI = function(){
+HTTP.call("GET", url, {
+	params: {
+		"agencies": transLocAgencyId,
+		"callback": "call",
+		"geo_area": transLocRange,
+	},
+	headers: {
+		"X-Mashape-Key": apiKey
+	}
+
+}, function(err, resp) {
+	if(!err) {
+		console.log("success, TRANS Loc Api Accessed")
+		var result = JSON.parse(resp.content);
+
+		var first = Object.keys(result.data)[0];
+		
+		result.data[first].forEach( function(element, index) {
+			if(index == 1) {
+				getSegment(element)
+			}
+		});
+	} else {
+		console.log( err );
+	}
+})
+
+
+getSegment = function(element) {
+	// var route = element.segments.filter(isForwardDirection).map(function(i) {
+	// 	return i[0];
+	// }).join();
+	// console.log(route);
+	console.log(element.route_id);
+	HTTP.call("GET", urlSegment, {
+		params: {
+		"agencies": transLocAgencyId,
+		"callback": "call",
+		"geo_area": transLocRange,
+		"routes": element.route_id,
+	},
+	headers: {
+		"X-Mashape-Key": apiKey
+	}
+
+	}, function(err, resp) {
+		if(!err) {
+			console.log("success, got segments")
+			var result = JSON.parse(resp.content);
+			console.dir(result);
+		} else {
+			console.log(err)
+		}
+
+	})
+}
+
+
+function isForwardDirection(isForward) {
+    return isForward[1] ==  "forward";
+}
+
+}
+
 Meteor.methods({
 	/* numVert: number of vertices
 	 * vertices: array of vertices
@@ -93,7 +164,9 @@ Meteor.methods({
 
 	/* returns the distance between two points 
 	* adapted from http://www.movable-type.co.uk/scripts/latlong.html */
-	distance: distance
+	distance: distance,
+
+	transLocAPI: transLocAPI
 
 	
 

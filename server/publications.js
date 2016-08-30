@@ -13,3 +13,5 @@ Meteor.publish("theMap",function() {return Map.find()});
 Meteor.publish("theHours",function() {return Hours.find()});
 
 Meteor.publish("theClasses",function() {return Classes.find()})
+
+Meteor.publish("theShuttles",function() {return Shuttles.find()})
