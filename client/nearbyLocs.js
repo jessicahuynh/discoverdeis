@@ -8,7 +8,7 @@ Template.nearbyLocs.helpers({
 			else {
 				return loc.name;
 			}
-			
+
 		}
 		else {
 			return "N/A";
@@ -55,7 +55,7 @@ Template.nearbyLocs.helpers({
 Template.nearbyLocs.events({
 	'click .visitnearby':function(event) {
 		event.preventDefault();
-		
+
 		// save current page to go back to
 		var currentPage = Router.current().route.path();
 		if (currentPage == "/selfguide") {
@@ -64,12 +64,12 @@ Template.nearbyLocs.events({
 		else {
 			Session.set("prev","/locationList");
 		}
-		
+
 		var loc = Locations.findOne({"id":JSON.stringify(this).replace(/"([^"]+(?="))"/g, '$1')});
-		
-		
+
+
 		Session.set("thisLoc",loc);
-		
+
 		Session.set("pageTitle","Viewing " + loc.nickname);
 		Router.go("/viewLocation/"+loc.id);
 	}

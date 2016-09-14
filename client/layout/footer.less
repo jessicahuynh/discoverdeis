@@ -9,7 +9,7 @@ footer {
   max-height:90px;
   background-color:transparent;
   z-index:5000;
-  
+
   #audioBox {
     position:absolute;
     bottom:0;
@@ -17,20 +17,20 @@ footer {
     float:right;
     width:auto;
     max-height:60px;
-    
-    div { 
+
+    div {
       float:left;
     }
   }
-  
+
   #micBox {
     display:inline-block;
     margin-bottom:0;
   }
-  
+
   #listenBox {
     display:inline-block;
-    
+
     a {
       border:0;
       background-color:transparent;
@@ -44,7 +44,7 @@ footer {
       font-size:1.6em;
     }
   }
-  
+
   @media (max-width:768px) {
     #listenBox {
       bottom:0;
@@ -56,11 +56,11 @@ footer {
       }
     }
   }
-  
+
   div#info {
     display:none;
   }
-  
+
   /* override mic styles */
   .wit-microphone .mic {
     border:none;
@@ -74,68 +74,68 @@ footer {
     height:50px;
     color:@off-white;
     border:0;
-    
+
     // #listenBox {
     //   right:3.5em;
     // }
-    
+
     #micBox {
       margin:0;
       padding:0;
       // right:0;
       bottom:0;
     }
-    
+
     .wit-microphone .icon-wit-mic {
       color:@off-white;
     }
-    
-   
+
+
   }
 }
 
 #speechText {
-    display:none;
-    position:fixed;
-    right:20px;
-    bottom:75px;
-    width:320px;
-    min-height:6em;
-    border: 1px solid rgba(0, 0, 0, .2);
-    border-radius: 0;
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-    z-index:450;
-    background:@dark-blue;
+  display:none;
+  position:fixed;
+  right:20px;
+  bottom:75px;
+  width:320px;
+  min-height:6em;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 0;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  z-index:450;
+  background:@dark-blue;
+  color:@off-white;
+
+  span.said {
+    color:@reddish;
+  }
+
+  span.arg {
+    color:#FF8906;
+  }
+
+  #close-popover {
     color:@off-white;
-    
-    span.said {
-      color:@reddish;
-    }
-    
-    span.arg {
-      color:#FF8906;
-    }
-    
-    #close-popover {
-      color:@off-white;
-      font-size:150%;
-      border:0;
-      background-color:transparent;
-    }
-    
-    small {
-      color:@off-white;
-    }
+    font-size:150%;
+    border:0;
+    background-color:transparent;
+  }
+
+  small {
+    color:@off-white;
+  }
 }
 
 @media (max-width:768px) {
-    #speechText {
-      right:0;
-      bottom:50px;
-      width:100%;
-      border:0;
-    }
+  #speechText {
+    right:0;
+    bottom:50px;
+    width:100%;
+    border:0;
+  }
 }
 
 
@@ -151,39 +151,39 @@ div#microphone {cursor:pointer;}
 
 /* CURRENT LOC BLOCK */
 #currentLoc {
-    position:fixed;
-    bottom:0;
-    left:0;
-    width:270px;
-    
-    a {
-      color:@off-white;
-      display:block;
-      width:100%;
-      padding:1em;
-      padding-left:17px;
-      
-      small {
-        color:@gray-white;
-      }
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:270px;
+
+  a {
+    color:@off-white;
+    display:block;
+    width:100%;
+    padding:1em;
+    padding-left:17px;
+
+    small {
+      color:@gray-white;
     }
-    a:hover, a:focus, a:active {
-      color:@dark-blue;
-      background-color:@off-white;
-      text-decoration:none;
-      
-      small {
-        color:@deis-blue;
-      }
+  }
+  a:hover, a:focus, a:active {
+    color:@dark-blue;
+    background-color:@off-white;
+    text-decoration:none;
+
+    small {
+      color:@deis-blue;
     }
+  }
 }
 
 
 
 @media (max-width:768px) {
-   #currentLoc {     
-      width:auto;
-      padding:0;
-      height:50px;
-    }
+  #currentLoc {
+    width:auto;
+    padding:0;
+    height:50px;
+  }
 }

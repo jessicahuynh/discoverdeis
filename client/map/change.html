@@ -1,107 +1,107 @@
 <template name="change">
-<h1 class="page-header">Navigate</h1>
+    <h1 class="page-header">Navigate</h1>
 
-<div class="row">
-	<div class="tab-content" id="navpanels">
-		<div id="loadingPanel">
-			{{> loading}}
-		</div>		
-		<div class="col-sm-12" id="container1">
-			<form id="navform" name="navform">
-				<!-- start -->
-				<div class="form-group col-xs-5">
-					<!-- <label for="startpoint">Start</label> -->
-					{{> inputAutocomplete settings=settings id="startpoint" class="form-control" placeholder="starting location"
-					value=startLoc }}
-					<div class="getCurrentContainer">
-						<a id="getCurrentLoc" href="#">
-							<span class="glyphicon glyphicon-map-marker"></span>&nbsp;Use  current location
-						</a>
-					</div>
-				</div>
+    <div class="row">
+        <div class="tab-content" id="navpanels">
+            <div id="loadingPanel">
+                {{> loading}}
+            </div>
+            <div class="col-sm-12" id="container1">
+                <form id="navform" name="navform">
+                    <!-- start -->
+                    <div class="form-group col-xs-5">
+                        <!-- <label for="startpoint">Start</label> -->
+                        {{> inputAutocomplete settings=settings id="startpoint" class="form-control" placeholder="starting location"
+                        value=startLoc }}
+                        <div class="getCurrentContainer">
+                            <a id="getCurrentLoc" href="#">
+                                <span class="glyphicon glyphicon-map-marker"></span>&nbsp;Use  current location
+                            </a>
+                        </div>
+                    </div>
 
-				<!-- change start and destination -->
-				<div class="form-group col-xs-1">
-					<button
-					type="click" id="exchangeButton" name="exchangeButton" class="btn btn-primary">
-						<span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>
-					</button>
-				</div>
+                    <!-- change start and destination -->
+                    <div class="form-group col-xs-1">
+                        <button
+                                type="click" id="exchangeButton" name="exchangeButton" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>
+                        </button>
+                    </div>
 
-				<!-- destination -->
-				<div class="form-group col-xs-5">
-					<!-- <label for="endpoint">End</label> -->
-					{{> inputAutocomplete settings=settings id="endpoint" class="form-control" placeholder="destination" value=endLoc}}
-					<div class="getCurrentContainer">
-						<p>{{routeEstimate}}</p>
-					</div>
-				</div>
-				<!-- start button -->
-				<div class="form-group col-xs-1">
-					<button
-					type="submit" id="routeButton" name="routeButton" class="btn btn-primary">
-						<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
-					</button>
-				</div>
-			</form>
-		</div>
-						
-		<div id="container2">
-			<!-- map -->
-			<div role="tabpanel" class="tab-pane col-sm-12" id="mapPane">
-				<div id="map-nav" style="height:500px">{{> googleMap name="naviMap" options=naviMapOptions}}</div>
-			</div>
-			<!-- description -->
-			<div class="panel-group  col-sm-12" id="routePane">
-			    <div class="panel">
-			    	<div>
-			    		<!-- previous button -->
-						<div role="tabpanel" class="tab-pane " id="prevStep"> 
-							<a href="#">
-								<span class="glyphicon glyphicon-chevron-left" 
-								style="font-size: 20px;"></span>
-							</a>
-						</div>
+                    <!-- destination -->
+                    <div class="form-group col-xs-5">
+                        <!-- <label for="endpoint">End</label> -->
+                        {{> inputAutocomplete settings=settings id="endpoint" class="form-control" placeholder="destination" value=endLoc}}
+                        <div class="getCurrentContainer">
+                            <p>{{routeEstimate}}</p>
+                        </div>
+                    </div>
+                    <!-- start button -->
+                    <div class="form-group col-xs-1">
+                        <button
+                                type="submit" id="routeButton" name="routeButton" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
 
-				      	<div class="panel-heading  col-sm-12" id="currentStep">			
-							<!-- current step description -->
-							<div role="tabpanel" class="panel-title col-sm-12" id="descriptionText"> 
-								{{currentDescription}}
-							</div>
-						</div>
+            <div id="container2">
+                <!-- map -->
+                <div role="tabpanel" class="tab-pane col-sm-12" id="mapPane">
+                    <div id="map-nav" style="height:500px">{{> googleMap name="naviMap" options=naviMapOptions}}</div>
+                </div>
+                <!-- description -->
+                <div class="panel-group  col-sm-12" id="routePane">
+                    <div class="panel">
+                        <div>
+                            <!-- previous button -->
+                            <div role="tabpanel" class="tab-pane " id="prevStep">
+                                <a href="#">
+								<span class="glyphicon glyphicon-chevron-left"
+                                      style="font-size: 20px;"></span>
+                                </a>
+                            </div>
 
-						<!-- next button -->
-						<div role="tabpanel" class="tab-pane " id="nextStep"> 
-							<a href="#">
+                            <div class="panel-heading  col-sm-12" id="currentStep">
+                                <!-- current step description -->
+                                <div role="tabpanel" class="panel-title col-sm-12" id="descriptionText">
+                                    {{currentDescription}}
+                                </div>
+                            </div>
+
+                            <!-- next button -->
+                            <div role="tabpanel" class="tab-pane " id="nextStep">
+                                <a href="#">
 								<span class="glyphicon glyphicon-chevron-right"
-								style="font-size: 20px;"></span>
-							</a>
-						</div>
-					</div>
+                                      style="font-size: 20px;"></span>
+                                </a>
+                            </div>
+                        </div>
 
-			      	<div id="collapse1" class="panel-collapse collapse">
-			        	<ul class="list-group" id="descriptionList">
-			        		&nbsp;
-			        		{{#each stops}}
-			          			<li class="list-group-item">
-			          				{{stopDescription}}
-			          			</li>
-			        		{{/each}}
-			        	</ul>			        		
-			      	</div>
-			      	<div class="col-sm-12">
-			        	<a data-toggle="collapse" href="#collapse1">
-			          		<center><span class="glyphicon glyphicon-chevron-down" aria-hidden="true" vertical-align="middle"></span></center>
-			        	</a >
-			     	</div>
-			    </div>
-			</div>			
-		</div>		
-	</div>	
-</div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <ul class="list-group" id="descriptionList">
+                                &nbsp;
+                                {{#each stops}}
+                                    <li class="list-group-item">
+                                        {{stopDescription}}
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                        <div class="col-sm-12">
+                            <a data-toggle="collapse" href="#collapse1">
+                                <center><span class="glyphicon glyphicon-chevron-down" aria-hidden="true" vertical-align="middle"></span></center>
+                            </a >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </template>
 
 <template name="suggestions">
-	<span class="label">{{nickname}} <small class="muted">{{name}}</small></span>
+    <span class="label">{{nickname}} <small class="muted">{{name}}</small></span>
 </template>

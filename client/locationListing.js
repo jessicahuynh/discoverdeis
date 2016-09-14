@@ -20,10 +20,10 @@ Template.locationListing.helpers({
 				openPeriod+= ","+sH+":"+sM+"-"+eH+":"+eM;
 			}
 			console.log("period :"+openPeriod);
-	
+
 			var h=new Date().getHours();
 			var m=new Date().getMinutes();
-			
+
 			eachPeriod(0);
 			var state=stateF(h,m,sH,sM,eH,eM);
 			if(!state){
@@ -35,7 +35,7 @@ Template.locationListing.helpers({
 							eachPeriod(8);
 							state=stateF(h,m,sH,sM,eH,eM);
 						}
-					} 
+					}
 				}
 			}
 			return openPeriod;
@@ -50,7 +50,7 @@ Template.locationListing.events({
 	'click a.go-to-location':function(event) {
 		Session.set("viewLocation",this.id);
 		Session.set("thisLoc",this);
-		
+
 		Session.set("prev","/locationList");
 	},
 	'click a.go-to-navigate':function(event) {

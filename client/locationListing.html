@@ -1,13 +1,13 @@
 <template name="locationListing">
-	<div class="locationListing row">
-		<a class="go-to-location col-xs-10" href="/viewLocation/{{locationId}}">
-			<div class="inside-info">
-				<h4 class="list-group-item-heading">{{nickname}} ({{name}}) 
-					<small>{{status}}</small></h4>
-				<p class="list-group-item-text">{{function}}</p>
-				<!-- <p class="list-group-item-text"><strong>Category:</strong> {{category}}</p> -->
-			</div>
-		</a>
-		<a class="go-to-navigate col-xs-2" href="{{pathFor 'change'}}"><div class="inside-location"><span class="glyphicon glyphicon-send"></span><br />Go!</div></a>	
-	</div>
+    <div class="locationListing row">
+        <a class="go-to-location col-xs-10" href="/viewLocation/{{locationId}}">
+            <div class="inside-info">
+                <h4 class="list-group-item-heading">{{nickname}} ({{name}})
+                    <small>{{status}}</small></h4>
+                <p class="list-group-item-text">{{function}}</p>
+                <!-- <p class="list-group-item-text"><strong>Category:</strong> {{category}}</p> -->
+            </div>
+        </a>
+        <a class="go-to-navigate col-xs-2" href="{{pathFor 'change'}}"><div class="inside-location"><span class="glyphicon glyphicon-send"></span><br />Go!</div></a>
+    </div>
 </template>

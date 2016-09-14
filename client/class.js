@@ -2,7 +2,7 @@ Template.class.helpers({
 	course:function(){
 		console.log(this)
 		console.log(this.name)
-		return Classes.find({"times.building": this.name}, {sort: { "code": 1}}).fetch(); 
+		return Classes.find({"times.building": this.name}, {sort: { "code": 1}}).fetch();
 	},
 
 	instructor:function() {
@@ -63,7 +63,7 @@ function makeDateString(arr) {
 	var str = ""
 	if(arr[0] == 1)
 		str = str + " m "
-	if(arr[1] == 1) 
+	if(arr[1] == 1)
 		str = str + " tu "
 	if (arr[2] == 1)
 		str = str + " w "

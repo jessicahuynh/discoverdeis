@@ -20,12 +20,12 @@ Template.selfguide.rendered = function() {
 };
 
 Tracker.autorun(function() {
-	setAudio(Session.get("inLocation")[0]);	
+	setAudio(Session.get("inLocation")[0]);
 });
 
 function setAudio(loc) {
 	var listen = loc.name + ". " + loc.function;
-	
+
 	// var nearbyS = " Nearby we have ";
 	// if (loc.nearby != undefined || loc.nearby != null) {
 	// 	if (loc.nearby.length > 1) {
@@ -39,8 +39,8 @@ function setAudio(loc) {
 	// 	}
 	// 	listen += nearbyS;	
 	// }
-	
-	
-	
+
+
+
 	Session.set("listenTo",listen);
 }

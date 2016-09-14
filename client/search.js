@@ -6,9 +6,9 @@ Locations.initEasySearch(['name','nickname','function','category'],
 
 Template.search.helpers({
 	searchTerm:function(){
-		
+
 		displayVoiceSearchResults();
-		
+
 		return Session.get("searchTerm");
 	}
 });
@@ -28,36 +28,36 @@ Template.voiceResults.helpers({
 
 Template.search.events({
 	'click #locations':function(event) {
-        if ($(window).width() > 768 && !Session.get("boxClosed")) {
-           searchShow();
-        }
-        else {
-           if ($("#searchForm").css("display") == "none") {
-                $("#searchForm").toggle();
-                $("#searchBox").focus();
-           }
-           else {
-                $("#searchForm").toggle();
-           }
-        }
-    }
+		if ($(window).width() > 768 && !Session.get("boxClosed")) {
+			searchShow();
+		}
+		else {
+			if ($("#searchForm").css("display") == "none") {
+				$("#searchForm").toggle();
+				$("#searchBox").focus();
+			}
+			else {
+				$("#searchForm").toggle();
+			}
+		}
+	}
 })
 
 function searchShow() {
-    $("#searchBox").toggle("slow").focus();
-    Session.set("boxClosed",true);
+	$("#searchBox").toggle("slow").focus();
+	Session.set("boxClosed",true);
 }
 
 function displayVoiceSearchResults() {
 	if (Session.get("searchTerm") != "") {
 		EasySearch.search('locations', Session.get("searchTerm"), function (err, data) {
-		    	if (err) {
-					console.log(err);
-				}
-				else {
-					console.log(data.results);
-					Session.set("vresults",data.results);
-				}
+			if (err) {
+				console.log(err);
+			}
+			else {
+				console.log(data.results);
+				Session.set("vresults",data.results);
+			}
 		});
 	}
 }

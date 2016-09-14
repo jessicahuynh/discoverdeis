@@ -1,83 +1,83 @@
 <template name="locationProfile">
-{{#with location}}
-<h1 class="page-header locName">{{name}} <small>{{categories}}</small></h1>
+    {{#with location}}
+        <h1 class="page-header locName">{{name}} <small>{{categories}}</small></h1>
 
-<div class="row">
-	<div class="col-xs-12">
-		<div class="panes">
-			
-			<div class="tab-content">
-				<div role="tabpanel" class="tab-pane" id="pic">
- 					<img src="http://moore.cs-i.brandeis.edu/discoverdeis/{{id}}.JPG" class="profilePic">
- 				</div>
-				<div role="tabpanel" class="tab-pane active" id="profileMap">
-					<div id="map-container">
-						{{> googleMap name="locMap" options=locMapOptions}}
-					</div>
-				</div>
-			</div>
-			
-		</div>
-		
-		<div class="tabs">
-			<ul class="nav nav-pills" role="tablist" id="profileTabs">
-				<li role="presentation">
-					<a href="#pic" aria-controls="pic" role="pill" data-toggle="pill"><span class="glyphicon glyphicon-picture"><span class="sr-only">Picture</span></span></a></li>
-				<li role="presentation" class="active">
-					<a href="#profileMap" aria-controls="profileMap" role="pill" data-toggle="pill"><span class="glyphicon glyphicon-map-marker"></span><span class="sr-only">Map</span></a></li>
-			</ul>
-		</div>
-	</div>
-	
-</div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panes">
 
-<div class="row mobileGo">
-	<div class="col-xs-6">
-		<div class="go-to-navigate">
-			<a href="{{pathFor 'change'}}"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Go</a>
-		</div>
-	</div>
-	<div class="col-xs-6">
-		<div class="go-to-navigate">
-			<a href="mailto:?subject=Come join me at Brandeis University! &amp;body=You can find me here at {{name}} %0D%0A %0D%0A {{currentSiteShare}}"
-	title="Share by Email"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Share</a>
-		</div>
-	</div>
-</div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane" id="pic">
+                            <img src="http://moore.cs-i.brandeis.edu/discoverdeis/{{id}}.JPG" class="profilePic">
+                        </div>
+                        <div role="tabpanel" class="tab-pane active" id="profileMap">
+                            <div id="map-container">
+                                {{> googleMap name="locMap" options=locMapOptions}}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tabs">
+                    <ul class="nav nav-pills" role="tablist" id="profileTabs">
+                        <li role="presentation">
+                            <a href="#pic" aria-controls="pic" role="pill" data-toggle="pill"><span class="glyphicon glyphicon-picture"><span class="sr-only">Picture</span></span></a></li>
+                        <li role="presentation" class="active">
+                            <a href="#profileMap" aria-controls="profileMap" role="pill" data-toggle="pill"><span class="glyphicon glyphicon-map-marker"></span><span class="sr-only">Map</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mobileGo">
+            <div class="col-xs-6">
+                <div class="go-to-navigate">
+                    <a href="{{pathFor 'change'}}"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Go</a>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="go-to-navigate">
+                    <a href="mailto:?subject=Come join me at Brandeis University! &amp;body=You can find me here at {{name}} %0D%0A %0D%0A {{currentSiteShare}}"
+                       title="Share by Email"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Share</a>
+                </div>
+            </div>
+        </div>
 
 
 
-<div class="row">
-	<div class="col-sm-8">
-		<p>{{function}}</p>
-		<p>{{description}}</p>
-	</div>
-	<div class="col-sm-4">
-		<div class="go-to-navigate desktopGo">
-			<a href="{{pathFor 'change'}}"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Go</a>
-		</div>
-		<div class="go-to-navigate desktopGo">
-			<a href="mailto:?subject=Come join me at Brandeis University! &amp;body=You can find me here at {{name}} %0D%0A %0D%0A {{currentSiteShare}}"
-   title="Share by Email"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Share</a>
-		</div>
-		{{> hours}}
-	</div>
-</div>
+        <div class="row">
+            <div class="col-sm-8">
+                <p>{{function}}</p>
+                <p>{{description}}</p>
+            </div>
+            <div class="col-sm-4">
+                <div class="go-to-navigate desktopGo">
+                    <a href="{{pathFor 'change'}}"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Go</a>
+                </div>
+                <div class="go-to-navigate desktopGo">
+                    <a href="mailto:?subject=Come join me at Brandeis University! &amp;body=You can find me here at {{name}} %0D%0A %0D%0A {{currentSiteShare}}"
+                       title="Share by Email"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Share</a>
+                </div>
+                {{> hours}}
+            </div>
+        </div>
 
-<div class="row">
-	<div class="col-sm-12">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title">Nearby places</h3>
-			</div>
-			<div class="panel-body">
-				{{> nearbyLocs}}
-			</div>
-		</div>
-	</div>
-</div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Nearby places</h3>
+                    </div>
+                    <div class="panel-body">
+                        {{> nearbyLocs}}
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<!-- <div class="row">
+        <!-- <div class="row">
 	<div class="col-sm-12">
 		<div class="panel panel-default">
 			<div class="panel-heading">
@@ -90,6 +90,6 @@
 	</div>
 </div> -->
 
-{{/with}}
+    {{/with}}
 </template>
 

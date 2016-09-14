@@ -3,7 +3,7 @@ Session.setDefault("area","");
 
 Template.locationList.rendered = function() {
 	Session.set("pageTitle","Locations @ Brandeis");
-	
+
 	var listen = "This is a list of every location on campus, filterable and sortable.";
 
 	Session.set("listenTo",listen);
@@ -66,13 +66,13 @@ Template.locationList.events({
 	},
 	'click .selectionCat':function(event) {
 		event.preventDefault();
-		
+
 		Session.set("category",$(event.target).data("filter"));
 	}
 	,
 	'click .selectionArea':function(event) {
 		event.preventDefault();
-		
+
 		Session.set("area",$(event.target).data("filter"));
 	}
 });

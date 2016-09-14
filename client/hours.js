@@ -66,7 +66,7 @@ Template.hours.onCreated (function() {
 
 		var h=new Date().getHours();
 		var m=new Date().getMinutes();
-		
+
 		eachPeriod(0);
 		state=stateF(h,m,sH,sM,eH,eM);
 		if(!state){
@@ -78,10 +78,10 @@ Template.hours.onCreated (function() {
 						eachPeriod(8);
 						state=stateF(h,m,sH,sM,eH,eM);
 					}
-				} 
+				}
 			}
 		}
-	}	
+	}
 });
 Template.hours.helpers({
 	period:function(){
@@ -94,36 +94,36 @@ Template.hours.helpers({
 			if(!state){
 				return "Closed";
 			} else return "Open";
-		} else return "N/A";		
+		} else return "N/A";
 	}
 });
 
-	
+
 
 // today: function(){
-	// 	d = new Date().getDay();
-	// 	day = "";
-	// 	if(d==0){
-	// 		day="Sunday";
-	// 	} else if (d==1){
-	// 		day=="Monday";
-	// 	} else if (d==2){
-	// 		day=="Tuesday";
-	// 	} else if (d==3){
-	// 		day=="Wednesday";
-	// 	} else if (d==4){
-	// 		day=="Thursday";
-	// 	} else if (d==5){
-	// 		day=="Friday";
-	// 	} else if (d==6){
-	// 		day=="Saturday";
-	// 	}
-	// 	return day;
-	// },
-	// now: function(){
-	// 	h=new Date().getHours();
-	// 	m=new Date().getMinutes();
-	// 	var nowTime=h+":"+m;
-	// 	return nowTime;
-	// }
+// 	d = new Date().getDay();
+// 	day = "";
+// 	if(d==0){
+// 		day="Sunday";
+// 	} else if (d==1){
+// 		day=="Monday";
+// 	} else if (d==2){
+// 		day=="Tuesday";
+// 	} else if (d==3){
+// 		day=="Wednesday";
+// 	} else if (d==4){
+// 		day=="Thursday";
+// 	} else if (d==5){
+// 		day=="Friday";
+// 	} else if (d==6){
+// 		day=="Saturday";
+// 	}
+// 	return day;
+// },
+// now: function(){
+// 	h=new Date().getHours();
+// 	m=new Date().getMinutes();
+// 	var nowTime=h+":"+m;
+// 	return nowTime;
+// }
 

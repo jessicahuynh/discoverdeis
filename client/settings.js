@@ -7,14 +7,14 @@ Session.setDefault("readingmode",false);
 Template.settings.rendered = function() {
 	Session.set("pageTitle","Settings");
 	Session.set("listenTo","Change settings for Discover Deis here.");
-	
+
 	$(".switch").bootstrapSwitch();
 	$(".deviceSwitch").bootstrapSwitch();
-	
+
 	if (window.SpeechSynthesisUtterance === undefined) {
-			  $("#voiceSettingsDiv").hide();
-		  }
-	
+		$("#voiceSettingsDiv").hide();
+	}
+
 	$("#unit").on('switchChange.bootstrapSwitch', function(event, data) {
 		if ($("#unit").is(":checked")) {
 			Session.setPersistent("unit","m");
@@ -38,12 +38,12 @@ Template.settings.rendered = function() {
 
 	$('.slider').slider();
 	$('#rate').slider()
-	  .on('slideStop', function(data){
-	  	console.log(data);
-	  	var rate = data.value;
-	  	console.log(rate);
-	    Session.setPersistent("rate",rate);
-	});
+		.on('slideStop', function(data){
+			console.log(data);
+			var rate = data.value;
+			console.log(rate);
+			Session.setPersistent("rate",rate);
+		});
 	$('#rate').slider('setValue', Session.get("rate", rate));
 
 

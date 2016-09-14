@@ -1,35 +1,35 @@
 <template name="selfguide">
-{{#with currentLoc}}
-  <h1 class="page-header locName">{{name}}</h1>
-  
-  <div class="alert alert-success alert-dismissible" role="alert">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <strong>Welcome to the self-guided tour!</strong> Feel free to walk around campus and watch information flow past your screen.
-  </div>
-  
-  <img src="http://moore.cs-i.brandeis.edu/discoverdeis/{{id}}.JPG" class="profilePic">
-  
-<div class="row">
-	<div class="col-xs-6">
-		<div class="go-to-navigate">
-			<a href="/viewLocation/{{id}}" id="viewmore"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;More Info</a>
-		</div>
-	</div>
-	<div class="col-xs-6">
-		<div class="go-to-navigate">
-			<a href="mailto:?subject=Come join me at Brandeis University! &amp;body=You can find me here at {{name}} %0D%0A %0D%0A {{currentSiteShare}}"
-	title="Share by Email"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Share</a>
-		</div>
-	</div>
-</div>
-  
-  <p>{{function}}</p>
-  
-  <p>{{description}}</p>
-  
-  <h3>Nearby locations</h3>
-  {{> nearbyLocs}}
+    {{#with currentLoc}}
+        <h1 class="page-header locName">{{name}}</h1>
 
-{{/with}}
+        <div class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Welcome to the self-guided tour!</strong> Feel free to walk around campus and watch information flow past your screen.
+        </div>
+
+        <img src="http://moore.cs-i.brandeis.edu/discoverdeis/{{id}}.JPG" class="profilePic">
+
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="go-to-navigate">
+                    <a href="/viewLocation/{{id}}" id="viewmore"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;More Info</a>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="go-to-navigate">
+                    <a href="mailto:?subject=Come join me at Brandeis University! &amp;body=You can find me here at {{name}} %0D%0A %0D%0A {{currentSiteShare}}"
+                       title="Share by Email"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Share</a>
+                </div>
+            </div>
+        </div>
+
+        <p>{{function}}</p>
+
+        <p>{{description}}</p>
+
+        <h3>Nearby locations</h3>
+        {{> nearbyLocs}}
+
+    {{/with}}
 
 </template>

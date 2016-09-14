@@ -1,39 +1,39 @@
 <template name="settings">
-	<h1 class="page-header">Settings</h1>
-	
-	<div class="checkbox">
-		<div class="row">
-			<div class="col-xs-6 text-left">
-				<label for="unit">Distance units</label>
-			</div>
-			<div class="col-xs-6 text-right">
-			<div class = "bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-on bootstrap-switch-mini bootstrap-switch-id-switch-size bootstrap-switch-animate">	
-				<input type="checkbox" id="unit" class="switch" data-off-text="FT" data-on-text="M" data-off-color="info" data-handle-width="40" checked="{{unitCheck}}">
-			</div>
-		</div>
-		</div>
-		<p class="help-block">Choose either meters or feet to be used app-wide.</p>
-		
-	</div>
-	<hr/>
+    <h1 class="page-header">Settings</h1>
 
-	<div class="checkbox">
-		<div class="row">
-			<div class="col-xs-6 text-left">
-				<label for="orientation">Device Orientation</label>
-			</div>
-			<div class="col-xs-6 text-right">
-			<div class = "bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-on bootstrap-switch-mini bootstrap-switch-id-switch-size bootstrap-switch-animate">	
-				<input type="checkbox" id="orientation" class="deviceSwitch" data-off-text="Off" data-on-text="On" data-off-color="info" data-handle-width="40" checked="{{deviceOrientation}}">
-			</div>
-		</div>
-		</div>
-		<p class="help-block">Device Orientation Pointer for Maps</p>
-		
-</div>
-	
-	<div id="voiceSettingsDiv">
-	<!--<hr />
+    <div class="checkbox">
+        <div class="row">
+            <div class="col-xs-6 text-left">
+                <label for="unit">Distance units</label>
+            </div>
+            <div class="col-xs-6 text-right">
+                <div class = "bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-on bootstrap-switch-mini bootstrap-switch-id-switch-size bootstrap-switch-animate">
+                    <input type="checkbox" id="unit" class="switch" data-off-text="FT" data-on-text="M" data-off-color="info" data-handle-width="40" checked="{{unitCheck}}">
+                </div>
+            </div>
+        </div>
+        <p class="help-block">Choose either meters or feet to be used app-wide.</p>
+
+    </div>
+    <hr/>
+
+    <div class="checkbox">
+        <div class="row">
+            <div class="col-xs-6 text-left">
+                <label for="orientation">Device Orientation</label>
+            </div>
+            <div class="col-xs-6 text-right">
+                <div class = "bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-on bootstrap-switch-mini bootstrap-switch-id-switch-size bootstrap-switch-animate">
+                    <input type="checkbox" id="orientation" class="deviceSwitch" data-off-text="Off" data-on-text="On" data-off-color="info" data-handle-width="40" checked="{{deviceOrientation}}">
+                </div>
+            </div>
+        </div>
+        <p class="help-block">Device Orientation Pointer for Maps</p>
+
+    </div>
+
+    <div id="voiceSettingsDiv">
+        <!--<hr />
 		<div class="checkbox">
 			<div class="row">
 				<div class="col-xs-6 text-left">
@@ -46,22 +46,22 @@
 			<p class="help-block">When reading mode is on, the app will read every page you visit. This mode is fantastic for the self-guided tour or step-by-step navigation.</p>
 		</div>-->
 
-	<hr />
-		<div class="checkbox">
-			<div class="row">
-				<div class="col-xs-12 text-left">
-					<label for="rate">Speech speed</label>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 text-right">
-					<input type="text" class="slider" value="" data-slider-min="0" data-slider-max="3.5" data-slider-step="0.01" data-slider-value="1" data-slider-selection="after" data-slider-tooltip="show" id = "rate">
-				</div>
-			</div>
-			<p class="help-block">You can test the speed by clicking the speaker button in the bottom right corner.</p>		
-		</div>
+        <hr />
+        <div class="checkbox">
+            <div class="row">
+                <div class="col-xs-12 text-left">
+                    <label for="rate">Speech speed</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 text-right">
+                    <input type="text" class="slider" value="" data-slider-min="0" data-slider-max="3.5" data-slider-step="0.01" data-slider-value="1" data-slider-selection="after" data-slider-tooltip="show" id = "rate">
+                </div>
+            </div>
+            <p class="help-block">You can test the speed by clicking the speaker button in the bottom right corner.</p>
+        </div>
 
-	</div>
+    </div>
 
 
 </template>

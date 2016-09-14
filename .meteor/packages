@@ -11,7 +11,7 @@ matteodem:easy-search
 manuelschoebel:wait-on-lib
 dburles:google-maps
 u2622:persistent-session
-less@2.7.4
+less@2.7.5
 
 mizzao:autocomplete
 jaywon:meteor-node-uuid
@@ -19,12 +19,12 @@ sacha:spin
 maxharris9:meteor-bootstrap-slider
 meteor-base@1.0.4
 mobile-experience@1.0.4
-mongo@1.1.10
+mongo@1.1.12
 blaze-html-templates@1.0.4
 session@1.1.6
 jquery@1.11.9
 tracker@1.1.0
-logging@1.1.14
+logging@1.1.15
 reload@1.1.10
 random@1.0.10
 ejson@1.0.12
@@ -34,8 +34,9 @@ mdg:geolocation
 meteorhacks:kadira
 ground:db
 fastclick@1.0.12
-standard-minifier-css
-standard-minifier-js
-http
-autopublish
-insecure
+standard-minifier-css@1.2.0
+standard-minifier-js@1.2.0
+http@1.2.9
+autopublish@1.0.7
+insecure@1.0.7
+shell-server

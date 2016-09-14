@@ -1,34 +1,34 @@
 <template name="debugger">
-<h2>Map Debugger</h2>
-<div id="map-container" style="height:900px">
-	{{> googleMap name="dataMap" options=dataMapOptions}}
-</div>
-<p>The map markers are from <a>http://www.benjaminkeen.com/google-maps-coloured-markers/</a>.</p>
+    <h2>Map Debugger</h2>
+    <div id="map-container" style="height:900px">
+        {{> googleMap name="dataMap" options=dataMapOptions}}
+    </div>
+    <p>The map markers are from <a>http://www.benjaminkeen.com/google-maps-coloured-markers/</a>.</p>
 
-<h2>Locations without entrances assigned</h2>
-<ul>
-	{{#each locNoEntrance}}
-	<li>{{name}}</li>
-	{{/each}}
-</ul>
+    <h2>Locations without entrances assigned</h2>
+    <ul>
+        {{#each locNoEntrance}}
+            <li>{{name}}</li>
+        {{/each}}
+    </ul>
 
-<h2>Locations without nearby locations</h2>
-<ul>
-	{{#each locNoNearby}}
-	<li>{{name}}</li>
-	{{/each}}
-</ul>
+    <h2>Locations without nearby locations</h2>
+    <ul>
+        {{#each locNoNearby}}
+            <li>{{name}}</li>
+        {{/each}}
+    </ul>
 
-<h2>Stats</h2>
-<ul>
-	<li># points: {{numPoints}}
-		<ul>
-			<li># entrances: {{numEntrances}} ({{numIEntrances}} internal)</li>
-			<li># crossings: {{numCrossings}} ({{numICrossings}} internal)</li>
-		</ul>
-	</li>
-	<li># locations: {{numLocs}}</li>
-	<li># paths: {{numPaths}}</li>
-</ul>
+    <h2>Stats</h2>
+    <ul>
+        <li># points: {{numPoints}}
+            <ul>
+                <li># entrances: {{numEntrances}} ({{numIEntrances}} internal)</li>
+                <li># crossings: {{numCrossings}} ({{numICrossings}} internal)</li>
+            </ul>
+        </li>
+        <li># locations: {{numLocs}}</li>
+        <li># paths: {{numPaths}}</li>
+    </ul>
 
 </template>

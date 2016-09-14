@@ -16,7 +16,7 @@ Meteor.startup(function() {
 		Meteor.call("transLocAPI");
 	}
 
-	
+
 	if (Locations.find().count() == 0) {
 		// list of all of the files containing location data
 		var locFiles = [
@@ -37,11 +37,11 @@ Meteor.startup(function() {
 			locations_artinstallations,
 			locations_rooms
 		];
-		
+
 		locFiles.forEach(function(locFile) {
 			locFile.forEach(function(location) {
 				Locations.insert(location);
-				
+
 				var c = null;
 				if (location.coordinates.type == "Point") {
 					c = location.coordinates.coordinates;
@@ -51,11 +51,11 @@ Meteor.startup(function() {
 					c = location.coordinates.coordinates[0][0];
 				}
 				CornerPoints.insert({"coordinate":{"type":"Point","coordinates":[c[1],c[0]]},"name":location.name}); // need to flip x and y for geojson
-				
+
 			});
-		});		
+		});
 	}
-	
+
 	if (Intersections.find().count() == 0) {
 		var intersectFiles = [
 			points_centralCampus,
@@ -63,7 +63,7 @@ Meteor.startup(function() {
 			points_massellchapels,
 			points_southcampus,
 			points_gym,
-			points_admin, 
+			points_admin,
 			points_science,
 			points_northrabb,
 			points_mandelquad,
@@ -75,7 +75,7 @@ Meteor.startup(function() {
 			points_rooms
 		];
 
-		
+
 		intersectFiles.forEach(function(intersectFile) {
 			intersectFile.forEach(function(point) {
 				if (point.singlepoint){
@@ -83,24 +83,24 @@ Meteor.startup(function() {
 					// the single point's entrance is always the same as its location coordinate
 					point.coordinate = Locations.findOne({"id":point.id.replace('_e01','')}).coordinates;
 				}
-				
+
 				Intersections.insert(point);
-			
+
 				var flipped = {"type":"Point","coordinates":[point.coordinate.coordinates[1],point.coordinate.coordinates[0]]};
-			
+
 				IntersectionsYX.insert({"id":point.id,"coordinate":flipped,"type":point.type,"getTo":point.getTo});
-				
+
 			});
 		});
 	}
-	
+
 	if (Paths.find().count() == 0) {
 		var pathFiles = [
 			paths_massellchapels,
-			paths_lowerDorms, 
-			paths_southcampus,	
+			paths_lowerDorms,
+			paths_southcampus,
 			paths_gym,
-			paths_admin, 
+			paths_admin,
 			paths_science,
 			paths_northrabb,
 			paths_mandelquad,
@@ -112,7 +112,7 @@ Meteor.startup(function() {
 			paths_bernstein,
 			paths_rooms
 		];
-		
+
 		pathFiles.forEach(function(pathFile) {
 			pathFile.forEach(function(path) {
 				//console.log("path###############");
@@ -130,9 +130,9 @@ Meteor.startup(function() {
 							Paths.insert(path);
 							// console.log(path);	
 						}
-				});
+					});
 			});
-			
+
 		});
 	}
 
@@ -149,7 +149,7 @@ Meteor.startup(function() {
 			}
 			map[start][end] = dist;
 		});
-		
+
 		/*console.log(map);*/
 		Map.insert(map);
 	}
@@ -159,7 +159,7 @@ Meteor.startup(function() {
 		hoursFile.forEach(function(hour) {
 			//console.log(hour);
 			Hours.insert(hour);
-			
+
 		});
 	}
 
@@ -191,7 +191,7 @@ Meteor.startup(function() {
 	// }
 
 
-	
+
 	console.log(Map.find().count());
 	console.log("startup end");
 

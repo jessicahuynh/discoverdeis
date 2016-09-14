@@ -24,30 +24,30 @@ form {width:100%;}
 }
 
 .form-group.required label:after {
-  content:" *";
-  color:@reddish;
+	content:" *";
+	color:@reddish;
 }
 
 .panel {border-radius:0;}
 
 /* adjust body when menu is open */
 body.slide-active {
-    overflow-x: hidden
+	overflow-x: hidden
 }
 /*first child of #page-content so it doesn't shift around*/
 .no-margin-top {
-    margin-top: 0px!important
+	margin-top: 0px!important
 }
 /*wrap the entire page content but not nav inside this div if not a fixed top, don't add any top padding */
 #page-content {
-    position: relative;
+	position: relative;
 	left:0;
 	div.container {
 		margin-bottom:90px;
 	}
 }
 #page-content.slide-active {
-    padding-top:71px;
+	padding-top:71px;
 }
 @media (min-width:769px) {
 	#page-content.slide-active {
@@ -63,40 +63,40 @@ nav div.container {
 
 /* put toggle bars on the left :: not using button */
 #slide-nav .navbar-toggle {
-    cursor: pointer;
-    position: fixed;
-    line-height: 0;
-    float: left;
-    margin: 0;
-    width: 30px;
-    height: 40px;
-    padding: 10px 0 0 0;
-    border: 0;
-    background: transparent;
+	cursor: pointer;
+	position: fixed;
+	line-height: 0;
+	float: left;
+	margin: 0;
+	width: 30px;
+	height: 40px;
+	padding: 10px 0 0 0;
+	border: 0;
+	background: transparent;
 }
 /* icon bar prettyup - optional */
 #slide-nav .navbar-toggle > .icon-bar {
-    width: 100%;
-    display: block;
-    height: 3px;
-    margin: 5px 0 0 0;
+	width: 100%;
+	display: block;
+	height: 3px;
+	margin: 5px 0 0 0;
 }
 /* the color of the hamburger menu when clicked */
 #slide-nav .navbar-toggle.slide-active .icon-bar {
-    background: #ffffff;
+	background: #ffffff;
 }
 .navbar-header {
-    position: fixed;
+	position: fixed;
 }
 /* fix the navbar when active so that all the menu items are accessible */
 .navbar.navbar-fixed-top.slide-active {
-    position: fixed;
+	position: fixed;
 }
 .navbar-inverse {
 	background:@dark-blue;
 	border-color:@dark-blue;
 	color:#ffffff;
-	
+
 	ul.navbar-nav {
 		width:100%;
 		margin-top:3em;
@@ -104,7 +104,7 @@ nav div.container {
 	.navbar-brand {
 		color:#ffffff;
 	}
-	
+
 	.navbar-nav li {
 		display:block;
 		clear:both;
@@ -120,15 +120,15 @@ nav div.container {
 }
 
 
-@media (max-width:768px) { 
+@media (max-width:768px) {
 	#slide-nav .container {
-	    margin: 0;
-	    padding: 0!important;
+		margin: 0;
+		padding: 0!important;
 	}
 	#slide-nav .navbar-header {
-	    margin: 0 auto;
-	    padding: 0 15px;
-		
+		margin: 0 auto;
+		padding: 0 15px;
+
 		.navbar-brand {
 			margin-left:1.5em;
 			padding-right:0;
@@ -137,72 +137,72 @@ nav div.container {
 		}
 	}
 	#slide-nav .navbar.slide-active {
-	    position: absolute;
-	    width: 60%;
-	    top: -1px;
-	    z-index: 1000;
+		position: absolute;
+		width: 60%;
+		top: -1px;
+		z-index: 1000;
 	}
 	#slide-nav #navbar-hamburger {
-	    background: #f7f7f7;
-	    left: -100%;
-	    width: 60%;
-	    min-width: 0;
-	    position: fixed;
-	    padding-left: 0;
+		background: #f7f7f7;
+		left: -100%;
+		width: 60%;
+		min-width: 0;
+		position: fixed;
+		padding-left: 0;
 		padding-right:0;
 		// padding-top:58px;
-	    z-index: 2;
-	    top: -8px;
-	    margin: 0;
-		
+		z-index: 2;
+		top: -8px;
+		margin: 0;
+
 	}
 	#slide-nav #navbar-hamburger .navbar-nav {
-	    min-width: 0;
-	    width: 100%;
-	    margin: 0;
+		min-width: 0;
+		width: 100%;
+		margin: 0;
 	}
 	#slide-nav #navbar-hamburger .navbar-nav .dropdown-menu li a {
-	    min-width: 0;
-	    width: 60%;
-	    white-space: normal;
+		min-width: 0;
+		width: 60%;
+		white-space: normal;
 	}
 	#slide-nav {
-	    border-top: 0
+		border-top: 0
 	}
 	#slide-nav.navbar-inverse #navbar-hamburger {
-	    background: @dark-blue;
+		background: @dark-blue;
 	}
 	/* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
 	#slide-nav #navbar-height-col {
-	    position: fixed;
-	    top: 0;
-	    height: 100%;
-	    width: 60%;
-	    left: -60%;
-	    background: #eee;
+		position: fixed;
+		top: 0;
+		height: 100%;
+		width: 60%;
+		left: -60%;
+		background: #eee;
 	}
 	#slide-nav.navbar-inverse #navbar-height-col {
-	    background: @dark-blue;
-	    z-index: 1;
-	    border: 0;
+		background: @dark-blue;
+		z-index: 1;
+		border: 0;
 	}
 	#slide-nav .navbar-form {
-	    width: 100%;
-	    margin: 8px 0;
-	    text-align: center;
-	    overflow: hidden;
-	    /*fast clearfixer*/
+		width: 100%;
+		margin: 8px 0;
+		text-align: center;
+		overflow: hidden;
+		/*fast clearfixer*/
 	}
 	#slide-nav .navbar-form .form-control {
-	    text-align: center
+		text-align: center
 	}
 	#slide-nav .navbar-form .btn {
-	    width: 100%
+		width: 100%
 	}
 }
-@media (min-width:769px) { 
+@media (min-width:769px) {
 	#page-content {
-	    left: 0!important;
+		left: 0!important;
 		z-index:200;
 	}
 	/* for the sidebar space */
@@ -210,26 +210,26 @@ nav div.container {
 		padding-left:275px;
 	}
 	.navbar.navbar-fixed-top.slide-active {
-	    position: fixed
+		position: fixed
 	}
 	.navbar-header {
-	    left: 0!important;
+		left: 0!important;
 	}
 	/* fix widths and make a sidebar */
 	#slide-nav {
 		height:100%; /* get background color to show all the way down */
 		width:270px;
 		background:@dark-blue;
-		
+
 		.container {
 			width:270px;
 		}
-		
+
 		/* stack navigation elements instead of inline */
 		#navbar-hamburger ul li {
 			float:none;
 		}
-	}	
+	}
 	#homeLink {
 		display:none;
 	}
@@ -238,7 +238,7 @@ nav div.container {
 	#page-content {
 		padding-top:72px;
 	}
-	
+
 	#homeLink {
 		display:block;
 		padding-top:3px;
@@ -284,13 +284,13 @@ button#searchGlass {
 		width:100%;
 		margin-top:50px;
 		background-color:@dark-blue;
-		
+
 		.form-group {
 			margin-bottom:12px;
 		}
-		
+
 		input {display:block;}
-		
+
 	}
 	button#searchGlass {
 		color:#ffffff;
@@ -306,14 +306,14 @@ button#searchGlass {
 	nav.navbar .container .navbar-brand {
 		margin:0 auto;
 	}
-	
+
 	#toggleBtn {
 		display:none;
 	}
 	.back {
 		display:none;
 	}
-	
+
 	#discoverDeisLink {
 		display:block;
 	}
@@ -332,14 +332,14 @@ button#searchGlass {
 		display:block;
 		margin-top:0;
 	}
-	
+
 	.back {
 		display:none;
 	}
 	#toggleBtn {
 		display:block;
 	}
-	
+
 	#discoverDeisLink {
 		display:none;
 	}
